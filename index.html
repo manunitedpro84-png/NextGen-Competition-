@@ -371,33 +371,32 @@
 
         // Subject structure management: Shuffling groups/sections, and questions inside them.
         function parseAndShuffleExam(structuredData) {
-            let finalizedDeck = [];
-            // Shuffle sections themselves first
-            let shuffledSections = shuffleArray(structuredData.parts);
+    let finalizedDeck = [];
+    
+    // Loop through parts in their natural order (do NOT shuffle the sections)
+    structuredData.parts.forEach(section => {
+        // Shuffle the questions within this part
+        let shuffledQuestions = shuffleArray(section.questions);
+        
+        shuffledQuestions.forEach(qItem => {
+            const originalOpts = [...qItem.opts];
+            const correctVal = originalOpts[qItem.ans];
+            
+            // Shuffle answer options
+            const shuffledOpts = shuffleArray(originalOpts);
+            const newCorrectIndex = shuffledOpts.indexOf(correctVal);
 
-            shuffledSections.forEach(section => {
-                // Shuffle questions within this part
-                let shuffledQuestions = shuffleArray(section.questions);
-                
-                shuffledQuestions.forEach(qItem => {
-                    const originalOpts = [...qItem.opts];
-                    const correctVal = originalOpts[qItem.ans];
-                    
-                    // Shuffle answer options
-                    const shuffledOpts = shuffleArray(originalOpts);
-                    const newCorrectIndex = shuffledOpts.indexOf(correctVal);
-
-                    finalizedDeck.push({
-                        partTitle: section.partTitle,
-                        q: qItem.q,
-                        opts: shuffledOpts,
-                        ans: newCorrectIndex,
-                        exp: qItem.exp || "No explanation provided."
-                    });
-                });
+            finalizedDeck.push({
+                partTitle: section.partTitle,
+                q: qItem.q,
+                opts: shuffledOpts,
+                ans: newCorrectIndex,
+                exp: qItem.exp || "No explanation provided."
             });
+        });
+    });
 
-            return finalizedDeck;
+    return finalizedDeck;
         }
 
         // Form Submit
