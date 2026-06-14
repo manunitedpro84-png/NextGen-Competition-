@@ -1,0 +1,684 @@
+{
+  "parts": [
+    {
+      "partTitle": "Part I: Algebra, Complex Numbers, and Functions",
+      "questions": [
+        {
+          "q": "Which one of the following defines a prime number?",
+          "opts": [
+            "It is a natural number that has an odd number of factors",
+            "It is an odd natural number that has only two factors",
+            "It is a natural number that has exactly two distinct factors",
+            "It is a natural number where one of its factors is 3"
+          ],
+          "ans": 2,
+          "exp": "A prime number is a natural number strictly greater than 1 that has exactly two distinct positive divisors: 1 and itself."
+        },
+        {
+          "q": "The GCF of two numbers is 9 and their LCM is 54. If one of the numbers is 18, what is the other number?",
+          "opts": [
+            "36",
+            "54",
+            "27",
+            "72"
+          ],
+          "ans": 2,
+          "exp": "Using the arithmetic relation: GCF(a, b) &times; LCM(a, b) = a &times; b. Thus, 9 &times; 54 = 18 &times; b, which gives b = 27."
+        },
+        {
+          "q": "Which of the following is the rationalizing factor to rationalize the denominator of: <br><br> <div class='text-center font-bold'>&frac;{7}{3 + &radic;5}</div>",
+          "opts": [
+            "&radic;3 + &radic;5",
+            "&radic;3 - 5",
+            "3 - &radic;5",
+            "3 + &radic;5"
+          ],
+          "ans": 2,
+          "exp": "To rationalize the denominator of a binomial radical of the form (a + &radic;b), we multiply both the numerator and the denominator by its conjugate, which is (a - &radic;b). The conjugate of 3 + &radic;5 is 3 - &radic;5."
+        },
+        {
+          "q": "According to the division algorithm, what should be the value of quotient (q) and remainder (r) respectively so that: <br><br> <div class='text-center font-bold'>290 = 11q + r</div>",
+          "opts": [
+            "q = 3 and r = 26",
+            "q = 26 and r = 4",
+            "q = 25 and r = 5",
+            "q = 24 and r = 6"
+          ],
+          "ans": 1,
+          "exp": "Using the division algorithm, 290 divided by 11 gives 26 with a remainder. 11 &times; 26 = 286. Thus, the remainder r = 290 - 286 = 4."
+        },
+        {
+          "q": "If 8<sup>3x-1</sup> = (&frac;1{2</sub>)<sup>4x</sup> &middot; 128<sup>-x-1</sup>, what is the value of x?",
+          "opts": [
+            "1",
+            "5",
+            "1/5",
+            "-1/5"
+          ],
+          "ans": 3,
+          "exp": "Express everything as powers of base 2: 2<sup>3(3x-1)</sup> = 2<sup>-4x</sup> &middot; 2<sup>-7(x+1)</sup>. Equating exponents: 9x - 3 = -4x - 7x - 7 => 20x = -4 => x = -1/5."
+        },
+        {
+          "q": "What is the solution set of the absolute value equation: <br><br> <div class='text-center font-bold'>|3 - 2x| = |x - 6|</div>",
+          "opts": [
+            "{-3, 4}",
+            "{3, 4}",
+            "{-3, 3}",
+            "{-3, -3}"
+          ],
+          "ans": 2,
+          "exp": "Solve the two cases: (1) 3 - 2x = x - 6 => 3x = 9 => x = 3. (2) 3 - 2x = -(x - 6) => 3 - 2x = -x + 6 => x = -3. The solution set is {-3, 3}."
+        },
+        {
+          "q": "In a class of 52 students, 34 students passed in Mathematics and 28 passed in English. If the number of students who failed both subjects is 9, what is the number of students who passed both subjects?",
+          "opts": [
+            "19",
+            "10",
+            "9",
+            "6"
+          ],
+          "ans": 0,
+          "exp": "Total students who passed at least one subject = 52 - 9 = 43. Using set theory: n(M &cup; E) = n(M) + n(E) - n(M &cap; E) => 43 = 34 + 28 - x => x = 19."
+        },
+        {
+          "q": "What is the range of the signum function f(x) = 3 + sgn(x<sup>2</sup> + 1)?",
+          "opts": [
+            "{3, 4}",
+            "{2, 3, 4}",
+            "{4}",
+            "{-1, 0, 1}"
+          ],
+          "ans": 2,
+          "exp": "Since x<sup>2</sup> + 1 is always strictly positive for all real x, sgn(x<sup>2</sup> + 1) is always 1. Thus, f(x) = 3 + 1 = 4. The range is the singleton set {4}."
+        },
+        {
+          "q": "For what values of x is the greatest integer function expression true: <br><br> <div class='text-center font-bold'>&lfloor;2x - 3&rfloor; = 6</div>",
+          "opts": [
+            "{x : 9/2 &le; x < 5}",
+            "{x : x = 9/2}",
+            "{x : x = 5}",
+            "{x : 9/2 &le; x &le; 5}"
+          ],
+          "ans": 0,
+          "exp": "By definition of the greatest integer function, 6 &le; 2x - 3 < 7. Adding 3 yields 9 &le; 2x < 10. Dividing by 2 yields 9/2 &le; x < 5."
+        },
+        {
+          "q": "Which of the following algebraic expressions is a rational expression?",
+          "opts": [
+            "(x<sup>3</sup> + &radic;x<sup>2</sup>) / (x + 4)",
+            "(&radic;3x<sup>2</sup> + log<sub>2</sub>8) / (&pi; - 1)",
+            "(x - 2<sup>x</sup>) / (x<sup>2</sup> + 1)",
+            "(x<sup>-2</sup> + x - 1) / (&radic;x - 2)"
+          ],
+          "ans": 1,
+          "exp": "A rational expression is the quotient of two polynomials. Option B has a real constant polynomial as its numerator and denominator, making it a valid rational expression."
+        },
+        {
+          "q": "What is the modulus of the complex number: <br><br> <div class='text-center font-bold'>z = 1 - i&radic;3</div>",
+          "opts": [
+            "4",
+            "2",
+            "1",
+            "&radic;5"
+          ],
+          "ans": 1,
+          "exp": "The modulus is given by |z| = &radic;(a<sup>2</sup> + b<sup>2</sup>). Here, |z| = &radic;(1<sup>2</sup> + (-&radic;3)<sup>2</sup>) = &radic;(1 + 3) = &radic;4 = 2."
+        },
+        {
+          "q": "What is the inverse of the function f(x) = (x + 1) / (2x - 1)?",
+          "opts": [
+            "f<sup>-1</sup>(x) = (x + 1) / (2x + 1)",
+            "f<sup>-1</sup>(x) = (x - 1) / (2x + 1)",
+            "f<sup>-1</sup>(x) = (x - 1) / (2x - 1)",
+            "f<sup>-1</sup>(x) = (x + 1) / (2x - 1)"
+          ],
+          "ans": 3,
+          "exp": "Set y = (x + 1)/(2x - 1). Solving for x gives: 2xy - y = x + 1 => x(2y - 1) = y + 1 => x = (y + 1)/(2y - 1). Thus, the inverse is self-reciprocal: f<sup>-1</sup>(x) = (x + 1)/(2x - 1)."
+        },
+        {
+          "q": "What is the domain of the function f(x) = (x<sup>2</sup> + 2x + 1) / (x<sup>2</sup> - 5x - 6)?",
+          "opts": [
+            "&reals; \\ {-1, 6}",
+            "&reals; \\ {6}",
+            "&reals; \\ {-6, 1}",
+            "&reals; \\ {1, 6}"
+          ],
+          "ans": 0,
+          "exp": "The denominator cannot equal zero: x<sup>2</sup> - 5x - 6 = 0 => (x - 6)(x + 1) = 0 => x = 6 and x = -1. Therefore, the domain is &reals; \\ {-1, 6}."
+        },
+        {
+          "q": "If f(1) = 4, f'(1) = 5, and f'(4) = 5, what is the value of (f &comp; f)'(1)?",
+          "opts": [
+            "20",
+            "25",
+            "15",
+            "30"
+          ],
+          "ans": 1,
+          "exp": "By the Chain Rule: (f &comp; f)'(1) = f'(f(1)) &middot; f'(1) = f'(4) &middot; f'(1) = 5 &middot; 5 = 25."
+        },
+        {
+          "q": "What is the principal argument of the complex number z = 1 + i?",
+          "opts": [
+            "&pi;/2",
+            "&pi;/4",
+            "&pi;/3",
+            "&pi;/6"
+          ],
+          "ans": 1,
+          "exp": "Since the complex number lies in the first quadrant, Arg(z) = arctan(y/x) = arctan(1/1) = &pi;/4."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part II: Sequences, Series, and Limits",
+      "questions": [
+        {
+          "q": "Which term of the arithmetic sequence -6, 1, 8, 15, ... is equal to 414?",
+          "opts": [
+            "31",
+            "62",
+            "61",
+            "32"
+          ],
+          "ans": 2,
+          "exp": "The first term a<sub>1</sub> = -6, and the common difference d = 7. Using the general term: a<sub>n</sub> = a<sub>1</sub> + (n - 1)d => 414 = -6 + (n - 1)7 => 420 = 7(n - 1) => n - 1 = 60 => n = 61."
+        },
+        {
+          "q": "What is the sum of the first 50 terms of the sequence: <br><br> <div class='text-center font-bold'>&frac;{1}{2} + &frac;{1}{6} + &frac;{1}{12} + &frac;{1}{20} + ...</div>",
+          "opts": [
+            "52/51",
+            "50/51",
+            "51/50",
+            "1/51"
+          ],
+          "ans": 1,
+          "exp": "This is a telescoping series where each term can be written as 1/(n(n+1)) = 1/n - 1/(n+1). The sum of the first k terms collapses to: 1 - 1/(k+1) = k/(k+1). For k=50, the sum is 50/51."
+        },
+        {
+          "q": "Which of the following geometric sequences is divergent?",
+          "opts": [
+            "a<sub>n</sub> = (-1)<sup>2n+1</sup>(3/5)<sup>n</sup>",
+            "a<sub>n</sub> = (-3/5)<sup>2n+1</sup>",
+            "a<sub>n</sub> = &frac;1{10}(5/2)<sup>n</sup>",
+            "a<sub>n</sub> = 2 / 5<sup>n</sup>"
+          ],
+          "ans": 2,
+          "exp": "A geometric sequence converges if the common ratio r satisfies |r| &le; 1 (and r &ne; -1). In option C, r = 5/2, which is greater than 1, so the sequence diverges."
+        },
+        {
+          "q": "A new auditorium has 30 seats in the first row, 34 in the second, and 38 in the third. If this arithmetic pattern continues, what is the total seating capacity of the theater if it has 20 rows?",
+          "opts": [
+            "106",
+            "3880",
+            "580",
+            "1360"
+          ],
+          "ans": 3,
+          "exp": "This is an arithmetic series with a<sub>1</sub> = 30, d = 4, and n = 20. S<sub>20</sub> = (n/2) &middot; [2a<sub>1</sub> + (n - 1)d] = 10 &middot; [60 + 19(4)] = 10 &middot; [60 + 76] = 1360."
+        },
+        {
+          "q": "The sum of all integers from 1 to 100 that are divisible by 15 is equal to:",
+          "opts": [
+            "180",
+            "190",
+            "300",
+            "315"
+          ],
+          "ans": 3,
+          "exp": "The integers are multiples of 15: 15, 30, 45, 60, 75, and 90. Their sum is 15 + 30 + 45 + 60 + 75 + 90 = 315."
+        },
+        {
+          "q": "The sum of the infinite series &sum;<sub>n=0</sub><sup>&infin;</sup> 5(2/3)<sup>n</sup> is equal to:",
+          "opts": [
+            "10",
+            "15",
+            "10/3",
+            "5"
+          ],
+          "ans": 1,
+          "exp": "This is an infinite geometric series with first term a = 5 and ratio r = 2/3. Since |r| < 1, the sum is S = a / (1 - r) = 5 / (1 - 2/3) = 15."
+        },
+        {
+          "q": "The fraction form of the recurring decimal 0.56&#772; is equal to:",
+          "opts": [
+            "17/30",
+            "15/17",
+            "2/3",
+            "19/45"
+          ],
+          "ans": 0,
+          "exp": "Let x = 0.5666... Then 10x = 5.666... and 100x = 56.666... Subtracting the equations: 90x = 51 => x = 51/90 = 17/30."
+        },
+        {
+          "q": "If x + 3, 2x + 3, and 4x - 1 are consecutive terms of a geometric progression, then what is the possible value of x?",
+          "opts": [
+            "12",
+            "-12",
+            "-6",
+            "6"
+          ],
+          "ans": 1,
+          "exp": "For three terms to be in a GP, the middle term squared must equal the product of the outer terms: (2x+3)<sup>2</sup> = (x+3)(4x-1) => 4x<sup>2</sup> + 12x + 9 = 4x<sup>2</sup> + 11x - 3 => 12x + 9 = 11x - 3 => x = -12."
+        },
+        {
+          "q": "What is the limit value of the sequence: <br><br> <div class='text-center font-bold'>a<sub>n</sub> = &frac;{3n}{n + 1}</div>",
+          "opts": [
+            "3",
+            "0",
+            "1",
+            "Does not exist"
+          ],
+          "ans": 0,
+          "exp": "Divide numerator and denominator by n: lim<sub>n&rarr;&infin;</sub> 3 / (1 + 1/n) = 3 / (1 + 0) = 3."
+        },
+        {
+          "q": "In an arithmetic progression, if a<sub>1</sub> = 1, a<sub>n</sub> = 20, and S<sub>n</sub> = 399, what is the value of n?",
+          "opts": [
+            "19",
+            "21",
+            "42",
+            "38"
+          ],
+          "ans": 3,
+          "exp": "Using the sum formula: S<sub>n</sub> = (n/2)(a<sub>1</sub> + a<sub>n</sub>) => 399 = (n/2)(1 + 20) => 399 = 10.5n => n = 38."
+        },
+        {
+          "q": "What is the sum of all multiples of 4 that are between 30 and 301?",
+          "opts": [
+            "12,882",
+            "11,288",
+            "6,288",
+            "6,882"
+          ],
+          "ans": 1,
+          "exp": "The multiples are 32, 36, ..., 300. This is an AP with a<sub>1</sub> = 32, d = 4, and a<sub>n</sub> = 300. Finding n: 300 = 32 + (n - 1)4 => 268 = 4(n - 1) => n = 68. The sum is S<sub>68</sub> = (68/2)(32 + 300) = 34 &times; 332 = 11,288."
+        },
+        {
+          "q": "What is the sum of the series: <br><br> <div class='text-center font-bold'>&sum;<sub>n=2</sub><sup>20</sup> ( &frac;{1}{n - 1} - &frac;{1}{n} )</div>",
+          "opts": [
+            "17/20",
+            "23/20",
+            "21/20",
+            "19/20"
+          ],
+          "ans": 3,
+          "exp": "This is a telescoping series: (1/1 - 1/2) + (1/2 - 1/3) + ... + (1/19 - 1/20). All intermediate terms cancel out, leaving: 1 - 1/20 = 19/20."
+        },
+        {
+          "q": "Which of the following sequences is convergent?",
+          "opts": [
+            "a<sub>n</sub> = n<sup>2</sup>",
+            "a<sub>n</sub> = (-1)<sup>n</sup>",
+            "a<sub>n</sub> = (1/2)<sup>n</sup>",
+            "a<sub>n</sub> = 3<sup>n</sup>"
+          ],
+          "ans": 2,
+          "exp": "As n approaches infinity, (1/2)<sup>n</sup> approaches 0. The other sequences either grow infinitely or oscillate, meaning they are divergent."
+        },
+        {
+          "q": "In an arithmetic progression, if a<sub>5</sub> = 10 and a<sub>10</sub> = 45, what is the common difference (d) and first term (a<sub>1</sub>)?",
+          "opts": [
+            "d = 7 and a<sub>1</sub> = -18",
+            "d = 7 and a<sub>1</sub> = 18",
+            "d = -7 and a<sub>1</sub> = -18",
+            "d = -7 and a<sub>1</sub> = 18"
+          ],
+          "ans": 0,
+          "exp": "a<sub>10</sub> - a<sub>5</sub> = 5d => 45 - 10 = 35 = 5d => d = 7. Then, a<sub>5</sub> = a<sub>1</sub> + 4d => 10 = a<sub>1</sub> + 28 => a<sub>1</sub> = -18."
+        },
+        {
+          "q": "A candidate accepts a position with an initial salary of Birr 12,500 per year. If their salary increases by Birr 250 at the end of every year, what will be their salary at the beginning of the 12th year?",
+          "opts": [
+            "Birr 14,750",
+            "Birr 15,000",
+            "Birr 15,250",
+            "Birr 14,500"
+          ],
+          "ans": 2,
+          "exp": "This represents the 12th term of an AP: a<sub>12</sub> = a<sub>1</sub> + 11d. a<sub>12</sub> = 12500 + 11(250) = 12500 + 2750 = Birr 15,250."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part III: Matrices, Determinants, and Systems of Equations",
+      "questions": [
+        {
+          "q": "What is the value of k so that the system of linear equations has no solution: <br><br> <div class='text-center font-bold'>4x - 8y = -3 <br> 2x + ky = 16</div>",
+          "opts": [
+            "k = -4",
+            "k = 4",
+            "k &ne; -4",
+            "k &ne; 4"
+          ],
+          "ans": 0,
+          "exp": "For a 2x2 system to have no solution, the determinant of the coefficients must be zero, meaning the coefficients are proportional: 4/2 = -8/k => 2 = -8/k => k = -4."
+        },
+        {
+          "q": "What is the possible value of k such that the system of linear equations has exactly one solution: <br><br> <div class='text-center font-bold'>2x - 3y = 15 <br> &frac;{2}{3}x + ky = 5</div>",
+          "opts": [
+            "k &ne; -1",
+            "k &ne; 1",
+            "k = -1",
+            "k = 1"
+          ],
+          "ans": 0,
+          "exp": "For a unique solution, the coefficient ratios must not be equal: 2 / (2/3) &ne; -3 / k => 3 &ne; -3/k => k &ne; -1."
+        },
+        {
+          "q": "If A, B, and C are given by: <br><br> <div class='text-xs font-mono text-center'>A = [ 1, 2 ; -2, 0 ] <br> B = [ -1, -2 ; 3, 1 ] <br> C = [ 1, 0 ; 0, -1 ]</div> <br> what is the result of 3A - 2B + 2C?",
+          "opts": [
+            "[ [7, 10] , [-12, -4] ]",
+            "[ [3, 4] , [-5, 0] ]",
+            "[ [1, 2] , [-2, 0] ]",
+            "[ [5, 10] , [-12, 4] ]"
+          ],
+          "ans": 0,
+          "exp": "Perform element-wise operations: 3A - 2B + 2C = 3[1, 2; -2, 0] - 2[-1, -2; 3, 1] + 2[1, 0; 0, -1] = [3+2+2, 6+4+0; -6-6+0, 0-2-2] = [7, 10; -12, -4]."
+        },
+        {
+          "q": "What is the determinant of the 3x3 matrix: <br><br> <table class='mx-auto my-2 border-collapse border border-slate-300 text-center text-xs font-mono'><tr><td class='p-2 border border-slate-300'>2</td><td class='p-2 border border-slate-300'>0</td><td class='p-2 border border-slate-300'>-2</td></tr><tr><td class='p-2 border border-slate-300'>1</td><td class='p-2 border border-slate-300'>0</td><td class='p-2 border border-slate-300'>3</td></tr><tr><td class='p-2 border border-slate-300'>7</td><td class='p-2 border border-slate-300'>0</td><td class='p-2 border border-slate-300'>5</td></tr></table>",
+          "opts": [
+            "20",
+            "0",
+            "16",
+            "24"
+          ],
+          "ans": 1,
+          "exp": "Expanding along the second column (which contains all zero elements), the determinant of this matrix is 0."
+        },
+        {
+          "q": "Let matrices A and B be defined as: <br><br> <div class='text-xs font-mono text-center'>A = [ 8, a+b ; 2, 4 ] <br> B = [ 8, 6 ; 2, a-b ]</div> <br> If A = B, then what are the values of a and b respectively?",
+          "opts": [
+            "a = 5, b = 1",
+            "a = 4, b = 2",
+            "a = 3, b = 3",
+            "a = 6, b = 0"
+          ],
+          "ans": 0,
+          "exp": "Equating corresponding elements: (1) a + b = 6, and (2) a - b = 4. Adding the equations gives 2a = 10 => a = 5. Substituting back gives b = 1."
+        },
+        {
+          "q": "Which of the following matrices is a symmetric matrix?",
+          "opts": [
+            "[ [1, 2, 3] ; [2, 5, 4] ; [3, 4, 9] ]",
+            "[ [0, -2, 3] ; [2, 0, -4] ; [-3, 4, 0] ]",
+            "[ [1, 2, 3] ; [3, 4, 9] ; [2, 5, 4] ]",
+            "[ [0, 2, 3] ; [2, 0, 4] ; [3, 0, 4] ]"
+          ],
+          "ans": 0,
+          "exp": "A matrix is symmetric if f A<sup>T</sup> = A. The matrix in option A satisfies this condition as the element at row i, col j is equal to the element at row j, col i."
+        },
+        {
+          "q": "If A is a 3x3 matrix with det(A) = 6, then what is the determinant of 2A<sup>T</sup>?",
+          "opts": [
+            "12",
+            "36",
+            "48",
+            "24"
+          ],
+          "ans": 2,
+          "exp": "Using determinant properties for an n&times;n matrix: det(kA) = k<sup>n</sup> &middot; det(A) and det(A<sup>T</sup>) = det(A). Thus, det(2A<sup>T</sup>) = 2<sup>3</sup> &middot; det(A) = 8 &times; 6 = 48."
+        },
+        {
+          "q": "What is the inverse of the matrix: <br><br> <table class='mx-auto my-2 border-collapse border border-slate-300 text-center text-xs font-mono'><tr><td class='p-2 border border-slate-300'>1</td><td class='p-2 border border-slate-300'>2</td></tr><tr><td class='p-2 border border-slate-300'>2</td><td class='p-2 border border-slate-300'>3</td></tr></table>",
+          "opts": [
+            "[ [-3, 2] , [2, -1] ]",
+            "[ [3, -2] , [-2, 1] ]",
+            "[ [-1, 2] , [2, -3] ]",
+            "[ [1, -2] , [-2, 3] ]"
+          ],
+          "ans": 0,
+          "exp": "The determinant of A is 1(3) - 2(2) = -1. The inverse is (1/det) &middot; [d, -b; -c, a] = (1/-1) &middot; [3, -2; -2, 1] = [-3, 2; 2, -1]."
+        },
+        {
+          "q": "If matrices A and B are invertible matrices of order 3, and det(A) = 8, det(B) = 16, what is det(A<sup>-1</sup>B)?",
+          "opts": [
+            "2",
+            "1/2",
+            "4",
+            "1/4"
+          ],
+          "ans": 0,
+          "exp": "Using properties of determinants: det(A<sup>-1</sup>B) = det(A<sup>-1</sup>) &middot; det(B) = (1/det(A)) &middot; det(B) = (1/8) &times; 16 = 2."
+        },
+        {
+          "q": "Which of the following describes a matrix that has an unequal number of rows and columns?",
+          "opts": [
+            "Square matrix",
+            "Rectangular matrix",
+            "Diagonal matrix",
+            "Identity matrix"
+          ],
+          "ans": 1,
+          "exp": "By definition, a rectangular matrix has dimensions m &times; n where the number of rows (m) is not equal to the number of columns (n)."
+        },
+        {
+          "q": "For what value of x does the following matrix not have an inverse: <br><br> <table class='mx-auto my-2 border-collapse border border-slate-300 text-center text-xs font-mono'><tr><td class='p-2 border border-slate-300'>2</td><td class='p-2 border border-slate-300'>3</td></tr><tr><td class='p-2 border border-slate-300'>x</td><td class='p-2 border border-slate-300'>-2</td></tr></table>",
+          "opts": [
+            "4/3",
+            "-3/4",
+            "-4/3",
+            "3/4"
+          ],
+          "ans": 2,
+          "exp": "A matrix does not have an inverse if its determinant is zero: det(A) = 2(-2) - 3(x) = 0 => -4 - 3x = 0 => 3x = -4 => x = -4/3."
+        },
+        {
+          "q": "If A = [ 2, 3 ; 2, -1 ], and B = [ 2, 5, -4 ; 3, 2, 6 ], what is the transpose of the product (AB)<sup>T</sup>?",
+          "opts": [
+            "[ [13, 1] ; [16, 8] ; [10, -14] ]",
+            "[ [13, 16, 10] ; [1, 8, -14] ]",
+            "[ [1, 13] ; [8, 16] ; [-14, 10] ]",
+            "[ [13, 16, 10] ; [-1, -8, 14] ]"
+          ],
+          "ans": 0,
+          "exp": "First find AB = [ 2(2)+3(3), 2(5)+3(2), 2(-4)+3(6) ; 2(2)-1(3), 2(5)-1(2), 2(-4)-1(6) ] = [13, 16, 10; 1, 8, -14]. Transposing this yields [13, 1; 16, 8; 10, -14]."
+        },
+        {
+          "q": "Which matrix acts as the multiplicative identity for 2x2 matrices?",
+          "opts": [
+            "[ [1, 0] , [0, 1] ]",
+            "[ [0, 1] , [1, 0] ]",
+            "[ [1, 1] , [1, 1] ]",
+            "[ [0, 0] , [0, 0] ]"
+          ],
+          "ans": 0,
+          "exp": "The identity matrix is a square matrix with ones on the main diagonal and zeros elsewhere."
+        },
+        {
+          "q": "Using Cramer's Rule, if the system determinants are given as D = 8, D<sub>x</sub> = 16, and D<sub>y</sub> = 24, what are the values of x and y respectively?",
+          "opts": [
+            "x = 2, y = 3",
+            "x = 3, y = 2",
+            "x = 1/2, y = 1/3",
+            "x = 8, y = 8"
+          ],
+          "ans": 0,
+          "exp": "By Cramer's Rule, x = D<sub>x</sub>/D = 16/8 = 2. y = D<sub>y</sub>/D = 24/8 = 3."
+        },
+        {
+          "q": "If A is a 1x1 matrix [ 5 ], what is its determinant?",
+          "opts": [
+            "5",
+            "0",
+            "1/5",
+            "1"
+          ],
+          "ans": 0,
+          "exp": "The determinant of a 1x1 matrix [ k ] is simply the scalar value k."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part IV: Vectors, Differential and Integral Calculus, and Statistics",
+      "questions": [
+        {
+          "q": "Find the derivative of the function f(x) = 2x<sup>5</sup> + 3:",
+          "opts": [
+            "10x<sup>4</sup>",
+            "2x<sup>4</sup>",
+            "10x<sup>5</sup>",
+            "5x<sup>4</sup>"
+          ],
+          "ans": 0,
+          "exp": "Using the Power Rule of differentiation: f'(x) = 2 &middot; 5x<sup>4</sup> + 0 = 10x<sup>4</sup>."
+        },
+        {
+          "q": "What is the slope of the tangent line to the curve of the function f(x) = x<sup>2</sup>(x + &radic;x) at the point (1, 2)?",
+          "opts": [
+            "11/2",
+            "10",
+            "5/2",
+            "5"
+          ],
+          "ans": 0,
+          "exp": "Expand f(x) = x<sup>3</sup> + x<sup>5/2</sup>. Differentiate to find f'(x) = 3x<sup>2</sup> + (5/2)x<sup>3/2</sup>. At x = 1, f'(1) = 3 + 5/2 = 11/2."
+        },
+        {
+          "q": "Find the instantaneous rate of change of the function f(x) = 2x<sup>2</sup> + 9 at the point x = 3:",
+          "opts": [
+            "12",
+            "-12",
+            "16",
+            "-1"
+          ],
+          "ans": 0,
+          "exp": "The instantaneous rate of change is given by the derivative f'(x) = 4x. Evaluating at x = 3 yields f'(3) = 4(3) = 12."
+        },
+        {
+          "q": "What is the average rate of change of the function f(x) = x<sup>3</sup> - 9x on the closed interval [1, 6]?",
+          "opts": [
+            "43",
+            "34",
+            "16",
+            "23"
+          ],
+          "ans": 1,
+          "exp": "Average rate of change = [f(6) - f(1)] / (6 - 1). Here, f(6) = 6<sup>3</sup> - 9(6) = 216 - 54 = 162. f(1) = 1<sup>3</sup> - 9(1) = -8. Thus, average rate of change = [162 - (-8)] / 5 = 170 / 5 = 34."
+        },
+        {
+          "q": "What is the area of the region bounded by f(x) = x<sup>2</sup> + 3 and the x-axis on the closed interval [-1, 3]?",
+          "opts": [
+            "4/3",
+            "22/3",
+            "26/3",
+            "64/3"
+          ],
+          "ans": 3,
+          "exp": "Area = &int;<sub>-1</sub><sup>3</sup> (x<sup>2</sup> + 3) dx = [x<sup>3</sup>/3 + 3x]<sub>-1</sub><sup>3</sup> = (9 + 9) - (-1/3 - 3) = 18 - (-10/3) = 64/3."
+        },
+        {
+          "q": "What is the area of a region enclosed between f(x) = x<sup>2</sup> - 4 over the closed interval [1, 5]?",
+          "opts": [
+            "5/3",
+            "65/3",
+            "16/3",
+            "86/3"
+          ],
+          "ans": 3,
+          "exp": "Area = &int;<sub>1</sub><sup>5</sup> |x<sup>2</sup> - 4| dx. The curve crosses the x-axis at x = 2. So we split the integral: &int;<sub>1</sub><sup>2</sup> (4 - x<sup>2</sup>) dx + &int;<sub>2</sub><sup>5</sup> (x<sup>2</sup> - 4) dx = [4x - x<sup>3</sup>/3]<sub>1</sub><sup>2</sup> + [x<sup>3</sup>/3 - 4x]<sub>2</sub><sup>5</sup> = [8 - 8/3 - (4 - 1/3)] + [125/3 - 20 - (8/3 - 8)] = 5/3 + 81/3 = 86/3."
+        },
+        {
+          "q": "If g(x) = x f(x) - &radic;f(x), and f(2) = f'(2) = 4, then what is the value of g'(2)?",
+          "opts": [
+            "11",
+            "8",
+            "2",
+            "0"
+          ],
+          "ans": 0,
+          "exp": "By product and chain rules: g'(x) = f(x) + x f'(x) - f'(x) / (2&radic;f(x)). Plugs in x = 2: g'(2) = 4 + 2(4) - 4 / (2&radic;4) = 4 + 8 - 1 = 11."
+        },
+        {
+          "q": "What is the gradient (slope) of the function f(x) = x<sup>3</sup> + &radic;x at x = 1?",
+          "opts": [
+            "-3",
+            "3",
+            "-2",
+            "3.5"
+          ],
+          "ans": 3,
+          "exp": "The derivative is f'(x) = 3x<sup>2</sup> + 1/(2&radic;x). At x = 1, f'(1) = 3(1) + 1/2 = 3.5."
+        },
+        {
+          "q": "If vector u = (1, -1) and v = (1, 1), what is the cosine of the angle between them?",
+          "opts": [
+            "1",
+            "0",
+            "-1",
+            "&radic;3"
+          ],
+          "ans": 1,
+          "exp": "The dot product is u &middot; v = 1(1) + (-1)(1) = 0. Since the dot product is zero, the vectors are perpendicular, meaning the cosine of the angle between them is cos(90&deg;) = 0."
+        },
+        {
+          "q": "If u = (5, 3) and v = (-8, 1), then what is the unit vector in the direction of u + v?",
+          "opts": [
+            "&frac;3{5}i - &frac;2{5}j",
+            "-&frac;3{5}i + &frac;4{5}j",
+            "&frac;1{2}i - &frac;2{5}j",
+            "&frac;4{5}i + &frac;2{5}j"
+          ],
+          "ans": 1,
+          "exp": "First, find u + v = (5 - 8, 3 + 1) = (-3, 4). The magnitude is &radic;((-3)<sup>2</sup> + 4<sup>2</sup>) = 5. The unit vector is (1/5)(-3i + 4j) = -&frac;3{5}i + &frac;4{5}j."
+        },
+        {
+          "q": "Which of the following paired vectors are orthogonal?",
+          "opts": [
+            "a = (3, -2) and b = (2, 3)",
+            "c = (-3, 2) and d = (2, -3)",
+            "e = (4, 5) and f = (-4, 5)",
+            "g = (6, -8) and h = (6, -8)"
+          ],
+          "ans": 0,
+          "exp": "Two vectors are orthogonal if their dot product equals zero. a &middot; b = 3(2) + (-2)(3) = 6 - 6 = 0."
+        },
+        {
+          "q": "Which of the following is the mean of the data: 4, 5, 7, 8, 2, 11, 6, 5?",
+          "opts": [
+            "6",
+            "8",
+            "4",
+            "3"
+          ],
+          "ans": 0,
+          "exp": "The mean is sum of data / count: (4 + 5 + 7 + 8 + 2 + 11 + 6 + 5) / 8 = 48 / 8 = 6."
+        },
+        {
+          "q": "What is the variance of the data representing days of student sickness below: <br><br> <table class='mx-auto my-2 border-collapse border border-slate-300 text-center text-xs font-mono'><tr><td class='p-2 bg-slate-100 border border-slate-300 font-bold'>Days</td><td class='p-2 border border-slate-300'>3</td><td class='p-2 border border-slate-300'>4</td><td class='p-2 border border-slate-300'>5</td><td class='p-2 border border-slate-300'>6</td><td class='p-2 border border-slate-300'>7</td></tr><tr><td class='p-2 bg-slate-100 border border-slate-300 font-bold'>Frequency</td><td class='p-2 border border-slate-300'>2</td><td class='p-2 border border-slate-300'>4</td><td class='p-2 border border-slate-300'>8</td><td class='p-2 border border-slate-300'>4</td><td class='p-2 border border-slate-300'>2</td></tr></table>",
+          "opts": [
+            "1.2",
+            "2.5",
+            "2.7",
+            "1.9"
+          ],
+          "ans": 0,
+          "exp": "First, calculate mean = [3(2)+4(4)+5(8)+6(4)+7(2)] / 20 = 100/20 = 5. Variance = [&sum; f(x - mean)<sup>2</sup>] / &sum; f = [2(4) + 4(1) + 8(0) + 4(1) + 2(4)] / 20 = [8 + 4 + 0 + 4 + 8] / 20 = 24 / 20 = 1.2."
+        },
+        {
+          "q": "For 10 observations, the sum was 120 and the sum of squares was 1640. If one observation recorded as 10 is corrected to 20, then what is the corrected standard deviation?",
+          "opts": [
+            "5",
+            "4",
+            "6",
+            "7"
+          ],
+          "ans": 0,
+          "exp": "Corrected sum = 120 - 10 + 20 = 130. Corrected sum of squares = 1640 - 10<sup>2</sup> + 20<sup>2</sup> = 1640 - 100 + 400 = 1940. Corrected variance = [1940/10] - (130/10)<sup>2</sup> = 194 - 169 = 25. Standard deviation = &radic;25 = 5."
+        },
+        {
+          "q": "What is the interquartile range (IQR) in statistics?",
+          "opts": [
+            "The difference between the mean and median",
+            "The difference between the 3rd quartile and 1st quartile",
+            "The difference between the maximum and minimum values",
+            "Half the difference between the 3rd and 1st quartiles"
+          ],
+          "ans": 1,
+          "exp": "By definition, the interquartile range (IQR) is calculated by subtracting the first quartile (Q<sub>1</sub>) from the third quartile (Q<sub>3</sub>)."
+        }
+      ]
+    }
+  ]
+}
