@@ -1,0 +1,779 @@
+{
+  "parts": [
+    {
+      "partTitle": "Mathematics Competition Pool",
+      "questions": [
+        {
+          "q": "Which one of the following defines a prime number?",
+          "opts": [
+            "It is a natural number that has an odd number of factors",
+            "It is an odd natural number that has only two factors",
+            "It is a natural number that has exactly two distinct factors",
+            "It is a natural number where one of its factors is 3"
+          ],
+          "ans": 2,
+          "exp": "A prime number is formally defined as a natural number strictly greater than 1 that has exactly two distinct positive divisors: 1 and itself."
+        },
+        {
+          "q": "The GCF of two numbers is 9 and their LCM is 54. If one of the numbers is 18, what is the other number?",
+          "opts": [
+            "36",
+            "54",
+            "27",
+            "72"
+          ],
+          "ans": 2,
+          "exp": "Using the relationship GCF(a, b) &times; LCM(a, b) = a &times; b: 9 &times; 54 = 18 &times; x => 486 = 18x => x = 27."
+        },
+        {
+          "q": "For any real numbers a, b, and c, which one of the following statements is always true?",
+          "opts": [
+            "If a &lt; b, then a<sup>2</sup> &lt; b<sup>2</sup>",
+            "If a &lt; b, then ac &lt; bc",
+            "If a<sup>2</sup> &lt; b<sup>2</sup>, then b &lt; a",
+            "If a &lt; b and b &lt; c, then c &gt; a"
+          ],
+          "ans": 3,
+          "exp": "By the transitive property of inequality, if a &lt; b and b &lt; c, then a &lt; c, which is equivalent to c &gt; a."
+        },
+        {
+          "q": "What is the simplified form of the following expression:<br><br><div class='text-center font-semibold'>&frac;{6&radic;20 - 3&radic;45}{3&radic;75}</div>",
+          "opts": [
+            "&radic;15 / 15",
+            "&radic;5",
+            "5",
+            "1/5"
+          ],
+          "ans": 0,
+          "exp": "Simplify the terms: 6&radic;20 = 12&radic;5, and 3&radic;45 = 9&radic;5. Numerator becomes 12&radic;5 - 9&radic;5 = 3&radic;5. Denominator is 3&radic;75 = 15&radic;3. Dividing yields 3&radic;5 / 15&radic;3 = &radic;5 / 5&radic;3 = &radic;15 / 15."
+        },
+        {
+          "q": "Let a and b be positive integers, and let p and q be real numbers. Which of the following is true?",
+          "opts": [
+            "(a + b)<sup>p</sup> = a<sup>p</sup> + b<sup>p</sup>",
+            "(b<sup>p</sup>)(b<sup>-q</sup>) = (b)<sup>-pq</sup>",
+            "&frac;{a<sup>-p</sup>}{b<sup>-q</sup>} = &frac;{b<sup>q</sup>}{a<sup>p</sup>}",
+            "&frac;{a<sup>p</sup>}{a<sup>-q</sup>} = a<sup>p - q</sup>"
+          ],
+          "ans": 2,
+          "exp": "Using negative exponent rules: a<sup>-p</sup> = 1/a<sup>p</sup> and b<sup>-q</sup> = 1/b<sup>q</sup>. Thus, the fraction simplifies to b<sup>q</sup>/a<sup>p</sup>."
+        },
+        {
+          "q": "Which of the following is the rationalizing factor to rationalize the denominator of:<br><br><div class='text-center font-bold'>&frac;{7}{3 + &radic;5}</div>",
+          "opts": [
+            "(&radic;3 + &radic;5) / (&radic;3 + &radic;5)",
+            "(&radic;3 - 5) / (&radic;3 - 5)",
+            "(&radic;3 - &radic;5) / (&radic;3 - &radic;5)",
+            "(3 - &radic;5) / (3 - &radic;5)"
+          ],
+          "ans": 3,
+          "exp": "To rationalize a denominator of the form (a + &radic;b), we multiply the numerator and denominator by its conjugate binomial, which is (a - &radic;b). The conjugate of (3 + &radic;5) is (3 - &radic;5)."
+        },
+        {
+          "q": "According to the division algorithm, what are the values of q and r respectively so that:<br><br><div class='text-center font-bold'>290 = 11q + r</div>",
+          "opts": [
+            "q = 3 and r = 26",
+            "q = 26 and r = 4",
+            "q = 25 and r = 5",
+            "q = 24 and r = 6"
+          ],
+          "ans": 1,
+          "exp": "Using division: 290 divided by 11 gives a quotient of 26. Since 11 &times; 26 = 286, the remainder r is 290 - 286 = 4."
+        },
+        {
+          "q": "If 8<sup>3x-1</sup> = (&frac;1{2})<sup>4x</sup> &middot; 128<sup>-x-1</sup>, what is the value of x?",
+          "opts": [
+            "1",
+            "5",
+            "1/5",
+            "-1/5"
+          ],
+          "ans": 3,
+          "exp": "Write as base 2: 2<sup>3(3x-1)</sup> = 2<sup>-4x</sup> &middot; 2<sup>-7(x+1)</sup> => 9x - 3 = -4x - 7x - 7 => 20x = -4 => x = -1/5."
+        },
+        {
+          "q": "Kidest bought 2 kg of sugar and a can of tomato paste for 100 Birr. Her sister Tigist paid 150 Birr for 1 kg of sugar and 3 cans of tomato paste. What is the price of a can of tomato paste?",
+          "opts": [
+            "50 Birr",
+            "30 Birr",
+            "15 Birr",
+            "40 Birr"
+          ],
+          "ans": 3,
+          "exp": "Let sugar be s and tomato paste be t: (1) 2s + t = 100, (2) s + 3t = 150. From (1), t = 100 - 2s. Substitute into (2): s + 3(100 - 2s) = 150 => -5s = -150 => s = 30. Thus, t = 100 - 2(30) = 40 Birr."
+        },
+        {
+          "q": "What is the value of k so that the system of equations has no solution:<br><br><div class='text-center font-bold'>4x - 8y = -3<br>2x + ky = 16</div>",
+          "opts": [
+            "k = -4",
+            "k = 4",
+            "k &ne; -4",
+            "k &ne; 4"
+          ],
+          "ans": 0,
+          "exp": "For a system of linear equations to have no solution, the coefficient matrix must be singular: 4 &times; k - 2 &times; (-8) = 0 => 4k + 16 = 0 => k = -4."
+        },
+        {
+          "q": "Which of the following is the solution set of the absolute value equation:<br><br><div class='text-center font-bold'>|3 - 2x| = |x - 6|</div>",
+          "opts": [
+            "{-3, 4}",
+            "{3, 4}",
+            "{-3, 1}",
+            "{-3, 3}"
+          ],
+          "ans": 3,
+          "exp": "Case 1: 3 - 2x = x - 6 => 3x = 9 => x = 3. Case 2: 3 - 2x = -(x - 6) => -x = 3 => x = -3. The solution set is {-3, 3}."
+        },
+        {
+          "q": "The solution set of the quadratic equation 2x(x + 3) - 4x = 4 - 6x<sup>2</sup> + 6x is:",
+          "opts": [
+            "{-1/2, 1}",
+            "{-1, 1/2}",
+            "{-2, 1}",
+            "{-1, -1/2}"
+          ],
+          "ans": 0,
+          "exp": "Expand and simplify: 2x<sup>2</sup> + 2x = 4 - 6x<sup>2</sup> + 6x => 8x<sup>2</sup> - 4x - 4 = 0 => 2x<sup>2</sup> - x - 1 = 0 => (2x + 1)(x - 1) = 0. Thus, the solution set is {-1/2, 1}."
+        },
+        {
+          "q": "If one root of the quadratic equation x<sup>2</sup> - x + m = 0 exceeds the other by 5, what is the value of m?",
+          "opts": [
+            "-6",
+            "6",
+            "5/2",
+            "-3/2"
+          ],
+          "ans": 0,
+          "exp": "Let the roots be r and r+5. Sum of roots: r + (r + 5) = 1 => 2r = -4 => r = -2. The other root is 3. The product of roots: m = (-2)(3) = -6."
+        },
+        {
+          "q": "Let set A = {1, 2, {3, 4}, 5}. Which of the following is NOT true?",
+          "opts": [
+            "{{3, 4}} &sube; A",
+            "{4} &in; A",
+            "&empty; &sube; A",
+            "{1, 2, 5} &sube; A"
+          ],
+          "ans": 1,
+          "exp": "The element inside A is {3, 4}. Neither 4 nor {4} are elements of A on their own. Therefore, '{4} &in; A' is false."
+        },
+        {
+          "q": "Let set A = {x : x<sup>2</sup> - 4 = 0} and B = {x : x is a positive factor of 4}. Which of the following is B \\ A?",
+          "opts": [
+            "{1, 4}",
+            "{2, 4}",
+            "{1, 2, 4}",
+            "{2}"
+          ],
+          "ans": 0,
+          "exp": "Set A contains the roots {-2, 2}. Set B contains positive factors of 4: {1, 2, 4}. Subtracting elements of A from B leaves {1, 4}."
+        },
+        {
+          "q": "For any two non-empty sets A and B, if A &sub; B, then which of the following is always true?",
+          "opts": [
+            "A &cap; B = B",
+            "A &cup; B = A",
+            "A &Delta; B = A &cup; B",
+            "(A &cup; B) &cap; A = A"
+          ],
+          "ans": 3,
+          "exp": "If A &sub; B, then A &cup; B = B. Thus, (A &cup; B) &cap; A becomes B &cap; A, which always equals A."
+        },
+        {
+          "q": "What is the domain of the relation R = {(x, y) : y &ge; x<sup>2</sup> - 1 and y &lt; 3}?",
+          "opts": [
+            "[-2, 2]",
+            "[-1, 3)",
+            "[-1, 3]",
+            "(-2, 2)"
+          ],
+          "ans": 3,
+          "exp": "We must have x<sup>2</sup> - 1 &le; y &lt; 3. This implies x<sup>2</sup> - 1 &lt; 3 => x<sup>2</sup> &lt; 4 => -2 &lt; x &lt; 2, which corresponds to the open interval (-2, 2)."
+        },
+        {
+          "q": "Let R = {(x, y) : y &lt; x - 1 and y &le; -x} be a relation. What is the inverse relation R<sup>-1</sup>?",
+          "opts": [
+            "{(x, y) : y &gt; x + 1 and y &le; -x}",
+            "{(x, y) : y &lt; x + 1 and y &ge; -x}",
+            "{(x, y) : y &lt; x - 1 and y &ge; -x}",
+            "{(x, y) : y &gt; x - 1 and y &le; -x}"
+          ],
+          "ans": 0,
+          "exp": "To find the inverse relation, swap x and y: x &lt; y - 1 => y &gt; x + 1; and x &le; -y => y &le; -x."
+        },
+        {
+          "q": "Which of the following relations is a function?",
+          "opts": [
+            "R = {(3, 4), (2, 4), (4, 6)}",
+            "R = {(-1, 2), (0, 3), (-1, 4)}",
+            "R = {(x, y) : x = y<sup>2</sup>}",
+            "R = {(x, y) : x = |y|}"
+          ],
+          "ans": 0,
+          "exp": "In a function, every element in the domain must map to exactly one element in the codomain. Option A has unique x-values, so it is a function."
+        },
+        {
+          "q": "What is the range of the rational function f(x) = (2x + 3) / (x - 1)?",
+          "opts": [
+            "&reals; \\ {1}",
+            "&reals; \\ {3}",
+            "&reals; \\ {2}",
+            "&reals;"
+          ],
+          "ans": 2,
+          "exp": "A rational function of the form f(x) = (ax + b)/(cx + d) has a horizontal asymptote at y = a/c. For this function, y = 2/1 = 2, so the range is all real numbers except 2."
+        },
+        {
+          "q": "If x &lt; 0, what is the value of the expression:<br><br><div class='text-center font-bold'>&frac;{2x - |x|}{|x|}</div>",
+          "opts": [
+            "-1",
+            "1",
+            "-3",
+            "3"
+          ],
+          "ans": 2,
+          "exp": "Since x &lt; 0, the absolute value is |x| = -x. Substituting this gives: [2x - (-x)] / (-x) = 3x / -x = -3."
+        },
+        {
+          "q": "Which of the following is true about the power function f(x) = 3x<sup>-4/5</sup>?",
+          "opts": [
+            "The domain of f is &reals; \\ {0}",
+            "The range of f is [0, &infin;)",
+            "f is increasing on (-&infin;, 0]",
+            "f is decreasing on [0, &infin;)"
+          ],
+          "ans": 0,
+          "exp": "Because the exponent is negative, the variable is in the denominator. The 5th root of x is defined for all reals, but since x cannot be 0, the domain is &reals; \\ {0}."
+        },
+        {
+          "q": "What is the solution set of the equation: sgn(x<sup>2</sup> - 1) = -1?",
+          "opts": [
+            "[-1, 1]",
+            "(-1, 1)",
+            "(-&infin;, -1] &cup; [1, &infin;)",
+            "(-&infin;, -1) &cup; (1, &infin;)"
+          ],
+          "ans": 1,
+          "exp": "The signum function is -1 when its argument is strictly negative: x<sup>2</sup> - 1 &lt; 0 => x<sup>2</sup> &lt; 1 => -1 &lt; x &lt; 1, which is the open interval (-1, 1)."
+        },
+        {
+          "q": "Let f(x) = &lfloor;2x - 3&rfloor; be the greatest integer function. For what value of x is f(x) = 6?",
+          "opts": [
+            "{x : 9/2 &le; x &lt; 5}",
+            "{x : x = 9/2}",
+            "{x : x = 5}",
+            "{x : 9/2 &le; x &le; 5}"
+          ],
+          "ans": 0,
+          "exp": "By definition, 6 &le; 2x - 3 &lt; 7 => 9 &le; 2x &lt; 10 => 9/2 &le; x &lt; 5."
+        },
+        {
+          "q": "If f(x) = ax - b, and f<sup>-1</sup>(x + 1) = &frac;1{2}x + 2, then what are the values of a and b?",
+          "opts": [
+            "a = 2, b = 3",
+            "a = 1/2, b = -2",
+            "a = 2, b = 2",
+            "a = 1, b = 1"
+          ],
+          "ans": 0,
+          "exp": "Find the general inverse: f<sup>-1</sup>(x) = (x+b)/a. Then, f<sup>-1</sup>(x + 1) = (x + 1 + b)/a = (1/a)x + (1+b)/a. Compare coefficients: 1/a = 1/2 => a = 2. Then, (1+b)/2 = 2 => 1+b = 4 => b = 3."
+        },
+        {
+          "q": "Which of the following algebraic expressions represents a valid rational expression?",
+          "opts": [
+            "(x<sup>3</sup> + &radic;x<sup>2</sup>) / (x + 4)",
+            "(&radic;3x<sup>2</sup> + log<sub>2</sub>(8)) / (&pi; - 1)",
+            "(x - 2<sup>x</sup>) / (x<sup>2</sup> + 1)",
+            "(x<sup>-2</sup> + x - 1) / (x - &radic;2)"
+          ],
+          "ans": 1,
+          "exp": "A rational expression is the quotient of two polynomials. Option B contains variables with non-negative integer exponents, and the coefficients are real constants, making it a rational expression."
+        },
+        {
+          "q": "What is the solution set of the rational equation:<br><br><div class='text-center font-bold'>&frac;{1}{x - 2} + &frac;{6x}{x<sup>2</sup> - 4} = &frac;{3}{x + 2}</div>",
+          "opts": [
+            "{-4, 2}",
+            "{-2}",
+            "{-1/2, 1/2}",
+            "&empty; (Empty Set)"
+          ],
+          "ans": 3,
+          "exp": "Multiply by (x<sup>2</sup>-4): (x+2) + 6x = 3(x-2) => 7x + 2 = 3x - 6 => 4x = -8 => x = -2. However, x = -2 causes division by zero in the original equation, making it extraneous. Thus, the solution set is empty."
+        },
+        {
+          "q": "What are the values of A, B, and C respectively so that:<br><br><div class='text-center font-bold'>&frac;{x - 1}{x + x<sup>3</sup>} = &frac;{A}{x} + &frac;Bx + C{x<sup>2</sup> + 1}</div>",
+          "opts": [
+            "A = -1, B = 1, C = 1",
+            "A = -1, B = 1, C = 2",
+            "A = 1, B = -2, C = 0",
+            "A = 3, B = 1, C = 2"
+          ],
+          "ans": 0,
+          "exp": "Combine into a single fraction: [A(x<sup>2</sup>+1) + x(Bx+C)] / x(x<sup>2</sup>+1) = [(A+B)x<sup>2</sup> + Cx + A] / (x<sup>3</sup>+x). Compare with x - 1: A = -1; C = 1; A + B = 0 => B = 1."
+        },
+        {
+          "q": "The simplified form of the expression [ (1 - 1/x) / (1 - 1/x<sup>2</sup>) ] &divide; (1 / (x + 1)) is:",
+          "opts": [
+            "x + 1",
+            "x - 1",
+            "x",
+            "1"
+          ],
+          "ans": 2,
+          "exp": "Simplify the compound fraction: [(x-1)/x] / [(x<sup>2</sup>-1)/x<sup>2</sup>] = [(x-1)/x] &times; [x<sup>2</sup> / ((x-1)(x+1))] = x/(x+1). Divide by 1/(x+1) is equivalent to multiplying by (x+1), which gives x."
+        },
+        {
+          "q": "What is the solution of the rational inequality:<br><br><div class='text-center font-bold'>&frac;{x<sup>2</sup> - 6x}{x - 12} &gt; 1</div>",
+          "opts": [
+            "(3, 4)",
+            "(12, &infin;)",
+            "(3, 4] &cup; (12, &infin;)",
+            "(3, 4) &cup; (12, &infin;)"
+          ],
+          "ans": 3,
+          "exp": "Subtract 1 and simplify: (x<sup>2</sup> - 7x + 12)/(x-12) &gt; 0 => (x-3)(x-4)/(x-12) &gt; 0. Setting up a sign chart with critical points 3, 4, and 12 shows positive intervals in (3, 4) and (12, &infin;)."
+        },
+        {
+          "q": "Which of the following functions does NOT have any vertical asymptote?",
+          "opts": [
+            "f(x) = 3 / (x<sup>2</sup> + 1)",
+            "f(x) = (x + 1) / (x<sup>2</sup> - 1)",
+            "f(x) = (2x + 3) / (x<sup>3</sup> + 1)",
+            "f(x) = 1 / x<sup>2</sup>"
+          ],
+          "ans": 0,
+          "exp": "A rational function lacks a vertical asymptote if its denominator cannot equal zero for any real x. Since x<sup>2</sup> + 1 = 0 has no real solutions, f(x) = 3/(x<sup>2</sup>+1) has no vertical asymptotes."
+        },
+        {
+          "q": "In a class, there are 8 more boys than girls. If the ratio of boys to girls is 4 to 3, what is the number of girls in the class?",
+          "opts": [
+            "32",
+            "24",
+            "22",
+            "30"
+          ],
+          "ans": 1,
+          "exp": "Let girls be G and boys be B: B = G + 8. Ratio is B/G = 4/3 => 3(G + 8) = 4G => 3G + 24 = 4G => G = 24."
+        },
+        {
+          "q": "Which of the following is true about the graph of the rational function f(x) = (1 - x<sup>2</sup>) / (x<sup>2</sup> - x)?",
+          "opts": [
+            "x = 0 and x = 1 are its vertical asymptotes",
+            "y = x - 1 is its oblique asymptote",
+            "y = 1 is its horizontal asymptote",
+            "The graph of f(x) has no y-intercept"
+          ],
+          "ans": 3,
+          "exp": "Simplify: f(x) = -(x+1)/x for x &ne; 1. The denominator equals zero at x = 0 (the y-axis), which acts as the vertical asymptote. Since x cannot be 0, the graph cannot cross the y-axis, meaning there is no y-intercept."
+        },
+        {
+          "q": "If the sum of matrices:<br><br><div class='text-xs font-mono text-center'>[ y-1, 4 ; 2, 1-3x ] + [ 1-x, 0 ; 1, 2y ] = [ 0, 4 ; 3, 5 ]</div><br>then what is the value of x + y?",
+          "opts": [
+            "0",
+            "16",
+            "-8",
+            "8"
+          ],
+          "ans": 2,
+          "exp": "Add components: (1) y - 1 + 1 - x = 0 => y = x. (2) 1 - 3x + 2y = 5. Since y = x, we write 1 - 3x + 2x = 5 => 1 - x = 5 => x = -4. Thus, y = -4. The sum is x + y = -4 - 4 = -8."
+        },
+        {
+          "q": "Which of the following matrix classifications has an unequal number of rows and columns?",
+          "opts": [
+            "Square matrix",
+            "Rectangular matrix",
+            "Diagonal matrix",
+            "Identity matrix"
+          ],
+          "ans": 1,
+          "exp": "By definition, a rectangular matrix is any matrix with dimensions m &times; n where the number of rows m does not equal the number of columns n."
+        },
+        {
+          "q": "Which of the following matrices is a symmetric matrix?",
+          "opts": [
+            "<table class='mx-auto border-collapse border border-slate-300 text-center font-mono text-xs'><tr><td class='p-1 border border-slate-300'>1</td><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>3</td></tr><tr><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>5</td><td class='p-1 border border-slate-300'>4</td></tr><tr><td class='p-1 border border-slate-300'>3</td><td class='p-1 border border-slate-300'>4</td><td class='p-1 border border-slate-300'>9</td></tr></table>",
+            "<table class='mx-auto border-collapse border border-slate-300 text-center font-mono text-xs'><tr><td class='p-1 border border-slate-300'>0</td><td class='p-1 border border-slate-300'>-2</td><td class='p-1 border border-slate-300'>3</td></tr><tr><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>0</td><td class='p-1 border border-slate-300'>-4</td></tr><tr><td class='p-1 border border-slate-300'>-3</td><td class='p-1 border border-slate-300'>4</td><td class='p-1 border border-slate-300'>0</td></tr></table>",
+            "<table class='mx-auto border-collapse border border-slate-300 text-center font-mono text-xs'><tr><td class='p-1 border border-slate-300'>1</td><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>3</td></tr><tr><td class='p-1 border border-slate-300'>3</td><td class='p-1 border border-slate-300'>4</td><td class='p-1 border border-slate-300'>9</td></tr><tr><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>5</td><td class='p-1 border border-slate-300'>4</td></tr></table>",
+            "<table class='mx-auto border-collapse border border-slate-300 text-center font-mono text-xs'><tr><td class='p-1 border border-slate-300'>0</td><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>3</td></tr><tr><td class='p-1 border border-slate-300'>2</td><td class='p-1 border border-slate-300'>0</td><td class='p-1 border border-slate-300'>4</td></tr><tr><td class='p-1 border border-slate-300'>3</td><td class='p-1 border border-slate-300'>0</td><td class='p-1 border border-slate-300'>4</td></tr></table>"
+          ],
+          "ans": 0,
+          "exp": "A square matrix is symmetric if and only if transpose matrix equal original matrix. In option A, swapping rows and columns yields the exact same matrix values."
+        },
+        {
+          "q": "What is the solution of the system of linear equations:<br><br><div class='text-center font-bold'>x + y = 5<br>2x - y = 1</div>",
+          "opts": [
+            "(3, 2)",
+            "(1, 4)",
+            "(4, 1)",
+            "(2, 3)"
+          ],
+          "ans": 3,
+          "exp": "Add the two equations together: (x + y) + (2x - y) = 5 + 1 => 3x = 6 => x = 2. Substitute x = 2 into the first equation: 2 + y = 5 => y = 3. The solution coordinate is (2, 3)."
+        },
+        {
+          "q": "The inverse of matrix A = [ -2, -1 ; 3, 3 ] is equal to:",
+          "opts": [
+            "[ [-1, 1/3] ; [-1, 2/3] ]",
+            "[ [-1, -1/3] ; [1, 2/3] ]",
+            "[ [-1, -1] ; [1, 2/3] ]",
+            "[ [1, 1/3] ; [-1, -2/3] ]"
+          ],
+          "ans": 1,
+          "exp": "Determinant: -2(3) - (-1)(3) = -3. Inverse: (1/-3) &times; [3, 1; -3, -2] = [-1, -1/3; 1, 2/3]."
+        },
+        {
+          "q": "The perimeter of a triangle is 50 m. The largest side of the triangle measures 20 m more than the shortest side. The middle side is 3 times the measure of the shortest side. What is the length of the larger side of the triangle?",
+          "opts": [
+            "18 m",
+            "26 m",
+            "30 m",
+            "35 m"
+          ],
+          "ans": 1,
+          "exp": "Let the sides be a, 3a, and a+20: a + 3a + (a + 20) = 50 => 5a = 30 => a = 6. The largest side is a + 20 = 26 m."
+        },
+        {
+          "q": "What is the determinant of matrix A = [ 1, -2, -3 ; -1, 3, 4 ; 2, 5, 0 ]?",
+          "opts": [
+            "3",
+            "-3",
+            "4",
+            "-4"
+          ],
+          "ans": 1,
+          "exp": "Expanding along Row 3: 2(-8 - (-9)) - 5(4 - 3) + 0 = 2(1) - 5(1) = -3."
+        },
+        {
+          "q": "Let A and B be two invertible matrices of order 3. Suppose det(A) = 8 and det(B) = 16. What is det(A<sup>-1</sup>B)?",
+          "opts": [
+            "2",
+            "1/2",
+            "4",
+            "1/4"
+          ],
+          "ans": 0,
+          "exp": "det(A<sup>-1</sup>B) = det(A<sup>-1</sup>) &middot; det(B) = (1 / det(A)) &middot; det(B) = (1/8) &times; 16 = 2."
+        },
+        {
+          "q": "What is the value of x so that matrix A = [ 2, 3 ; x, -2 ] does not have an inverse?",
+          "opts": [
+            "4/3",
+            "-3/4",
+            "-4/3",
+            "3/4"
+          ],
+          "ans": 2,
+          "exp": "For a matrix to lack an inverse, its determinant must be zero: 2(-2) - 3x = 0 => -4 - 3x = 0 => 3x = -4 => x = -4/3."
+        },
+        {
+          "q": "Which of the following relations holds for the sequence -8, -2, 4, 10, ...?",
+          "opts": [
+            "a<sub>n</sub> = a<sub>n-1</sub> - 6",
+            "a<sub>n</sub> = a<sub>n-1</sub> + 6",
+            "a<sub>n</sub> = a<sub>n-1</sub> - 3",
+            "a<sub>n</sub> = a<sub>n-1</sub> + 3"
+          ],
+          "ans": 1,
+          "exp": "This is an arithmetic sequence with a common difference d = 6. Thus, each term is obtained by adding 6 to the previous term: a<sub>n</sub> = a<sub>n-1</sub> + 6."
+        },
+        {
+          "q": "Which of the following sequences is neither arithmetic nor geometric?",
+          "opts": [
+            "2, 6, 8, 12, ...",
+            "5, 2, -1, -4, ...",
+            "27, 9, 3, 1, ...",
+            "0.1, 0.01, 0.001, 0.0001, ..."
+          ],
+          "ans": 0,
+          "exp": "Option A lacks a constant difference (differences are 4, 2, 4) and a constant ratio, so it is neither arithmetic nor geometric."
+        },
+        {
+          "q": "What is the general term of the sequence A<sub>n</sub>, if the 3rd term is 11 and the common difference is 4?",
+          "opts": [
+            "A<sub>n</sub> = 2n - 3",
+            "A<sub>n</sub> = 4n - 1",
+            "A<sub>n</sub> = 6n - 3",
+            "A<sub>n</sub> = 3n + 1"
+          ],
+          "ans": 1,
+          "exp": "Using the AP formula: a<sub>3</sub> = a<sub>1</sub> + 2d => 11 = a<sub>1</sub> + 2(4) => a<sub>1</sub> = 3. Thus, a<sub>n</sub> = 3 + (n - 1)4 = 4n - 1."
+        },
+        {
+          "q": "What is the value of the arithmetic sum: &sum;<sub>n=1</sub><sup>10</sup> (2n + 5)?",
+          "opts": [
+            "190",
+            "180",
+            "160",
+            "320"
+          ],
+          "ans": 2,
+          "exp": "Using the finite AP sum formula: S<sub>10</sub> = (10 / 2) &middot; [a<sub>1</sub> + a<sub>10</sub>]. Since a<sub>1</sub> = 7 and a<sub>10</sub> = 25, S<sub>10</sub> = 5 &middot; (7 + 25) = 160."
+        },
+        {
+          "q": "The sum of all integers from 1 to 100 that are divisible by 15 is:",
+          "opts": [
+            "180",
+            "190",
+            "300",
+            "315"
+          ],
+          "ans": 3,
+          "exp": "The numbers are 15, 30, 45, 60, 75, 90. Their sum is 15 + 30 + 45 + 60 + 75 + 90 = 315."
+        },
+        {
+          "q": "The sum of the infinite series 1 - 1/2 + 1/4 - 1/8 + ... is:",
+          "opts": [
+            "3/2",
+            "1/2",
+            "2/3",
+            "2"
+          ],
+          "ans": 2,
+          "exp": "This is an infinite geometric series with a = 1 and common ratio r = -1/2. Sum S = a / (1 - r) = 1 / (1 - (-1/2)) = 1 / (3/2) = 2/3."
+        },
+        {
+          "q": "Which of the following is a convergent sequence?",
+          "opts": [
+            "{(5/3)<sup>n</sup>}",
+            "{3n / (n + 1)}",
+            "{n<sup>2</sup> / (2n + 1)}",
+            "{(1/n)<sup>-1</sup>}"
+          ],
+          "ans": 1,
+          "exp": "Taking the limit as n approaches infinity: lim (3n / (n + 1)) = 3. Since the limit is a finite real value, the sequence converges."
+        },
+        {
+          "q": "A candidate accepts a position with an initial salary of Birr 12,500. If their salary increases by Birr 250 at the end of every year, what will be their salary at the beginning of the 12th year?",
+          "opts": [
+            "Birr 14,750",
+            "Birr 15,000",
+            "Birr 15,250",
+            "Birr 14,500"
+          ],
+          "ans": 2,
+          "exp": "At the beginning of the 12th year, 11 increases have been applied: a<sub>12</sub> = 12500 + 11(250) = 12500 + 2750 = Birr 15,250."
+        },
+        {
+          "q": "What is the average rate of change of the function f(x) = x<sup>3</sup> - 2x on the interval [1, 3]?",
+          "opts": [
+            "10",
+            "-10",
+            "11",
+            "-11"
+          ],
+          "ans": 2,
+          "exp": "Average rate of change = [f(3) - f(1)] / (3 - 1). Evaluating: f(3) = 27 - 6 = 21. f(1) = 1 - 2 = -1. Thus, rate = [21 - (-1)] / 2 = 22 / 2 = 11."
+        },
+        {
+          "q": "For what values of the codomain B is the function f : &reals; &rarr; B, f(x) = x<sup>2</sup> + 6x + 3, an onto function?",
+          "opts": [
+            "[3, &infin;)",
+            "(-&infin;, 3]",
+            "[-6, &infin;)",
+            "(-&infin;, -6]"
+          ],
+          "ans": 2,
+          "exp": "For f to be onto, the codomain B must equal the range of f. Completing the square: f(x) = (x + 3)<sup>2</sup> - 6. Since (x + 3)<sup>2</sup> &ge; 0, the minimum value is -6, so the range is [-6, &infin;)."
+        },
+        {
+          "q": "What is the inverse of the rational function f(x) = (x + 1) / (2x - 1)?",
+          "opts": [
+            "f<sup>-1</sup>(x) = (x + 1) / (2x + 1)",
+            "f<sup>-1</sup>(x) = (x - 1) / (2x + 1)",
+            "f<sup>-1</sup>(x) = (x - 1) / (2x - 1)",
+            "f<sup>-1</sup>(x) = (x + 1) / (2x - 1)"
+          ],
+          "ans": 3,
+          "exp": "Set y = (x+1)/(2x-1) and swap variables: x = (y+1)/(2y-1) => 2xy - x = y + 1 => y(2x - 1) = x + 1 => y = (x + 1)/(2x - 1). The function is its own inverse."
+        },
+        {
+          "q": "If the truth value of proposition p is T, which of the following compound propositions always has a truth value T for any proposition q?",
+          "opts": [
+            "(p &rArr; q) &and; &not;q",
+            "(p &and; &not;p) &and; q",
+            "(&not;p &and; q) &rArr; q",
+            "&not;p &hArr; (p &or; &not;q)"
+          ],
+          "ans": 2,
+          "exp": "Since p is T, &not;p is F. Thus, (&not;p &and; q) is always F regardless of q. Since a false premise always implies any conclusion (F &rArr; True/False is always True), the implication is a tautology."
+        },
+        {
+          "q": "Which of the following sentences is a mathematically valid statement?",
+          "opts": [
+            "You are a good student",
+            "No woman should die while giving birth",
+            "Sudan is a country in Africa",
+            "Hurry up, the rain is coming"
+          ],
+          "ans": 2,
+          "exp": "A statement is an assertive sentence that is either strictly true or strictly false, but not both. Option C is a true assertive statement."
+        },
+        {
+          "q": "How many three-digit numbers can be formed from the digits {3, 4, 5, 6, 7} if each digit can be used at most once?",
+          "opts": [
+            "125",
+            "120",
+            "60",
+            "250"
+          ],
+          "ans": 2,
+          "exp": "This is a permutation problem: P(5, 3) = 5 &times; 4 &times; 3 = 60 unique numbers."
+        },
+        {
+          "q": "A fair die is tossed once. What is the probability that either an even number or the number 3 appears?",
+          "opts": [
+            "3/4",
+            "4/5",
+            "2/3",
+            "1/6"
+          ],
+          "ans": 2,
+          "exp": "The successful outcomes are {2, 4, 6} (even) and {3}. This is a total of 4 successful outcomes out of 6 possibilities. P = 4/6 = 2/3."
+        },
+        {
+          "q": "A committee of 3 members is to be selected from 4 men and 5 women. What is the probability of selecting exactly two women?",
+          "opts": [
+            "10/21",
+            "5/42",
+            "1/21",
+            "5/21"
+          ],
+          "ans": 0,
+          "exp": "Total combinations = C(9, 3) = 84. Ways to select 2 women and 1 man = C(5, 2) &times; C(4, 1) = 10 &times; 4 = 40. P = 40 / 84 = 10/21."
+        },
+        {
+          "q": "A group of 8 students has a mean score of 67 in a test. A second group of 17 students has a mean score of 81. What is the mean score of all 25 students combined?",
+          "opts": [
+            "82.22",
+            "81.23",
+            "76.52",
+            "77.32"
+          ],
+          "ans": 2,
+          "exp": "Combined weighted mean = [8(67) + 17(81)] / 25 = [536 + 1377] / 25 = 1913 / 25 = 76.52."
+        },
+        {
+          "q": "Let Z be a complex number. What is the solution set of: Z<sup>2</sup> - Z + 1 = 0?",
+          "opts": [
+            "{ (-1 &plusmn; i&radic;3) / 2 }",
+            "{ (1 &plusmn; i&radic;3) / 2 }",
+            "{ (1 &plusmn; i&radic;3) / 3 }",
+            "{ 1 &plusmn; i&radic;3 }"
+          ],
+          "ans": 1,
+          "exp": "Using the quadratic formula: Z = [ -(-1) &plusmn; &radic;((-1)<sup>2</sup> - 4(1)(1)) ] / 2 = (1 &plusmn; &radic;(-3)) / 2 = (1 &plusmn; i&radic;3) / 2."
+        },
+        {
+          "q": "What is the equation of the normal line to the graph of f(x) = 3x<sup>2</sup> + 4x - 5 at the point (1, 2)?",
+          "opts": [
+            "x + 10y - 21 = 0",
+            "-x + 10y - 19 = 0",
+            "x + 10y + 21 = 0",
+            "x + 10y + 19 = 0"
+          ],
+          "ans": 0,
+          "exp": "Find derivative: f'(x) = 6x + 4. At x = 1, tangent slope m<sub>t</sub> = 10. The normal slope is m<sub>n</sub> = -1/10. Normal line equation: y - 2 = -1/10(x - 1) => 10y - 20 = -x + 1 => x + 10y - 21 = 0."
+        },
+        {
+          "q": "If y = 3 / x<sup>3</sup>, what is the value of dy/dx evaluated at x = 1?",
+          "opts": [
+            "-9",
+            "9",
+            "9/4",
+            "-9/4"
+          ],
+          "ans": 0,
+          "exp": "Write y as 3x<sup>-3</sup>. Differentiating gives: dy/dx = -9x<sup>-4</sup> = -9 / x<sup>4</sup>. At x = 1, this equals -9."
+        },
+        {
+          "q": "On which of the following intervals is the function f(x) = 2x<sup>5</sup> + 3 strictly increasing?",
+          "opts": [
+            "(-&infin;, 0]",
+            "[0, &infin;)",
+            "(-&infin;, 0) &cup; (0, &infin;)",
+            "(-&infin;, &infin;)"
+          ],
+          "ans": 3,
+          "exp": "A function is increasing where f'(x) &ge; 0. Here, f'(x) = 10x<sup>4</sup>, which is always positive or zero for all real numbers. Thus, the function is strictly increasing on its entire domain (-&infin;, &infin;)."
+        },
+        {
+          "q": "Which of the following is NOT a rational expression?",
+          "opts": [
+            "(2x<sup>4</sup> - 16) / (x - 2)",
+            "log<sub>2</sub>(8) / (x<sup>3</sup> + 5)",
+            "5x / 2&pi;",
+            "&radic;(x<sup>2</sup> - 25)"
+          ],
+          "ans": 3,
+          "exp": "A rational expression is a ratio of two polynomial expressions. Option D contains a radical of a variable expression, which is an algebraic but non-rational expression."
+        },
+        {
+          "q": "Which of the following is the correct partial fraction decomposition of the expression: 2x / (x<sup>2</sup> - 4)?",
+          "opts": [
+            "1/(x - 2) + 1/(x + 2)",
+            "2/(x - 2) - 1/(x + 2)",
+            "2/(x - 2) + 1/(x + 2)",
+            "1/(x - 2) - 1/(x + 2)"
+          ],
+          "ans": 0,
+          "exp": "Decompose: 2x / ((x-2)(x+2)) = A/(x-2) + B/(x+2) => 2x = A(x+2) + B(x-2). Setting x=2 yields A=1. Setting x=-2 yields B=1. Thus, the decomposition is 1/(x-2) + 1/(x+2)."
+        },
+        {
+          "q": "Which of the following statements is NOT true regarding the parabola y = -1/2 x<sup>2</sup>?",
+          "opts": [
+            "The focus is at (0, -1/2)",
+            "The focal length is 4",
+            "The directrix equation is y = 1/2",
+            "The parabola opens downward"
+          ],
+          "ans": 1,
+          "exp": "Write in standard form: x<sup>2</sup> = -2y. Comparing with x<sup>2</sup> = 4py, we get 4p = -2 => p = -1/2. The focal length is |p| = 1/2, not 4."
+        },
+        {
+          "q": "What is the distance between the point P(-2, -3) and the line L: 12x - 5y - 30 = 0?",
+          "opts": [
+            "46/13 units",
+            "3 units",
+            "39 units",
+            "2 units"
+          ],
+          "ans": 1,
+          "exp": "Distance = |12(-2) - 5(-3) - 30| / &radic;(12<sup>2</sup> + (-5)<sup>2</sup>) = |-24 + 15 - 30| / 13 = |-39| / 13 = 3 units."
+        },
+        {
+          "q": "If sequence {a<sub>n</sub>} is defined recursively by a<sub>1</sub> = 2 and a<sub>n+1</sub> = a<sub>n</sub> + 4 for all n &ge; 1, what is the value of the finite sum &sum;<sub>n=1</sub><sup>35</sup> a<sub>n</sub>?",
+          "opts": [
+            "2,460",
+            "2,458",
+            "2,450",
+            "2,442"
+          ],
+          "ans": 2,
+          "exp": "This is an AP with a<sub>1</sub> = 2 and d = 4. The 35th term is a<sub>35</sub> = 2 + 34(4) = 138. The sum is S<sub>35</sub> = (35/2) &middot; (a<sub>1</sub> + a<sub>35</sub>) = 17.5 &middot; (140) = 2,450."
+        },
+        {
+          "q": "The sum of the first 12 terms of a geometric sequence with first term 0.3 and common ratio 0.1 is equal to:",
+          "opts": [
+            "&frac;1{3} [ (10<sup>11</sup> - 1) / 10<sup>11</sup> ]",
+            "&frac;3{10} [ (10<sup>12</sup> - 1) / 10<sup>12</sup> ]",
+            "-&frac;1{3} [ (10<sup>12</sup> - 1) / 10<sup>12</sup> ]",
+            "&frac;1{3} [ (10<sup>12</sup> - 1) / 10<sup>12</sup> ]"
+          ],
+          "ans": 3,
+          "exp": "Using the finite geometric sum formula: S<sub>12</sub> = a(1 - r<sup>12</sup>)/(1 - r) = 0.3(1 - 0.1<sup>12</sup>)/(1 - 0.1) = 0.3(1 - 10^{-12})/0.9 = (1/3)(1 - 10^{-12}) = (1/3)[ (10<sup>12</sup> - 1)/10<sup>12</sup> ]."
+        },
+        {
+          "q": "A certain asset gains exactly 10% (one-tenth) of its value each year. If the asset is valued at Birr 30,000 today, how much will it be worth 3 years from now?",
+          "opts": [
+            "90,000 Birr",
+            "30,900 Birr",
+            "39,930 Birr",
+            "21,870 Birr"
+          ],
+          "ans": 2,
+          "exp": "This is compound growth over 3 periods: Value = 30000 &times; (1 + 0.10)<sup>3</sup> = 30000 &times; 1.331 = 39,930 Birr."
+        }
+      ]
+    }
+  ]
+}
