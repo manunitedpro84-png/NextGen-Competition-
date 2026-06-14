@@ -1,0 +1,889 @@
+{
+  "parts": [
+    {
+      "partTitle": "Chemistry Competition Pool",
+      "questions": [
+        {
+          "q": "According to the Br&oslash;nsted-Lowry theory, a base is defined as:",
+          "opts": [
+            "A proton donor",
+            "An electron-pair donor",
+            "A proton acceptor",
+            "An electron-pair acceptor"
+          ],
+          "ans": 2,
+          "exp": "Under the Br&oslash;nsted-Lowry definition, an acid is a substance that donates a proton (H<sup>+</sup>), while a base is a substance that accepts a proton."
+        },
+        {
+          "q": "Which of the following solids is classified as a crystalline network solid rather than an amorphous solid?",
+          "opts": [
+            "Glass",
+            "Plastics",
+            "Rubber",
+            "Sodium chloride"
+          ],
+          "ans": 3,
+          "exp": "Sodium chloride forms a highly structured crystalline lattice held together by strong ionic bonds, while glass, plastics, and rubber are amorphous solids."
+        },
+        {
+          "q": "In an ionic bond, electrons are:",
+          "opts": [
+            "Shared equally between atoms",
+            "Transferred from one atom to another",
+            "Shared unequally between atoms",
+            "Completely absent"
+          ],
+          "ans": 1,
+          "exp": "An ionic bond is formed through the electrostatic attraction between oppositely charged ions, which occurs when valence electrons are transferred from a metal to a non-metal."
+        },
+        {
+          "q": "What will happen to the position of chemical equilibrium if hydroxide ions (OH<sup>-</sup>) are added to an aqueous solution of acetic acid (CH<sub>3</sub>COOH &hArr; CH<sub>3</sub>COO<sup>-</sup> + H<sup>+</sup>)?",
+          "opts": [
+            "The equilibrium shifts to the left",
+            "The equilibrium shifts to the right",
+            "The solution becomes more acidic",
+            "No change in equilibrium position occurs"
+          ],
+          "ans": 1,
+          "exp": "Hydroxide ions react with hydronium ions (H<sup>+</sup>) to form water, removing H<sup>+</sup> from the solution. According to Le Chatelier's principle, the system will shift to the right to replenish the lost H<sup>+</sup> ions."
+        },
+        {
+          "q": "Which of the following statements is true regarding the liquid state of matter?",
+          "opts": [
+            "Liquids have a definite volume but take the shape of their container",
+            "Liquids have a definite shape and volume",
+            "Liquids have an indefinite volume but a definite shape",
+            "Liquids have neither a definite shape nor volume"
+          ],
+          "ans": 0,
+          "exp": "Intermolecular forces in liquids are strong enough to hold particles in close proximity (definite volume), but not strong enough to lock them in fixed positions (indefinite shape)."
+        },
+        {
+          "q": "Which of the following statements is true for the redox reaction:<br><br><div class='text-center font-semibold'>Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup> + 14H<sup>+</sup> + 6Cl<sup>-</sup> &rarr; 2Cr<sup>3+</sup> + 6Cl<sub>2</sub> + 7H<sub>2</sub>O</div>",
+          "opts": [
+            "Cr<sup>3+</sup> is oxidized",
+            "Cl<sup>-</sup> is reduced to Cl<sub>2</sub>",
+            "H<sup>+</sup> is reduced to H<sub>2</sub>",
+            "Cl<sup>-</sup> is oxidized to Cl<sub>2</sub>"
+          ],
+          "ans": 3,
+          "exp": "The oxidation state of chlorine increases from -1 in Cl<sup>-</sup> to 0 in Cl<sub>2</sub>, which means chloride ions lose electrons and undergo oxidation."
+        },
+        {
+          "q": "What is the conjugate base of carbonic acid (H<sub>2</sub>CO<sub>3</sub>)?",
+          "opts": [
+            "HCO<sub>3</sub><sup>-</sup>",
+            "CO<sub>3</sub><sup>2-</sup>",
+            "OH<sup>-</sup>",
+            "H<sub>3</sub>O<sup>+</sup>"
+          ],
+          "ans": 0,
+          "exp": "A conjugate base is formed when an acid donates a proton (H<sup>+</sup>). Removing one H<sup>+</sup> from H<sub>2</sub>CO<sub>3</sub> leaves the bicarbonate ion, HCO<sub>3</sub><sup>-</sup>."
+        },
+        {
+          "q": "Which gas law relates the pressure and volume of a fixed mass of gas at constant temperature?",
+          "opts": [
+            "Boyle's Law",
+            "Charles's Law",
+            "Gay-Lussac's Law",
+            "Avogadro's Law"
+          ],
+          "ans": 0,
+          "exp": "Boyle's Law states that the pressure of a given mass of an ideal gas is inversely proportional to its volume at constant temperature: P &prop; 1/V."
+        },
+        {
+          "q": "Which of the following best describes the nature of metallic bonding?",
+          "opts": [
+            "Electrons are shared equally between adjacent atoms",
+            "Electrons are transferred from one atom to another",
+            "Electrons are delocalized and free to move throughout the metallic lattice",
+            "Electrons are localized around each individual atom"
+          ],
+          "ans": 2,
+          "exp": "Metallic bonding consists of a lattice of positive metal cations surrounded by a shared 'sea' of delocalized valence electrons that are free to move throughout the structure."
+        },
+        {
+          "q": "Given a 0.1 M solution of a weak acid (K<sub>a</sub> = 1.8 &times; 10<sup>-5</sup>), what is the approximate pH of the solution?",
+          "opts": [
+            "2.87",
+            "3.45",
+            "4.72",
+            "5.60"
+          ],
+          "ans": 0,
+          "exp": "For a weak acid: [H<sup>+</sup>] = &radic;(K<sub>a</sub> &times; C) = &radic;(1.8 &times; 10<sup>-5</sup> &times; 0.1) = &radic;(1.8 &times; 10<sup>-6</sup>) &approx; 1.34 &times; 10<sup>-3</sup> M. Thus, pH = -log(1.34 &times; 10<sup>-3</sup>) &approx; 2.87."
+        },
+        {
+          "q": "What happens to the kinetic energy of particles as a substance undergoes a phase transition from a solid to a liquid state?",
+          "opts": [
+            "The kinetic energy decreases",
+            "The kinetic energy increases",
+            "The kinetic energy remains completely constant",
+            "The particles stop moving entirely"
+          ],
+          "ans": 1,
+          "exp": "Heating a solid increases the kinetic energy of its particles, allowing them to break free from their fixed positions in the lattice to enter the liquid state."
+        },
+        {
+          "q": "What type of intermolecular force is primarily responsible for the exceptionally high boiling point of water?",
+          "opts": [
+            "London dispersion forces",
+            "Hydrogen bonds",
+            "Ionic bonds",
+            "Dipole-dipole interactions"
+          ],
+          "ans": 1,
+          "exp": "Water molecules can form highly stable intermolecular hydrogen bonds due to the large electronegativity difference between oxygen and hydrogen."
+        },
+        {
+          "q": "Why does a buffer solution successfully resist significant changes in pH upon the addition of small amounts of an acid or a base?",
+          "opts": [
+            "It contains only a strong mineral acid",
+            "It contains a weak acid and its conjugate base",
+            "It completely prevents the self-ionization of water",
+            "It physically absorbs all added ions"
+          ],
+          "ans": 1,
+          "exp": "The weak acid component neutralizes added bases, while the conjugate base component neutralizes added acids, minimizing pH changes."
+        },
+        {
+          "q": "What is the wavelength of the yellow sodium emission line, which has an electromagnetic frequency of 5.09 &times; 10<sup>14</sup> s<sup>-1</sup>? (Speed of light, C = 3 &times; 10<sup>8</sup> m/s)",
+          "opts": [
+            "890 nm",
+            "400 nm",
+            "589 nm",
+            "670 nm"
+          ],
+          "ans": 2,
+          "exp": "Using &lambda; = C / &nu;: &lambda; = (3 &times; 10<sup>8</sup> m/s) / (5.09 &times; 10<sup>14</sup> s<sup>-1</sup>) &approx; 5.89 &times; 10<sup>-7</sup> m = 589 nm."
+        },
+        {
+          "q": "In a covalent bond, how do non-metal atoms typically achieve a stable octet electron configuration?",
+          "opts": [
+            "By transferring electrons from one atom to another",
+            "By sharing pairs of valence electrons",
+            "By losing all their core electrons",
+            "By gaining protons from other elements"
+          ],
+          "ans": 1,
+          "exp": "Covalent bonds form when non-metal atoms share pairs of valence electrons to achieve stable, lower-energy octet configurations."
+        },
+        {
+          "q": "Which of the following factors affects the ionization constant (K<sub>a</sub>) of a weak acid?",
+          "opts": [
+            "Temperature",
+            "Pressure",
+            "Volume",
+            "Mass"
+          ],
+          "ans": 0,
+          "exp": "Equilibrium constants, including K<sub>a</sub>, are temperature-dependent. Changing the temperature changes the kinetic energy of the particles, shifting the position of the ionization equilibrium."
+        },
+        {
+          "q": "In a diatomic molecule of nitrogen (N<sub>2</sub>), how many total valence electrons are shared between the two nitrogen atoms?",
+          "opts": [
+            "2 electrons",
+            "4 electrons",
+            "6 electrons",
+            "10 electrons"
+          ],
+          "ans": 2,
+          "exp": "Nitrogen has 5 valence electrons and forms a triple bond (one &sigma; and two &pi; bonds) to complete its octet. A triple bond shares 3 pairs of electrons, which is 6 electrons."
+        },
+        {
+          "q": "If the redox reaction Cu + HNO<sub>3</sub> &rarr; Cu(NO<sub>3</sub>)<sub>2</sub> + NO<sub>2</sub> + H<sub>2</sub>O is completely balanced, what is the stoichiometric coefficient of HNO<sub>3</sub>?",
+          "opts": [
+            "8",
+            "3",
+            "2",
+            "4"
+          ],
+          "ans": 3,
+          "exp": "The balanced equation is: Cu + 4HNO<sub>3</sub> &rarr; Cu(NO<sub>3</sub>)<sub>2</sub> + 2NO<sub>2</sub> + 2H<sub>2</sub>O. The coefficient of HNO<sub>3</sub> is 4."
+        },
+        {
+          "q": "A sample of gas occupies a volume of 10.0 L at 2.0 atm pressure. What will be its volume if the pressure is reduced to 1.0 atm at constant temperature?",
+          "opts": [
+            "5.0 L",
+            "20.0 L",
+            "15.0 L",
+            "10.0 L"
+          ],
+          "ans": 1,
+          "exp": "Using Boyle's Law: P<sub>1</sub>V<sub>1</sub> = P<sub>2</sub>V<sub>2</sub> => 2.0 atm &times; 10.0 L = 1.0 atm &times; V<sub>2</sub> => V<sub>2</sub> = 20.0 L."
+        },
+        {
+          "q": "A salt derived from a weak acid and a weak base will produce an aqueous solution whose pH depends directly on:",
+          "opts": [
+            "The strength of the weak acid only",
+            "The strength of the weak base only",
+            "The relative strengths (K<sub>a</sub> &chi; K<sub>b</sub>) of the parent weak acid and weak base",
+            "The physical concentration of the salt alone"
+          ],
+          "ans": 2,
+          "exp": "If K<sub>a</sub> &gt; K<sub>b</sub>, the solution is acidic; if K<sub>b</sub> &gt; K<sub>a</sub>, the solution is basic; if K<sub>a</sub> &approx; K<sub>b</sub>, the solution is neutral."
+        },
+        {
+          "q": "At Standard Temperature and Pressure (STP), what volume will 2.0 moles of an ideal gas occupy?",
+          "opts": [
+            "11.2 L",
+            "22.4 L",
+            "44.8 L",
+            "33.6 L"
+          ],
+          "ans": 2,
+          "exp": "One mole of an ideal gas occupies 22.4 L at STP. Therefore, 2.0 moles will occupy 2.0 &times; 22.4 L = 44.8 L."
+        },
+        {
+          "q": "A student electrolyzes an aqueous solution of copper(II) sulfate using inert platinum electrodes. What will they observe at the anode?",
+          "opts": [
+            "Copper metal deposition",
+            "Hydrogen gas evolution",
+            "Oxygen gas evolution",
+            "Chlorine gas evolution"
+          ],
+          "ans": 2,
+          "exp": "In aqueous copper(II) sulfate, water is oxidized at the anode in preference to sulfate ions due to its lower oxidation potential: 2H<sub>2</sub>O &rarr; O<sub>2</sub>(g) + 4H<sup>+</sup> + 4e<sup>-</sup>. This releases oxygen gas."
+        },
+        {
+          "q": "If a pH titration curve shows a single sharp pH rise around an equivalence point of pH 9, what type of acid-base titration is being performed?",
+          "opts": [
+            "Strong acid vs. strong base",
+            "Strong acid vs. weak base",
+            "Weak acid vs. strong base",
+            "Weak acid vs. weak base"
+          ],
+          "ans": 2,
+          "exp": "Titrating a weak acid with a strong base yields a basic equivalence point (pH &gt; 7) because the conjugate base of the weak acid hydrolyzes water to produce OH<sup>-</sup> ions."
+        },
+        {
+          "q": "Which of the following represents the correct organizational parameter of elements in the Modern Periodic Table?",
+          "opts": [
+            "Elements are arranged by increasing atomic number",
+            "Elements are arranged by increasing atomic mass",
+            "Elements are arranged by increasing alphabetical name",
+            "Elements are arranged by physical color"
+          ],
+          "ans": 0,
+          "exp": "Moseley's law established that elements in the modern periodic table are arranged by increasing atomic number (number of protons in the nucleus)."
+        },
+        {
+          "q": "Which chemical bonding theory explains the formation of covalent bonds as the physical overlap of individual atomic orbitals?",
+          "opts": [
+            "Valence bond theory",
+            "Molecular orbital theory",
+            "Lewis dot theory",
+            "VSEPR theory"
+          ],
+          "ans": 0,
+          "exp": "Valence bond theory states that a covalent bond forms when half-filled valence atomic orbitals on two adjacent atoms overlap, pairing their spins."
+        },
+        {
+          "q": "Which of the following is a key economic and technical characteristic of modern chemical industries?",
+          "opts": [
+            "They avoid the use of chemical reactions to prevent contamination",
+            "They produce only organic monomer compounds",
+            "They consume large quantities of thermal and electrical energy",
+            "They do not perform product quality control testing"
+          ],
+          "ans": 2,
+          "exp": "Chemical manufacturing is highly energy-intensive, requiring significant electrical and thermal energy to break and form chemical bonds."
+        },
+        {
+          "q": "What is a major global environmental concern associated specifically with cement manufacturing?",
+          "opts": [
+            "Excessive clean water use",
+            "High carbon dioxide (CO<sub>2</sub>) emissions",
+            "Excessive calcium sulfate depletion",
+            "Acoustic noise pollution"
+          ],
+          "ans": 1,
+          "exp": "Cement production releases large amounts of CO<sub>2</sub> both from the combustion of fossil fuels to heat the kiln and from the calcination of limestone (CaCO<sub>3</sub> &rarr; CaO + CO<sub>2</sub>)."
+        },
+        {
+          "q": "According to Dalton's atomic theory, atoms of the same element are:",
+          "opts": [
+            "Different in size, mass, and properties",
+            "In continuous, random motion",
+            "Identical in size, mass, and chemical properties",
+            "Composed of smaller subatomic particles"
+          ],
+          "ans": 2,
+          "exp": "A core postulate of Dalton's original atomic theory was that all atoms of a given element are identical in mass and properties."
+        },
+        {
+          "q": "What is the primary industrial raw material obtained directly from the Earth's atmosphere for use in chemical synthesis?",
+          "opts": [
+            "Nitrogen gas",
+            "Sodium chloride",
+            "Phosphate rock",
+            "Crude petroleum"
+          ],
+          "ans": 0,
+          "exp": "Atmospheric nitrogen (N<sub>2</sub>), which makes up about 78% of the air, is extracted by fractional distillation of liquid air and used to manufacture ammonia in the Haber-Bosch process."
+        },
+        {
+          "q": "One of the most important advantages of the modern periodic classification of elements is that it helps in understanding:",
+          "opts": [
+            "The periodicity of chemical and physical properties among elements",
+            "The exact cost of each element on the open market",
+            "The total number of atoms present in any compound",
+            "The physical appearance of all elements under standard conditions"
+          ],
+          "ans": 0,
+          "exp": "The periodic table groups elements with similar electron configurations, making it easier to predict trends in reactivity, ionization energy, and electronegativity."
+        },
+        {
+          "q": "Which of the following subatomic particles has a rest mass closest to that of a proton?",
+          "opts": [
+            "Electron",
+            "Photon",
+            "Neutron",
+            "Positron"
+          ],
+          "ans": 2,
+          "exp": "The mass of a proton is approximately 1.0073 amu, while the mass of a neutron is approximately 1.0087 amu. This makes the neutron the closest in mass."
+        },
+        {
+          "q": "What is the primary societal and economic role played by industrial chemistry?",
+          "opts": [
+            "It reduces overall technological development to conserve resources",
+            "It limits the scale of chemical product manufacturing",
+            "It prevents the use of natural resources",
+            "It supports economic growth by converting raw materials into useful products"
+          ],
+          "ans": 3,
+          "exp": "Industrial chemistry transforms raw materials like air, water, and minerals into industrial, agricultural, and consumer products, supporting economic development."
+        },
+        {
+          "q": "Which of the following groups of elements is correctly matched with its block in the periodic table?",
+          "opts": [
+            "Na, Mg, and Cl - s-block",
+            "Fe, Mn, and P - d-block",
+            "P, S, and Cl - p-block",
+            "Cr, Ni, and Al - p-block"
+          ],
+          "ans": 2,
+          "exp": "Phosphorus (Z=15), Sulfur (Z=16), and Chlorine (Z=17) all have their outermost valence electrons in the p-subshell, making them p-block elements."
+        },
+        {
+          "q": "What does the Aufbau principle state regarding the ground-state electron configuration of an atom?",
+          "opts": [
+            "Electrons fill atomic orbitals in order of increasing energy",
+            "Electrons fill atomic orbitals in order of increasing atomic mass",
+            "Electrons fill atomic orbitals from higher to lower energy levels",
+            "Electrons populate available degenerate orbitals randomly"
+          ],
+          "ans": 0,
+          "exp": "The Aufbau principle states that in the ground state of an atom or ion, electrons populate lower-energy subshells before moving to higher-energy ones."
+        },
+        {
+          "q": "What is the primary industrial process used to manufacture ammonia on a commercial scale?",
+          "opts": [
+            "Ostwald process",
+            "Solvay process",
+            "Haber-Bosch process",
+            "Contact process"
+          ],
+          "ans": 2,
+          "exp": "The Haber-Bosch process synthesizes ammonia (NH<sub>3</sub>) from nitrogen and hydrogen gas under high pressure and temperature using an iron catalyst."
+        },
+        {
+          "q": "Which of the following natural energy resources is classified as renewable?",
+          "opts": [
+            "Solar energy",
+            "Coal",
+            "Crude petroleum",
+            "Natural gas"
+          ],
+          "ans": 0,
+          "exp": "Solar energy is renewable because it is replenished naturally on a human timescale, unlike fossil fuels, which require millions of years to form."
+        },
+        {
+          "q": "What is the value of the angular momentum (azimuthal) quantum number (l) for any d-orbital?",
+          "opts": [
+            "2",
+            "1",
+            "0",
+            "3"
+          ],
+          "ans": 0,
+          "exp": "The azimuthal quantum number (l) determines orbital shape: l=0 is an s-orbital, l=1 is a p-orbital, l=2 is a d-orbital, and l=3 is an f-orbital."
+        },
+        {
+          "q": "Which of the following energy resources is classified as non-renewable?",
+          "opts": [
+            "Fossil fuels",
+            "Vegetation",
+            "Solar energy",
+            "Water"
+          ],
+          "ans": 0,
+          "exp": "Fossil fuels (coal, oil, natural gas) are finite resources that cannot be replaced once depleted."
+        },
+        {
+          "q": "How many unpaired electrons are present in the ground-state electron configuration of carbon (Z=6)?",
+          "opts": [
+            "1",
+            "3",
+            "4",
+            "2"
+          ],
+          "ans": 3,
+          "exp": "The ground-state configuration of carbon is 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>2</sup>. According to Hund's rule, the two 2p electrons occupy separate degenerate p-orbitals with parallel spins, leaving 2 unpaired electrons."
+        },
+        {
+          "q": "Which raw material is the primary source of silica used in glass manufacturing?",
+          "opts": [
+            "Limestone",
+            "Sand",
+            "Gypsum",
+            "Alumina"
+          ],
+          "ans": 1,
+          "exp": "Sand (silicon dioxide, SiO<sub>2</sub>) is the main source of silica, which acts as the network-forming oxide in glass production."
+        },
+        {
+          "q": "Which of the following forms of electromagnetic radiation has the shortest wavelength and highest energy?",
+          "opts": [
+            "Radio waves",
+            "Infrared waves",
+            "Ultraviolet waves",
+            "Gamma rays"
+          ],
+          "ans": 3,
+          "exp": "On the electromagnetic spectrum, gamma rays have the highest frequency and shortest wavelength, giving them the highest energy per photon."
+        },
+        {
+          "q": "Which local Ethiopian alcoholic beverage is traditionally manufactured on a commercial and household scale using distillation?",
+          "opts": [
+            "Wine",
+            "Beer",
+            "Tej",
+            "Araki"
+          ],
+          "ans": 3,
+          "exp": "Araki is a traditional, home-distilled spirit made from fermented grains, distinct from non-distilled traditional beers like Tella."
+        },
+        {
+          "q": "Which of the following catalysts is used in the Contact Process for the industrial manufacture of sulfuric acid?",
+          "opts": [
+            "Iron oxide",
+            "Vanadium(V) oxide (V<sub>2</sub>O<sub>5</sub>)",
+            "Platinum",
+            "Palladium"
+          ],
+          "ans": 1,
+          "exp": "Vanadium(V) oxide catalyzes the key step in the Contact Process: the oxidation of sulfur dioxide (SO<sub>2</sub>) to sulfur trioxide (SO<sub>3</sub>)."
+        },
+        {
+          "q": "Which of the following traditional methods is most commonly used to preserve food products in rural Ethiopia?",
+          "opts": [
+            "Vacuum packing",
+            "Chemical preservation",
+            "Sun drying",
+            "Pasteurization"
+          ],
+          "ans": 2,
+          "exp": "Sun drying is a low-cost, traditional method that removes moisture from foods like meat, grains, and red peppers to inhibit microbial growth."
+        },
+        {
+          "q": "What is the primary industrial objective of the tanning process in leather production?",
+          "opts": [
+            "To make the leather completely waterproof",
+            "To remove hair and epidermal tissue from hides",
+            "To bleach and color the leather fibers",
+            "To convert raw, putrescible hides into durable, stable leather"
+          ],
+          "ans": 3,
+          "exp": "Tanning cross-links the collagen proteins in animal hides, preserving them and preventing rot to produce a durable, flexible material."
+        },
+        {
+          "q": "Which byproduct of industrial sugar processing is used to manufacture bio-ethanol in Ethiopia?",
+          "opts": [
+            "Sugarcane leaves",
+            "Bagasse",
+            "Lime",
+            "Molasses"
+          ],
+          "ans": 3,
+          "exp": "Molasses, the thick syrup left after crystallizing sugar from cane juice, contains residual sugars that are fermented by yeast to produce ethanol."
+        },
+        {
+          "q": "Which of the following cement ingredients is added during clinker grinding to retard and control its setting time?",
+          "opts": [
+            "Silica",
+            "Gypsum (CaSO<sub>4</sub> &middot; 2H<sub>2</sub>O)",
+            "Lime",
+            "Alumina"
+          ],
+          "ans": 1,
+          "exp": "Without gypsum, cement reacts instantly with water and sets too quickly. Gypsum retards this hydration reaction, allowing workers time to mix and pour the concrete."
+        },
+        {
+          "q": "What does the period number of an element indicate in the Modern Periodic Table?",
+          "opts": [
+            "The principal energy level (shell) containing the valence electrons",
+            "The total number of protons in the atom's nucleus",
+            "The total number of valence electrons",
+            "The atomic weight of the element"
+          ],
+          "ans": 0,
+          "exp": "The period number corresponds to the principal quantum number (n) of the outermost occupied electron shell in the ground-state atom."
+        },
+        {
+          "q": "What is the primary product of industrial sugar manufacturing?",
+          "opts": [
+            "Glucose",
+            "Sucrose",
+            "Ethanol",
+            "Maltose"
+          ],
+          "ans": 1,
+          "exp": "Refined sugar is primarily sucrose (C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>), a disaccharide extracted from sugarcane or sugar beets."
+        },
+        {
+          "q": "Which of the following is NOT a characteristic property of transition elements (d-block metals)?",
+          "opts": [
+            "They are dense metals with high melting points",
+            "They are good conductors of heat and electricity",
+            "They form stable, brightly colored coordination compounds",
+            "They are highly reactive with cold water, releasing hydrogen gas"
+          ],
+          "ans": 3,
+          "exp": "Unlike highly reactive s-block alkali metals, transition metals are relatively unreactive with water due to their high ionization energies and strong metallic bonding."
+        },
+        {
+          "q": "Which type of glass is used to manufacture laboratory glassware due to its high thermal shock resistance and chemical durability?",
+          "opts": [
+            "Soda-lime glass",
+            "Silicate glass",
+            "Quartz glass",
+            "Borosilicate glass"
+          ],
+          "ans": 3,
+          "exp": "Borosilicate glass contains boron trioxide, which gives it a very low coefficient of thermal expansion, preventing it from cracking under sudden temperature changes."
+        },
+        {
+          "q": "Which of the following ions is preferentially discharged at the cathode during the electrolysis of aqueous copper(II) sulfate using inert platinum electrodes?",
+          "opts": [
+            "Cu<sup>2+</sup> ions",
+            "OH<sup>-</sup> ions",
+            "H<sup>+</sup> ions",
+            "SO<sub>4</sub><sup>2-</sup> ions"
+          ],
+          "ans": 0,
+          "exp": "At the cathode, copper(II) ions have a higher reduction potential (+0.34 V) than hydrogen ions (0.00 V), so they are preferentially reduced to form copper metal."
+        },
+        {
+          "q": "Which of the following crystal structures is hard, has a high melting point, and acts as an electrical insulator in both solid and liquid states?",
+          "opts": [
+            "Molecular crystal",
+            "Covalent network crystal",
+            "Metallic crystal",
+            "Ionic crystal"
+          ],
+          "ans": 1,
+          "exp": "Covalent network crystals like diamond or quartz consist of atoms held together by a continuous network of strong covalent bonds, with no free electrons or ions to conduct electricity."
+        },
+        {
+          "q": "Why do different isotopes of the same element display nearly identical chemical properties?",
+          "opts": [
+            "They have different nuclear energy levels",
+            "They have the same number of neutrons",
+            "They have identical nuclear masses",
+            "They have the same number of protons and electrons"
+          ],
+          "ans": 3,
+          "exp": "Chemical properties depend on an atom's electron configuration. Since isotopes of an element have the same number of protons, they have the same number of electrons in their neutral state."
+        },
+        {
+          "q": "What is the first step in balancing a redox reaction using the half-reaction (ion-electron) method?",
+          "opts": [
+            "Balance the oxygen atoms by adding water molecules",
+            "Separate the overall reaction into oxidation and reduction half-reactions",
+            "Balance the hydrogen atoms by adding hydrogen ions",
+            "Equalize the number of electrons transferred"
+          ],
+          "ans": 1,
+          "exp": "To use the half-reaction method, you must first identify which species are oxidized and reduced and separate them into their respective half-reactions."
+        },
+        {
+          "q": "Which of the following scientists is credited with discovering the dense, positively charged atomic nucleus using the gold foil scattering experiment?",
+          "opts": [
+            "Niels Bohr",
+            "J.J. Thomson",
+            "James Chadwick",
+            "Ernest Rutherford"
+          ],
+          "ans": 3,
+          "exp": "Rutherford's 1911 gold foil experiment showed that alpha particles occasionally bounced backward, proving that most of an atom's mass and positive charge is concentrated in a tiny nucleus."
+        },
+        {
+          "q": "Which of the following parameters determines which ions are preferentially discharged at an electrode during the electrolysis of an aqueous solution?",
+          "opts": [
+            "The ambient temperature of the cell",
+            "The position of the ions in the electrochemical reactivity series and their concentrations",
+            "The voltage applied to the cell",
+            "The physical surface area of the electrodes"
+          ],
+          "ans": 1,
+          "exp": "Ions with more favorable standard reduction/oxidation potentials are discharged first, though this can be influenced by high ion concentrations (overvoltage)."
+        },
+        {
+          "q": "According to the Bohr model of the atom, where are electrons located?",
+          "opts": [
+            "Embedded uniformly inside a positively charged sphere",
+            "Distributed randomly throughout the nucleus",
+            "In fixed, circular orbits of quantized energy levels around the nucleus",
+            "In continuous, three-dimensional stationary energy clouds"
+          ],
+          "ans": 2,
+          "exp": "Bohr proposed that electrons travel in defined circular orbits around the nucleus, with each orbit corresponding to a specific, quantized energy state."
+        },
+        {
+          "q": "What is the primary consequence of removing the salt bridge from an operating galvanic (voltaic) cell?",
+          "opts": [
+            "The cell voltage increases significantly",
+            "The chemical reaction continues completely unaffected",
+            "The electrical circuit is broken, charge builds up, and the cell stops working",
+            "The metallic electrodes begin to dissolve rapidly"
+          ],
+          "ans": 2,
+          "exp": "The salt bridge maintains electrical neutrality by allowing ions to migrate between half-cells. Removing it breaks the circuit and stops the flow of electricity."
+        },
+        {
+          "q": "Why do ionic compounds typically have exceptionally high melting and boiling points?",
+          "opts": [
+            "They are stabilized by weak intermolecular forces",
+            "They are composed of overlapping covalent bonds",
+            "They have no structured molecular or lattice organization",
+            "The strong electrostatic forces in the crystal lattice require significant energy to break"
+          ],
+          "ans": 3,
+          "exp": "Ionic solids form a closely packed three-dimensional lattice stabilized by strong, attractive electrostatic forces between cations and anions."
+        },
+        {
+          "q": "Which of the following scientists proposed the first modern atomic theory supported by quantitative experimental mass relations?",
+          "opts": [
+            "J.J. Thomson",
+            "Niels Bohr",
+            "Ernest Rutherford",
+            "John Dalton"
+          ],
+          "ans": 3,
+          "exp": "John Dalton formulated his atomic theory in 1803, basing it on the laws of conservation of mass and definite proportions."
+        },
+        {
+          "q": "Which of the following processes is NOT an industrial application of electrolysis?",
+          "opts": [
+            "Electroplating of jewelry",
+            "Electro-refining of impure copper",
+            "Extraction of reactive metals like aluminum",
+            "Nuclear fusion energy generation"
+          ],
+          "ans": 3,
+          "exp": "Nuclear fusion is a nuclear reaction that combines light atomic nuclei, which does not involve the electrolytic breakdown of chemical compounds."
+        },
+        {
+          "q": "Which of the following molecules has a central atom that is sp<sup>3</sup> hybridized?",
+          "opts": [
+            "Carbon dioxide (CO<sub>2</sub>)",
+            "Boron trifluoride (BF<sub>3</sub>)",
+            "Water (H<sub>2</sub>O)",
+            "Phosphorus pentachloride (PCl<sub>5</sub>)"
+          ],
+          "ans": 2,
+          "exp": "The central oxygen atom in water has two &sigma; bonds and two lone pairs. This gives it a steric number of 4, which corresponds to sp<sup>3</sup> hybridization."
+        },
+        {
+          "q": "Which model of the atom first proposed that electrons are embedded like raisin 'plums' inside a sphere of positive charge?",
+          "opts": [
+            "Thomson's plum pudding model",
+            "Dalton's solid sphere model",
+            "Rutherford's nuclear model",
+            "Bohr's planetary model"
+          ],
+          "ans": 0,
+          "exp": "Following his discovery of the electron in 1897, J.J. Thomson proposed the 'plum pudding' model to account for the overall neutral charge of the atom."
+        },
+        {
+          "q": "Which chemical bonding theory explains the formation of covalent bonds as the physical overlap of individual atomic orbitals?",
+          "opts": [
+            "Valence bond theory",
+            "Molecular orbital theory",
+            "Lewis dot theory",
+            "VSEPR theory"
+          ],
+          "ans": 0,
+          "exp": "Valence bond theory states that a covalent bond forms when half-filled valence atomic orbitals on two adjacent atoms overlap, pairing their spins."
+        },
+        {
+          "q": "Which of the following molecules has a linear molecular geometry?",
+          "opts": [
+            "Water (H<sub>2</sub>O)",
+            "Ammonia (NH<sub>3</sub>)",
+            "Methane (CH<sub>4</sub>)",
+            "Carbon dioxide (CO<sub>2</sub>)"
+          ],
+          "ans": 3,
+          "exp": "Carbon dioxide has two double bonds and no lone pairs on the central carbon atom, giving it a linear (180&deg;) geometry."
+        },
+        {
+          "q": "Which of the following is the correct cell notation for a galvanic cell composed of zinc and copper electrodes in their respective sulfate solutions?",
+          "opts": [
+            "Zn(s) / Cu<sup>2+</sup>(aq) // Cu<sup>2+</sup>(aq) / Cu(s)",
+            "Cu(s) / Cu<sup>2+</sup>(aq) // Zn<sup>2+</sup>(aq) / Zn(s)",
+            "Zn<sup>2+</sup>(aq) / Zn(s) // Cu(s) / Cu<sup>2+</sup>(aq)",
+            "Zn(s) / Zn<sup>2+</sup>(aq) // Cu<sup>2+</sup>(aq) / Cu(s)"
+          ],
+          "ans": 3,
+          "exp": "By convention, the anode (oxidation) is written on the left and the cathode (reduction) on the right: Zn(s) &rarr; Zn<sup>2+</sup>(aq) + 2e<sup>-</sup> and Cu<sup>2+</sup>(aq) + 2e<sup>-</sup> &rarr; Cu(s)."
+        },
+        {
+          "q": "Which type of covalent bond is formed when two bonding atoms have identical electronegativities, resulting in equal sharing of the bonding electrons?",
+          "opts": [
+            "Polar covalent bond",
+            "Ionic bond",
+            "Non-polar covalent bond",
+            "Coordinate covalent bond"
+          ],
+          "ans": 2,
+          "exp": "When the electronegativity difference (&Delta;EN) is close to zero, the bonding electrons are shared equally, forming a non-polar covalent bond."
+        },
+        {
+          "q": "What is the hybridization of the central carbon atom in a molecule of carbon dioxide (CO<sub>2</sub>)?",
+          "opts": [
+            "sp<sup>2</sup>",
+            "sp<sup>3</sup>d",
+            "sp",
+            "sp<sup>3</sup>"
+          ],
+          "ans": 2,
+          "exp": "The carbon atom forms two &sigma; bonds and has no lone pairs (steric number of 2), which corresponds to sp hybridization."
+        },
+        {
+          "q": "If a constant electric current of 5.0 A is passed through an electrolytic cell for exactly 2.0 hours, what is the total quantity of electrical charge passed?",
+          "opts": [
+            "180 C",
+            "3,600 C",
+            "1,800 C",
+            "36,000 C"
+          ],
+          "ans": 3,
+          "exp": "Using Q = I &times; t: Q = 5.0 A &times; (2.0 hours &times; 3600 s/hour) = 5.0 A &times; 7200 s = 36,000 C."
+        },
+        {
+          "q": "What is the ideal bond angle in a molecule with a regular tetrahedral molecular geometry, such as methane (CH<sub>4</sub>)?",
+          "opts": [
+            "90&deg;",
+            "120&deg;",
+            "180&deg;",
+            "109.5&deg;"
+          ],
+          "ans": 3,
+          "exp": "In a symmetric tetrahedral molecule, the four bonding electron pairs are arranged to minimize repulsion, resulting in bond angles of 109.5&deg;."
+        },
+        {
+          "q": "Which branch of chemistry focuses specifically on separating, identifying, and determining the relative quantities of the components in a sample of matter?",
+          "opts": [
+            "Analytical chemistry",
+            "Physical chemistry",
+            "Organic chemistry",
+            "Inorganic chemistry"
+          ],
+          "ans": 0,
+          "exp": "Analytical chemistry is the study of the separation, identification, and quantification of the chemical components of natural and artificial materials."
+        },
+        {
+          "q": "Which of the following represents a correct conversion factor between metric units of volume?",
+          "opts": [
+            "10 L = 1 dm<sup>3</sup>",
+            "1 L = 10 dm<sup>3</sup>",
+            "1 L = 1 dm<sup>3</sup>",
+            "1 L = 1 m<sup>3</sup>"
+          ],
+          "ans": 2,
+          "exp": "One liter (L) is defined as the volume of a cube with side lengths of 10 cm (1 dm). Therefore, 1 L is exactly equal to 1 cubic decimeter (dm<sup>3</sup>)."
+        },
+        {
+          "q": "What is considered the initial step in the systematic application of the scientific method?",
+          "opts": [
+            "Formulating a hypothesis",
+            "Performing an experiment",
+            "Formulating a theory",
+            "Making an observation"
+          ],
+          "ans": 3,
+          "exp": "The scientific method begins when an investigator makes an observation of a physical phenomenon, which raises a question that leads to a hypothesis."
+        },
+        {
+          "q": "Which core postulate of Dalton's original atomic theory has been modified or disproved by modern atomic discoveries?",
+          "opts": [
+            "Atoms combine in simple whole-number ratios to form chemical compounds",
+            "All matter is composed of small, indivisible particles called atoms",
+            "Atoms of different elements have different chemical properties",
+            "All atoms of the same element are completely identical in mass and properties"
+          ],
+          "ans": 3,
+          "exp": "The discovery of isotopes proved that atoms of the same element can have different masses (due to different numbers of neutrons), disproving Dalton's postulate."
+        },
+        {
+          "q": "Which region of the electromagnetic spectrum has the highest frequency and is capable of inducing electronic transitions of the greatest energy?",
+          "opts": [
+            "Orange",
+            "Red",
+            "Violet",
+            "Green"
+          ],
+          "ans": 2,
+          "exp": "On the visible light spectrum, violet light has the shortest wavelength and highest frequency, carrying the highest energy per photon."
+        },
+        {
+          "q": "What are the possible values of the azimuthal (orbital) quantum number (l) for an electron occupying an f-subshell?",
+          "opts": [
+            "0",
+            "1",
+            "2",
+            "3"
+          ],
+          "ans": 3,
+          "exp": "The azimuthal quantum number (l) is fixed for each subshell type: l=0 (s), l=1 (p), l=2 (d), and l=3 (f)."
+        },
+        {
+          "q": "Which of the following molecules displays a bent (V-shaped) molecular geometry due to the presence of lone pairs on the central atom?",
+          "opts": [
+            "Carbon dioxide (CO<sub>2</sub>)",
+            "Water (H<sub>2</sub>O)",
+            "Methane (CH<sub>4</sub>)",
+            "Beryllium chloride (BeCl<sub>2</sub>)"
+          ],
+          "ans": 1,
+          "exp": "Water (H<sub>2</sub>O) has two bonded hydrogen atoms and two lone pairs on its oxygen atom, creating a bent molecular geometry with an actual bond angle of approximately 104.5&deg;."
+        },
+        {
+          "q": "Which of the following mixtures is classified as a single-phase homogeneous solution?",
+          "opts": [
+            "Sand mixed in water",
+            "Vegetable oil mixed in water",
+            "Sodium chloride dissolved in water",
+            "Fine soil particles suspended in water"
+          ],
+          "ans": 2,
+          "exp": "Sodium chloride (salt) dissolves completely in water to form a uniform, single-phase homogeneous solution, whereas the other options form heterogeneous mixtures."
+        },
+        {
+          "q": "What is the formal oxidation number of sulfur (S) in a molecule of sulfuric acid (H<sub>2</sub>SO<sub>4</sub>)?",
+          "opts": [
+            "+4",
+            "+6",
+            "-2",
+            "+2"
+          ],
+          "ans": 1,
+          "exp": "Using oxidation rules: 2(+1) + S + 4(-2) = 0 => +2 + S - 8 = 0 => S - 6 = 0 => S = +6."
+        }
+      ]
+    }
+  ]
+}
