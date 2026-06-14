@@ -1,0 +1,1149 @@
+{
+  "parts": [
+    {
+      "partTitle": "Part I: Word Order",
+      "questions": [
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>not / morning / she / go / work / today</div>",
+          "opts": [
+            "She not go work today morning.",
+            "Today, she does not go to work in the morning.",
+            "She does not go to work this morning.",
+            "She not work today go morning."
+          ],
+          "ans": 2,
+          "exp": "The most natural and grammatically accurate construction is 'She does not go to work this morning' (using 'this morning' rather than the incorrect 'today morning')."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>anyone / seen / you / have / the / latest / film</div>",
+          "opts": [
+            "Have you anyone seen the latest film?",
+            "Have you seen the latest film, anyone?",
+            "Have you seen the latest film anyone?",
+            "Have you seen anyone the latest film?"
+          ],
+          "ans": 1,
+          "exp": "This is a direct question addressed to a group of people. Grammatically, 'anyone' acts as a direct address and is separated by a comma at the end."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>She/ interested/ that/ was/ in/ proposal/ said/ she/ the</div>",
+          "opts": [
+            "She was interested in that proposal said the she.",
+            "She said she was interested in that the proposal.",
+            "She said that she was proposal the interested in.",
+            "She said that she was interested in the proposal."
+          ],
+          "ans": 3,
+          "exp": "Using indirect speech: 'She said' followed by the noun clause 'that she was interested in the proposal' is the only correct syntactic option."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>great / in / 21st / the / shown / improvements / technology / century</div>",
+          "opts": [
+            "In the 21st century technology has shown great improvements.",
+            "The technology has shown improvements great in 21st century.",
+            "21st technology shown the century has improvements great in.",
+            "The technology 21st century has shown improvements great in."
+          ],
+          "ans": 0,
+          "exp": "The correct layout starts with the prepositional phrase of time 'In the 21st century', followed by the subject 'technology' and the present perfect verb 'has shown' and its object."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>Brother / with / my / distinction / has / University / from / graduated / Mettu</div>",
+          "opts": [
+            "My Mettu University has graduated with distinction from a brother.",
+            "My brother has graduated from Mettu University with distinction.",
+            "My brother from Mettu University has graduated with distinction.",
+            "From Mettu University has graduated my brother with distinction."
+          ],
+          "ans": 1,
+          "exp": "The subject 'My brother' is followed by the present perfect verb 'has graduated from', the location 'Mettu University', and the adverbial phrase of manner 'with distinction'."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>Beautiful / woman / young / in / Wollo / studied / University / has / the / medicine</div>",
+          "opts": [
+            "The young beautiful woman has studied in Wollo University medicine.",
+            "The woman beautiful has studied medicine in young Wollo University.",
+            "The beautiful young woman has studied in Wollo University medicine.",
+            "The beautiful young woman has studied medicine in Wollo University."
+          ],
+          "ans": 3,
+          "exp": "Adjective ordering places size/opinion ('beautiful') before age ('young'). The verb 'has studied' is followed directly by its object 'medicine', then the location."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>she / is / person / a / driving / not / should / use / phone / a / while / he / or</div>",
+          "opts": [
+            "A person he should not use a phone or while she is driving.",
+            "A phone should not use while she or he is driving a person.",
+            "A person should not use a phone while driving he or she.",
+            "A person should not use a phone while he or she is driving."
+          ],
+          "ans": 3,
+          "exp": "The modal construction 'should not use' follows the subject 'A person', followed by the time clause 'while he or she is driving'."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>our / order / not / us / write / teacher / to / anything</div>",
+          "opts": [
+            "Our teacher ordered us to not write anything.",
+            "To not write anything our teacher ordered us.",
+            "Our teacher ordered us not to write anything.",
+            "Not to write anything our teacher ordered us."
+          ],
+          "ans": 2,
+          "exp": "When reporting negative commands, the structure is: 'ordered + object + not + to-infinitive'."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>carefully / the / examined / scientist / machine / damaged / the / conclusion / before / giving / a</div>",
+          "opts": [
+            "The scientist examined carefully the damaged machine before giving a conclusion.",
+            "The scientist carefully examined the damaged machine before giving a conclusion.",
+            "Carefully the scientist examined the damaged machine before giving a conclusion.",
+            "The carefully scientist examined the damaged machine before giving a conclusion."
+          ],
+          "ans": 1,
+          "exp": "The adverb 'carefully' modifies the verb 'examined' and is placed before it. The prepositional clause 'before giving a conclusion' is placed at the end."
+        },
+        {
+          "q": "Rearrange the jumbled words to form a grammatically correct and meaningful sentence:<br><br><div class='text-center font-bold'>scarcely / finished / had / the / principal / his / speech / when / went / off / the / electricity</div>",
+          "opts": [
+            "Scarcely the principal had finished his speech when the electricity went off.",
+            "Had scarcely the principal finished his speech when the electricity went off.",
+            "The principal scarcely had finished his speech when the electricity went off.",
+            "Scarcely had the principal finished his speech when the electricity went off."
+          ],
+          "ans": 3,
+          "exp": "When a sentence starts with the negative adverb 'Scarcely', we must use inversion: 'Scarcely + auxiliary verb (had) + subject + main verb...'"
+        }
+      ]
+    },
+    {
+      "partTitle": "Part II: Paragraph Coherence",
+      "questions": [
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>1. They give us much information about history.<br>2. He wrote about the everyday life of the common people.<br>3. Shakespeare wrote 37 plays, dramas, tragedies and comedies.<br>4. His plays help us to understand people.<br>5. For example: Hamlet, King Lear....",
+          "opts": [
+            "1, 5, 2, 4, 3",
+            "3, 5, 2, 4, 1",
+            "2, 1, 4, 5, 3",
+            "3, 2, 4, 1, 5"
+          ],
+          "ans": 1,
+          "exp": "Start with introducing the main subject (3), then follow with examples of those plays (5), how he wrote them (2), their value for understanding human nature (4), and their historical benefit (1)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>1. Diseases can also be caused by a lack of hygiene.<br>2. Other diseases that are caused by insects are yellow fever, bilharzias... etc.<br>3. For example, malaria is caused by a certain type of mosquito.<br>4. Many diseases are caused by insects.",
+          "opts": [
+            "4, 3, 2, 1",
+            "4, 1, 3, 2",
+            "4, 2, 1, 3",
+            "1, 4, 2, 3"
+          ],
+          "ans": 0,
+          "exp": "Introduce the insect-cause theory (4), give a specific example of it (3), list other insect-borne diseases (2), and transition to alternative causes like lack of hygiene (1)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>1. Early humans imitated these natural bridges by chopping down tall trees and placing them across water.<br>2. It was built of many logs tied together with ropes.<br>3. The first bridges were simply trees that had accidentally fallen across streams.<br>4. The first genuine bridge was laid across the Euphrates river at Babylon about 700BC.<br>5. The bridge over the Euphrates River lasted for decades.",
+          "opts": [
+            "5, 4, 1, 2, 3",
+            "4, 1, 3, 5, 2",
+            "5, 3, 1, 4, 2",
+            "3, 1, 2, 4, 5"
+          ],
+          "ans": 3,
+          "exp": "Start with natural, non-manmade origins (3), describe how early humans copied them (1, 2), and then transition to engineered, historically documented structures (4, 5)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>a. Salt in some countries has remained fixed.<br>b. Due to value service is reportedly shortened.<br>c. That left many things disorderly and nasty.<br>d. What is more, the organization seems to lack successful management.<br>e. However, it is decreasing at the same time as markets are in crash.",
+          "opts": [
+            "a, b, d, e, c",
+            "a, b, c, d, e",
+            "a, e, b, d, c",
+            "a, c, b, d, e"
+          ],
+          "ans": 2,
+          "exp": "Start with the premise (a), introduce contrast (e), describe the consequence (b), add a coordinating point (d), and end with the resulting situation (c)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>a. Such people do it more for pleasure than necessity.<br>b. Weekend is the best time for those who buy essential things for life.<br>c. Very few people can avoid shopping at least once a week.<br>d. For some people, however, shopping has become a daily routine.<br>e. Shopping is a necessary part of life.",
+          "opts": [
+            "e, c, d, a, b",
+            "c, d, b, a, e",
+            "c, e, d, b, a",
+            "b, d, c, a, e"
+          ],
+          "ans": 0,
+          "exp": "Introduce shopping as a general necessity (e), elaborate on how most do it weekly (c), present contrasting daily shoppers (d), explain their motivations (a), and conclude with weekend shoppers (b)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>a. The continent with the highest life expectancy is Europe.<br>b. Hence, associates and theorists often lived to great ages.<br>c. Previously, women died in childbirth and young men in wars.<br>d. Now, childbirth is not risky and there is little war.<br>e. The average age for men is 77 and for women is 82.",
+          "opts": [
+            "e, b, d, a, c",
+            "c, d, a, b, e",
+            "a, c, d, b, e",
+            "a, e, c, d, b"
+          ],
+          "ans": 3,
+          "exp": "State Europe's highest life expectancy (a), provide the supporting numbers (e), introduce past historical mortality factors (c), show how those factors have changed (d), and draw a logical conclusion (b)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent dialogue:<br><br>a. Very well, thanks. Let’s get down to business, shall we?<br>b. I’m fine thanks. How are you?<br>c. Hello again! How are you getting on<br>d. Yes, all right.",
+          "opts": [
+            "a, c, d, b",
+            "c, b, a, d",
+            "c, a, b, d",
+            "d, a, c, b"
+          ],
+          "ans": 1,
+          "exp": "Greeting is initiated (c), followed by a standard response and counter-question (b), transitioning to a work-related proposal (a), and ending with agreement (d)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>a. The gadget is a really special one.<br>b. It converts oral texts into written ones in seconds.<br>c. Technology provides mankind with amazing gifts.<br>d. Transcription is no more seen as an exhaustively boring task.<br>e. Just play a talk and print out is there on your desk in no time.",
+          "opts": [
+            "c, d, a, e, b",
+            "c, b, e, a, d",
+            "c, a, b, e, d",
+            "c, a, d, e, b"
+          ],
+          "ans": 2,
+          "exp": "Open with a broad statement about technology (c), introduce a specific gadget (a), describe its main function (b), explain its ease of use (e), and conclude with its impact on transcription work (d)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>1. eventually, their confidence increased and they performed better in exams.<br>2. Grade 12 students initially struggled with time management during mock tests.<br>3. Teachers introduced strict exam simulation sessions to improve their skills.<br>4. Continuous practical helped students understand how to answer quickly and accurately.<br>5. As a result, students began to develop effective exam strategies.",
+          "opts": [
+            "2, 3, 5, 4, 1",
+            "2, 3, 4, 5, 1",
+            "2, 4, 3, 5, 1",
+            "3, 2, 4, 5, 1"
+          ],
+          "ans": 0,
+          "exp": "Define the initial problem (2), describe the teachers' intervention (3), state the immediate outcome (5), describe the supportive practice (4), and conclude with the final successful result (1)."
+        },
+        {
+          "q": "Arrange the following sentences in a logical order to form a coherent paragraph:<br><br>1. The teacher praised the students for their teamwork.<br>2. They completed the project before the deadline.<br>3. Our class was assigned a group project.<br>4. Each group member contributed actively.<br>5. We started working immediately after the instruction.",
+          "opts": [
+            "3, 4, 5, 2, 1",
+            "5, 3, 4, 2, 1",
+            "3, 5, 4, 2, 1",
+            "3, 5, 2, 4, 1"
+          ],
+          "ans": 2,
+          "exp": "State the project assignment (3), describe starting the work (5), explain the teamwork dynamic (4), state completion of the work (2), and end with the teacher's praise (1)."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part III: Reading Passage I",
+      "questions": [
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>Farming has evolved dramatically over the past century, thanks to advancements in technology. From the development of better machinery to the use of computer systems, modern technology has greatly increased efficiency in agriculture. Tractors, combine harvesters, and planting machines have all improved the speed and accuracy of planting, cultivating, and harvesting crops. As a result, farmers can now produce more food with less labor and fewer resources.<br>Another area where technology has made a huge impact is in the management of crops and livestock. With the use of drones, sensors, and satellite imaging, farmers can now monitor crop health, soil conditions, and livestock well-being from a distance. This has allowed for more precise farming, where farmers can apply fertilizers, pesticides, and water only where needed, reducing waste and environmental harm.<br>Genetic engineering and biotechnology have also played a major role in transforming agriculture. By modifying the genetic makeup of plants and animals, scientists have created crops that are more resistant to pests, diseases, and extreme weather conditions. Additionally, genetically modified organisms (GMOs) have been designed to grow faster and with higher yields, ensuring food security in the face of a growing global population.<br>However, the integration of technology in farming has not come without challenges. While technology can increase productivity, it often requires a significant initial investment, which may be difficult for small farmers to afford. Additionally, there are concerns about the long-term environmental impact of technologies such as GMOs and the potential loss of biodiversity. As farming continues to modernize, it will be important for farmers, governments, and scientists to work together to address these challenges while ensuring sustainable food production.</div>What role has technology played in farming over the past century?",
+          "opts": [
+            "Reduced total food production",
+            "Increased efficiency and productivity",
+            "Made farming completely independent of machinery",
+            "Slowed down the harvesting process"
+          ],
+          "ans": 1,
+          "exp": "The first paragraph of the text states: 'modern technology has greatly increased efficiency in agriculture... farmers can now produce more food with less labor and fewer resources.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>How have tractors, combine harvesters, and planting machines improved farming?",
+          "opts": [
+            "They have slowed down farming processes",
+            "They have increased labor costs",
+            "They have improved the speed and accuracy of farming tasks",
+            "They have made farming more traditional"
+          ],
+          "ans": 2,
+          "exp": "According to paragraph 1: 'Tractors, combine harvesters, and planting machines have all improved the speed and accuracy of planting, cultivating, and harvesting crops.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>What tools are modern farmers using to monitor crop health and livestock well-being from a distance?",
+          "opts": [
+            "Tractors and plow units",
+            "Drones, sensors, and satellite imaging",
+            "Hand tools and organic fertilizers",
+            "None of the above"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 2 states: 'With the use of drones, sensors, and satellite imaging, farmers can now monitor crop health, soil conditions, and livestock well-being from a distance.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>How has the use of drones, sensors, and satellite imaging benefited farmers?",
+          "opts": [
+            "They make harvesting processes slower",
+            "They help farmers monitor crop health and livestock well-being",
+            "They create more physical waste",
+            "They increase manual labor costs"
+          ],
+          "ans": 1,
+          "exp": "As stated in paragraph 2, these tools allow farmers to monitor crops and livestock from a distance, facilitating precise farming."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>What are the environmental benefits of using precise technology to apply fertilizers, pesticides, and water?",
+          "opts": [
+            "It increases environmental harm",
+            "It reduces waste and environmental harm",
+            "It makes farming more expensive",
+            "It leads to excessive chemical use"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 2 states that applying inputs 'only where needed' has 'reduced waste and environmental harm.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>How has genetic engineering transformed agriculture?",
+          "opts": [
+            "By creating plants that grow slower",
+            "By making crops more resistant to pests and diseases",
+            "By making crops require more water",
+            "By reducing total crop yield"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 3 notes: 'By modifying the genetic makeup of plants and animals, scientists have created crops that are more resistant to pests, diseases, and extreme weather conditions.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>What is a primary advantage of genetically modified organisms (GMOs) mentioned in the text?",
+          "opts": [
+            "They reduce total crop yields",
+            "They grow slower and require more labor",
+            "They are resistant to extreme weather and grow faster",
+            "They are designed to harm the environment"
+          ],
+          "ans": 2,
+          "exp": "Paragraph 3 notes that GMOs are designed 'to grow faster and with higher yields' and resist 'extreme weather conditions.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>What is a major challenge small farmers face when trying to adopt these new technologies?",
+          "opts": [
+            "They lack access to genetically modified crops",
+            "They cannot afford the high initial investment required",
+            "They receive too much government financial support",
+            "They prefer manual farming methods"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 4 states: 'While technology can increase productivity, it often requires a significant initial investment, which may be difficult for small farmers to afford.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>What environmental concern is associated with the long-term use of GMOs?",
+          "opts": [
+            "There are no concerns",
+            "A potential loss of biodiversity",
+            "An increase in biodiversity",
+            "There is no effect on the environment"
+          ],
+          "ans": 1,
+          "exp": "The final paragraph mentions: 'there are concerns about the long-term environmental impact of technologies such as GMOs and the potential loss of biodiversity.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Technology in Farming</b><br>[Passage as provided above...]</div>Why does the author advocate for collaboration between farmers, governments, and scientists?",
+          "opts": [
+            "To avoid the use of technology entirely",
+            "To ensure sustainable food production and address challenges",
+            "To increase labor costs",
+            "To reduce total productivity"
+          ],
+          "ans": 1,
+          "exp": "The final sentence concludes: 'it will be important for farmers, governments, and scientists to work together to address these challenges while ensuring sustainable food production.'"
+        }
+      ]
+    },
+    {
+      "partTitle": "Part IV: Reading Passage II",
+      "questions": [
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>Education in Ethiopia has seen substantial progress over the past few decades, with significant improvements in access, infrastructure, and literacy rates. The government has made education a priority, aiming to increase enrollment at all levels, especially in rural areas. Primary education is free and compulsory for children and enrollment rates have grown rapidly in recent years. However, challenges remain, including overcrowded classrooms, a lack of educational resources, and disparities between urban and rural areas. Despite these obstacles, the government is committed to addressing these issues and improving the quality of education across the country.<br>Secondary education is also expanding, with more schools being built in both urban and rural areas. While the number of students enrolled in secondary education has increased, there are still limitations, such as insufficient teachers and materials. Higher education in Ethiopia has grown significantly in the past two decades, with the establishment of new universities and colleges. Ethiopian universities have seen an influx of students, with many pursuing degrees in fields like engineering, health sciences, and business. However, the quality of education in higher institutions remains a concern, with some universities facing challenges related to outdated curricula, underfunded facilities, and the need for more qualified professors.<br>Despite the government's efforts to improve the educational system, Ethiopia faces challenges that hinder the development of its education sector. Poverty, cultural factors, and geographical barriers continue to limit access to education, particularly for girls and children in remote areas. The government, alongside international organizations, is working to address these issues by providing scholarships, building more schools, and offering adult literacy programs. Education is seen as a key to Ethiopia’s development, and the government is taking steps to ensure that more children and young adults receive the education they need to contribute to the country's future.</div>What is the primary focus of the Ethiopian government in the education sector?",
+          "opts": [
+            "To improve access only to secondary education",
+            "To reduce the number of students enrolled",
+            "To prioritize education and increase enrollment rates, especially in rural areas",
+            "To eliminate education for girls"
+          ],
+          "ans": 2,
+          "exp": "Paragraph 1 states: 'The government has made education a priority, aiming to increase enrollment at all levels, especially in rural areas.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What is a major challenge faced by secondary education in Ethiopia?",
+          "opts": [
+            "Overcrowded classrooms in urban areas",
+            "A lack of teachers and educational materials",
+            "A decrease in student enrollment",
+            "Excessive government funding"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 2 states: 'While the number of students enrolled in secondary education has increased, there are still limitations, such as insufficient teachers and materials.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>How has higher education in Ethiopia developed over the past two decades?",
+          "opts": [
+            "Higher education enrollment has decreased",
+            "The number of universities and colleges has significantly increased",
+            "Higher education has become less accessible to students",
+            "The government has shut down several universities"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 2 states: 'Higher education in Ethiopia has grown significantly in the past two decades, with the establishment of new universities and colleges.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What is one of the ongoing barriers to education in remote areas of Ethiopia?",
+          "opts": [
+            "Abundant resources and support",
+            "Cultural factors and geographical barriers",
+            "Advanced technology in schools",
+            "The high number of qualified teachers"
+          ],
+          "ans": 1,
+          "exp": "Paragraph 3 states: 'Poverty, cultural factors, and geographical barriers continue to limit access to education, particularly for girls and children in remote areas.'"
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>In the sentence, 'The government has made education a priority, aiming to increase enrollment at all levels, especially in rural areas,' what does the word 'enrollment' refer to?",
+          "opts": [
+            "The building of schools",
+            "The registration or joining of students in school",
+            "The training of teachers",
+            "Government funding"
+          ],
+          "ans": 1,
+          "exp": "Enrollment refers to the process of officially registering or joining a school to study."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What is the meaning of 'compulsory' in the sentence: 'Primary education is free and compulsory for children'?",
+          "opts": [
+            "Optional",
+            "Required by law or obligatory",
+            "Only available in urban areas",
+            "Expensive"
+          ],
+          "ans": 1,
+          "exp": "Compulsory means mandatory, required by law or rule; something that must be done."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What does 'influx' mean in the sentence: 'Ethiopian universities have seen an influx of students'?",
+          "opts": [
+            "A decrease in students",
+            "A large arrival or flow of students",
+            "A change in the educational system",
+            "A lack of interest from students"
+          ],
+          "ans": 1,
+          "exp": "An influx is a large, sudden arrival or entry of people or things."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What is the meaning of 'barriers' in 'Poverty, cultural factors, and geographical barriers continue to limit access to education'?",
+          "opts": [
+            "Advantages",
+            "Obstacles or hindrances",
+            "Opportunities",
+            "Resources"
+          ],
+          "ans": 1,
+          "exp": "Barriers are obstacles, limits, or blockages that prevent easy movement or progress."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>What does 'disparities' mean in the sentence 'There are disparities between urban and rural areas'?",
+          "opts": [
+            "Similarities",
+            "Differences or inequalities",
+            "Equalities",
+            "Solutions"
+          ],
+          "ans": 1,
+          "exp": "Disparities refers to clear differences, inequalities, or imbalances between things."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-48 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700'><b>Education in Ethiopia</b><br>[Passage as provided above...]</div>How is the government working with international organizations to address access challenges?",
+          "opts": [
+            "By shutting down failing schools",
+            "By providing scholarships, building schools, and offering adult literacy programs",
+            "By limiting higher education enrollment",
+            "By stopping rural-to-urban migration"
+          ],
+          "ans": 1,
+          "exp": "The final paragraph explicitly states: 'The government, alongside international organizations, is working to address these issues by providing scholarships, building more schools, and offering adult literacy programs.'"
+        }
+      ]
+    },
+    {
+      "partTitle": "Part V: Vocabulary - Section A: Substitution",
+      "questions": [
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>The children were <u>delighted</u> by the magician's tricks.",
+          "opts": [
+            "Thrilled",
+            "Bored",
+            "Confused",
+            "Angry"
+          ],
+          "ans": 0,
+          "exp": "Delighted means extremely pleased or happy; 'thrilled' is the closest synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>She <u>swiftly</u> completed her homework before going out to play.",
+          "opts": [
+            "Slowly",
+            "quickly",
+            "Lazily",
+            "Hesitantly"
+          ],
+          "ans": 1,
+          "exp": "Swiftly means with great speed; 'quickly' is its exact synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>The movie was very <u>captivating</u>, and the audience loved it.",
+          "opts": [
+            "Boring",
+            "Interesting",
+            "Confusing",
+            "Predictable"
+          ],
+          "ans": 1,
+          "exp": "Captivating means capable of attracting and holding interest; 'interesting' or 'fascinating' are close synonyms."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>He was <u>exhausted</u> after working all day in the garden.",
+          "opts": [
+            "Energetic",
+            "Tired",
+            "Refreshed",
+            "Relaxed"
+          ],
+          "ans": 1,
+          "exp": "Exhausted means extremely physically tired or drained; 'tired' is the correct match."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>She <u>stubbornly</u> refused to listen to anyone's advice.",
+          "opts": [
+            "Willingly",
+            "Reluctantly",
+            "Obstinately",
+            "Kindly"
+          ],
+          "ans": 2,
+          "exp": "Stubbornly means showing a dogged determination not to change one's attitude; 'obstinately' is its exact synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>The lecture was <u>tedious</u>, causing many students to lose focus.",
+          "opts": [
+            "dull",
+            "fascinating",
+            "enlightening",
+            "complex"
+          ],
+          "ans": 0,
+          "exp": "Tedious means boring, slow, and monotonous; 'dull' is the closest synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>The manager’s decision was considered <u>prudent</u>, ensuring the company avoided unnecessary risks.",
+          "opts": [
+            "reckless",
+            "thoughtless",
+            "cautious",
+            "spontaneous"
+          ],
+          "ans": 2,
+          "exp": "Prudent means acting with or showing care and thought for the future; 'cautious' or 'wise' is the synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>Slavery had been <u>prohibited</u> in many parts of Africa by the 19th century.",
+          "opts": [
+            "destroyed",
+            "encouraged",
+            "banned",
+            "admitted"
+          ],
+          "ans": 2,
+          "exp": "Prohibited means formally forbidden by law or authority; 'banned' is the closest synonym."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br><u>Procrastination</u> is one of the main barriers keeping you from succeeding.",
+          "opts": [
+            "Doing something on time",
+            "Actively participating to do something",
+            "Delaying something to another day",
+            "Way of time management"
+          ],
+          "ans": 2,
+          "exp": "Procrastination is the action of delaying or postponing something needlessly."
+        },
+        {
+          "q": "Choose the word that has the same meaning as the underlined word in the sentence:<br><br>Internationally, 17 road <u>fatalities</u> per 100,000 population per annum are reported.",
+          "opts": [
+            "liberations",
+            "deliveries",
+            "birth rates",
+            "death rates"
+          ],
+          "ans": 3,
+          "exp": "Fatalities refers to deaths caused by accidents, disasters, or violence; 'death rates' matches this context."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part VI: Vocabulary - Section B: Completion",
+      "questions": [
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The professor's explanation was so __________ that all the students understood the topic clearly.",
+          "opts": [
+            "complicated",
+            "simple",
+            "confusing",
+            "puzzling"
+          ],
+          "ans": 1,
+          "exp": "Because the students understood the topic 'clearly', the explanation must have been 'simple'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The team celebrated their __________ after winning the championship game.",
+          "opts": [
+            "disappointment",
+            "failure",
+            "success",
+            "frustration"
+          ],
+          "ans": 2,
+          "exp": "Winning a championship game is a major achievement or 'success', which warrants celebration."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The research results were __________ in a scientific journal for others to review.",
+          "opts": [
+            "hidden",
+            "published",
+            "ignored",
+            "confused"
+          ],
+          "ans": 1,
+          "exp": "For others to review scientific research, the results must be 'published' in a journal."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The teacher’s __________ comments helped the students improve their writing skills.",
+          "opts": [
+            "criticizing",
+            "encouraging",
+            "unhelpful",
+            "indifferent"
+          ],
+          "ans": 1,
+          "exp": "Comments that help students improve their skills are supportive or 'encouraging'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The manager gave __________ instructions to ensure the project was completed on time.",
+          "opts": [
+            "vague",
+            "inaccurate",
+            "clear",
+            "unfocused"
+          ],
+          "ans": 2,
+          "exp": "To ensure tasks are completed correctly and on time, instructions must be precise or 'clear'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>It is a good idea to keep a time __________ where you write down how long you spend on each task.",
+          "opts": [
+            "interrupt",
+            "log",
+            "procrastination",
+            "factor"
+          ],
+          "ans": 1,
+          "exp": "A record of actions or performance over time is called a 'log'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>He asked me to do a lot of things, but I __________ from doing them because they were illegal.",
+          "opts": [
+            "refrained",
+            "avoided",
+            "ignored",
+            "stopped"
+          ],
+          "ans": 0,
+          "exp": "To choose not to do an action is to 'refrain' from it. The correct past tense is 'refrained'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The dentist told me there were __________ reasons to brush my teeth, but I can only think of one.",
+          "opts": [
+            "few",
+            "magnificent",
+            "insufficient",
+            "numerous"
+          ],
+          "ans": 3,
+          "exp": "The contrast between many reasons ('numerous') and 'only one' makes 'numerous' the logical fit."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>The attorney suggested that the witness’s testimony was __________ because the witness was a known liar.",
+          "opts": [
+            "amazing",
+            "unreliable",
+            "sincere",
+            "insane"
+          ],
+          "ans": 1,
+          "exp": "A known liar's testimony cannot be trusted, making it 'unreliable'."
+        },
+        {
+          "q": "Choose the alternative that best completes the sentence:<br><br>Unlike many noisy industrial towns, Addis Ababa is a pleasant place to live, its people are __________.",
+          "opts": [
+            "friend",
+            "friendship",
+            "friendly",
+            "friends"
+          ],
+          "ans": 2,
+          "exp": "The adjective form 'friendly' is required here to describe the people of Addis Ababa."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part VII: Grammar in Use",
+      "questions": [
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>____________ living in a big house, they only use the ground floor.",
+          "opts": [
+            "Despite",
+            "Therefore",
+            "Because",
+            "Although"
+          ],
+          "ans": 0,
+          "exp": "'Despite' is a preposition and is followed directly by a gerund (-ing form), showing contrast."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>_________ I was walking home, it began to rain.",
+          "opts": [
+            "However",
+            "Although",
+            "While",
+            "If"
+          ],
+          "ans": 2,
+          "exp": "'While' is used to introduce a background action that was occurring when another event started."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>The traders _____________ many cars since last year.",
+          "opts": [
+            "has sold",
+            "sold",
+            "have sold",
+            "sell"
+          ],
+          "ans": 2,
+          "exp": "'Traders' is a plural subject. The time marker 'since last year' requires the present perfect tense ('have sold')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>The students__________ are studying in the library are my best friends.",
+          "opts": [
+            "which",
+            "whom",
+            "whose",
+            "who"
+          ],
+          "ans": 3,
+          "exp": "The relative pronoun 'who' is used as the subject of the relative clause to refer to people ('students')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>The meeting hall ___________ at the moment in order to serve our participants as usual.",
+          "opts": [
+            "was being decorated",
+            "was decorated",
+            "is being decorated",
+            "are being decorated"
+          ],
+          "ans": 2,
+          "exp": "The time marker 'at the moment' requires the present continuous passive tense ('is being decorated' for the singular 'hall')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>Ato Degu, _________ wife is a nurse, goes to work on foot.",
+          "opts": [
+            "which",
+            "whose",
+            "whom",
+            "who"
+          ],
+          "ans": 1,
+          "exp": "The possessive relative pronoun 'whose' is used to show ownership ('Ato Degu's wife')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>They were exhausted highly because they ___________ all day.",
+          "opts": [
+            "have been drive",
+            "have been driving",
+            "had been drive",
+            "had been driving"
+          ],
+          "ans": 3,
+          "exp": "The past continuous or past perfect continuous tense ('had been driving') describes a continuous past action that caused a past state of exhaustion."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>___________ she studied hard, she failed the exam.",
+          "opts": [
+            "Even though",
+            "However",
+            "Especially",
+            "In spite of"
+          ],
+          "ans": 0,
+          "exp": "'Even though' is a conjunction used to introduce a clause showing strong contrast."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>I don’t think your friend is a good person. I advise you _________ thinking about her.",
+          "opts": [
+            "to stop",
+            "stopping",
+            "stop",
+            "stopped"
+          ],
+          "ans": 0,
+          "exp": "The verb 'advise' is followed by an object and a to-infinitive: 'advise you to stop'."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>He gets a stomachache ______________ he eats acidic foods.",
+          "opts": [
+            "wherever",
+            "whatever",
+            "whenever",
+            "whichever"
+          ],
+          "ans": 2,
+          "exp": "'Whenever' is a temporal adverb meaning 'at whatever time' or 'every time'."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>I _____________ for the exam before I realized it was canceled.",
+          "opts": [
+            "have studied",
+            "study",
+            "am studying",
+            "had studied"
+          ],
+          "ans": 3,
+          "exp": "The past perfect tense ('had studied') describes an action completed prior to another past action ('realized')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>Oranges _____________ from Paraguay.",
+          "opts": [
+            "imported",
+            "are imported",
+            "have imported",
+            "had imported"
+          ],
+          "ans": 1,
+          "exp": "'Oranges' is a plural subject. The simple present passive ('are imported') describes a general fact."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>There is no hope of ______________ funding for our new research.",
+          "opts": [
+            "to get",
+            "get",
+            "getting",
+            "getting it"
+          ],
+          "ans": 2,
+          "exp": "The preposition 'of' must be followed by a gerund ('getting')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>I wish I ____________ a bigger car. Mine is too small.",
+          "opts": [
+            "have",
+            "would had",
+            "had",
+            "had had"
+          ],
+          "ans": 2,
+          "exp": "To express a present wish or regret about a current state, we use the simple past tense ('had')."
+        },
+        {
+          "q": "Choose the word that best completes the sentence:<br><br>He went outside _____________ he could get some fresh air.",
+          "opts": [
+            "so that",
+            "although",
+            "in order to",
+            "so as"
+          ],
+          "ans": 0,
+          "exp": "'So that' is a conjunction used to show purpose, followed by a clause containing a modal verb ('could')."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part VIII: Communicative Activities",
+      "questions": [
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Seni:</b> How long have you been using the internet in our school?<br><b>Zufan:</b> _______________________________________.",
+          "opts": [
+            "I don’t know how to use it.",
+            "For unlimited time I don’t have a smart phone.",
+            "Since the beginning of the 1st semester.",
+            "Before I joined here I used to get the information."
+          ],
+          "ans": 2,
+          "exp": "The question 'How long' requires a duration or a starting point in time, which 'Since the beginning of the 1st semester' provides."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Siraj:</b> ___________________________________?<br><b>Semir:</b> If it is available, let me have a toast bread.",
+          "opts": [
+            "How do you like to get for breakfast?",
+            "Is there any bread in your kitchen?",
+            "What sort of bread do you like?",
+            "Do you have to invite me to breakfast?"
+          ],
+          "ans": 2,
+          "exp": "The response specifies a type of bread ('toast bread'), so the question must ask about preferences ('What sort of bread...')."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Rosa:</b> What do you think about his arrival?<br><b>Girum:</b> __________________________.",
+          "opts": [
+            "I think he’ll arrive on time",
+            "May be arrive",
+            "Arrivals are now a days uncertain",
+            "I’m not sure he does"
+          ],
+          "ans": 0,
+          "exp": "This is a grammatically complete and polite prediction matching the question."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Mesfin:</b> Would you mind opening the door?<br><b>Elsa:</b> _____________________________.",
+          "opts": [
+            "Please open the door",
+            "Yes, I don’t mind",
+            "Why don’t you open the door",
+            "No, not at all"
+          ],
+          "ans": 3,
+          "exp": "To agree to a 'Would you mind' request, we respond with a negative ('No, not at all') to indicate we do not mind performing the task."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Caller:</b> Hello, can I speak to Ato Geday, please?<br><b>Receiver:</b> _____________________________.",
+          "opts": [
+            "Don’t call again",
+            "I’m afraid you have got the wrong number",
+            "This is my phone number",
+            "Your number is wrong, please change"
+          ],
+          "ans": 1,
+          "exp": "A standard, polite telephone expression when a caller reaches the wrong person is 'I'm afraid you have got the wrong number'."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Waiter:</b> What will you have sir?<br><b>Guest:</b> ________________________.",
+          "opts": [
+            "It doesn’t matter. Don’t repeat it again.",
+            "What do you mean? Anything to drink.",
+            "May I have a menu, please?",
+            "Nothing special"
+          ],
+          "ans": 2,
+          "exp": "A customer at a restaurant would ask to see the menu ('May I have a menu, please?') before ordering."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Customer:</b> Do you have a changing room?<br><b>Shop assistant:</b> _________________.",
+          "opts": [
+            "We don’t change here",
+            "The rooms are too narrow",
+            "No, thank you",
+            "Certainly, it’s over there"
+          ],
+          "ans": 3,
+          "exp": "A shop assistant would politely guide a customer to the changing room by saying 'Certainly, it’s over there'."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Hany:</b> Do you think it will rain today?<br><b>Petros:</b> ______________________.",
+          "opts": [
+            "I guess so, because the sky is cloudy.",
+            "I think so, the sun still shines.",
+            "I don’t think so, the clouds are so dark.",
+            "I’m sorry, but I can’t agree with you."
+          ],
+          "ans": 0,
+          "exp": "A cloudy sky is physical evidence supporting a prediction of rain ('I guess so, because the sky is cloudy')."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Solomon:</b> What do you think about the film?<br><b>Ahimed:</b> I think __________________.",
+          "opts": [
+            "it good",
+            "the film great",
+            "it was very interesting",
+            "it useless"
+          ],
+          "ans": 2,
+          "exp": "This is the only grammatically complete and correct evaluation of the film."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Aster:</b> I feel tired and dizzy.<br><b>Alem:</b> I think ______________.",
+          "opts": [
+            "you must sing",
+            "I must take some rests too",
+            "you should lie down and have some rest",
+            "you can see the doctor tonight"
+          ],
+          "ans": 2,
+          "exp": "The most appropriate response to someone feeling tired and dizzy is to offer supportive health advice ('you should lie down...')."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Sisay:</b> Have you ever heard that Natan and Dagmawit are getting married?<br><b>Semegn:</b> Oh, really? What a surprise. ______________________.",
+          "opts": [
+            "I’m very pleased to hear that",
+            "Of course, I heard about it",
+            "I don’t really like her",
+            "It is not my business"
+          ],
+          "ans": 0,
+          "exp": "Expressing happiness ('I'm very pleased to hear that') is a standard, polite reaction to marriage news."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Chris:</b> Why didn’t you call me back?<br><b>Jordan:</b> I was swamped all day.<br><b>Chris:</b> Still, you could have______________________",
+          "opts": [
+            "someone else to call.",
+            "made some time for me",
+            "ignored my message.",
+            "sent me a text at least."
+          ],
+          "ans": 3,
+          "exp": "The modal 'could have' is followed by a past participle. 'sent me a text at least' is grammatically correct and logically fits."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Belay:</b> How can I finish all this in time?<br><b>Clerk:</b> __________________________",
+          "opts": [
+            "Why would you work hard",
+            "If I were you, I would ask friends to help",
+            "I know you are so much hard working",
+            "What is the time"
+          ],
+          "ans": 1,
+          "exp": "Giving advice using a second conditional structure ('If I were you, I would...') is appropriate here."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Goitom:</b> This will get more expensive next week.<br><b>Lulit:</b> __________________________",
+          "opts": [
+            "It doesn’t look like new",
+            "Business men are unkind.",
+            "Customers have more money",
+            "Perhaps, it might remain the same"
+          ],
+          "ans": 3,
+          "exp": "This offers a logical alternative prediction to Goitom's statement."
+        },
+        {
+          "q": "Select the most appropriate response to complete the dialogue:<br><br><b>Stranger:</b> How can I get to the Ministry of Education?<br><b>Beza:</b> __________________________________",
+          "opts": [
+            "Are you a student?",
+            "Is your father a teacher?",
+            "Sorry, I am a stranger myself.",
+            "Lots of people ask this question."
+          ],
+          "ans": 2,
+          "exp": "A standard, polite way to decline giving directions when you do not know the way is: 'Sorry, I am a stranger myself'."
+        }
+      ]
+    },
+    {
+      "partTitle": "Part IX: Writing Skills & Punctuation",
+      "questions": [
+        {
+          "q": "Identify the genre of writing that the following extract is taken from:<br><br><i>\"To make coffee first wash the coffee beans and roast them next, grind the roasted coffee beans with mortar and pestle and then add the coffee flour to the boiling water in a kettle.\"</i>",
+          "opts": [
+            "narrative essay",
+            "expository essay",
+            "argumentative essay",
+            "descriptive essay"
+          ],
+          "ans": 1,
+          "exp": "This extract outlines a step-by-step process or recipe, which is characteristic of expository (informative/process) writing."
+        },
+        {
+          "q": "Identify the genre of writing that the following extract is taken from:<br><br><i>\"I was hurrying across the campus to get to a class. As it had rained heavily all morning, I had to cross a path full of water. After a few minutes' walk, I called out to two friends...\"</i>",
+          "opts": [
+            "narrative essay",
+            "descriptive essay",
+            "expository essay",
+            "argumentative essay"
+          ],
+          "ans": 0,
+          "exp": "This extract describes a personal experience or story using first-person pronouns, which is characteristic of narrative writing."
+        },
+        {
+          "q": "Identify the genre of writing that the following extract is taken from:<br><br><i>\"... However, it would be a serious mistake to replace libraries with tablets. First, digital books and resources are associated with less learning and more problems than print resources...\"</i>",
+          "opts": [
+            "Descriptive essay",
+            "expository essay",
+            "argumentative essay",
+            "narrative essay"
+          ],
+          "ans": 2,
+          "exp": "This extract presents a claim and supports it with reasoning to convince the reader, which is characteristic of argumentative writing."
+        },
+        {
+          "q": "Which of the following sentences is CORRECTLY punctuated and capitalized?",
+          "opts": [
+            "While walking to the store, John saw his friend, who was riding a bike.",
+            "While walking to the store John, saw his friend who, was riding a bike.",
+            "While, walking to the store John saw, his friend who was riding, a bike.",
+            "While walking to the store John saw his friend who was riding a bike."
+          ],
+          "ans": 0,
+          "exp": "The introductory adverbial clause is separated by a comma: 'While walking to the store,'. The non-restrictive relative clause is also correctly separated by a comma: ', who was riding a bike.'"
+        },
+        {
+          "q": "Which of the following sentences is CORRECTLY punctuated?",
+          "opts": [
+            "\"I don't think she will come,\" said Mark, \"even though she promised.\"",
+            "I don't think she will come said, Mark even though she promised.",
+            "I don't think she will come, said Mark, even though she promised.",
+            "\"I don't think she will come\" said Mark even though she promised."
+          ],
+          "ans": 0,
+          "exp": "This is direct speech. The punctuation marks are correctly placed inside the quotation marks, and commas separate the dialogue tags."
+        },
+        {
+          "q": "Which of the following sentences is CORRECTLY punctuated?",
+          "opts": [
+            "The store sells apples, bananas, oranges and pears.",
+            "The store sells apples, bananas, oranges, and pears.",
+            "The store sells, apples bananas, oranges and, pears.",
+            "The store sells apples bananas, oranges, and pears."
+          ],
+          "ans": 1,
+          "exp": "This sentence correctly uses commas to separate items in a list, including the Oxford comma before 'and': 'apples, bananas, oranges, and pears.'"
+        },
+        {
+          "q": "Which of the following is an appropriate ending for a formal letter that begins with 'Dear Sir/Madam'?",
+          "opts": [
+            "Yours sincerely",
+            "See you",
+            "Good bye",
+            "Yours faithfully"
+          ],
+          "ans": 3,
+          "exp": "When the recipient's name is unknown and the letter begins with 'Dear Sir/Madam', we sign off with 'Yours faithfully'."
+        },
+        {
+          "q": "When writing a formal business letter, what element do you place at the top right-hand corner of the page?",
+          "opts": [
+            "The writer's address and date",
+            "The opening salutation",
+            "The closing signature",
+            "The recipient's address"
+          ],
+          "ans": 0,
+          "exp": "Under standard block/semi-block business letter formats, the writer's address is placed at the top right-hand corner."
+        },
+        {
+          "q": "The sentence, 'I'm extremely delighted to hear that you are going to join the university next year,' is most likely taken from which part of a letter?",
+          "opts": [
+            "The end of a formal letter",
+            "The body of a formal letter",
+            "The closing remarks of an informal letter",
+            "The beginning of an informal letter"
+          ],
+          "ans": 3,
+          "exp": "This sentence expresses personal joy and is appropriate for the opening paragraph (beginning) of an informal letter to a friend or relative."
+        },
+        {
+          "q": "Which of the following letter closings is generally used in an informal letter to a close friend?",
+          "opts": [
+            "Yours faithfully",
+            "Yours sincerely",
+            "Warm regards",
+            "Yours truly"
+          ],
+          "ans": 2,
+          "exp": "'Warm regards' or 'Best wishes' are appropriate, informal closings for a letter to a friend or relative."
+        }
+      ]
+    }
+  ]
+}
