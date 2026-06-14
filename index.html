@@ -780,53 +780,122 @@
             });
         }
     </script>
-    <!-- Constants Modal Overlay -->
+<!-- Constants Modal Overlay -->
 <div id="constants-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-4 max-h-[85vh] overflow-y-auto">
-        <div class="flex items-center justify-between border-b pb-2">
+    <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 flex flex-col max-h-[85vh]">
+        <!-- Modal Header -->
+        <div class="flex items-center justify-between border-b pb-3 shrink-0">
             <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider flex items-center gap-1.5">
-                <i class="fa-solid fa-atom text-blue-950"></i> Standard Physical Constants
+                <i class="fa-solid fa-atom text-blue-950"></i> Reference Sheets & Constants
             </h3>
             <button id="close-constants-btn" class="text-slate-400 hover:text-slate-600 text-lg transition"><i class="fa-solid fa-xmark"></i></button>
         </div>
-        <div class="text-xs space-y-3">
-            <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
-                <span class="font-semibold">Acceleration due to gravity (g):</span>
-                <span class="font-mono text-slate-900 font-bold">10 m/s²</span>
-                <span class="font-semibold">Universal Gravitational Constant (G):</span>
-                <span class="font-mono text-slate-900 font-bold">6.67 &times; 10⁻¹¹ N&middot;m²/kg²</span>
-                <span class="font-semibold">Speed of light in vacuum (c):</span>
-                <span class="font-mono text-slate-900 font-bold">3.00 &times; 10⁸ m/s</span>
-                <span class="font-semibold">Permittivity of free space (&epsilon;₀):</span>
-                <span class="font-mono text-slate-900 font-bold">8.85 &times; 10⁻¹² F/m</span>
-                <span class="font-semibold">Coulomb's Constant (K):</span>
-                <span class="font-mono text-slate-900 font-bold">9.00 &times; 10⁹ N&middot;m²/C²</span>
-                <span class="font-semibold">Elementary charge (q):</span>
-                <span class="font-mono text-slate-900 font-bold">1.60 &times; 10⁻¹⁹ C</span>
-                <span class="font-semibold">Mass of electron (m_e):</span>
-                <span class="font-mono text-slate-900 font-bold">9.11 &times; 10⁻³¹ kg</span>
-                <span class="font-semibold">Mass of proton (m_p):</span>
-                <span class="font-mono text-slate-900 font-bold">1.67 &times; 10⁻²⁷ kg</span>
-                <span class="font-semibold">Density of pure water (&rho;_w):</span>
-                <span class="font-mono text-slate-900 font-bold">1000 kg/m³</span>
+        
+        <!-- Tab Controls -->
+        <div class="flex border-b border-slate-200 text-xs font-semibold mt-2 shrink-0">
+            <button id="tab-physics-btn" class="px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition">Physics Constants</button>
+            <button id="tab-chemistry-btn" class="px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition">Chemistry Constants</button>
+        </div>
+        
+        <!-- Modal Body (Scrollable) -->
+        <div class="overflow-y-auto py-4 text-xs flex-grow">
+            <!-- Physics Tab Content -->
+            <div id="tab-physics-content" class="space-y-4">
+                <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
+                    <span class="font-semibold">Acceleration due to gravity (g):</span>
+                    <span class="font-mono text-slate-900 font-bold">10 m/s²</span>
+                    <span class="font-semibold">Universal Gravitational Constant (G):</span>
+                    <span class="font-mono text-slate-900 font-bold">6.67 &times; 10⁻¹¹ N&middot;m²/kg²</span>
+                    <span class="font-semibold">Speed of light in vacuum (c):</span>
+                    <span class="font-mono text-slate-900 font-bold">3.00 &times; 10⁸ m/s</span>
+                    <span class="font-semibold">Permittivity of free space (&epsilon;₀):</span>
+                    <span class="font-mono text-slate-900 font-bold">8.85 &times; 10⁻¹² F/m</span>
+                    <span class="font-semibold">Coulomb's Constant (K):</span>
+                    <span class="font-mono text-slate-900 font-bold">9.00 &times; 10⁹ N&middot;m²/C²</span>
+                    <span class="font-semibold">Elementary charge (q):</span>
+                    <span class="font-mono text-slate-900 font-bold">1.60 &times; 10⁻¹⁹ C</span>
+                    <span class="font-semibold">Mass of electron (m_e):</span>
+                    <span class="font-mono text-slate-900 font-bold">9.11 &times; 10⁻³¹ kg</span>
+                    <span class="font-semibold">Mass of proton (m_p):</span>
+                    <span class="font-mono text-slate-900 font-bold">1.67 &times; 10⁻²⁷ kg</span>
+                    <span class="font-semibold">Density of pure water (&rho;_w):</span>
+                    <span class="font-mono text-slate-900 font-bold">1000 kg/m³</span>
+                </div>
+                <div class="space-y-1">
+                    <p class="font-bold text-slate-800">Trigonometric Quick Values:</p>
+                    <p class="font-mono text-slate-600">• sin(30&deg;) = cos(60&deg;) = 0.5</p>
+                    <p class="font-mono text-slate-600">• sin(37&deg;) &approx; cos(53&deg;) &approx; 0.6</p>
+                    <p class="font-mono text-slate-600">• sin(53&deg;) &approx; cos(37&deg;) &approx; 0.8</p>
+                    <p class="font-mono text-slate-600">• sin(45&deg;) = cos(45&deg;) &approx; 0.707</p>
+                </div>
             </div>
-            <div class="space-y-1">
-                <p class="font-bold text-slate-800">Trigonometric Quick Values:</p>
-                <p class="font-mono text-slate-600">• sin(30&deg;) = cos(60&deg;) = 0.5</p>
-                <p class="font-mono text-slate-600">• sin(37&deg;) &approx; cos(53&deg;) &approx; 0.6</p>
-                <p class="font-mono text-slate-600">• sin(53&deg;) &approx; cos(37&deg;) &approx; 0.8</p>
-                <p class="font-mono text-slate-600">• sin(45&deg;) = cos(45&deg;) &approx; 0.707</p>
+            
+            <!-- Chemistry Tab Content -->
+            <div id="tab-chemistry-content" class="hidden space-y-4">
+                <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
+                    <span class="font-semibold">Ideal Gas Constant (R):</span>
+                    <span class="font-mono text-slate-900 font-bold">0.0821 L&middot;atm/(mol&middot;K) / 8.314 J/(mol&middot;K)</span>
+                    <span class="font-semibold">Avogadro's Number (N_A):</span>
+                    <span class="font-mono text-slate-900 font-bold">6.02 &times; 10²³ mol⁻¹</span>
+                    <span class="font-semibold">Planck's Constant (h):</span>
+                    <span class="font-mono text-slate-900 font-bold">6.626 &times; 10⁻³⁴ J&middot;s</span>
+                    <span class="font-semibold">Faraday's Constant (F):</span>
+                    <span class="font-mono text-slate-900 font-bold">96,500 C/mol</span>
+                    <span class="font-semibold">Ionization Constant of Water (K_w):</span>
+                    <span class="font-mono text-slate-900 font-bold">1.00 &times; 10⁻¹⁴ (at 25&deg;C)</span>
+                </div>
+                
+                <div class="space-y-1.5">
+                    <p class="font-bold text-slate-800">Common Atomic Weights (A):</p>
+                    <div class="grid grid-cols-4 gap-2 font-mono text-slate-600">
+                        <span>• H: 1.0</span>
+                        <span>• He: 4.0</span>
+                        <span>• C: 12.0</span>
+                        <span>• N: 14.0</span>
+                        <span>• O: 16.0</span>
+                        <span>• Na: 23.0</span>
+                        <span>• Mg: 24.3</span>
+                        <span>• Al: 27.0</span>
+                        <span>• P: 31.0</span>
+                        <span>• S: 32.1</span>
+                        <span>• Cl: 35.5</span>
+                        <span>• Cr: 52.0</span>
+                        <span>• Fe: 55.8</span>
+                        <span>• Cu: 63.6</span>
+                        <span>• Zn: 65.4</span>
+                        <span>• Ag: 108.0</span>
+                    </div>
+                </div>
+                
+                <div class="space-y-1.5 pt-2">
+                    <p class="font-bold text-slate-800">Standard Reduction Potentials (E&deg; at 25&deg;C):</p>
+                    <div class="grid grid-cols-2 gap-y-1 gap-x-4 font-mono text-slate-600">
+                        <span>• Zn²⁺/Zn: -0.76 V</span>
+                        <span>• Cr³⁺/Cr: -0.74 V</span>
+                        <span>• Fe²⁺/Fe: -0.44 V</span>
+                        <span>• Pb²⁺/Pb: -0.13 V</span>
+                        <span>• Cu²⁺/Cu: +0.34 V</span>
+                        <span>• Ag⁺/Ag: +0.80 V</span>
+                        <span>• Au³⁺/Au: +1.50 V</span>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <script>
-    // JS trigger logic for the Modal
     const constantsBtn = document.getElementById('constants-btn');
     const constantsModal = document.getElementById('constants-modal');
     const closeConstantsBtn = document.getElementById('close-constants-btn');
 
+    // Tab buttons and content containers
+    const tabPhysicsBtn = document.getElementById('tab-physics-btn');
+    const tabChemistryBtn = document.getElementById('tab-chemistry-btn');
+    const tabPhysicsContent = document.getElementById('tab-physics-content');
+    const tabChemistryContent = document.getElementById('tab-chemistry-content');
+
+    // Display toggle
     constantsBtn.addEventListener('click', () => {
         constantsModal.classList.remove('hidden');
     });
@@ -836,6 +905,21 @@
     constantsModal.addEventListener('click', (e) => {
         if (e.target === constantsModal) constantsModal.classList.add('hidden');
     });
-        </script>
+
+    // Tab switching logic
+    tabPhysicsBtn.addEventListener('click', () => {
+        tabPhysicsBtn.className = "px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition";
+        tabChemistryBtn.className = "px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition";
+        tabPhysicsContent.classList.remove('hidden');
+        tabChemistryContent.classList.add('hidden');
+    });
+
+    tabChemistryBtn.addEventListener('click', () => {
+        tabChemistryBtn.className = "px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition";
+        tabPhysicsBtn.className = "px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition";
+        tabChemistryContent.classList.remove('hidden');
+        tabPhysicsContent.classList.add('hidden');
+    });
+</script>
 </body>
 </html>
