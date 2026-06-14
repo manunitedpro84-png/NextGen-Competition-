@@ -271,22 +271,23 @@
         };
 
         const streamSubjectMapping = {
-            "Natural Science": [
-                { id: "maths", name: "Mathematics" },
-                { id: "english", name: "English" },
-                { id: "physics", name: "Physics" },
-                { id: "chemistry", name: "Chemistry" },
-                { id: "biology", name: "Biology" },
-                { id: "sat", name: "Scholastic Aptitude Test" }
-            ],
-            "Social Science": [
-                { id: "english", name: "English" },
-                { id: "history", name: "History" },
-                { id: "geography", name: "Geography" },
-                { id: "economics", name: "Economics" },
-                { id: "sat", name: "Scholastic Aptitude Test" }
-            ]
-        };
+    "Natural Science": [
+        { id: "maths", name: "Mathematics" },
+        { id: "english", name: "English" },
+        { id: "physics", name: "Physics" },
+        { id: "chemistry", name: "Chemistry" },
+        { id: "biology", name: "Biology" },
+        { id: "sat", name: "Scholastic Aptitude Test" }
+    ],
+    "Social Science": [
+        { id: "maths", name: "Mathematics" }, // Added Mathematics to Social Science
+        { id: "english", name: "English" },
+        { id: "history", name: "History" },
+        { id: "geography", name: "Geography" },
+        { id: "economics", name: "Economics" },
+        { id: "sat", name: "Scholastic Aptitude Test" }
+    ]
+};
 
         // Runtime Global State
         let activeQuestions = [];
