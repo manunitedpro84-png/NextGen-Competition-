@@ -41,6 +41,16 @@
                 <div class="text-base sm:text-lg font-black text-red-500 font-mono" id="timer-display">00:00:00</div>
             </div>
         </div>
+        <!-- Countdown Timer -->
+<div class="flex items-center gap-2">
+    <button id="constants-btn" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-bold py-1.5 px-3 rounded-lg text-xs flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-calculator"></i> Constants Sheet
+    </button>
+    <div id="sticky-timer-card" class="hidden flex items-center gap-3 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg shrink-0">
+        <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider hidden sm:inline">Time Remaining:</span>
+        <div class="text-base sm:text-lg font-black text-red-500 font-mono" id="timer-display">00:00:00</div>
+    </div>
+</div>
     </header>
 
     <!-- Main Workspace -->
@@ -770,5 +780,62 @@
             });
         }
     </script>
+    <!-- Constants Modal Overlay -->
+<div id="constants-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-lg w-full p-6 shadow-2xl border border-slate-200 space-y-4 max-h-[85vh] overflow-y-auto">
+        <div class="flex items-center justify-between border-b pb-2">
+            <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider flex items-center gap-1.5">
+                <i class="fa-solid fa-atom text-blue-950"></i> Standard Physical Constants
+            </h3>
+            <button id="close-constants-btn" class="text-slate-400 hover:text-slate-600 text-lg transition"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        <div class="text-xs space-y-3">
+            <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
+                <span class="font-semibold">Acceleration due to gravity (g):</span>
+                <span class="font-mono text-slate-900 font-bold">10 m/s²</span>
+                <span class="font-semibold">Universal Gravitational Constant (G):</span>
+                <span class="font-mono text-slate-900 font-bold">6.67 &times; 10⁻¹¹ N&middot;m²/kg²</span>
+                <span class="font-semibold">Speed of light in vacuum (c):</span>
+                <span class="font-mono text-slate-900 font-bold">3.00 &times; 10⁸ m/s</span>
+                <span class="font-semibold">Permittivity of free space (&epsilon;₀):</span>
+                <span class="font-mono text-slate-900 font-bold">8.85 &times; 10⁻¹² F/m</span>
+                <span class="font-semibold">Coulomb's Constant (K):</span>
+                <span class="font-mono text-slate-900 font-bold">9.00 &times; 10⁹ N&middot;m²/C²</span>
+                <span class="font-semibold">Elementary charge (q):</span>
+                <span class="font-mono text-slate-900 font-bold">1.60 &times; 10⁻¹⁹ C</span>
+                <span class="font-semibold">Mass of electron (m_e):</span>
+                <span class="font-mono text-slate-900 font-bold">9.11 &times; 10⁻³¹ kg</span>
+                <span class="font-semibold">Mass of proton (m_p):</span>
+                <span class="font-mono text-slate-900 font-bold">1.67 &times; 10⁻²⁷ kg</span>
+                <span class="font-semibold">Density of pure water (&rho;_w):</span>
+                <span class="font-mono text-slate-900 font-bold">1000 kg/m³</span>
+            </div>
+            <div class="space-y-1">
+                <p class="font-bold text-slate-800">Trigonometric Quick Values:</p>
+                <p class="font-mono text-slate-600">• sin(30&deg;) = cos(60&deg;) = 0.5</p>
+                <p class="font-mono text-slate-600">• sin(37&deg;) &approx; cos(53&deg;) &approx; 0.6</p>
+                <p class="font-mono text-slate-600">• sin(53&deg;) &approx; cos(37&deg;) &approx; 0.8</p>
+                <p class="font-mono text-slate-600">• sin(45&deg;) = cos(45&deg;) &approx; 0.707</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    // JS trigger logic for the Modal
+    const constantsBtn = document.getElementById('constants-btn');
+    const constantsModal = document.getElementById('constants-modal');
+    const closeConstantsBtn = document.getElementById('close-constants-btn');
+
+    constantsBtn.addEventListener('click', () => {
+        constantsModal.classList.remove('hidden');
+    });
+    closeConstantsBtn.addEventListener('click', () => {
+        constantsModal.classList.add('hidden');
+    });
+    constantsModal.addEventListener('click', (e) => {
+        if (e.target === constantsModal) constantsModal.classList.add('hidden');
+    });
+        </script>
 </body>
 </html>
