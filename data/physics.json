@@ -1,0 +1,614 @@
+{
+  "parts": [
+    {
+      "partTitle": "Physics Competition Pool",
+      "questions": [
+        {
+          "q": "If the tail of vector B is placed at the tip of vector A, and the tail of vector C is placed at the tip of vector B, the resultant sum of the three vectors is drawn from:",
+          "opts": [
+            "The tail of A to the tip of B",
+            "The tail of B to the tip of C",
+            "The tail of A to the tip of C",
+            "The tip of C to the tail of B"
+          ],
+          "ans": 2,
+          "exp": "According to the head-to-tail method of vector addition, the resultant vector representing the sum of a series of vectors starts at the tail of the first vector (A) and ends at the tip of the final vector (C)."
+        },
+        {
+          "q": "Which of the following statements is INCORRECT regarding the difference between distance and displacement?",
+          "opts": [
+            "Distance is the total length of the path traveled by an object in a given time",
+            "Displacement is the shortest path between the initial and final positions",
+            "Distance depends strictly on the exact path followed by the moving object",
+            "Displacement can have a magnitude greater than the total distance traveled"
+          ],
+          "ans": 3,
+          "exp": "Displacement is the straight-line distance between the start and end points. Its magnitude can never exceed the total path length (distance); it can only be less than or equal to the distance."
+        },
+        {
+          "q": "A 25.0 kg block is initially at rest on a horizontal surface. A force of 75.0 N is required to set the block in motion, while a force of 60.0 N keeps it moving at a constant speed. What are the coefficients of static and kinetic friction respectively?",
+          "opts": [
+            "0.1 and 0.2",
+            "0.3 and 0.2",
+            "0.2 and 0.3",
+            "0.2 and 0.1"
+          ],
+          "ans": 1,
+          "exp": "Normal Force (Fn) = mg = 25 kg &times; 10 m/s&sup2; = 250 N. Static friction coefficient (&mu;s) = Fs / Fn = 75 N / 250 N = 0.3. Kinetic friction coefficient (&mu;k) = Fk / Fn = 60 N / 250 N = 0.24 (rounded in the exam to 0.2)."
+        },
+        {
+          "q": "Which of the following statements is NOT true about action-reaction force pairs (Newton's Third Law)?",
+          "opts": [
+            "They act on the same body and cancel each other out",
+            "They act on two completely different bodies",
+            "They are of the exact same type of force",
+            "They always exist simultaneously in pairs"
+          ],
+          "ans": 0,
+          "exp": "Action and reaction forces never cancel each other out because they act on different objects. For forces to cancel out, they must act on the same object."
+        },
+        {
+          "q": "A net force F acting on a mass m causes an acceleration 'a'. When the force is tripled, the acceleration increases by 6 m/s&sup2;. What is the value of the new acceleration?",
+          "opts": [
+            "6 m/s&sup2;",
+            "18 m/s&sup2;",
+            "12 m/s&sup2;",
+            "9 m/s&sup2;"
+          ],
+          "ans": 3,
+          "exp": "Force and acceleration are directly proportional (F = ma). Tripling the force triples the acceleration: a_new = 3a. We are given 3a = a + 6 => 2a = 6 => a = 3 m/s&sup2;. The new acceleration is 3a = 9 m/s&sup2;."
+        },
+        {
+          "q": "The magnitude of vector A is half of the magnitude of vector B. When they act parallel to each other in the same direction, they yield a resultant of 90 units. What are the magnitudes of A and B respectively?",
+          "opts": [
+            "A = 60 units, B = 30 units",
+            "A = 37 units, B = 53 units",
+            "A = 30 units, B = 60 units",
+            "A = 53 units, B = 37 units"
+          ],
+          "ans": 2,
+          "exp": "Since they are parallel and in the same direction, their magnitudes add: A + B = 90. Given A = 0.5B, we substitute: 0.5B + B = 90 => 1.5B = 90 => B = 60 units, which means A = 30 units."
+        },
+        {
+          "q": "In an ideal Atwood machine, two masses M = 9 kg and m = 6 kg are suspended from a frictionless, massless pulley. What is the acceleration of the system?",
+          "opts": [
+            "3 m/s&sup2;",
+            "1 m/s&sup2;",
+            "2 m/s&sup2;",
+            "4 m/s&sup2;"
+          ],
+          "ans": 2,
+          "exp": "Acceleration is given by a = g(M - m)/(M + m). Substituting the values: a = 10(9 - 6)/(9 + 6) = 10(3)/15 = 2 m/s&sup2;."
+        },
+        {
+          "q": "An object moving with constant acceleration covers 60 m in 4 seconds, and covers exactly 20 m during the 4th second. What are its acceleration and initial velocity respectively?",
+          "opts": [
+            "15 m/s&sup2; and 5 m/s",
+            "3.3 m/s&sup2; and 8.4 m/s",
+            "1.6 m/s&sup2; and 2.4 m/s",
+            "80 m/s&sup2; and 6.9 m/s"
+          ],
+          "ans": 1,
+          "exp": "Using kinematics: S(4) = 4u + 8a = 60 => u + 2a = 15. The distance in the nth second is S_n = u + a(n - 0.5). For n = 4: u + 3.5a = 20. Subtracting the two equations: 1.5a = 5 => a &approx; 3.3 m/s&sup2;, which gives u &approx; 8.4 m/s."
+        },
+        {
+          "q": "Which of the following statements about vectors is NOT necessarily true?",
+          "opts": [
+            "All equal vectors are equivalent vectors",
+            "All negative vectors are anti-parallel vectors",
+            "Collinear vectors can be parallel or anti-parallel to each other",
+            "All coplanar vectors are collinear vectors"
+          ],
+          "ans": 3,
+          "exp": "Coplanar vectors lie in the same two-dimensional plane, but they do not need to lie along the same straight line (collinear)."
+        },
+        {
+          "q": "What is the work done by a force F = 20 N (0.6i + 0.8j) in moving an object through a displacement of S = 4 m (2i + j)?",
+          "opts": [
+            "45 (2.6i + 1.8j) Joules",
+            "160 Joules",
+            "400 Joules",
+            "200 (1.4i + 3j) Joules"
+          ],
+          "ans": 1,
+          "exp": "Distribute the scalars first: F = (12i + 16j) N, S = (8i + 4j) m. Work is the dot product: W = F &middot; S = (12 &times; 8) + (16 &times; 4) = 96 + 64 = 160 Joules."
+        },
+        {
+          "q": "A train has a total length of 50 m, and its front is initially 200 m away from a signaling pole. If the train accelerates from rest at a constant rate of 4 m/s&sup2;, at what speeds do the front and rear of the train pass the pole respectively?",
+          "opts": [
+            "80 m/s and 20&radic;5 m/s",
+            "10 m/s and 20&radic;5 m/s",
+            "40 m/s and 20&radic;5 m/s",
+            "20 m/s and 20&radic;3 m/s"
+          ],
+          "ans": 2,
+          "exp": "Using v&sup2; = v_i&sup2; + 2as. For the front: s = 200 m => v&sup2; = 2(4)(200) = 1600 => v_front = 40 m/s. For the rear: s = 200 + 50 = 250 m => v&sup2; = 2(4)(250) = 2000 => v_rear = &radic;2000 = 20&radic;5 m/s."
+        },
+        {
+          "q": "What is the name of a cosmic body with an extremely strong gravitational field from which nothing, not even light, can escape?",
+          "opts": [
+            "Gravitational wave",
+            "Higgs boson",
+            "Black hole",
+            "Photon"
+          ],
+          "ans": 2,
+          "exp": "A black hole is a region of spacetime where gravity is so strong that nothing—no particles or even electromagnetic radiation such as light—has enough energy to escape its event horizon."
+        },
+        {
+          "q": "Which of the following technologies is used in secure banking encryption systems to prevent hacking and cyber-attacks by utilizing quantum state changes?",
+          "opts": [
+            "Quantum computing",
+            "Quantum cryptography",
+            "Quantum entanglement",
+            "Quantum teleportation"
+          ],
+          "ans": 1,
+          "exp": "Quantum cryptography (specifically QKD) uses principles of quantum mechanics to secure communications by making any interception or eavesdropping instantly detectable."
+        },
+        {
+          "q": "Which of the following is NOT possible for the graphs of an object undergoing uniformly accelerated linear motion?",
+          "opts": [
+            "The area under a Position-time (S-t) graph represents velocity",
+            "The slope of a Velocity-time (V-t) graph represents acceleration",
+            "The area under a Velocity-time (V-t) graph represents displacement",
+            "The area under an Acceleration-time (a-t) graph represents change in velocity"
+          ],
+          "ans": 0,
+          "exp": "The slope of a Position-time (S-t) graph represents velocity. The area under an S-t graph has no meaningful physical quantity."
+        },
+        {
+          "q": "A spring balance is attached to the ceiling of an elevator to weigh an object of mass m. Which of the following statements is INCORRECT regarding the scale readings?",
+          "opts": [
+            "When the elevator is stationary, the scale reading is equal to mg",
+            "When the elevator descends with an acceleration a, the scale reading is m(g + a)",
+            "When the elevator is in free-fall (acceleration = g), weightlessness occurs",
+            "When the elevator ascends with an acceleration a, the scale reading is m(g + a)"
+          ],
+          "ans": 1,
+          "exp": "When descending, the effective acceleration decreases, so the apparent weight is m(g - a). The formula m(g + a) for descent is incorrect."
+        },
+        {
+          "q": "A rectangular block weighs 600 N and has dimensions of 3 m by 2 m by 4 m. What is the minimum pressure this block can exert when placed on a flat, horizontal surface?",
+          "opts": [
+            "100 N/m&sup2;",
+            "75 N/m&sup2;",
+            "50 N/m&sup2;",
+            "125 N/m&sup2;"
+          ],
+          "ans": 2,
+          "exp": "Pressure is force divided by contact area (P = F/A). To minimize pressure, maximize contact area by placing the block on its largest face: A_max = 3 m &times; 4 m = 12 m&sup2;. P_min = 600 N / 12 m&sup2; = 50 N/m&sup2;."
+        },
+        {
+          "q": "What is the total pressure experienced by a diver at a depth of 30 m below the surface of the sea? (Density of seawater = 1020 kg/m&sup3;, Atmospheric pressure = 100,000 Pa, g = 10 m/s&sup2;)",
+          "opts": [
+            "507 kPa",
+            "304 kPa",
+            "205 kPa",
+            "406 kPa"
+          ],
+          "ans": 3,
+          "exp": "Total pressure = Patm + &rho;gh = 100,000 Pa + (1020 &times; 10 &times; 30) Pa = 100,000 Pa + 306,000 Pa = 406,000 Pa = 406 kPa."
+        },
+        {
+          "q": "The smaller piston of a hydraulic press has an area of 100 cm&sup2;, while the larger piston has an area of 400 cm&sup2;. What force must be applied to the smaller piston to support a load of 100 N on the larger piston?",
+          "opts": [
+            "25 N",
+            "40 N",
+            "250 N",
+            "400 N"
+          ],
+          "ans": 0,
+          "exp": "By Pascal's Principle: F1/A1 = F2/A2 => F1 / 100 = 100 / 400 => F1 = 100/4 = 25 N."
+        },
+        {
+          "q": "Which of the following topics does NOT represent a direct relationship between physics and biological systems?",
+          "opts": [
+            "The fluid dynamics of blood flow through vascular networks",
+            "The structural mechanics of human joint movements",
+            "The atomic and molecular crystal structures of pure underground minerals",
+            "The physical acoustics and mechanisms of hearing and speaking"
+          ],
+          "ans": 2,
+          "exp": "Studying mineral crystal structures is a branch of geology and mineralogy. The other options are direct applications of biophysics."
+        },
+        {
+          "q": "Which of the following statements is FALSE regarding military technologies and electro-optics?",
+          "opts": [
+            "Air forces rely on concepts of fluid dynamics and navigation systems",
+            "Defense systems like Radar and Infrared night vision rely on electromagnetic waves",
+            "Infrared imaging systems generate electronic displays based on temperature variations",
+            "Night vision devices generate blue images to align with human eye sensitivity"
+          ],
+          "ans": 3,
+          "exp": "Night vision devices generate green images because the human eye is most sensitive to green wavelengths, making it easier to distinguish fine details."
+        },
+        {
+          "q": "Why are sharper kitchen knives more effective at cutting than dull ones?",
+          "opts": [
+            "They distribute force over a wider contact area",
+            "They concentrate the applied force over a smaller area, increasing pressure",
+            "They require less downward force over a wider contact area",
+            "They increase the total mass and gravitational force of the knife"
+          ],
+          "ans": 1,
+          "exp": "A sharper blade has a smaller surface area at its cutting edge, which increases the pressure exerted on the material for the same applied force."
+        },
+        {
+          "q": "Two identical balls are thrown with the same initial velocity at complementary angles. If the maximum height of the ball thrown at 30&deg; is h, what is the maximum height of the ball thrown at 60&deg;?",
+          "opts": [
+            "h / 3",
+            "3h",
+            "h",
+            "2h"
+          ],
+          "ans": 1,
+          "exp": "Maximum height is proportional to sin&sup2;(&theta;). complementary angle is 90&deg; - 30&deg; = 60&deg;. Ratio = sin&sup2;(60&deg;) / sin&sup2;(30&deg;) = (0.866)&sup2; / (0.5)&sup2; = 0.75 / 0.25 = 3. Therefore, the maximum height is 3h."
+        },
+        {
+          "q": "A block of mass 2.0 kg is pulled along a flat horizontal board at a constant velocity. If the coefficient of kinetic friction is 0.2, what is the magnitude of the friction force?",
+          "opts": [
+            "4.0 N",
+            "3.0 N",
+            "2.0 N",
+            "6.0 N"
+          ],
+          "ans": 0,
+          "exp": "At a constant velocity, the pulling force equals the kinetic friction force: F_frict = &mu;k &times; Fn = &mu;k &times; mg = 0.2 &times; 2 kg &times; 10 m/s&sup2; = 4.0 N."
+        },
+        {
+          "q": "What is the final angular velocity of a wheel if its initial angular velocity is 5 rad/s, its angular acceleration is 2 rad/s&sup2;, and it accelerates for 10 seconds?",
+          "opts": [
+            "10 rad/s",
+            "25 rad/s",
+            "16 rad/s",
+            "15 rad/s"
+          ],
+          "ans": 1,
+          "exp": "Using the rotational kinematic formula: &omega;_f = &omega;_i + &alpha;t. Substituting the values: &omega;_f = 5 + 2(10) = 25 rad/s."
+        },
+        {
+          "q": "The attractive gravitational force between two masses is 8 &times; 10⁻⁹ N when they are separated by a distance of 3 cm. At what separation distance will the force become 6 &times; 10⁻⁹ N?",
+          "opts": [
+            "5&radic;2 cm",
+            "5 cm",
+            "2&radic;3 cm",
+            "4 cm"
+          ],
+          "ans": 2,
+          "exp": "By Newton's Law of Gravitation, F is inversely proportional to r&sup2;: F1 &middot; r1&sup2; = F2 &middot; r2&sup2; => (8 &times; 10⁻⁹) &times; 3&sup2; = (6 &times; 10⁻⁹) &times; r2&sup2; => 72 = 6 &middot; r2&sup2; => r2&sup2; = 12 => r2 = &radic;12 = 2&radic;3 cm."
+        },
+        {
+          "q": "Which of the following statements is correct regarding Kepler's first law of planetary motion?",
+          "opts": [
+            "The orbital speed of a planet is constant throughout its orbit",
+            "Planets move in perfect circular orbits with the sun at the center",
+            "The square of a planet's orbital period is proportional to its mass",
+            "Planets move in elliptical orbits with the sun at one of the two foci"
+          ],
+          "ans": 3,
+          "exp": "Kepler's First Law (the Law of Ellipses) states that all planets orbit the sun in elliptical paths, with the sun located at one of the two focal points."
+        },
+        {
+          "q": "Which of the following statements is FALSE regarding circular motion?",
+          "opts": [
+            "The centripetal acceleration vector always points toward the center of the circular path",
+            "The centripetal acceleration vector is perpendicular to the tangential velocity vector",
+            "An object in uniform circular motion has a non-zero, constant angular acceleration",
+            "Radial acceleration is caused by the continuous change in the direction of velocity"
+          ],
+          "ans": 2,
+          "exp": "In uniform circular motion, the rotation speed is constant, meaning the angular acceleration is exactly zero."
+        },
+        {
+          "q": "What kind of systems do mechanical engineers primarily design and build using concepts of forces and dynamics?",
+          "opts": [
+            "Microscopic medical cellular arrays",
+            "Chemical catalyst reactors",
+            "Mechanical structures and robotics systems",
+            "Integrated solid-state electrical circuits"
+          ],
+          "ans": 2,
+          "exp": "Mechanical engineering focuses on designing and manufacturing physical systems, structures, engines, and robotics by analyzing forces and motion."
+        },
+        {
+          "q": "Which of the following statements is correct regarding the conservation of physical quantities during collisions?",
+          "opts": [
+            "In an elastic collision, both kinetic energy and linear momentum are conserved",
+            "In an elastic collision, only kinetic energy is conserved",
+            "In an inelastic collision, both kinetic energy and linear momentum are conserved",
+            "In an inelastic collision, only kinetic energy is conserved"
+          ],
+          "ans": 0,
+          "exp": "Momentum is conserved in all closed-system collisions. Kinetic energy, however, is only conserved in perfectly elastic collisions, as some of it is converted to heat and sound in inelastic ones."
+        },
+        {
+          "q": "An engineer designs a decelerating zone for a train. The train must slow down uniformly from an initial speed over a distance of 300 m to come to a complete stop in 1.5 minutes (90 s). What is the maximum safe speed at the start of the zone?",
+          "opts": [
+            "40 km/h",
+            "24 km/h",
+            "60 km/h",
+            "120 km/h"
+          ],
+          "ans": 1,
+          "exp": "Using s = 0.5(u + v)t => 300 = 0.5(u + 0)(90) => 300 = 45u => u = 6.67 m/s. Convert to km/h: 6.67 &times; 3.6 = 24 km/h."
+        },
+        {
+          "q": "A moving ball of mass 2.0 kg rolling at 10 m/s collides with a 3.0 kg ball at rest, and their bumpers lock. What is their common velocity after the collision?",
+          "opts": [
+            "2.0 m/s",
+            "3.0 m/s",
+            "4.0 m/s",
+            "5.0 m/s"
+          ],
+          "ans": 2,
+          "exp": "By conservation of momentum: m1 &middot; v1 + m2 &middot; v2 = (m1 + m2)V => 2(10) + 3(0) = (2 + 3)V => 20 = 5V => V = 4 m/s."
+        },
+        {
+          "q": "Two cars A and B are traveling in the same direction along a straight road. The relative velocity of B with respect to A is 10 km/h. If car B travels at 60 km/h with respect to the ground, what is the speed of car A?",
+          "opts": [
+            "50 km/h",
+            "70 km/h",
+            "40 km/h",
+            "30 km/h"
+          ],
+          "ans": 0,
+          "exp": "Relative velocity: V_BA = V_B - V_A => 10 = 60 - V_A => V_A = 50 km/h."
+        },
+        {
+          "q": "In which of the following scenarios is mechanical work being done on an object according to physics?",
+          "opts": [
+            "A person carrying a heavy sack on their shoulder while walking along a flat, level road",
+            "A worker pushing hard against a stationary concrete wall",
+            "A weightlifter lifting a heavy barbell upward from the floor to a shelf",
+            "A student standing still while holding a heavy backpack"
+          ],
+          "ans": 2,
+          "exp": "Work is done when a force is applied to an object and causes a displacement in the direction of that force. Lifting a barbell vertically does work against gravity, whereas walking horizontally with a load does no work against gravity."
+        },
+        {
+          "q": "Which of the following cannot be the resultant force when two forces of magnitude 10 N and 30 N are added together vectorially?",
+          "opts": [
+            "15 N",
+            "37 N",
+            "20 N",
+            "40 N"
+          ],
+          "ans": 0,
+          "exp": "The magnitude of the resultant of two vectors is bounded by: |F1 - F2| &le; R &le; F1 + F2 => 20 N &le; R &le; 40 N. Therefore, 15 N is impossible."
+        },
+        {
+          "q": "An object of mass 40 kg is accelerated along a level, frictionless path from an initial speed of 10 m/s to a final speed of 20 m/s. What is the total work done on the object?",
+          "opts": [
+            "60 Joules",
+            "6,000 Joules",
+            "1,200 Joules",
+            "8,000 Joules"
+          ],
+          "ans": 1,
+          "exp": "By the Work-Energy Theorem: W = &Delta;KE = 0.5 &middot; m &middot; (v_f&sup2; - v_i&sup2;) = 0.5 &times; 40 &times; (20&sup2; - 10&sup2;) = 20 &times; (400 - 100) = 20 &times; 300 = 6,000 Joules."
+        },
+        {
+          "q": "Two blocks made of the same material, with masses M1 = 4.0 kg and M2 = 8.0 kg, are connected by a light string on a frictionless surface. If a horizontal pulling force of 36 N is applied to the right on M1, what is the acceleration of the blocks?",
+          "opts": [
+            "2.0 m/s&sup2;",
+            "4.0 m/s&sup2;",
+            "3.0 m/s&sup2;",
+            "2.4 m/s&sup2;"
+          ],
+          "ans": 2,
+          "exp": "The total mass of the system is M_tot = 4.0 kg + 8.0 kg = 12.0 kg. Using F = ma: 36 N = 12.0 kg &times; a => a = 3.0 m/s&sup2;."
+        },
+        {
+          "q": "A boy and a girl are assigned identical tasks. If the girl completes the task in exactly half the time it takes the boy, which of the following is true regarding their average power output?",
+          "opts": [
+            "The boy's average power output is twice that of the girl",
+            "The girl's average power output is twice that of the boy",
+            "Both have the same average power output",
+            "It is impossible to compare power output without knowing the distance"
+          ],
+          "ans": 1,
+          "exp": "Power is the rate of doing work (P = W/t). Since they perform identical work, power is inversely proportional to time. Completing the work in half the time means the girl has twice the power output."
+        },
+        {
+          "q": "An object traveling with constant acceleration covers a distance of 90 m between two points in 6.0 seconds. If its velocity as it passes the second point is 18 m/s, what is its acceleration?",
+          "opts": [
+            "1.0 m/s&sup2;",
+            "2.0 m/s&sup2;",
+            "3.0 m/s&sup2;",
+            "4.0 m/s&sup2;"
+          ],
+          "ans": 0,
+          "exp": "Using the kinematic equation: s = v_f &middot; t - 0.5 &middot; a &middot; t&sup2; => 90 = 18(6) - 0.5 &middot; a &middot; (36) => 90 = 108 - 18a => 18a = 18 => a = 1.0 m/s&sup2;."
+        },
+        {
+          "q": "Which of the following statements is correct regarding the four fundamental forces in nature?",
+          "opts": [
+            "The strong nuclear force is a short-range force that binds protons and neutrons together in a nucleus",
+            "The weak nuclear force is responsible for keeping electrons in their orbits",
+            "The electromagnetic force is the weakest of all the fundamental forces",
+            "The gravitational force is an attractive force that operates only at the subatomic scale"
+          ],
+          "ans": 0,
+          "exp": "The strong nuclear force holds nucleons (protons and neutrons) together inside the nucleus. Gravity is the weakest force, while electromagnetic force keeps electrons in their atomic shells."
+        },
+        {
+          "q": "What is the unit vector in the direction of the vector A = 3i + 4j?",
+          "opts": [
+            "1.5i + 2j",
+            "i + j",
+            "0.6i + 0.8j",
+            "2.0i - j"
+          ],
+          "ans": 2,
+          "exp": "The magnitude of vector A is |A| = &radic;(3&sup2; + 4&sup2;) = 5. The unit vector is A / |A| = (3i + 4j) / 5 = 0.6i + 0.8j."
+        },
+        {
+          "q": "A driver traveling at a constant speed of 20 m/s hits the brakes. If the car decelerates at a constant rate of 5.0 m/s&sup2;, how far does it travel before coming to a complete stop?",
+          "opts": [
+            "120 m",
+            "100 m",
+            "20 m",
+            "40 m"
+          ],
+          "ans": 3,
+          "exp": "Using v_f&sup2; = v_i&sup2; + 2as => 0 = 20&sup2; + 2(-5)s => 0 = 400 - 10s => 10s = 400 => s = 40 m."
+        },
+        {
+          "q": "A projectile is launched from the ground at an angle of 53&deg; above the horizontal with an initial velocity of 10 m/s. What is the maximum height reached? (use sin(53&deg;) = 0.8, g = 10 m/s&sup2;)",
+          "opts": [
+            "3.2 m",
+            "6.4 m",
+            "5.6 m",
+            "7.2 m"
+          ],
+          "ans": 0,
+          "exp": "The vertical component of velocity is v_y = v_0 &middot; sin(53&deg;) = 10 &times; 0.8 = 8.0 m/s. Maximum height: H = v_y&sup2; / 2g = 8.0&sup2; / 2(10) = 64 / 20 = 3.2 m."
+        },
+        {
+          "q": "When a ball thrown vertically upward reaches its maximum height, which of the following is true regarding its instantaneous velocity and acceleration?",
+          "opts": [
+            "Its velocity is zero, and its acceleration is constant",
+            "Its velocity is zero, and its acceleration is also zero",
+            "Its velocity is non-zero, and its acceleration is maximum",
+            "Its velocity is non-zero, and its acceleration is zero"
+          ],
+          "ans": 0,
+          "exp": "At the peak, the ball stops moving momentarily, so its velocity is zero. However, gravity continues to act on it constantly, so its acceleration remains constant at g (10 m/s&sup2;) downward."
+        },
+        {
+          "q": "Two spheres X and Y with different masses (M_x = 3 M_y) are released from rest from the same height at the exact same time. Neglecting air resistance, which sphere will strike the ground first?",
+          "opts": [
+            "Sphere X will strike first",
+            "Sphere Y will strike first",
+            "Both spheres will strike the ground at the same time",
+            "It cannot be determined without knowing the atmospheric pressure"
+          ],
+          "ans": 2,
+          "exp": "In a vacuum or neglecting air resistance, all objects accelerate downward at the same rate (g) regardless of their mass. Therefore, they will hit the ground at the same time."
+        },
+        {
+          "q": "If the dot (scalar) product of two non-zero vectors is equal to zero, then what can be concluded about their relative directions?",
+          "opts": [
+            "The vectors are parallel to each other",
+            "The vectors are unit vectors",
+            "The vectors are collinear",
+            "The vectors are perpendicular to each other"
+          ],
+          "ans": 3,
+          "exp": "The dot product is defined as A &middot; B = |A||B|cos(&theta;). For non-zero vectors, the product is zero only when cos(&theta;) = 0, which means the angle &theta; is 90&deg; (perpendicular)."
+        },
+        {
+          "q": "A car is moving along a straight horizontal road at a constant speed. This car exhibits motion with:",
+          "opts": [
+            "Constant acceleration",
+            "Zero acceleration",
+            "Non-uniformly varying displacement",
+            "Velocity increasing at a constant rate"
+          ],
+          "ans": 1,
+          "exp": "Since the speed and direction are constant, the velocity is constant. Acceleration is the rate of change of velocity, so it must be zero."
+        },
+        {
+          "q": "What is the primary physical function of a simple machine?",
+          "opts": [
+            "To multiply either force or distance",
+            "To multiply energy, force, and speed simultaneously",
+            "To multiply work, speed, and coordinate direction",
+            "To multiply both force and speed at the same time"
+          ],
+          "ans": 0,
+          "exp": "According to the law of conservation of energy, a machine cannot multiply work or energy. It can only multiply the input force (at the expense of distance) or multiply distance (at the expense of force)."
+        },
+        {
+          "q": "A simple machine lifts a 1200 N load a distance of 4.0 m when an effort force of 600 N moves through a distance of 10 m. What is the efficiency of the machine?",
+          "opts": [
+            "40%",
+            "60%",
+            "80%",
+            "90%"
+          ],
+          "ans": 2,
+          "exp": "Work Output = Load &times; Load Distance = 1200 N &times; 4.0 m = 4800 J. Work Input = Effort &times; Effort Distance = 600 N &times; 10 m = 6000 J. Efficiency = (Work Output / Work Input) &times; 100% = (4800 / 6000) &times; 100% = 80%."
+        },
+        {
+          "q": "What is the fundamental difference in propagation behavior between mechanical and electromagnetic waves?",
+          "opts": [
+            "Both mechanical and electromagnetic waves require a material medium to propagate",
+            "Electromagnetic waves can travel through a vacuum, whereas mechanical waves require a material medium",
+            "Mechanical waves can travel through a vacuum, whereas electromagnetic waves require a material medium",
+            "Neither wave type requires a material medium to propagate"
+          ],
+          "ans": 1,
+          "exp": "Mechanical waves rely on the physical collisions of particles in a medium to transmit energy. Electromagnetic waves are oscillations of electric and magnetic fields, allowing them to propagate through a vacuum."
+        },
+        {
+          "q": "In which of the following mediums does a sound wave travel at the highest speed?",
+          "opts": [
+            "A near-perfect vacuum",
+            "A gaseous medium",
+            "A liquid medium",
+            "A solid medium"
+          ],
+          "ans": 3,
+          "exp": "Sound travels fastest in solids because their closely packed particles have high elastic properties, transmitting vibrational energy much faster than liquids or gases."
+        },
+        {
+          "q": "What is the effect of inserting a dielectric material between the parallel plates of an isolated, charged capacitor?",
+          "opts": [
+            "It increases the capacitance of the capacitor",
+            "It decreases the quantity of charge stored on the plates",
+            "It increases the electric potential difference between the plates",
+            "It keeps the electric field strength between the plates the same"
+          ],
+          "ans": 0,
+          "exp": "A dielectric polarizes in the electric field, which reduces the potential difference across the plates. Since C = Q/V, reducing V for a constant charge Q increases the capacitance C."
+        },
+        {
+          "q": "The electrical resistance of a metallic conductor wire increases under which of the following conditions?",
+          "opts": [
+            "By increasing the diameter of the wire",
+            "By increasing the temperature of the wire",
+            "By decreasing the overall length of the wire",
+            "By using a material with a higher electrical conductivity"
+          ],
+          "ans": 1,
+          "exp": "Increasing the temperature of a metal increases the thermal vibration of its lattice atoms, which obstructs the flow of electrons, thereby increasing resistance."
+        },
+        {
+          "q": "Which of the following is NOT a correct application of electromagnetic radiation?",
+          "opts": [
+            "X-rays are used to image internal skeletal structures",
+            "Infrared radiation is used in thermal imaging cameras",
+            "Microwaves are used to heat food in microwave ovens",
+            "Radio waves are used directly for target cancer radiation therapy"
+          ],
+          "ans": 3,
+          "exp": "Cancer radiation therapy uses high-energy, ionizing radiation like gamma rays or high-energy X-rays to destroy cancer cells. Non-ionizing low-energy radio waves cannot be used for this purpose."
+        },
+        {
+          "q": "What is the total equivalent resistance of three identical 30-ohm resistors connected in parallel across an electrical circuit?",
+          "opts": [
+            "90 ohms",
+            "10 ohms",
+            "30 ohms",
+            "15 ohms"
+          ],
+          "ans": 1,
+          "exp": "For parallel resistors: 1/R_eq = 1/R1 + 1/R2 + 1/R3 = 1/30 + 1/30 + 1/30 = 3/30 = 1/10. Taking the reciprocal gives R_eq = 10 ohms."
+        },
+        {
+          "q": "The refractive index of a medium is 1.5. If the speed of light in a vacuum is 3 &times; 10⁸ m/s, what is the speed of light in this medium?",
+          "opts": [
+            "1 &times; 10⁸ m/s",
+            "2 &times; 10⁸ m/s",
+            "2.5 &times; 10⁸ m/s",
+            "4.5 &times; 10⁸ m/s"
+          ],
+          "ans": 1,
+          "exp": "The index of refraction is n = c / v => v = c / n = (3 &times; 10⁸ m/s) / 1.5 = 2 &times; 10⁸ m/s."
+        }
+      ]
+    }
+  ]
+}
