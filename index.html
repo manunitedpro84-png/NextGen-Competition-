@@ -1,0 +1,1297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Exam Collections 2018 E.C. - NextGen Scholars</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .watermark-bg {
+            background-image: url('https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            opacity: 0.02;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 flex flex-col justify-between animate-fade-in">
+
+    <!-- Sticky Header -->
+    <header class="bg-slate-900 text-white py-3.5 px-4 md:px-6 shadow-md border-b-2 border-amber-500 top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg" alt="NextGen Logo" class="w-10 h-10 rounded-full border border-amber-400 object-cover shrink-0">
+                <div>
+                    <h1 class="text-sm md:text-lg font-bold tracking-tight text-white leading-tight">NextGen Scholars</h1>
+                    <p class="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">Model Exam Collections 2018 E.C.</p>
+                </div>
+            </div>
+            
+            <!-- Header Actions -->
+            <div class="flex items-center gap-2">
+                <button id="admin-gate-btn" class="bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white p-1.5 rounded-lg text-xs transition">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <button id="constants-btn" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-bold py-1.5 px-3 rounded-lg text-xs flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-calculator"></i> Constants
+                </button>
+                <div id="sticky-timer-card" class="hidden flex items-center gap-3 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg shrink-0">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider hidden sm:inline">Time:</span>
+                    <div class="text-base sm:text-lg font-black text-red-500 font-mono" id="timer-display">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="flex-grow max-w-7xl w-full mx-auto p-3 md:p-6 relative">
+        <div class="absolute inset-0 watermark-bg z-0"></div>
+
+        <!-- 1. Registration & Instructions Panel -->
+        <section id="intro-section" class="relative z-10 max-w-2xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden my-6">
+            <div class="bg-gradient-to-r from-blue-950 to-indigo-900 p-6 text-white text-center">
+                <h2 class="text-2xl font-extrabold mb-1"><i class="fa-solid fa-trophy text-amber-400 mr-1"></i> NextGen National Competition Arena</h2>
+                <p class="text-indigo-200 text-xs">Test Your Limits • Top Scholars Earn Special Prizes</p>
+            </div>
+            <div class="p-6 space-y-6">
+                <!-- Registration Closed Alert Card -->
+                <div id="closed-registration-alert" class="hidden bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl text-xs text-red-800 font-semibold space-y-1">
+                    <p class="text-sm font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-xmark"></i> Registration Period Closed</p>
+                    <p>New candidate registrations are currently locked by the administrator. Active sessions already in progress will not be interrupted.</p>
+                </div>
+
+                <div class="bg-amber-50/80 border-l-4 border-amber-500 p-4 rounded-r-xl space-y-2">
+                    <h3 class="font-bold text-amber-900 text-sm mb-1.5 flex items-center gap-1">
+                        <i class="fa-solid fa-triangle-exclamation"></i> Competitive Rules & Eligibility
+                    </h3>
+                    <ul class="space-y-1.5 text-xs text-slate-700 list-disc list-inside">
+                        <li><strong>Flexible Entry:</strong> You can pick <span class="font-bold text-blue-900">any single subject</span> you feel ready to take. You only need to complete your chosen subject to be fully eligible for prizes.</li>
+                        <li><strong>Anti-Cheating Protection:</strong> Switching tabs, changing windows, or exiting the browser <span class="font-bold text-red-600">will cause your exam to be immediately auto-submitted.</span> (Getting out will count as a direct submit).</li>
+                        <li><strong>Duration Limit:</strong> To prevent rapid guessing, those who submit before <span class="font-bold text-blue-900">40 minutes</span> have elapsed will be disqualified from receiving prizes.</li>
+                        <li><strong>Contact Details:</strong> You must supply at least one valid method of contact (Telegram or Email) below so we can reach you if you win.</li>
+                    </ul>
+                </div>
+
+                <form id="registration-form" class="space-y-4">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 border-b pb-1.5"><i class="fa-solid fa-id-card mr-1"></i> Candidate Profile</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">Full Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="reg-name" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm" placeholder="First & Last Name">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">City / Sub-City <span class="text-red-500">*</span></label>
+                            <input type="text" id="reg-city" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">School Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="reg-school" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm">
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 border-b pt-4 pb-1.5"><i class="fa-solid fa-address-book mr-1"></i> Contact Information (At least one required)</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">Email Address</label>
+                            <input type="email" id="reg-email" class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm" placeholder="e.g. name@domain.com">
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">Telegram Username</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400 text-sm font-bold">@</span>
+                                <input type="text" id="reg-telegram" class="w-full pl-7 pr-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm" placeholder="username">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-500 border-b pt-4 pb-1.5"><i class="fa-solid fa-graduation-cap mr-1"></i> Subject Registration</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">Academic Stream <span class="text-red-500">*</span></label>
+                            <select id="reg-stream" required class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm bg-white">
+                                <option value="" disabled selected>Select Stream</option>
+                                <option value="Natural Science">Natural Science</option>
+                                <option value="Social Science">Social Science</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-[11px] font-semibold text-slate-500 mb-1">Select Exam Subject <span class="text-red-500">*</span></label>
+                            <select id="reg-subject" required disabled class="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-900 outline-none text-sm bg-white">
+                                <option value="" disabled selected>Choose Stream First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Dynamic Subject Parameter Details Card -->
+                    <div id="subject-info-card" class="hidden bg-blue-50 border border-blue-200 p-4 rounded-xl text-xs space-y-1">
+                        <p class="font-bold text-blue-950 flex items-center gap-1.5"><i class="fa-solid fa-circle-info"></i> Selected Subject Parameters:</p>
+                        <ul class="text-slate-700 space-y-0.5 list-none">
+                            <li>• Subject Title: <span id="info-sub-title" class="font-bold text-slate-900"></span></li>
+                            <li>• Number of Questions: <span id="info-sub-qcount" class="font-bold text-slate-900"></span></li>
+                            <li>• Time Allowed: <span id="info-sub-duration" class="font-bold text-slate-900"></span></li>
+                        </ul>
+                    </div>
+                    
+                    <button type="submit" id="submit-reg-btn" class="w-full bg-blue-950 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm mt-6">
+                        <i class="fa-solid fa-play"></i> Enter Competition Arena
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Loading state screen -->
+        <section id="loading-section" class="hidden relative z-10 max-w-md mx-auto text-center bg-white border border-slate-200 p-8 rounded-2xl shadow-lg my-12 space-y-4">
+            <div class="animate-spin text-blue-950 text-4xl"><i class="fa-solid fa-spinner"></i></div>
+            <h3 class="font-bold text-slate-800 text-base">Retrieving Question Banks</h3>
+            <p class="text-xs text-slate-500">Connecting securely to remote repository files...</p>
+        </section>
+
+        <!-- 2. Simulation Environment -->
+        <section id="exam-section" class="hidden relative z-10 grid grid-cols-1 lg:grid-cols-4 gap-4 md:gap-6">
+            <!-- Questions Window -->
+            <div class="lg:col-span-3 space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-600 uppercase tracking-wider" id="question-index-label">Question -- of --</span>
+                        <div class="flex items-center gap-2">
+                            <span id="section-tag" class="text-[10px] bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Part: Unknown</span>
+                            <button id="flag-btn" class="text-xs font-semibold px-3 py-1 border border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100 transition rounded-full flex items-center gap-1">
+                                <i class="fa-regular fa-bookmark"></i> Flag
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5 md:p-8 space-y-6">
+                        <h3 class="text-sm md:text-base font-semibold text-slate-800 leading-relaxed" id="question-text">
+                            Question Content
+                        </h3>
+                        <div class="grid grid-cols-1 gap-3" id="options-container">
+                            <!-- Populated Dynamically -->
+                        </div>
+                    </div>
+
+                    <!-- Footnote controls -->
+                    <div class="bg-slate-50 px-5 py-3.5 border-t border-slate-200 flex items-center justify-between">
+                        <button id="prev-btn" class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold py-1.5 px-4 rounded-lg text-xs transition flex items-center gap-1.5">
+                            <i class="fa-solid fa-chevron-left"></i> Previous
+                        </button>
+                        <button id="next-btn" class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-1.5 px-4 rounded-lg text-xs transition flex items-center gap-1.5">
+                            Next <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navigator Grid panel -->
+            <div class="lg:col-span-1 space-y-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-800 text-xs uppercase tracking-wider">Exam Progress</h4>
+                        <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold" id="progress-indicator">0/--</span>
+                    </div>
+
+                    <div class="grid grid-cols-5 gap-1.5 max-h-56 overflow-y-auto p-1.5 border rounded-lg bg-slate-50" id="navigator-grid">
+                        <!-- Populated dynamically -->
+                    </div>
+
+                    <button id="submit-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-sm text-xs transition flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-cloud-arrow-up"></i> Submit & Finish
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Assessment & Results Section -->
+        <section id="results-section" class="hidden relative z-10 max-w-4xl mx-auto space-y-6">
+            <div class="bg-gradient-to-r from-slate-900 to-indigo-950 p-6 md:p-8 rounded-2xl text-white text-center border-b-4 border-emerald-500 shadow-md">
+                <h2 class="text-2xl font-black tracking-wide mb-1">Official Result Card</h2>
+                <p class="text-slate-300 text-xs mb-4" id="results-meta"></p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto my-4">
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Raw Performance Score</span>
+                        <span class="text-3xl font-extrabold text-emerald-400" id="final-score-field">0 / --</span>
+                        <span class="text-xs text-slate-300 mt-1 block" id="final-percent-field">(0%)</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col justify-center">
+                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Prize Pool Status</span>
+                        <span class="text-xl font-bold mt-1" id="competition-status-field">Checking...</span>
+                        <span class="text-[9px] text-slate-300 mt-0.5 block" id="competition-reason-field">---</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Join Channel CTA -->
+            <div class="bg-emerald-50 border border-emerald-200 p-5 rounded-xl flex flex-col md:flex-row items-center gap-4 justify-between">
+                <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl shrink-0">
+                        <i class="fa-brands fa-telegram"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-extrabold text-slate-800 text-sm">Join NextGen Scholars on Telegram</h4>
+                        <p class="text-xs text-slate-500">Stay updated on rank listings, correct answers, and contest winners.</p>
+                    </div>
+                </div>
+                <a href="https://t.me/NextGen_12" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg text-xs tracking-wider uppercase shadow-sm transition shrink-0">
+                    @NextGen_12
+                </a>
+            </div>
+
+            <!-- Horizontal Tab Navigation System -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="flex border-b border-slate-200 bg-slate-50 font-bold text-xs uppercase tracking-wider text-center">
+                    <button id="show-explanations-btn" class="flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition"><i class="fa-solid fa-list-check mr-1"></i> Review & Explanations</button>
+                    <button id="show-scoreboard-btn" class="flex-1 py-3 text-slate-400 hover:text-slate-800 transition"><i class="fa-solid fa-ranking-star mr-1"></i> Competitive Leaderboard</button>
+                </div>
+
+                <!-- Tab A: Explanations View -->
+                <div id="explanations-view" class="p-5 divide-y divide-slate-100">
+                    <!-- Populated dynamically -->
+                </div>
+
+                <!-- Tab B: Scoreboard View -->
+                <div id="scoreboard-view" class="hidden p-5 space-y-6">
+                    <div class="flex justify-center border-b pb-2 text-xs font-bold gap-4">
+                        <button id="board-nat-btn" class="px-4 py-1.5 rounded-full bg-blue-950 text-white transition">Natural Science Board</button>
+                        <button id="board-soc-btn" class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition">Social Science Board</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-900 text-white uppercase text-[10px] tracking-wider">
+                                    <th class="p-3 rounded-l-lg">Rank</th>
+                                    <th class="p-3">Name</th>
+                                    <th class="p-3">School</th>
+                                    <th class="p-3">Subject</th>
+                                    <th class="p-3">Score %</th>
+                                    <th class="p-3 rounded-r-lg">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-table-body" class="divide-y divide-slate-100">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Constants Modal Overlay -->
+    <div id="constants-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-2xl w-full p-6 shadow-2xl border border-slate-200 flex flex-col max-h-[85vh]">
+            <div class="flex items-center justify-between border-b pb-3 shrink-0">
+                <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider flex items-center gap-1.5">
+                    <i class="fa-solid fa-atom text-blue-950"></i> Reference Sheets & Constants
+                </h3>
+                <button id="close-constants-btn" class="text-slate-400 hover:text-slate-600 text-lg transition"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div class="flex border-b border-slate-200 text-xs font-semibold mt-2 shrink-0">
+                <button id="tab-physics-btn" class="px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition">Physics Constants</button>
+                <button id="tab-chemistry-btn" class="px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition">Chemistry Constants</button>
+            </div>
+            <div class="overflow-y-auto py-4 text-xs flex-grow">
+                <div id="tab-physics-content" class="space-y-4">
+                    <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
+                        <span class="font-semibold">Acceleration due to gravity (g):</span>
+                        <span class="font-mono text-slate-900 font-bold">10 m/s²</span>
+                        <span class="font-semibold">Universal Gravitational Constant (G):</span>
+                        <span class="font-mono text-slate-900 font-bold">6.67 &times; 10⁻¹¹ N&middot;m²/kg²</span>
+                        <span class="font-semibold">Speed of light in vacuum (c):</span>
+                        <span class="font-mono text-slate-900 font-bold">3.00 &times; 10⁸ m/s</span>
+                        <span class="font-semibold">Permittivity of free space (&epsilon;₀):</span>
+                        <span class="font-mono text-slate-900 font-bold">8.85 &times; 10⁻¹² F/m</span>
+                        <span class="font-semibold">Coulomb's Constant (K):</span>
+                        <span class="font-mono text-slate-900 font-bold">9.00 &times; 10⁹ N&middot;m²/C²</span>
+                        <span class="font-semibold">Elementary charge (q):</span>
+                        <span class="font-mono text-slate-900 font-bold">1.60 &times; 10⁻¹⁹ C</span>
+                        <span class="font-semibold">Mass of electron (m_e):</span>
+                        <span class="font-mono text-slate-900 font-bold">9.11 &times; 10⁻³¹ kg</span>
+                        <span class="font-semibold">Mass of proton (m_p):</span>
+                        <span class="font-mono text-slate-900 font-bold">1.67 &times; 10⁻²⁷ kg</span>
+                        <span class="font-semibold">Density of pure water (&rho;_w):</span>
+                        <span class="font-mono text-slate-900 font-bold">1000 kg/m³</span>
+                    </div>
+                    <div class="space-y-1">
+                        <p class="font-bold text-slate-800">Trigonometric Quick Values:</p>
+                        <p class="font-mono text-slate-600">• sin(30&deg;) = cos(60&deg;) = 0.5</p>
+                        <p class="font-mono text-slate-600">• sin(37&deg;) &approx; cos(53&deg;) &approx; 0.6</p>
+                        <p class="font-mono text-slate-600">• sin(53&deg;) &approx; cos(37&deg;) &approx; 0.8</p>
+                        <p class="font-mono text-slate-600">• sin(45&deg;) = cos(45&deg;) &approx; 0.707</p>
+                    </div>
+                </div>
+                <div id="tab-chemistry-content" class="hidden space-y-4">
+                    <div class="grid grid-cols-2 gap-y-2 gap-x-4 border-b pb-3 text-slate-700">
+                        <span class="font-semibold">Ideal Gas Constant (R):</span>
+                        <span class="font-mono text-slate-900 font-bold">0.0821 L&middot;atm/(mol&middot;K) / 8.314 J/(mol&middot;K)</span>
+                        <span class="font-semibold">Avogadro's Number (N_A):</span>
+                        <span class="font-mono text-slate-900 font-bold">6.02 &times; 10²³ mol⁻¹</span>
+                        <span class="font-semibold">Planck's Constant (h):</span>
+                        <span class="font-mono text-slate-900 font-bold">6.626 &times; 10⁻³⁴ J&middot;s</span>
+                        <span class="font-semibold">Faraday's Constant (F):</span>
+                        <span class="font-mono text-slate-900 font-bold">96,500 C/mol</span>
+                        <span class="font-semibold">Ionization Constant of Water (K_w):</span>
+                        <span class="font-mono text-slate-900 font-bold">1.00 &times; 10⁻¹⁴ (at 25&deg;C)</span>
+                    </div>
+                    <div class="space-y-1.5">
+                        <p class="font-bold text-slate-800">Common Atomic Weights (A):</p>
+                        <div class="grid grid-cols-4 gap-2 font-mono text-slate-600">
+                            <span>• H: 1.0</span><span>• He: 4.0</span><span>• C: 12.0</span><span>• N: 14.0</span>
+                            <span>• O: 16.0</span><span>• Na: 23.0</span><span>• Mg: 24.3</span><span>• Al: 27.0</span>
+                            <span>• P: 31.0</span><span>• S: 32.1</span><span>• Cl: 35.5</span><span>• Cr: 52.0</span>
+                            <span>• Fe: 55.8</span><span>• Cu: 63.6</span><span>• Zn: 65.4</span><span>• Ag: 108.0</span>
+                        </div>
+                    </div>
+                    <div class="space-y-1.5 pt-2">
+                        <p class="font-bold text-slate-800">Standard Reduction Potentials (E&deg; at 25&deg;C):</p>
+                        <div class="grid grid-cols-2 gap-y-1 gap-x-4 font-mono text-slate-600">
+                            <span>• Zn²⁺/Zn: -0.76 V</span><span>• Cr³⁺/Cr: -0.74 V</span><span>• Fe²⁺/Fe: -0.44 V</span>
+                            <span>• Pb²⁺/Pb: -0.13 V</span><span>• Cu²⁺/Cu: +0.34 V</span><span>• Ag⁺/Ag: +0.80 V</span>
+                            <span>• Au³⁺/Au: +1.50 V</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div id="admin-panel-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex items-center justify-between border-b pb-2">
+                <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider"><i class="fa-solid fa-lock-open mr-1"></i> Admin Portal</h3>
+                <button id="close-admin-btn" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Password Input View -->
+            <div id="admin-auth-view" class="space-y-3">
+                <label class="block text-xs font-semibold text-slate-500">Enter Admin Password:</label>
+                <input type="password" id="admin-password" class="w-full px-3 py-2 border rounded-lg outline-none text-sm focus:ring-2 focus:ring-blue-900">
+                <button id="auth-btn" class="w-full bg-blue-950 text-white font-bold py-2 rounded-lg text-xs transition">Verify Access</button>
+            </div>
+
+            <!-- Controlled Panel View (hidden by default) -->
+            <div id="admin-controls-view" class="hidden space-y-4">
+                <!-- Sandbox/Live Data toggle -->
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Database Operations Mode:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-mode-label" class="font-semibold text-amber-600">Mock/Demo Mode</span>
+                        <button id="toggle-mode-btn" class="bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px] transition">Toggle Mode</button>
+                    </div>
+                </div>
+
+                <!-- Registration Gate Toggle -->
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Registration Gate Lock:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-gate-label" class="font-semibold text-emerald-600">Open for Entries</span>
+                        <button id="toggle-gate-btn" class="bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition">Lock Gate</button>
+                    </div>
+                </div>
+                
+                <p class="text-[10px] text-slate-400 leading-relaxed">
+                    * <b>Registration Lock:</b> When locked, no new students can register. Active exam sessions in progress will continue completely unaffected.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS Core Engine -->
+    <script>
+        const GITHUB_BASE_URL = "./data/";
+        
+        // Active Google Sheets and Telegram Credentials
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzzvn2pR6TSOVdNJaf4AMCvDhqqVZOw7yUO8-AA_Bt9E4rdNhpsr4g9Ll0xS5l4Bg29GQ/exec";
+        const TG_BOT_TOKEN = "8546466666:AAH7xDftINFqzElceySKYuh4oWYT5yVWs_s";
+        const TG_CHAT_ID = "5328757737";
+
+        // Structured Subject Parameters
+        const subjectMetaData = {
+            maths: { title: "Mathematics", duration: 10800, qCount: 60, formattedTime: "3 Hours (180 mins)" },
+            biology: { title: "Biology", duration: 7200, qCount: 100, formattedTime: "2 Hours (120 mins)" },
+            chemistry: { title: "Chemistry", duration: 9000, qCount: 80, formattedTime: "2 Hours 30 Minutes (150 mins)" },
+            history: { title: "History", duration: 9000, qCount: 100, formattedTime: "2 Hours 30 Minutes (150 mins)" },
+            physics: { title: "Physics", duration: 9000, qCount: 60, formattedTime: "2 Hours 30 Minutes (150 mins)" },
+            english: { title: "English", duration: 7200, qCount: 100, formattedTime: "2 Hours (120 mins)" },
+            economics: { title: "Economics", duration: 9000, qCount: 80, formattedTime: "2 Hours 30 Minutes (150 mins)" },
+            sat: { title: "Scholastic Aptitude Test (SAT)", duration: 9000, qCount: 60, formattedTime: "2 Hours 30 Minutes (150 mins)" },
+            geography: { title: "Geography", duration: 7200, qCount: 115, formattedTime: "2 Hours (120 mins)" }
+        };
+
+        const streamSubjectMapping = {
+            "Natural Science": [
+                { id: "maths", name: "Mathematics" },
+                { id: "english", name: "English" },
+                { id: "physics", name: "Physics" },
+                { id: "chemistry", name: "Chemistry" },
+                { id: "biology", name: "Biology" },
+                { id: "sat", name: "Scholastic Aptitude Test" }
+            ],
+            "Social Science": [
+                { id: "maths", name: "Mathematics" },
+                { id: "english", name: "English" },
+                { id: "history", name: "History" },
+                { id: "geography", name: "Geography" },
+                { id: "economics", name: "Economics" },
+                { id: "sat", name: "Scholastic Aptitude Test" }
+            ]
+        };
+
+        // Runtime Global State
+        let activeQuestions = [];
+        let currentIdx = 0;
+        let selectedAnswers = {}; 
+        let flaggedList = {};      
+        let secondsLeft = 0;
+        let totalExamSeconds = 0;
+        let timerHook = null;
+        let profile = {};
+        let startTimeStamp = null;
+        let isExamActive = false;
+
+        // Admin Operational Variables
+        let isLiveCompetitionMode = false; // Default: false (demo mode active)
+        let isRegistrationGateOpen = true;  // Fetch-synchronized on boot
+        let rawDatabaseSubmissions = [];
+        let viewBoardStream = "Natural Science";
+
+        // UI Selectors
+        const introSec = document.getElementById('intro-section');
+        const loadingSec = document.getElementById('loading-section');
+        const examSec = document.getElementById('exam-section');
+        const resultSec = document.getElementById('results-section');
+        const stickyTimer = document.getElementById('sticky-timer-card');
+        const regForm = document.getElementById('registration-form');
+        const streamSelect = document.getElementById('reg-stream');
+        const subjectSelect = document.getElementById('reg-subject');
+        const closedRegAlert = document.getElementById('closed-registration-alert');
+        const submitRegBtn = document.getElementById('submit-reg-btn');
+        
+        // Subject Parameter Display elements
+        const subjectInfoCard = document.getElementById('subject-info-card');
+        const infoSubTitle = document.getElementById('info-sub-title');
+        const infoSubQCount = document.getElementById('info-sub-qcount');
+        const infoSubDuration = document.getElementById('info-sub-duration');
+
+        // Dynamic Filtering of subjects based on chosen Stream
+        streamSelect.addEventListener('change', () => {
+            const selectedStream = streamSelect.value;
+            subjectSelect.innerHTML = '<option value="" disabled selected>Select Subject</option>';
+            subjectSelect.disabled = false;
+            subjectInfoCard.classList.add('hidden');
+
+            if (streamSubjectMapping[selectedStream]) {
+                streamSubjectMapping[selectedStream].forEach(sub => {
+                    const opt = document.createElement('option');
+                    opt.value = sub.id;
+                    opt.textContent = sub.name;
+                    subjectSelect.appendChild(opt);
+                });
+            }
+        });
+
+        // Event listener to show subject details dynamically once selected
+        subjectSelect.addEventListener('change', () => {
+            const selectedSubKey = subjectSelect.value;
+            if (subjectMetaData[selectedSubKey]) {
+                const metadata = subjectMetaData[selectedSubKey];
+                infoSubTitle.textContent = metadata.title;
+                infoSubQCount.textContent = `${metadata.qCount} Questions`;
+                infoSubDuration.textContent = metadata.formattedTime;
+                
+                subjectInfoCard.classList.remove('hidden');
+            } else {
+                subjectInfoCard.classList.add('hidden');
+            }
+        });
+
+        // Check if registration gate is locked globally on bootup
+        window.addEventListener('load', async () => {
+            // Bypass gate check if the local candidate is already actively taking the exam
+            if (sessionStorage.getItem('nextgen_exam_running') === 'true') {
+                return; 
+            }
+            
+            try {
+                const checkResponse = await fetch(`${WEB_APP_URL}?checkStatus=1`);
+                if (checkResponse.ok) {
+                    const statusObj = await checkResponse.json();
+                    isRegistrationGateOpen = statusObj.registrationOpen !== false;
+                    syncRegistrationUI();
+                }
+            } catch (err) {
+                console.warn("Could not check global lock status. Falling back to open:", err);
+            }
+        });
+
+        function syncRegistrationUI() {
+            if (!isRegistrationGateOpen) {
+                closedRegAlert.classList.remove('hidden');
+                submitRegBtn.disabled = true;
+                submitRegBtn.className = "w-full bg-slate-300 text-slate-500 font-bold py-3 px-6 rounded-xl cursor-not-allowed flex items-center justify-center gap-2 text-sm mt-6";
+                submitRegBtn.innerHTML = '<i class="fa-solid fa-lock"></i> Registration Period Closed';
+            } else {
+                closedRegAlert.classList.add('hidden');
+                submitRegBtn.disabled = false;
+                submitRegBtn.className = "w-full bg-blue-950 hover:bg-blue-900 text-white font-bold py-3 px-6 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm mt-6";
+                submitRegBtn.innerHTML = '<i class="fa-solid fa-play"></i> Enter Competition Arena';
+            }
+        }
+
+        // Fisher-Yates array shuffling
+        function shuffleArray(arr) {
+            let shuffled = [...arr];
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Subject structure management: Shuffling groups/sections, and questions inside them.
+        function parseAndShuffleExam(structuredData) {
+            let finalizedDeck = [];
+            structuredData.parts.forEach(section => {
+                let shuffledQuestions = shuffleArray(section.questions);
+                shuffledQuestions.forEach(qItem => {
+                    const originalOpts = [...qItem.opts];
+                    const correctVal = originalOpts[qItem.ans];
+                    const shuffledOpts = shuffleArray(originalOpts);
+                    const newCorrectIndex = shuffledOpts.indexOf(correctVal);
+
+                    finalizedDeck.push({
+                        partTitle: section.partTitle,
+                        q: qItem.q,
+                        opts: shuffledOpts,
+                        ans: newCorrectIndex,
+                        exp: qItem.exp || "No explanation provided."
+                    });
+                });
+            });
+            return finalizedDeck;
+        }
+
+        // Form Submit
+        regForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById('reg-name').value.trim();
+            const city = document.getElementById('reg-city').value.trim();
+            const school = document.getElementById('reg-school').value.trim();
+            const stream = document.getElementById('reg-stream').value;
+            const email = document.getElementById('reg-email').value.trim();
+            const telegram = document.getElementById('reg-telegram').value.trim();
+
+            if (!email && !telegram) {
+                alert("Error: You must provide either an Email address or Telegram Username so we can contact you in case you win!");
+                return;
+            }
+
+            profile = { name, city, school, stream, email, telegram };
+            currentSubjectKey = subjectSelect.value;
+            
+            introSec.classList.add('hidden');
+            loadingSec.classList.remove('hidden');
+
+            try {
+                const response = await fetch(`${GITHUB_BASE_URL}${currentSubjectKey}.json?t=${Date.now()}`);
+                if (!response.ok) throw new Error("Failed to retrieve question banks.");
+                
+                const rawData = await response.json();
+                activeQuestions = parseAndShuffleExam(rawData);
+
+                totalExamSeconds = subjectMetaData[currentSubjectKey].duration;
+                secondsLeft = totalExamSeconds;
+
+                loadingSec.classList.add('hidden');
+                startExamSimulation();
+            } catch (err) {
+                loadingSec.classList.add('hidden');
+                introSec.classList.remove('hidden');
+                alert("Error loading questions. Ensure that subject JSON files exist in your data folder.");
+                console.error(err);
+            }
+        });
+
+        function startExamSimulation() {
+            examSec.classList.remove('hidden');
+            stickyTimer.classList.remove('hidden');
+            isExamActive = true;
+            sessionStorage.setItem('nextgen_exam_running', 'true');
+            startTimeStamp = Date.now();
+            currentIdx = 0;
+            selectedAnswers = {};
+            flaggedList = {};
+
+            renderQuestion(currentIdx);
+            buildGridElements();
+            runClock();
+        }
+
+        // Tab focus monitoring (Anti-Cheat system)
+        function triggerAntiCheatSystem() {
+            if (isExamActive) {
+                isExamActive = false;
+                alert("SECURITY VIOLATION: You left the exam tab. Your answers have been submitted automatically.");
+                submitExamData(true, "Tab-switch / Window Blur detected");
+            }
+        }
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) triggerAntiCheatSystem();
+        });
+        window.addEventListener('blur', triggerAntiCheatSystem);
+
+        function renderQuestion(idx) {
+            const item = activeQuestions[idx];
+            document.getElementById('question-index-label').textContent = `Question ${idx + 1} of ${activeQuestions.length}`;
+            document.getElementById('question-text').innerHTML = item.q;
+            document.getElementById('section-tag').textContent = item.partTitle;
+            document.getElementById('section-tag').classList.remove('hidden');
+
+            const optionsBox = document.getElementById('options-container');
+            optionsBox.innerHTML = '';
+
+            item.opts.forEach((opt, optIdx) => {
+                const letter = String.fromCharCode(65 + optIdx);
+                const isChecked = selectedAnswers[idx] === optIdx;
+
+                const optionEl = document.createElement('label');
+                optionEl.className = `flex items-center gap-3 p-3 rounded-xl border-2 transition cursor-pointer text-xs md:text-sm font-medium ${
+                    isChecked ? 'border-blue-900 bg-blue-50/50 font-semibold' : 'border-slate-200 hover:bg-slate-50'
+                }`;
+
+                optionEl.innerHTML = `
+                    <input type="radio" name="model_opt" value="${optIdx}" ${isChecked ? 'checked' : ''} class="w-4 h-4 text-blue-900 focus:ring-blue-900">
+                    <span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-500 shrink-0 border">${letter}</span>
+                    <span class="text-slate-700">${opt}</span>
+                `;
+
+                optionEl.querySelector('input').addEventListener('change', () => {
+                    selectedAnswers[idx] = optIdx;
+                    updateNavigatorButton(idx);
+                    renderQuestion(idx);
+                });
+
+                optionsBox.appendChild(optionEl);
+            });
+
+            const flagBtn = document.getElementById('flag-btn');
+            if (flaggedList[idx]) {
+                flagBtn.className = "text-xs font-semibold px-3 py-1 border border-amber-600 text-white bg-amber-500 transition rounded-full flex items-center gap-1";
+                flagBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Flagged';
+            } else {
+                flagBtn.className = "text-xs font-semibold px-3 py-1 border border-amber-300 text-amber-700 bg-amber-50 hover:bg-amber-100 transition rounded-full flex items-center gap-1";
+                flagBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Flag';
+            }
+
+            document.getElementById('prev-btn').disabled = idx === 0;
+            document.getElementById('prev-btn').style.opacity = idx === 0 ? '0.4' : '1';
+            
+            const nextBtn = document.getElementById('next-btn');
+            if (idx === activeQuestions.length - 1) {
+                nextBtn.innerHTML = 'Finish <i class="fa-solid fa-flag-checkered"></i>';
+            } else {
+                nextBtn.innerHTML = 'Next <i class="fa-solid fa-chevron-right"></i>';
+            }
+        }
+
+        document.getElementById('prev-btn').addEventListener('click', () => {
+            if (currentIdx > 0) { currentIdx--; renderQuestion(currentIdx); }
+        });
+
+        document.getElementById('next-btn').addEventListener('click', () => {
+            if (currentIdx < activeQuestions.length - 1) { currentIdx++; renderQuestion(currentIdx); }
+            else { triggerSubmissionPrompt(); }
+        });
+
+        document.getElementById('flag-btn').addEventListener('click', () => {
+            flaggedList[currentIdx] = !flaggedList[currentIdx];
+            updateNavigatorButton(currentIdx);
+            renderQuestion(currentIdx);
+        });
+
+        function buildGridElements() {
+            const gridBox = document.getElementById('navigator-grid');
+            gridBox.innerHTML = '';
+            activeQuestions.forEach((_, idx) => {
+                const btn = document.createElement('button');
+                btn.id = `nav-cell-${idx}`;
+                btn.className = 'w-full h-8 rounded-lg font-bold text-xs flex items-center justify-center border transition';
+                btn.textContent = idx + 1;
+                btn.addEventListener('click', () => { currentIdx = idx; renderQuestion(idx); });
+                gridBox.appendChild(btn);
+                updateNavigatorButton(idx);
+            });
+        }
+
+        function updateNavigatorButton(idx) {
+            const btn = document.getElementById('nav-cell-' + idx);
+            if (!btn) return;
+
+            const isAnswered = selectedAnswers[idx] !== undefined;
+            const isFlagged = flaggedList[idx];
+
+            btn.className = 'w-full h-8 rounded-lg font-bold text-xs flex items-center justify-center border transition ';
+
+            if (isFlagged) {
+                btn.classList.add('bg-amber-500', 'text-white', 'border-amber-600', 'hover:bg-amber-600');
+            } else if (isAnswered) {
+                btn.classList.add('bg-blue-600', 'text-white', 'border-blue-700', 'hover:bg-blue-700');
+            } else {
+                btn.classList.add('bg-slate-100', 'text-slate-600', 'border-slate-300', 'hover:bg-slate-200');
+            }
+
+            const answeredCount = Object.keys(selectedAnswers).length;
+            document.getElementById('progress-indicator').textContent = `${answeredCount}/${activeQuestions.length}`;
+        }
+
+        function runClock() {
+            clearInterval(timerHook);
+            timerHook = setInterval(() => {
+                if (secondsLeft <= 0) {
+                    clearInterval(timerHook);
+                    submitExamData(false, "Time Limit Reached");
+                } else {
+                    secondsLeft--;
+                    const hr = Math.floor(secondsLeft / 3600);
+                    const min = Math.floor((secondsLeft % 3600) / 60);
+                    const sec = secondsLeft % 60;
+                    document.getElementById('timer-display').textContent = 
+                        `${hr.toString().padStart(2, '0')}:${min.toString().padStart(2, '0')}:${sec.toString().padStart(2, '0')}`;
+                }
+            }, 1000);
+        }
+
+        document.getElementById('submit-btn').addEventListener('click', triggerSubmissionPrompt);
+
+        function triggerSubmissionPrompt() {
+            const unanswered = activeQuestions.length - Object.keys(selectedAnswers).length;
+            let msg = "Are you sure you want to finish and submit your exam answers?";
+            if (unanswered > 0) {
+                msg = "Warning: You have left " + unanswered + " question(s) unanswered. " + msg;
+            }
+            if (confirm(msg)) {
+                submitExamData(false, "User Submitted");
+            }
+        }
+
+        // --- SUBMISSION & LIVE LEADERBOARD RENDERING LOGIC ---
+        // Tab Navigation Toggle Events
+        const explanationsTabBtn = document.getElementById('show-explanations-btn');
+        const scoreboardTabBtn = document.getElementById('show-scoreboard-btn');
+        const explanationsView = document.getElementById('explanations-view');
+        const scoreboardView = document.getElementById('scoreboard-view');
+
+        explanationsTabBtn.addEventListener('click', () => {
+            explanationsTabBtn.className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            scoreboardTabBtn.className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            explanationsView.classList.remove('hidden');
+            scoreboardView.classList.add('hidden');
+        });
+
+        scoreboardTabBtn.addEventListener('click', () => {
+            scoreboardTabBtn.className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            explanationsTabBtn.className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            scoreboardView.classList.remove('hidden');
+            explanationsView.classList.add('hidden');
+            renderActiveLeaderboard();
+        });
+
+        const boardNatBtn = document.getElementById('board-nat-btn');
+        const boardSocBtn = document.getElementById('board-soc-btn');
+
+        boardNatBtn.addEventListener('click', () => {
+            viewBoardStream = "Natural Science";
+            boardNatBtn.className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+            boardSocBtn.className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            renderActiveLeaderboard();
+        });
+
+        boardSocBtn.addEventListener('click', () => {
+            viewBoardStream = "Social Science";
+            boardSocBtn.className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+            boardNatBtn.className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            renderActiveLeaderboard();
+        });
+
+        // Time parsing helper to calculate precise tiebreaker sorting (fastest time wins)
+        function parseTimeToSeconds(timeStr) {
+            if (!timeStr) return 999999;
+            const matches = timeStr.match(/(\d+)m\s*(\d+)s/);
+            if (matches) {
+                return (parseInt(matches[1]) * 60) + parseInt(matches[2]);
+            }
+            const secondsMatch = timeStr.match(/(\d+)s/);
+            if (secondsMatch) return parseInt(secondsMatch[0]);
+            return 999999;
+        }
+
+        // Mock data generator for testing pre-competition
+        function generateCompetitiveMockData() {
+            const firstNames = ["Abebe", "Tadesse", "Aster", "Mekonnen", "Solen", "Lydia", "Beti", "Dawit", "Yonas", "Fenet", "Chala", "Zenebe", "Hirut", "Kidus", "Eldana", "Eyerusalem", "Yididiya", "Gelila", "Naol", "Bontu"];
+            const lastNames = ["Kassa", "Asefa", "Kebede", "Demissie", "Geda", "Tolosa", "Tsegaye", "Bekele", "Hailu", "Girma", "Mengistu", "Degu", "Fikru", "Balcha", "Tefera", "Abera"];
+            const schools = ["Lideta Cathedral School", "St. Joseph School", "Hillside School", "Abugida Academy", "Ifa Boru Academy", "Bole Secondary", "Arada Secondary", "Gibson Academy", "Medhanealem School"];
+            
+            const mockStream = ["Natural Science", "Social Science"];
+            let mockDatabase = [];
+
+            for (let i = 0; i < 70; i++) {
+                const stream = mockStream[i % 2];
+                const subjectList = streamSubjectMapping[stream];
+                const subMeta = subjectList[Math.floor(Math.random() * subjectList.length)];
+                
+                const percent = Math.floor(Math.random() * 41) + 60; // 60% to 100%
+                const totalQ = subjectMetaData[subMeta.id].qCount;
+                const scoreVal = Math.round((percent / 100) * totalQ);
+
+                const minLimit = 2400; // 40 minutes (2400 seconds)
+                const maxLimit = subjectMetaData[subMeta.id].duration;
+                const randSeconds = Math.floor(Math.random() * (maxLimit - minLimit)) + minLimit;
+                const minutes = Math.floor(randSeconds / 60);
+                const seconds = randSeconds % 60;
+
+                mockDatabase.push({
+                    "Candidate Name": `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`,
+                    "School": schools[Math.floor(Math.random() * schools.length)],
+                    "Stream": stream,
+                    "Subject": subjectMetaData[subMeta.id].title,
+                    "Percentage": `${percent}%`,
+                    "Raw Score": scoreVal,
+                    "Total Questions": totalQ,
+                    "Time Spent": `${minutes}m ${seconds}s`,
+                    "Competition Status": "Eligible",
+                    "Reason": "Met requirements"
+                });
+            }
+            return mockDatabase;
+        }
+
+        async function submitExamData(disqualified = false, reasonDetail = "") {
+            isExamActive = false;
+            sessionStorage.removeItem('nextgen_exam_running');
+            clearInterval(timerHook);
+            window.removeEventListener('blur', triggerAntiCheatSystem);
+
+            examSec.classList.add('hidden');
+            stickyTimer.classList.add('hidden');
+            resultSec.classList.remove('hidden');
+
+            const timeSpentSeconds = Math.round((Date.now() - startTimeStamp) / 1000);
+            const minutesPlayed = Math.floor(timeSpentSeconds / 60);
+            const secondsRemainder = timeSpentSeconds % 60;
+            const timeSpentFormatted = `${minutesPlayed}m ${secondsRemainder}s`;
+
+            // Score Calculations
+            let correctCount = 0;
+            activeQuestions.forEach((item, idx) => {
+                if (selectedAnswers[idx] === item.ans) correctCount++;
+            });
+
+            const finalPercent = Math.round((correctCount / activeQuestions.length) * 100);
+            document.getElementById('final-score-field').textContent = `${correctCount} / ${activeQuestions.length}`;
+            document.getElementById('final-percent-field').textContent = `(${finalPercent}%)`;
+
+            // Eligibility determination
+            let eligibilityStatus = "Eligible";
+            let statusReason = "Met all competitive requirements.";
+
+            if (disqualified) {
+                eligibilityStatus = "Disqualified";
+                statusReason = reasonDetail;
+            } else if (timeSpentSeconds < 2400) { // 40 minutes minimum limit
+                eligibilityStatus = "Disqualified";
+                statusReason = "Completed in under 40 minutes.";
+            }
+
+            const statusField = document.getElementById('competition-status-field');
+            const reasonField = document.getElementById('competition-reason-field');
+
+            if (eligibilityStatus === "Eligible") {
+                statusField.textContent = "Eligible for Prizes";
+                statusField.className = "text-xl font-bold mt-1 text-emerald-400";
+                reasonField.textContent = statusReason;
+            } else {
+                statusField.textContent = "Ineligible for Prizes";
+                statusField.className = "text-xl font-bold mt-1 text-red-500";
+                reasonField.textContent = statusReason;
+            }
+
+            const activeSubjectName = subjectMetaData[currentSubjectKey].title;
+            document.getElementById('results-meta').innerHTML = `
+                Candidate: <strong class="text-white">${profile.name}</strong> &nbsp;|&nbsp; 
+                Subject: <strong class="text-white">${activeSubjectName}</strong>
+            `;
+
+            // Prepare payloads
+            const payload = {
+                name: profile.name,
+                city: profile.city,
+                school: profile.school,
+                stream: profile.stream,
+                subject: activeSubjectName,
+                email: profile.email,
+                telegram: profile.telegram,
+                score: correctCount,
+                total: activeQuestions.length,
+                percentage: finalPercent,
+                timeSpent: timeSpentFormatted,
+                status: eligibilityStatus,
+                reason: statusReason
+            };
+
+            // 1. Send to Google Sheets
+            if (WEB_APP_URL) {
+                fetch(WEB_APP_URL, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                }).catch(err => console.error("Database sync issue:", err));
+            }
+
+            // 2. Send Telegram Bot Notification
+            sendTelegramMessage(payload);
+
+            // Explicitly set the active tab to Explanations on submit to ensure it displays first
+            explanationsTabBtn.className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            scoreboardTabBtn.className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            explanationsView.classList.remove('hidden');
+            scoreboardView.classList.add('hidden');
+
+            // 3. Isolated Fetch Database and Prepare Leaderboard
+            rawDatabaseSubmissions = []; // reset local list before fetch
+            try {
+                const dbResponse = await fetch(`${WEB_APP_URL}`);
+                if (dbResponse.ok) {
+                    const rawDataPayload = await dbResponse.json();
+                    rawDatabaseSubmissions = rawDataPayload.submissions || [];
+                }
+            } catch (err) {
+                console.warn("Spreadsheet network lookup skipped or blocked. Displaying local run:", err);
+            }
+
+            // Append current user to the runtime leaderboard data list dynamically
+            rawDatabaseSubmissions.push({
+                "Candidate Name": profile.name,
+                "School": profile.school,
+                "Stream": profile.stream,
+                "Subject": activeSubjectName,
+                "Percentage": `${finalPercent}%`,
+                "Time Spent": timeSpentFormatted,
+                "Competition Status": eligibilityStatus
+            });
+
+            // Automatically switch current default board view to user's registered stream
+            viewBoardStream = profile.stream || "Natural Science";
+            if (viewBoardStream === "Natural Science") {
+                boardNatBtn.className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+                boardSocBtn.className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            } else {
+                boardSocBtn.className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+                boardNatBtn.className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            }
+
+            renderUnifiedReview();
+            renderActiveLeaderboard(); // Pre-call to avoid blank views on tab switch
+        }
+
+        // Leaderboard Calculation & Render
+        function renderActiveLeaderboard() {
+            try {
+                const tableBody = document.getElementById('leaderboard-table-body');
+                tableBody.innerHTML = '';
+
+                let dataPool = [...rawDatabaseSubmissions];
+                
+                // pre-competition test fallback (Inject mock data only if not in live mode)
+                if (!isLiveCompetitionMode && dataPool.length <= 1) {
+                    const mockList = generateCompetitiveMockData();
+                    dataPool = dataPool.concat(mockList);
+                }
+
+                const currentUserName = profile?.name || "";
+                const currentUserStream = profile?.stream || "Natural Science";
+
+                // Filter by selected stream, check eligibility, and EXCLUDE test runs
+                let filteredList = dataPool.filter(item => {
+                    const cName = item["Candidate Name"] || "";
+                    return item["Stream"] === viewBoardStream && 
+                           item["Competition Status"] === "Eligible" &&
+                           !cName.toLowerCase().startsWith("test");
+                });
+
+                // Sort logic: Score % descending, then Time Spent ascending (tiebreaker)
+                filteredList.sort((a, b) => {
+                    const percentA = parseInt(a["Percentage"]) || 0;
+                    const percentB = parseInt(b["Percentage"]) || 0;
+
+                    if (percentA !== percentB) {
+                        return percentB - percentA;
+                    }
+
+                    const secondsA = parseTimeToSeconds(a["Time Spent"]);
+                    const secondsB = parseTimeToSeconds(b["Time Spent"]);
+                    return secondsA - secondsB;
+                });
+
+                // Find current user's entry in the sorted array
+                let userRankIndex = filteredList.findIndex(item => item["Candidate Name"] === currentUserName);
+                let userRankDisplay = userRankIndex !== -1 ? userRankIndex + 1 : null;
+
+                // Render Top 10 rows (Reduced from 20)
+                const renderedCount = Math.min(10, filteredList.length);
+                for (let i = 0; i < renderedCount; i++) {
+                    const rowData = filteredList[i];
+                    const isCurrentUser = rowData["Candidate Name"] === currentUserName;
+                    
+                    const row = document.createElement('tr');
+                    row.className = isCurrentUser 
+                        ? "bg-amber-100 font-bold border-l-4 border-amber-500 transition" 
+                        : "hover:bg-slate-50 transition";
+
+                    row.innerHTML = `
+                        <td class="p-3 font-mono">${i + 1}</td>
+                        <td class="p-3">${rowData["Candidate Name"]}</td>
+                        <td class="p-3 max-w-xs truncate">${rowData["School"]}</td>
+                        <td class="p-3">${rowData["Subject"]}</td>
+                        <td class="p-3 font-semibold text-blue-950">${rowData["Percentage"]}</td>
+                        <td class="p-3 text-slate-500 font-mono">${rowData["Time Spent"]}</td>
+                    `;
+                    tableBody.appendChild(row);
+                }
+
+                // Render personal rank card at the bottom of the table if user is ranked outside Top 10
+                if (viewBoardStream === currentUserStream) {
+                    const userRowData = filteredList.find(item => item["Candidate Name"] === currentUserName);
+                    if (userRowData) {
+                        const extraCard = document.createElement('tr');
+                        
+                        if (userRankDisplay > 10) {
+                            extraCard.className = "bg-amber-100 font-bold border-t-2 border-amber-500";
+                            extraCard.innerHTML = `
+                                <td class="p-3 font-mono">${userRankDisplay}</td>
+                                <td class="p-3">${userRowData["Candidate Name"]} (You)</td>
+                                <td class="p-3 max-w-xs truncate">${userRowData["School"]}</td>
+                                <td class="p-3">${userRowData["Subject"]}</td>
+                                <td class="p-3 font-semibold text-blue-950">${userRowData["Percentage"]}</td>
+                                <td class="p-3 text-slate-500 font-mono">${userRowData["Time Spent"]}</td>
+                            `;
+                        } else if (userRankDisplay === null) {
+                            extraCard.className = "bg-red-50 text-red-800 font-bold border-t border-red-200";
+                            extraCard.innerHTML = `
+                                <td colspan="6" class="p-4 text-center">
+                                    <i class="fa-solid fa-circle-info"></i> You are currently disqualified from the prize rankings (completed in under 40 minutes).
+                                </td>
+                            `;
+                        } else {
+                            return;
+                        }
+                        tableBody.appendChild(extraCard);
+                    }
+                }
+            } catch (err) {
+                console.error("Leaderboard rendering exception caught safely:", err);
+            }
+        }
+
+        function renderUnifiedReview() {
+            try {
+                const container = document.getElementById('explanations-view'); // FIXED ID REFERENCE
+                container.innerHTML = '';
+
+                activeQuestions.forEach((item, idx) => {
+                    const userChoiceIdx = selectedAnswers[idx];
+                    const isCorrect = userChoiceIdx === item.ans;
+
+                    const reviewBlock = document.createElement('div');
+                    reviewBlock.className = "py-6 space-y-4";
+
+                    reviewBlock.innerHTML = `
+                        <div class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white mt-0.5 ${
+                                isCorrect ? 'bg-emerald-600' : 'bg-red-500'
+                            }">
+                                ${idx + 1}
+                            </span>
+                            <div class="space-y-3 w-full">
+                                <h4 class="font-bold text-slate-800 text-sm leading-relaxed">${item.q}</h4>
+                                
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    ${item.opts.map((opt, optIdx) => {
+                                        let badgeStyle = "border-slate-100 text-slate-600 bg-slate-50/50";
+                                        let tag = "";
+
+                                        if (optIdx === item.ans) {
+                                            badgeStyle = "border-emerald-200 bg-emerald-50 text-emerald-800 font-bold";
+                                            tag = '<span class="ml-auto text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded font-semibold"><i class="fa-solid fa-check"></i> Correct</span>';
+                                        } else if (optIdx === userChoiceIdx) {
+                                            badgeStyle = "border-red-200 bg-red-50 text-red-800 font-bold";
+                                            tag = '<span class="ml-auto text-[10px] bg-red-500 text-white px-1.5 py-0.5 rounded font-semibold"><i class="fa-solid fa-xmark"></i> Yours</span>';
+                                        }
+
+                                        return `
+                                            <div class="flex items-center gap-2 border p-2 rounded-lg text-xs ${badgeStyle}">
+                                                <span class="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[9px] font-bold border shrink-0">${String.fromCharCode(65 + optIdx)}</span>
+                                                <span>${opt}</span>
+                                                ${tag}
+                                            </div>
+                                        `;
+                                    }).join('')}
+                                </div>
+
+                                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded-r-lg">
+                                    <h5 class="font-bold text-indigo-900 text-xs flex items-center gap-1 mb-1">
+                                        <i class="fa-solid fa-circle-info"></i> Explanation
+                                    </h5>
+                                    <p class="text-slate-600 text-[11px] leading-relaxed">${item.exp}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                    container.appendChild(reviewBlock);
+                });
+            } catch (err) {
+                console.error("Explanations rendering exception caught safely:", err);
+            }
+        }
+
+        // --- CONSTANTS MODAL TRIGGER ---
+        const constantsBtn = document.getElementById('constants-btn');
+        const constantsModal = document.getElementById('constants-modal');
+        const closeConstantsBtn = document.getElementById('close-constants-btn');
+
+        const tabPhysicsBtn = document.getElementById('tab-physics-btn');
+        const tabChemistryBtn = document.getElementById('tab-chemistry-btn');
+        const tabPhysicsContent = document.getElementById('tab-physics-content');
+        const tabChemistryContent = document.getElementById('tab-chemistry-content');
+
+        constantsBtn.addEventListener('click', () => {
+            constantsModal.classList.remove('hidden');
+        });
+        closeConstantsBtn.addEventListener('click', () => {
+            constantsModal.classList.add('hidden');
+        });
+        constantsModal.addEventListener('click', (e) => {
+            if (e.target === constantsModal) constantsModal.classList.add('hidden');
+        });
+
+        tabPhysicsBtn.addEventListener('click', () => {
+            tabPhysicsBtn.className = "px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition font-semibold";
+            tabChemistryBtn.className = "px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition font-semibold";
+            tabPhysicsContent.classList.remove('hidden');
+            tabChemistryContent.classList.add('hidden');
+        });
+
+        tabChemistryBtn.addEventListener('click', () => {
+            tabChemistryBtn.className = "px-4 py-2 text-blue-950 border-b-2 border-blue-950 focus:outline-none transition font-semibold";
+            tabPhysicsBtn.className = "px-4 py-2 text-slate-500 hover:text-slate-800 focus:outline-none transition font-semibold";
+            tabChemistryContent.classList.remove('hidden');
+            tabPhysicsContent.classList.add('hidden');
+        });
+
+        // --- ADMIN PORTAL INTERACTION LOGIC ---
+        const adminGateBtn = document.getElementById('admin-gate-btn');
+        const adminPanelModal = document.getElementById('admin-panel-modal');
+        const closeAdminBtn = document.getElementById('close-admin-btn');
+        const adminAuthView = document.getElementById('admin-auth-view');
+        const adminControlsView = document.getElementById('admin-controls-view');
+        const adminPasswordInput = document.getElementById('admin-password');
+        const authBtn = document.getElementById('auth-btn');
+        const toggleModeBtn = document.getElementById('toggle-mode-btn');
+        const currentModeLabel = document.getElementById('current-mode-label');
+        
+        // Remote lock selectors
+        const toggleGateBtn = document.getElementById('toggle-gate-btn');
+        const currentGateLabel = document.getElementById('current-gate-label');
+
+        adminGateBtn.addEventListener('click', () => {
+            adminPanelModal.classList.remove('hidden');
+        });
+        closeAdminBtn.addEventListener('click', () => {
+            adminPanelModal.classList.add('hidden');
+            adminAuthView.classList.remove('hidden');
+            adminControlsView.classList.add('hidden');
+            adminPasswordInput.value = '';
+        });
+
+        authBtn.addEventListener('click', () => {
+            const inputPass = adminPasswordInput.value.trim();
+            if (inputPass === "nextgen2018") {
+                adminAuthView.classList.add('hidden');
+                adminControlsView.classList.remove('hidden');
+                
+                // Initialize admin lock labels
+                currentGateLabel.textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked / Suspended";
+                currentGateLabel.className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                toggleGateBtn.textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate";
+                toggleGateBtn.className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px] transition" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+            } else {
+                alert("Incorrect administrative password. Access denied.");
+            }
+        });
+
+        toggleModeBtn.addEventListener('click', () => {
+            isLiveCompetitionMode = !isLiveCompetitionMode;
+            if (isLiveCompetitionMode) {
+                currentModeLabel.textContent = "Live Competition Mode";
+                currentModeLabel.className = "font-semibold text-emerald-600";
+                toggleModeBtn.textContent = "Switch to Demo";
+                toggleModeBtn.className = "bg-slate-500 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+            } else {
+                currentModeLabel.textContent = "Mock/Demo Mode";
+                currentModeLabel.className = "font-semibold text-amber-600";
+                toggleModeBtn.textContent = "Switch to Live";
+                toggleModeBtn.className = "bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+            }
+        });
+
+        // Toggle global registration lock action
+        toggleGateBtn.addEventListener('click', async () => {
+            const nextState = !isRegistrationGateOpen;
+            toggleGateBtn.disabled = true;
+            toggleGateBtn.textContent = "Updating...";
+
+            try {
+                const response = await fetch(WEB_APP_URL, {
+                    method: "POST",
+                    mode: "cors",
+                    body: JSON.stringify({
+                        action: "toggleRegistration",
+                        open: nextState,
+                        password: "nextgen2018"
+                    })
+                });
+
+                if (response.ok) {
+                    const result = await response.json();
+                    isRegistrationGateOpen = result.registrationOpen;
+                    isRegistrationGateOpen = result.registrationOpen !== false;
+                    
+                    // UI Refresh
+                    currentGateLabel.textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked / Suspended";
+                    currentGateLabel.className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                    toggleGateBtn.textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate";
+                    toggleGateBtn.className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px] transition" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+                    
+                    syncRegistrationUI();
+                }
+            } catch (err) {
+                alert("Spreadsheet connection lost. Check Apps Script Web App Deployment.");
+                console.error(err);
+            } finally {
+                toggleGateBtn.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
