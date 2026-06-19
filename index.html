@@ -191,20 +191,25 @@
             </div>
 
             <!-- Join Channel CTA -->
-            <div class="bg-emerald-50 border border-emerald-200 p-5 rounded-xl flex flex-col md:flex-row items-center gap-4 justify-between">
-                <div class="flex items-center gap-3">
-                    <div class="w-11 h-11 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl shrink-0">
-                        <i class="fa-brands fa-telegram"></i>
-                    </div>
-                    <div>
-                        <h4 class="font-extrabold text-slate-800 text-sm">Join NextGen Scholars on Telegram</h4>
-                        <p class="text-xs text-slate-500">Stay updated on rank listings, correct answers, and contest winners.</p>
-                    </div>
-                </div>
-                <a href="https://t.me/NextGen_12" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2 px-4 rounded-lg text-xs tracking-wider uppercase shadow-sm transition shrink-0">
-                    @NextGen_12
-                </a>
-            </div>
+<div class="bg-emerald-50 border border-emerald-200 p-5 rounded-xl flex flex-col md:flex-row items-center gap-4 justify-between">
+    <div class="flex items-center gap-3">
+        <div class="w-11 h-11 rounded-full bg-emerald-100 text-emerald-800 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-brands fa-telegram"></i>
+        </div>
+        <div>
+            <h4 class="font-extrabold text-slate-800 text-sm">Join NextGen Scholars on Telegram</h4>
+            <p class="text-xs text-slate-500">Stay updated on rank listings, correct answers, and contest winners.</p>
+        </div>
+    </div>
+    <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+        <a href="scoreboard.html" class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-2.5 px-4 rounded-lg text-xs tracking-wider uppercase shadow-sm transition text-center flex items-center justify-center gap-1.5">
+            <i class="fa-solid fa-ranking-star"></i> Live Leaderboard
+        </a>
+        <a href="https://t.me/NextGen_12" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-2.5 px-4 rounded-lg text-xs tracking-wider uppercase shadow-sm transition text-center block">
+            @NEXTGEN_12
+        </a>
+    </div>
+</div>
 
             <!-- Review & Explanations -->
             <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 space-y-4">
@@ -547,6 +552,9 @@
         async function submitExamData(disqualified = false, reasonDetail = "") {
             isExamActive = false; 
             sessionStorage.removeItem('nextgen_exam_state'); 
+            // Save identity to local storage so the separate scoreboard can identify them
+localStorage.setItem('nextgen_last_name', profile.name);
+localStorage.setItem('nextgen_last_stream', profile.stream);
             sessionStorage.removeItem('nextgen_exam_seconds');
             clearInterval(timerHook); window.removeEventListener('blur', triggerAntiCheatSystem);
 
