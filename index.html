@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Exam Collections 2018 E.C. - NextGen Scholars</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .watermark-bg {
+            background-image: url('https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg');
+            background-repeat: no-repeat; background-position: center; background-size: contain;
+            opacity: 0.02; pointer-events: none;
+        }
+        /* Custom scrollbar for constants modal to make it neat */
+        .custom-scroll::-webkit-scrollbar { width: 6px; }
+        .custom-scroll::-webkit-scrollbar-thumb { background-color: #cbd5e1; border-radius: 10px; }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 flex flex-col justify-between animate-fade-in">
+
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-3.5 px-4 md:px-6 shadow-md border-b-2 border-amber-500 top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg" alt="NextGen Logo" class="w-10 h-10 rounded-full border border-amber-400 object-cover shrink-0">
+                <div>
+                    <h1 class="text-sm md:text-lg font-bold tracking-tight text-white leading-tight">NextGen Scholars</h1>
+                    <p class="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">Model Exam Collections 2018 E.C.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button id="admin-gate-btn" class="bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white p-1.5 rounded-lg text-xs transition"><i class="fa-solid fa-gear"></i></button>
+                <button id="constants-btn" class="bg-slate-800 hover:bg-slate-700 border border-slate-700 text-amber-400 font-bold py-1.5 px-3 rounded-lg text-xs flex items-center gap-1.5 transition shadow-sm"><i class="fa-solid fa-calculator"></i> Constants Data</button>
+                <div id="sticky-timer-card" class="hidden flex items-center gap-3 bg-slate-800 border border-slate-700 px-3 py-1.5 rounded-lg shrink-0">
+                    <span class="text-[11px] font-bold text-slate-400 uppercase tracking-wider hidden sm:inline">Time:</span>
+                    <div class="text-base sm:text-lg font-black text-red-500 font-mono" id="timer-display">00:00:00</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="flex-grow max-w-7xl w-full mx-auto p-3 md:p-6 relative">
+        <div class="absolute inset-0 watermark-bg z-0"></div>
+
+        <!-- 1. Registration -->
+        <section id="intro-section" class="relative z-10 max-w-3xl mx-auto bg-white rounded-2xl shadow-xl border border-slate-200 overflow-hidden my-6">
+            <div class="bg-gradient-to-r from-blue-950 to-indigo-900 p-6 text-white text-center">
+                <h2 class="text-2xl md:text-3xl font-extrabold mb-1"><i class="fa-solid fa-trophy text-amber-400 mr-1"></i> NextGen National Competition</h2>
+            </div>
+            <div class="p-6 md:p-8 space-y-6">
+                <div id="closed-registration-alert" class="hidden bg-red-50 border-l-4 border-red-500 p-4 rounded-r-xl text-sm text-red-800 font-semibold space-y-1">
+                    <p class="font-bold flex items-center gap-1.5"><i class="fa-solid fa-circle-xmark"></i> Registration Period Closed</p>
+                    <p class="text-xs">New registrations are currently locked by the administrator. Active sessions will not be interrupted.</p>
+                </div>
+                <div class="bg-amber-50/80 border-l-4 border-amber-500 p-4 rounded-r-xl space-y-2">
+                    <h3 class="font-bold text-amber-900 text-sm mb-1.5"><i class="fa-solid fa-triangle-exclamation"></i> Competitive Rules & Eligibility</h3>
+                    <ul class="space-y-1.5 text-xs text-slate-700 list-disc list-inside">
+                        <li><strong>Flexible Entry:</strong> Pick <span class="font-bold text-blue-900">any single subject</span> to compete.</li>
+                        <li><strong>Connection Safe:</strong> If your internet drops, you <span class="font-bold text-emerald-700">can refresh the page</span> safely without losing your progress.</li>
+                        <li><strong>Anti-Cheating:</strong> Switching tabs or opening other apps <span class="font-bold text-red-600">will auto-submit your exam.</span></li>
+                        <li><strong>Duration Limit:</strong> Submitting before <span class="font-bold text-blue-900">40 minutes</span> disqualifies you from prizes.</li>
+                    </ul>
+                </div>
+
+                <form id="registration-form" class="space-y-5">
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-600 border-b pb-1.5"><i class="fa-solid fa-id-card mr-1"></i> 1. Candidate Identity</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Full Legal Name <span class="text-red-500">*</span></label>
+                            <p class="text-[10px] text-slate-400 mb-1.5">Enter your exact name as it appears on your school records.</p>
+                            <input type="text" id="reg-name" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm" placeholder="e.g. Abebe Kebede">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">City / Sub-City / Woreda <span class="text-red-500">*</span></label>
+                            <p class="text-[10px] text-slate-400 mb-1.5">Your current residential or school location.</p>
+                            <input type="text" id="reg-city" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm" placeholder="e.g. Addis Ababa, Arada">
+                        </div>
+                        <div class="md:col-span-2">
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Official School Name <span class="text-red-500">*</span></label>
+                            <p class="text-[10px] text-slate-400 mb-1.5">The name of the high school you are currently attending.</p>
+                            <input type="text" id="reg-school" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm" placeholder="e.g. Lideta Cathedral School">
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-600 border-b pt-4 pb-1.5"><i class="fa-solid fa-address-book mr-1"></i> 2. Contact Information</h3>
+                    <p class="text-[11px] text-slate-500 font-medium">Please provide at least one valid method of contact so we can reach you for prize distribution.</p>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Email Address</label>
+                            <input type="email" id="reg-email" class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm" placeholder="your.email@domain.com">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Telegram Username / Phone</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400 text-sm font-bold">@</span>
+                                <input type="text" id="reg-telegram" class="w-full pl-7 pr-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm" placeholder="Username or +251...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-sm font-bold uppercase tracking-wider text-slate-600 border-b pt-4 pb-1.5"><i class="fa-solid fa-graduation-cap mr-1"></i> 3. Subject Selection</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Academic Stream <span class="text-red-500">*</span></label>
+                            <select id="reg-stream" required class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm bg-white cursor-pointer">
+                                <option value="" disabled selected>Select Your Stream</option>
+                                <option value="Natural Science">Natural Science</option>
+                                <option value="Social Science">Social Science</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 mb-0.5">Select Exam Subject <span class="text-red-500">*</span></label>
+                            <select id="reg-subject" required disabled class="w-full px-3 py-2 border border-slate-300 rounded-lg focus:ring-2 focus:ring-blue-900 text-sm bg-slate-50 cursor-pointer disabled:opacity-50">
+                                <option value="" disabled selected>Choose Stream First</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div id="subject-info-card" class="hidden bg-blue-50 border border-blue-200 p-4 rounded-xl text-sm space-y-1.5 mt-2">
+                        <p class="font-bold text-blue-950 flex items-center gap-1.5"><i class="fa-solid fa-circle-info"></i> Exam Parameters:</p>
+                        <ul class="text-slate-700 space-y-1 list-none ml-1">
+                            <li><i class="fa-solid fa-book text-blue-400 w-4"></i> Subject: <span id="info-sub-title" class="font-bold text-slate-900"></span></li>
+                            <li><i class="fa-solid fa-list-ol text-blue-400 w-4"></i> Total Questions: <span id="info-sub-qcount" class="font-bold text-slate-900"></span></li>
+                            <li><i class="fa-solid fa-stopwatch text-blue-400 w-4"></i> Time Allowed: <span id="info-sub-duration" class="font-bold text-slate-900"></span></li>
+                        </ul>
+                    </div>
+                    
+                    <button type="submit" id="submit-reg-btn" class="w-full bg-blue-950 hover:bg-blue-900 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base mt-8">
+                        <i class="fa-solid fa-play"></i> Enter Competition Arena
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Loading -->
+        <section id="loading-section" class="hidden relative z-10 max-w-md mx-auto text-center bg-white border border-slate-200 p-8 rounded-2xl shadow-lg my-12 space-y-4">
+            <div class="animate-spin text-blue-950 text-4xl"><i class="fa-solid fa-spinner"></i></div>
+            <h3 class="font-bold text-slate-800 text-lg">Preparing Your Exam...</h3>
+        </section>
+
+        <!-- 2. Simulator -->
+        <section id="exam-section" class="hidden relative z-10 grid grid-cols-1 lg:grid-cols-4 gap-4 md:gap-6">
+            <div class="lg:col-span-3 space-y-4">
+                <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                    <div class="bg-slate-50 px-5 py-3.5 border-b border-slate-200 flex items-center justify-between">
+                        <span class="text-xs font-bold text-slate-600 uppercase tracking-wider" id="question-index-label">Question -- of --</span>
+                        <div class="flex items-center gap-2">
+                            <span id="section-tag" class="text-[10px] bg-indigo-100 text-indigo-800 font-bold px-2 py-0.5 rounded-full uppercase tracking-wider">Part</span>
+                            <button id="flag-btn" class="text-xs font-semibold px-3 py-1 border border-amber-300 text-amber-700 bg-amber-50 rounded-full flex items-center gap-1"><i class="fa-regular fa-bookmark"></i> Flag</button>
+                        </div>
+                    </div>
+                    
+                    <div class="p-5 md:p-8 space-y-6">
+                        <h3 class="text-sm md:text-base font-semibold text-slate-800 leading-relaxed" id="question-text">Content</h3>
+                        <div class="grid grid-cols-1 gap-3" id="options-container"></div>
+                    </div>
+
+                    <div class="bg-slate-50 px-5 py-3.5 border-t border-slate-200 flex items-center justify-between">
+                        <button id="prev-btn" class="bg-white border border-slate-300 hover:bg-slate-100 text-slate-700 font-bold py-1.5 px-4 rounded-lg text-xs flex items-center gap-1.5"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                        <button id="next-btn" class="bg-blue-950 hover:bg-blue-900 text-white font-bold py-1.5 px-4 rounded-lg text-xs flex items-center gap-1.5">Next <i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1 space-y-4">
+                <div class="bg-white p-5 rounded-2xl shadow-sm border border-slate-200 space-y-4">
+                    <div class="flex items-center justify-between border-b pb-2">
+                        <h4 class="font-bold text-slate-800 text-xs uppercase tracking-wider">Progress</h4>
+                        <span class="text-xs bg-slate-100 text-slate-600 px-2 py-0.5 rounded-full font-bold" id="progress-indicator">0/--</span>
+                    </div>
+                    <div class="grid grid-cols-5 gap-1.5 max-h-64 overflow-y-auto p-1.5 border rounded-lg bg-slate-50 custom-scroll" id="navigator-grid"></div>
+                    <button id="submit-btn" class="w-full bg-red-600 hover:bg-red-700 text-white font-bold py-2.5 rounded-xl shadow-sm text-xs flex items-center justify-center gap-2"><i class="fa-solid fa-cloud-arrow-up"></i> Submit & Finish</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Results Section -->
+        <section id="results-section" class="hidden relative z-10 max-w-4xl mx-auto space-y-6">
+            <div class="bg-gradient-to-r from-slate-900 to-indigo-950 p-6 md:p-8 rounded-2xl text-white text-center border-b-4 border-emerald-500 shadow-md">
+                <h2 class="text-2xl font-black tracking-wide mb-1">Official Result Card</h2>
+                <p class="text-slate-300 text-xs mb-4" id="results-meta"></p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-xl mx-auto my-4">
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl">
+                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Raw Score</span>
+                        <span class="text-3xl font-extrabold text-emerald-400" id="final-score-field">0 / --</span>
+                        <span class="text-xs text-slate-300 mt-1 block" id="final-percent-field">(0%)</span>
+                    </div>
+                    <div class="bg-white/5 border border-white/10 p-4 rounded-xl flex flex-col justify-center">
+                        <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">Prize Pool Status</span>
+                        <span class="text-xl font-bold mt-1" id="competition-status-field">Checking...</span>
+                        <span class="text-[9px] text-slate-300 mt-0.5 block" id="competition-reason-field">---</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABS -->
+            <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+                <div class="flex border-b border-slate-200 bg-slate-50 font-bold text-xs uppercase tracking-wider text-center">
+                    <button id="show-explanations-btn" class="flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition"><i class="fa-solid fa-list-check mr-1"></i> Review</button>
+                    <button id="show-scoreboard-btn" class="flex-1 py-3 text-slate-400 hover:text-slate-800 transition"><i class="fa-solid fa-ranking-star mr-1"></i> Leaderboard</button>
+                </div>
+
+                <!-- Explanations View -->
+                <div id="explanations-view" class="p-5 divide-y divide-slate-100"></div>
+
+                <!-- Scoreboard View -->
+                <div id="scoreboard-view" class="hidden p-5 space-y-6">
+                    <div class="flex justify-center border-b pb-2 text-xs font-bold gap-4">
+                        <button id="board-nat-btn" class="px-4 py-1.5 rounded-full bg-blue-950 text-white transition">Natural Science</button>
+                        <button id="board-soc-btn" class="px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition">Social Science</button>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left border-collapse text-xs md:text-sm">
+                            <thead>
+                                <tr class="bg-slate-900 text-white uppercase text-[10px] tracking-wider">
+                                    <th class="p-3 rounded-l-lg">Rank</th><th class="p-3">Name</th><th class="p-3">School</th>
+                                    <th class="p-3">Subject</th><th class="p-3">Score %</th><th class="p-3 rounded-r-lg">Duration</th>
+                                </tr>
+                            </thead>
+                            <tbody id="leaderboard-table-body" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Constants Modal Overlay (Redesigned & Enlarged) -->
+    <div id="constants-modal" class="hidden fixed inset-0 bg-slate-900/70 backdrop-blur-sm z-50 flex items-center justify-center p-2 md:p-4">
+        <div class="bg-white rounded-2xl max-w-3xl w-full shadow-2xl border border-slate-200 flex flex-col max-h-[90vh] overflow-hidden">
+            <!-- Header -->
+            <div class="flex items-center justify-between border-b bg-slate-50 px-6 py-4 shrink-0">
+                <h3 class="font-extrabold text-slate-800 text-lg flex items-center gap-2">
+                    <i class="fa-solid fa-atom text-blue-950"></i> Master Reference & Constants Sheet
+                </h3>
+                <button id="close-constants-btn" class="text-slate-400 hover:text-red-500 text-2xl transition"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            
+            <!-- Tabs -->
+            <div class="flex border-b border-slate-200 text-sm font-bold bg-slate-50 shrink-0 px-2">
+                <button id="tab-physics-btn" class="px-6 py-3 text-blue-950 border-b-4 border-blue-950 focus:outline-none transition">Physics Parameters</button>
+                <button id="tab-chemistry-btn" class="px-6 py-3 text-slate-400 hover:text-slate-800 focus:outline-none transition">Chemistry Parameters</button>
+            </div>
+            
+            <!-- Scrollable Content -->
+            <div class="overflow-y-auto p-6 text-sm flex-grow custom-scroll bg-white">
+                
+                <!-- PHYSICS TAB -->
+                <div id="tab-physics-content" class="space-y-6">
+                    <div>
+                        <h4 class="font-bold text-blue-900 border-b pb-1 mb-3 uppercase tracking-wide text-xs">Fundamental Physical Constants</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Gravity (g)</span><span class="font-mono font-bold text-slate-900">10 m/s&sup2;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Gravitational Const (G)</span><span class="font-mono font-bold text-slate-900">6.67 &times; 10&puncsp;&sup1;&sup1; N&middot;m&sup2;/kg&sup2;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Speed of light (c)</span><span class="font-mono font-bold text-slate-900">3.00 &times; 10&sup8; m/s</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Permittivity (&epsilon;&infin;)</span><span class="font-mono font-bold text-slate-900">8.85 &times; 10&puncsp;&sup1;&sup2; F/m</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Permeability (&mu;&infin;)</span><span class="font-mono font-bold text-slate-900">4&pi; &times; 10&puncsp;&sup7; T&middot;m/A</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Coulomb's Const (K)</span><span class="font-mono font-bold text-slate-900">9.00 &times; 10&sup9; N&middot;m&sup2;/C&sup2;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Elementary charge (q)</span><span class="font-mono font-bold text-slate-900">&plusmn; 1.60 &times; 10&puncsp;&sup1;&sup9; C</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Mass of electron (m_e)</span><span class="font-mono font-bold text-slate-900">9.11 &times; 10&puncsp;&sup3;&sup1; kg</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Mass of proton (m_p)</span><span class="font-mono font-bold text-slate-900">1.67 &times; 10&puncsp;&sup2;&sup7; kg</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Density of Water (&rho;)</span><span class="font-mono font-bold text-slate-900">1000 kg/m&sup3;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Speed of Sound (Air, 20&deg;C)</span><span class="font-mono font-bold text-slate-900">343 m/s</span></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-blue-900 border-b pb-1 mb-3 uppercase tracking-wide text-xs">Trigonometric Values</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 font-mono text-sm bg-slate-100 p-3 rounded-lg border">
+                            <span>sin(30&deg;) = 0.50</span><span>cos(60&deg;) = 0.50</span><span>sin(45&deg;) &approx; 0.707</span>
+                            <span>sin(37&deg;) &approx; 0.60</span><span>cos(53&deg;) &approx; 0.60</span><span>cos(45&deg;) &approx; 0.707</span>
+                            <span>sin(53&deg;) &approx; 0.80</span><span>cos(37&deg;) &approx; 0.80</span><span>sin(20&deg;) &approx; 0.34</span>
+                            <span>sin(60&deg;) &approx; 0.87</span><span>cos(30&deg;) &approx; 0.87</span><span>cos(20&deg;) &approx; 0.94</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CHEMISTRY TAB -->
+                <div id="tab-chemistry-content" class="hidden space-y-6">
+                    <div>
+                        <h4 class="font-bold text-emerald-700 border-b pb-1 mb-3 uppercase tracking-wide text-xs">Fundamental Chemical Constants</h4>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-3 gap-x-6">
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Gas Constant (R)</span><span class="font-mono font-bold text-slate-900">0.0821 L&middot;atm/mol&middot;K</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Gas Constant (R)</span><span class="font-mono font-bold text-slate-900">8.314 J/mol&middot;K</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Avogadro's (N_A)</span><span class="font-mono font-bold text-slate-900">6.023 &times; 10&sup2;&sup3; mol&puncsp;&sup1;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Planck's Const (h)</span><span class="font-mono font-bold text-slate-900">6.626 &times; 10&puncsp;&sup3;&sup4; J&middot;s</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Faraday's (F)</span><span class="font-mono font-bold text-slate-900">96,500 C/mol</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Rydberg Const (R_H)</span><span class="font-mono font-bold text-slate-900">-2.18 &times; 10&puncsp;&sup1;&sup8; J</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">Water Ionization (K_w)</span><span class="font-mono font-bold text-slate-900">1.0 &times; 10&puncsp;&sup1;&sup4;</span></div>
+                            <div class="flex justify-between bg-slate-50 p-2 rounded border"><span class="font-medium text-slate-600">&radic;3.55</span><span class="font-mono font-bold text-slate-900">1.88</span></div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-emerald-700 border-b pb-1 mb-3 uppercase tracking-wide text-xs">Standard Atomic Weights</h4>
+                        <div class="grid grid-cols-4 md:grid-cols-6 gap-2 font-mono text-sm bg-slate-100 p-3 rounded-lg border text-center">
+                            <span class="bg-white border rounded py-1">H: 1.0</span><span class="bg-white border rounded py-1">He: 4.0</span>
+                            <span class="bg-white border rounded py-1">Li: 6.9</span><span class="bg-white border rounded py-1">Be: 9.01</span>
+                            <span class="bg-white border rounded py-1">B: 10.8</span><span class="bg-white border rounded py-1">C: 12.0</span>
+                            <span class="bg-white border rounded py-1">N: 14.0</span><span class="bg-white border rounded py-1">O: 16.0</span>
+                            <span class="bg-white border rounded py-1">F: 19.0</span><span class="bg-white border rounded py-1">Ne: 20.2</span>
+                            <span class="bg-white border rounded py-1">Na: 23.0</span><span class="bg-white border rounded py-1">Mg: 24.3</span>
+                            <span class="bg-white border rounded py-1">Al: 27.0</span><span class="bg-white border rounded py-1">P: 31.0</span>
+                            <span class="bg-white border rounded py-1">S: 32.1</span><span class="bg-white border rounded py-1">Cl: 35.5</span>
+                            <span class="bg-white border rounded py-1">Ar: 40.0</span><span class="bg-white border rounded py-1">K: 39.0</span>
+                            <span class="bg-white border rounded py-1">Ca: 40.1</span><span class="bg-white border rounded py-1">Cr: 52.0</span>
+                            <span class="bg-white border rounded py-1">Mn: 54.9</span><span class="bg-white border rounded py-1">Fe: 55.8</span>
+                            <span class="bg-white border rounded py-1">Cu: 63.6</span><span class="bg-white border rounded py-1">Zn: 65.4</span>
+                            <span class="bg-white border rounded py-1">Br: 79.9</span><span class="bg-white border rounded py-1">Ag: 108.0</span>
+                            <span class="bg-white border rounded py-1">I: 200.6</span><span class="bg-white border rounded py-1">Pb: 207.0</span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h4 class="font-bold text-emerald-700 border-b pb-1 mb-3 uppercase tracking-wide text-xs">Standard Reduction Potentials (E&deg; at 25&deg;C)</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-3 gap-2 font-mono text-sm bg-slate-100 p-3 rounded-lg border">
+                            <span class="bg-white border rounded px-2 py-1">Ca&sup2;&⁺;/Ca: -2.87 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Mg&sup2;&⁺;/Mg: -2.37 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Al&sup3;&⁺;/Al: -1.66 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Mn&sup2;&⁺;/Mn: -1.18 V</span>
+                            <span class="bg-white border rounded px-2 py-1">V&sup2;&⁺;/V: -1.18 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Zn&sup2;&⁺;/Zn: -0.76 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Cr&sup3;&⁺;/Cr: -0.74 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Fe&sup2;&⁺;/Fe: -0.44 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Cd&sup2;&⁺;/Cd: -0.40 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Ni&sup2;&⁺;/Ni: -0.25 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Pb&sup2;&⁺;/Pb: -0.13 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Cu&sup2;&⁺;/Cu: +0.34 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Ag&⁺;/Ag: +0.80 V</span>
+                            <span class="bg-white border rounded px-2 py-1">Au&sup3;&⁺;/Au: +1.50 V</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Panel Modal -->
+    <div id="admin-panel-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex items-center justify-between border-b pb-2">
+                <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider"><i class="fa-solid fa-lock-open mr-1"></i> Admin Portal</h3>
+                <button id="close-admin-btn" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="admin-auth-view" class="space-y-3">
+                <label class="block text-xs font-semibold text-slate-500">Enter Admin Password:</label>
+                <input type="password" id="admin-password" class="w-full px-3 py-2 border rounded-lg outline-none text-sm focus:ring-2 focus:ring-blue-900">
+                <button id="auth-btn" class="w-full bg-blue-950 text-white font-bold py-2 rounded-lg text-xs transition">Verify Access</button>
+            </div>
+            <div id="admin-controls-view" class="hidden space-y-4">
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Registration Gate Lock:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-gate-label" class="font-semibold text-emerald-600">Open for Entries</span>
+                        <button id="toggle-gate-btn" class="bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition">Lock Gate</button>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Arena Mode:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-mode-label" class="font-semibold text-amber-600">Mock/Demo Mode</span>
+                        <button id="toggle-mode-btn" class="bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px] transition">Toggle Mode</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script Engine -->
+    <script>
+        const GITHUB_BASE_URL = "./data/";
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzzvn2pR6TSOVdNJaf4AMCvDhqqVZOw7yUO8-AA_Bt9E4rdNhpsr4g9Ll0xS5l4Bg29GQ/exec";
+        
+        const subjectMetaData = {
+            maths: { title: "Mathematics", duration: 10800, qCount: 60, formattedTime: "3 Hours" },
+            biology: { title: "Biology", duration: 7200, qCount: 100, formattedTime: "2 Hours" },
+            chemistry: { title: "Chemistry", duration: 9000, qCount: 80, formattedTime: "2.5 Hours" },
+            history: { title: "History", duration: 9000, qCount: 100, formattedTime: "2.5 Hours" },
+            physics: { title: "Physics", duration: 9000, qCount: 60, formattedTime: "2.5 Hours" },
+            english: { title: "English", duration: 7200, qCount: 100, formattedTime: "2 Hours" },
+            economics: { title: "Economics", duration: 9000, qCount: 80, formattedTime: "2.5 Hours" },
+            sat: { title: "SAT", duration: 9000, qCount: 60, formattedTime: "2.5 Hours" },
+            geography: { title: "Geography", duration: 7200, qCount: 115, formattedTime: "2 Hours" }
+        };
+
+        const streamSubjectMapping = {
+            "Natural Science": [{ id: "maths", name: "Mathematics" }, { id: "english", name: "English" }, { id: "physics", name: "Physics" }, { id: "chemistry", name: "Chemistry" }, { id: "biology", name: "Biology" }, { id: "sat", name: "SAT" }],
+            "Social Science": [{ id: "maths", name: "Mathematics" }, { id: "english", name: "English" }, { id: "history", name: "History" }, { id: "geography", name: "Geography" }, { id: "economics", name: "Economics" }, { id: "sat", name: "SAT" }]
+        };
+
+        let activeQuestions = [], currentIdx = 0, selectedAnswers = {}, flaggedList = {};      
+        let secondsLeft = 0, totalExamSeconds = 0, timerHook = null, profile = {}, startTimeStamp = null, isExamActive = false;
+        let isRegistrationGateOpen = true, rawDatabaseSubmissions = [], viewBoardStream = "Natural Science";
+        let isRefreshing = false, isLiveCompetitionMode = false;
+
+        const introSec = document.getElementById('intro-section'), loadingSec = document.getElementById('loading-section'), examSec = document.getElementById('exam-section'), resultSec = document.getElementById('results-section');
+        const streamSelect = document.getElementById('reg-stream'), subjectSelect = document.getElementById('reg-subject'), regForm = document.getElementById('registration-form');
+
+        // Restore Session State
+        function saveSessionState() {
+            if(!isExamActive) return;
+            const state = { profile, currentSubjectKey: subjectSelect.value, activeQuestions, selectedAnswers, flaggedList, startTimeStamp, currentIdx };
+            sessionStorage.setItem('nextgen_exam_state', JSON.stringify(state));
+        }
+
+        function restoreSessionState() {
+            const stateStr = sessionStorage.getItem('nextgen_exam_state');
+            if (stateStr) {
+                const state = JSON.parse(stateStr);
+                profile = state.profile; subjectSelect.value = state.currentSubjectKey; activeQuestions = state.activeQuestions;
+                selectedAnswers = state.selectedAnswers || {}; flaggedList = state.flaggedList || {};
+                startTimeStamp = state.startTimeStamp; currentIdx = state.currentIdx || 0;
+                let savedSecs = sessionStorage.getItem('nextgen_exam_seconds');
+                secondsLeft = savedSecs !== null ? parseInt(savedSecs) : state.secondsLeft;
+
+                introSec.classList.add('hidden'); examSec.classList.remove('hidden'); document.getElementById('sticky-timer-card').classList.remove('hidden');
+                isExamActive = true;
+                renderQuestion(currentIdx); buildGridElements(); runClock();
+                return true;
+            }
+            return false;
+        }
+
+        streamSelect.addEventListener('change', () => {
+            subjectSelect.innerHTML = '<option value="" disabled selected>Select Subject</option>'; subjectSelect.disabled = false;
+            document.getElementById('subject-info-card').classList.add('hidden');
+            if (streamSubjectMapping[streamSelect.value]) { streamSubjectMapping[streamSelect.value].forEach(sub => { let opt = document.createElement('option'); opt.value = sub.id; opt.textContent = sub.name; subjectSelect.appendChild(opt); }); }
+        });
+
+        subjectSelect.addEventListener('change', () => {
+            const meta = subjectMetaData[subjectSelect.value];
+            if (meta) {
+                document.getElementById('info-sub-title').textContent = meta.title; document.getElementById('info-sub-qcount').textContent = `${meta.qCount} Questions`; document.getElementById('info-sub-duration').textContent = meta.formattedTime; document.getElementById('subject-info-card').classList.remove('hidden');
+            }
+        });
+
+        window.addEventListener('load', async () => {
+            if (restoreSessionState()) return; 
+            try {
+                let res = await fetch(`${WEB_APP_URL}?checkStatus=1`);
+                if (res.ok) { let data = await res.json(); isRegistrationGateOpen = data.registrationOpen !== false; syncRegistrationUI(); }
+            } catch (err) {}
+        });
+
+        function syncRegistrationUI() {
+            const btn = document.getElementById('submit-reg-btn'), alert = document.getElementById('closed-registration-alert');
+            if (!isRegistrationGateOpen) {
+                alert.classList.remove('hidden'); btn.disabled = true;
+                btn.className = "w-full bg-slate-300 text-slate-500 font-bold py-3.5 px-6 rounded-xl cursor-not-allowed flex items-center justify-center gap-2 text-base mt-8 shadow-inner";
+                btn.innerHTML = '<i class="fa-solid fa-lock"></i> Registration Locked';
+            } else {
+                alert.classList.add('hidden'); btn.disabled = false;
+                btn.className = "w-full bg-blue-950 hover:bg-blue-900 text-white font-bold py-3.5 px-6 rounded-xl shadow-lg transition flex items-center justify-center gap-2 text-base mt-8";
+                btn.innerHTML = '<i class="fa-solid fa-play"></i> Enter Competition Arena';
+            }
+        }
+
+        function shuffleArray(arr) {
+            let shuffled = [...arr];
+            for (let i = shuffled.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]]; }
+            return shuffled;
+        }
+
+        function parseAndShuffleExam(data) {
+            let deck = [];
+            data.parts.forEach(sec => {
+                let qArr = shuffleArray(sec.questions);
+                qArr.forEach(q => {
+                    let opts = [...q.opts], correctVal = opts[q.ans], shufOpts = shuffleArray(opts);
+                    deck.push({ partTitle: sec.partTitle, q: q.q, opts: shufOpts, ans: shufOpts.indexOf(correctVal), exp: q.exp });
+                });
+            });
+            return deck;
+        }
+
+        regForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const email = document.getElementById('reg-email').value.trim(), telegram = document.getElementById('reg-telegram').value.trim();
+            if (!email && !telegram) return alert("You must provide an Email or Telegram Username!");
+
+            profile = { name: document.getElementById('reg-name').value.trim(), city: document.getElementById('reg-city').value.trim(), school: document.getElementById('reg-school').value.trim(), stream: streamSelect.value, email, telegram };
+            introSec.classList.add('hidden'); loadingSec.classList.remove('hidden');
+
+            try {
+                let res = await fetch(`${GITHUB_BASE_URL}${subjectSelect.value}.json?t=${Date.now()}`);
+                if (!res.ok) throw new Error("JSON missing");
+                activeQuestions = parseAndShuffleExam(await res.json());
+                totalExamSeconds = subjectMetaData[subjectSelect.value].duration; secondsLeft = totalExamSeconds;
+                loadingSec.classList.add('hidden'); examSec.classList.remove('hidden'); document.getElementById('sticky-timer-card').classList.remove('hidden');
+                isExamActive = true; startTimeStamp = Date.now();
+                saveSessionState(); renderQuestion(0); buildGridElements(); runClock();
+            } catch (err) {
+                loadingSec.classList.add('hidden'); introSec.classList.remove('hidden'); alert("Error loading questions.");
+            }
+        });
+
+        window.addEventListener('beforeunload', () => { isRefreshing = true; });
+        function triggerAntiCheatSystem() {
+            if (isExamActive && !isRefreshing) { isExamActive = false; alert("SECURITY VIOLATION: You left the tab. Auto-submitting."); submitExamData(true, "Tab-switch / Window Blur detected"); }
+        }
+        document.addEventListener('visibilitychange', () => { if (document.hidden) triggerAntiCheatSystem(); });
+        window.addEventListener('blur', triggerAntiCheatSystem);
+
+        function renderQuestion(idx) {
+            const item = activeQuestions[idx];
+            document.getElementById('question-index-label').textContent = `Question ${idx + 1} of ${activeQuestions.length}`;
+            document.getElementById('question-text').innerHTML = item.q;
+            document.getElementById('section-tag').textContent = item.partTitle;
+
+            const optsBox = document.getElementById('options-container'); optsBox.innerHTML = '';
+            item.opts.forEach((opt, oIdx) => {
+                const isChecked = selectedAnswers[idx] === oIdx;
+                const el = document.createElement('label');
+                el.className = `flex items-center gap-3 p-3 rounded-xl border-2 transition cursor-pointer text-xs md:text-sm font-medium ${isChecked ? 'border-blue-900 bg-blue-50/50 font-semibold' : 'border-slate-200 hover:bg-slate-50'}`;
+                el.innerHTML = `<input type="radio" name="m_opt" value="${oIdx}" ${isChecked?'checked':''} class="w-4 h-4 text-blue-900"><span class="w-6 h-6 rounded-full bg-slate-100 flex items-center justify-center text-[10px] font-bold text-slate-500 border">${String.fromCharCode(65+oIdx)}</span><span class="text-slate-700">${opt}</span>`;
+                el.querySelector('input').addEventListener('change', () => { selectedAnswers[idx] = oIdx; saveSessionState(); updateNavigatorButton(idx); renderQuestion(idx); });
+                optsBox.appendChild(el);
+            });
+
+            const fBtn = document.getElementById('flag-btn');
+            if (flaggedList[idx]) { fBtn.className = "text-xs font-semibold px-3 py-1 border border-amber-600 text-white bg-amber-500 rounded-full flex items-center gap-1"; fBtn.innerHTML = '<i class="fa-solid fa-bookmark"></i> Flagged'; }
+            else { fBtn.className = "text-xs font-semibold px-3 py-1 border border-amber-300 text-amber-700 bg-amber-50 rounded-full flex items-center gap-1"; fBtn.innerHTML = '<i class="fa-regular fa-bookmark"></i> Flag'; }
+
+            document.getElementById('prev-btn').disabled = idx === 0; document.getElementById('prev-btn').style.opacity = idx === 0 ? '0.4' : '1';
+            document.getElementById('next-btn').innerHTML = idx === activeQuestions.length - 1 ? 'Finish <i class="fa-solid fa-flag-checkered"></i>' : 'Next <i class="fa-solid fa-chevron-right"></i>';
+        }
+
+        document.getElementById('prev-btn').addEventListener('click', () => { if (currentIdx > 0) { currentIdx--; saveSessionState(); renderQuestion(currentIdx); } });
+        document.getElementById('next-btn').addEventListener('click', () => { if (currentIdx < activeQuestions.length - 1) { currentIdx++; saveSessionState(); renderQuestion(currentIdx); } else triggerSubmissionPrompt(); });
+        document.getElementById('flag-btn').addEventListener('click', () => { flaggedList[currentIdx] = !flaggedList[currentIdx]; saveSessionState(); updateNavigatorButton(currentIdx); renderQuestion(currentIdx); });
+
+        function buildGridElements() {
+            const grid = document.getElementById('navigator-grid'); grid.innerHTML = '';
+            activeQuestions.forEach((_, i) => {
+                let btn = document.createElement('button'); btn.id = `nav-cell-${i}`; btn.textContent = i + 1;
+                btn.addEventListener('click', () => { currentIdx = i; saveSessionState(); renderQuestion(i); });
+                grid.appendChild(btn); updateNavigatorButton(i);
+            });
+        }
+
+        function updateNavigatorButton(idx) {
+            let btn = document.getElementById(`nav-cell-${idx}`); if(!btn) return;
+            btn.className = 'w-full h-8 rounded-lg font-bold text-xs flex items-center justify-center border transition ';
+            if (flaggedList[idx]) btn.classList.add('bg-amber-500', 'text-white', 'border-amber-600');
+            else if (selectedAnswers[idx] !== undefined) btn.classList.add('bg-blue-600', 'text-white', 'border-blue-700');
+            else btn.classList.add('bg-slate-100', 'text-slate-600', 'border-slate-300');
+            document.getElementById('progress-indicator').textContent = `${Object.keys(selectedAnswers).length}/${activeQuestions.length}`;
+        }
+
+        function runClock() {
+            clearInterval(timerHook);
+            timerHook = setInterval(() => {
+                if (secondsLeft <= 0) { clearInterval(timerHook); submitExamData(false, "Time Limit Reached"); }
+                else {
+                    secondsLeft--; sessionStorage.setItem('nextgen_exam_seconds', secondsLeft);
+                    let hr = Math.floor(secondsLeft / 3600), min = Math.floor((secondsLeft % 3600) / 60), sec = secondsLeft % 60;
+                    document.getElementById('timer-display').textContent = `${hr.toString().padStart(2,'0')}:${min.toString().padStart(2,'0')}:${sec.toString().padStart(2,'0')}`;
+                }
+            }, 1000);
+        }
+
+        document.getElementById('submit-btn').addEventListener('click', triggerSubmissionPrompt);
+        function triggerSubmissionPrompt() {
+            let unans = activeQuestions.length - Object.keys(selectedAnswers).length;
+            if (confirm(unans > 0 ? `Warning: ${unans} unanswered. Submit anyway?` : "Are you sure you want to submit?")) submitExamData(false, "User Submitted");
+        }
+
+        async function submitExamData(disqualified = false, reasonDetail = "") {
+            isExamActive = false; sessionStorage.removeItem('nextgen_exam_state'); sessionStorage.removeItem('nextgen_exam_seconds');
+            clearInterval(timerHook); window.removeEventListener('blur', triggerAntiCheatSystem);
+
+            examSec.classList.add('hidden'); document.getElementById('sticky-timer-card').classList.add('hidden'); resultSec.classList.remove('hidden');
+
+            let timeSecs = Math.round((Date.now() - startTimeStamp) / 1000);
+            let timeFmt = `${Math.floor(timeSecs / 60)}m ${timeSecs % 60}s`;
+
+            let corrects = 0;
+            activeQuestions.forEach((item, idx) => { if (selectedAnswers[idx] === item.ans) corrects++; });
+            let percent = Math.round((corrects / activeQuestions.length) * 100);
+
+            document.getElementById('final-score-field').textContent = `${corrects} / ${activeQuestions.length}`;
+            document.getElementById('final-percent-field').textContent = `(${percent}%)`;
+
+            let status = "Eligible", reason = "Met all requirements.";
+            if (disqualified) { status = "Disqualified"; reason = reasonDetail; }
+            else if (timeSecs < 2400) { status = "Disqualified"; reason = "Completed under 40 minutes."; }
+
+            let sField = document.getElementById('competition-status-field'), rField = document.getElementById('competition-reason-field');
+            sField.textContent = status === "Eligible" ? "Eligible for Prizes" : "Ineligible for Prizes";
+            sField.className = status === "Eligible" ? "text-xl font-bold mt-1 text-emerald-400" : "text-xl font-bold mt-1 text-red-500";
+            rField.textContent = reason;
+
+            let subTitle = subjectSelect.value ? subjectMetaData[subjectSelect.value].title : "Unknown Subject";
+            document.getElementById('results-meta').innerHTML = `Candidate: <strong class="text-white">${profile.name}</strong> | Subject: <strong class="text-white">${subTitle}</strong>`;
+
+            let payload = { name: profile.name, city: profile.city, school: profile.school, stream: profile.stream, subject: subTitle, email: profile.email, telegram: profile.telegram, score: corrects, total: activeQuestions.length, percentage: percent, timeSpent: timeFmt, status, reason };
+
+            // Completely isolated POST fetch to ensure no cross-origin parsing crashes occur
+            try {
+                fetch(WEB_APP_URL, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
+            } catch (e) {}
+
+            document.getElementById('show-explanations-btn').className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            document.getElementById('show-scoreboard-btn').className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            document.getElementById('explanations-view').classList.remove('hidden');
+            document.getElementById('scoreboard-view').classList.add('hidden');
+
+            renderExplanations();
+
+            // Completely isolated Leaderboard GET fetch to ensure UI doesn't crash on failed load
+            rawDatabaseSubmissions = [];
+            try {
+                let dbRes = await fetch(WEB_APP_URL);
+                if (dbRes.ok) { let d = await dbRes.json(); if(d.submissions) rawDatabaseSubmissions = d.submissions; }
+            } catch (err) { console.warn("Scoreboard data fetch unavailable. Falling back to local data only."); }
+
+            rawDatabaseSubmissions.push({ "Candidate Name": profile.name, "School": profile.school, "Stream": profile.stream, "Subject": subTitle, "Percentage": `${percent}%`, "Time Spent": timeFmt, "Competition Status": status });
+            viewBoardStream = profile.stream || "Natural Science";
+            updateBoardTabStyles();
+            renderLeaderboard();
+        }
+
+        function renderExplanations() {
+            try {
+                const container = document.getElementById('explanations-view'); container.innerHTML = '';
+                activeQuestions.forEach((item, idx) => {
+                    let userOpt = selectedAnswers[idx], isCorr = userOpt === item.ans;
+                    let div = document.createElement('div'); div.className = "py-6 space-y-4";
+                    div.innerHTML = `
+                        <div class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full flex items-center justify-center shrink-0 text-xs font-bold text-white mt-0.5 ${isCorr?'bg-emerald-600':'bg-red-500'}">${idx + 1}</span>
+                            <div class="space-y-3 w-full">
+                                <h4 class="font-bold text-slate-800 text-sm leading-relaxed">${item.q}</h4>
+                                <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                                    ${item.opts.map((opt, oIdx) => {
+                                        let style = "border-slate-100 text-slate-600 bg-slate-50/50", tag = "";
+                                        if (oIdx === item.ans) { style = "border-emerald-200 bg-emerald-50 text-emerald-800 font-bold"; tag = '<span class="ml-auto text-[10px] bg-emerald-600 text-white px-1.5 py-0.5 rounded">Correct</span>'; }
+                                        else if (oIdx === userOpt) { style = "border-red-200 bg-red-50 text-red-800 font-bold"; tag = '<span class="ml-auto text-[10px] bg-red-500 text-white px-1.5 py-0.5 rounded">Yours</span>'; }
+                                        return `<div class="flex items-center gap-2 border p-2 rounded-lg text-xs ${style}"><span class="w-5 h-5 rounded-full bg-white flex items-center justify-center text-[9px] font-bold border shrink-0">${String.fromCharCode(65+oIdx)}</span><span>${opt}</span>${tag}</div>`;
+                                    }).join('')}
+                                </div>
+                                <div class="bg-indigo-50 border-l-4 border-indigo-500 p-3 rounded-r-lg"><h5 class="font-bold text-indigo-900 text-xs flex items-center gap-1 mb-1"><i class="fa-solid fa-circle-info"></i> Explanation</h5><p class="text-slate-600 text-[11px] leading-relaxed">${item.exp}</p></div>
+                            </div>
+                        </div>`;
+                    container.appendChild(div);
+                });
+            } catch (err) {}
+        }
+
+        document.getElementById('show-explanations-btn').addEventListener('click', (e) => {
+            e.target.className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            document.getElementById('show-scoreboard-btn').className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            document.getElementById('explanations-view').classList.remove('hidden'); document.getElementById('scoreboard-view').classList.add('hidden');
+        });
+
+        document.getElementById('show-scoreboard-btn').addEventListener('click', (e) => {
+            e.target.className = "flex-1 py-3 text-blue-950 border-b-4 border-blue-950 transition";
+            document.getElementById('show-explanations-btn').className = "flex-1 py-3 text-slate-400 hover:text-slate-800 transition";
+            document.getElementById('scoreboard-view').classList.remove('hidden'); document.getElementById('explanations-view').classList.add('hidden');
+            renderLeaderboard();
+        });
+
+        document.getElementById('board-nat-btn').addEventListener('click', () => { viewBoardStream = "Natural Science"; updateBoardTabStyles(); renderLeaderboard(); });
+        document.getElementById('board-soc-btn').addEventListener('click', () => { viewBoardStream = "Social Science"; updateBoardTabStyles(); renderLeaderboard(); });
+
+        function updateBoardTabStyles() {
+            if(viewBoardStream === "Natural Science") {
+                document.getElementById('board-nat-btn').className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+                document.getElementById('board-soc-btn').className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            } else {
+                document.getElementById('board-soc-btn').className = "px-4 py-1.5 rounded-full bg-blue-950 text-white transition";
+                document.getElementById('board-nat-btn').className = "px-4 py-1.5 rounded-full bg-slate-100 text-slate-500 hover:bg-slate-200 transition";
+            }
+        }
+
+        function generateMockData() {
+            const names = ["Abebe Kebede", "Tadesse Asefa", "Aster Geda", "Mekonnen Tolosa", "Solen Tsegaye", "Lydia Bekele", "Beti Hailu", "Dawit Girma", "Yonas Mengistu", "Fenet Degu", "Chala Fikru", "Zenebe Balcha"];
+            let mocks = [];
+            for (let i = 0; i < 35; i++) {
+                let stream = i % 2 === 0 ? "Natural Science" : "Social Science";
+                let pct = Math.floor(Math.random() * 41) + 60;
+                mocks.push({ "Candidate Name": names[i % names.length], "School": "Addis Academy", "Stream": stream, "Subject": "Model Exam", "Percentage": `${pct}%`, "Time Spent": "45m 12s", "Competition Status": "Eligible" });
+            }
+            return mocks;
+        }
+
+        function renderLeaderboard() {
+            try {
+                const tbody = document.getElementById('leaderboard-table-body'); tbody.innerHTML = '';
+                let list = [...rawDatabaseSubmissions];
+                
+                if (!isLiveCompetitionMode && list.length <= 1) list = list.concat(generateMockData());
+
+                let fList = list.filter(i => i && i["Stream"] === viewBoardStream && i["Competition Status"] === "Eligible" && !(i["Candidate Name"]||"").toLowerCase().startsWith("test"));
+                fList.sort((a, b) => { let pA = parseInt(a["Percentage"])||0, pB = parseInt(b["Percentage"])||0; if (pA !== pB) return pB - pA; return parseTime(a["Time Spent"]) - parseTime(b["Time Spent"]); });
+
+                let uIdx = fList.findIndex(i => i["Candidate Name"] === profile.name);
+                let limit = Math.min(10, fList.length);
+
+                for (let i=0; i<limit; i++) {
+                    let isU = fList[i]["Candidate Name"] === profile.name;
+                    tbody.innerHTML += `<tr class="${isU ? 'bg-amber-100 font-bold border-l-4 border-amber-500' : 'hover:bg-slate-50'} border-b">
+                        <td class="p-3 font-mono">${i+1}</td><td class="p-3">${fList[i]["Candidate Name"]}</td><td class="p-3 truncate max-w-[100px] hidden md:table-cell">${fList[i]["School"]}</td>
+                        <td class="p-3">${fList[i]["Subject"]}</td><td class="p-3 font-semibold text-blue-950">${fList[i]["Percentage"]}</td><td class="p-3 text-slate-500 font-mono">${fList[i]["Time Spent"]}</td>
+                    </tr>`;
+                }
+
+                if (viewBoardStream === profile.stream && uIdx >= 10) {
+                    tbody.innerHTML += `<tr class="bg-amber-100 font-bold border-t-2 border-amber-500 border-b">
+                        <td class="p-3 font-mono">${uIdx+1}</td><td class="p-3">${fList[uIdx]["Candidate Name"]} (You)</td><td class="p-3 truncate max-w-[100px] hidden md:table-cell">${fList[uIdx]["School"]}</td>
+                        <td class="p-3">${fList[uIdx]["Subject"]}</td><td class="p-3 font-semibold text-blue-950">${fList[uIdx]["Percentage"]}</td><td class="p-3 text-slate-500 font-mono">${fList[uIdx]["Time Spent"]}</td>
+                    </tr>`;
+                }
+            } catch (err) {}
+        }
+        function parseTime(s) { if(!s) return 999999; let m = s.match(/(\d+)m\s*(\d+)s/); return m ? parseInt(m[1])*60 + parseInt(m[2]) : 999999; }
+
+        // Modals
+        document.getElementById('constants-btn').addEventListener('click', () => document.getElementById('constants-modal').classList.remove('hidden'));
+        document.getElementById('close-constants-btn').addEventListener('click', () => document.getElementById('constants-modal').classList.add('hidden'));
+        document.getElementById('constants-modal').addEventListener('click', (e) => { if (e.target === document.getElementById('constants-modal')) e.target.classList.add('hidden'); });
+
+        document.getElementById('tab-physics-btn').addEventListener('click', e => { e.target.className = "px-6 py-3 text-blue-950 border-b-4 border-blue-950 font-bold"; document.getElementById('tab-chemistry-btn').className = "px-6 py-3 text-slate-400 hover:text-slate-800 font-bold"; document.getElementById('tab-physics-content').classList.remove('hidden'); document.getElementById('tab-chemistry-content').classList.add('hidden'); });
+        document.getElementById('tab-chemistry-btn').addEventListener('click', e => { e.target.className = "px-6 py-3 text-blue-950 border-b-4 border-blue-950 font-bold"; document.getElementById('tab-physics-btn').className = "px-6 py-3 text-slate-400 hover:text-slate-800 font-bold"; document.getElementById('tab-chemistry-content').classList.remove('hidden'); document.getElementById('tab-physics-content').classList.add('hidden'); });
+
+        document.getElementById('admin-gate-btn').addEventListener('click', () => document.getElementById('admin-panel-modal').classList.remove('hidden'));
+        document.getElementById('close-admin-btn').addEventListener('click', () => { document.getElementById('admin-panel-modal').classList.add('hidden'); document.getElementById('admin-auth-view').classList.remove('hidden'); document.getElementById('admin-controls-view').classList.add('hidden'); document.getElementById('admin-password').value = ''; });
+        document.getElementById('auth-btn').addEventListener('click', () => {
+            if(document.getElementById('admin-password').value.trim() === "nextgen2018") {
+                document.getElementById('admin-auth-view').classList.add('hidden'); document.getElementById('admin-controls-view').classList.remove('hidden');
+                document.getElementById('current-gate-label').textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked"; document.getElementById('current-gate-label').className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                document.getElementById('toggle-gate-btn').textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate"; document.getElementById('toggle-gate-btn').className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px]" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px]";
+            } else alert("Access denied.");
+        });
+        document.getElementById('toggle-gate-btn').addEventListener('click', async (e) => {
+            e.target.disabled = true; e.target.textContent = "Updating...";
+            try {
+                let res = await fetch(`${WEB_APP_URL}?action=toggleRegistration&open=${!isRegistrationGateOpen}&password=nextgen2018`);
+                if(res.ok) {
+                    let d = await res.json(); isRegistrationGateOpen = d.registrationOpen !== false; syncRegistrationUI();
+                    document.getElementById('current-gate-label').textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked"; document.getElementById('current-gate-label').className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                    e.target.textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate"; e.target.className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px]" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px]";
+                }
+            } catch(err) { alert("Network Error"); }
+            e.target.disabled = false;
+        });
+        document.getElementById('toggle-mode-btn').addEventListener('click', () => {
+            isLiveCompetitionMode = !isLiveCompetitionMode;
+            document.getElementById('current-mode-label').textContent = isLiveCompetitionMode ? "Live Data Only" : "Mock Data Active";
+            document.getElementById('toggle-mode-btn').textContent = "Switch Mode";
+        });
+    </script>
+</body>
+</html>
