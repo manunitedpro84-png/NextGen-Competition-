@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NextGen Live Leaderboard - Year 2018 E.C.</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .watermark-bg {
+            background-image: url('https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg');
+            background-repeat: no-repeat; background-position: center; background-size: contain;
+            opacity: 0.02; pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 min-h-screen text-slate-800 flex flex-col justify-between">
+
+    <!-- Header -->
+    <header class="bg-slate-900 text-white py-4 px-4 md:px-6 shadow-md border-b-2 border-amber-500">
+        <div class="max-w-4xl mx-auto flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+                <img src="https://i.ibb.co/HfLjKC1n/IMG-20250826-140721-663.jpg" alt="NextGen Logo" class="w-10 h-10 rounded-full border border-amber-400 object-cover shrink-0">
+                <div>
+                    <h1 class="text-sm md:text-lg font-bold tracking-tight text-white leading-tight">NextGen Competition Arena</h1>
+                    <p class="text-[10px] text-amber-400 font-semibold uppercase tracking-wider">Official Live Leaderboard • Year 2018 E.C.</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-2">
+                <button id="admin-gate-btn" class="bg-slate-800 hover:bg-slate-700 text-slate-400 hover:text-white p-2 rounded-lg text-xs transition">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <a href="index.html" class="bg-slate-800 hover:bg-slate-700 text-slate-300 hover:text-white font-bold py-1.5 px-3 rounded-lg text-xs flex items-center gap-1.5 transition">
+                    <i class="fa-solid fa-chevron-left"></i> Back to Arena
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Workspace -->
+    <main class="flex-grow max-w-4xl w-full mx-auto p-4 relative">
+        <div class="absolute inset-0 watermark-bg z-0"></div>
+
+        <div class="relative z-10 space-y-6 my-4">
+            <div class="text-center space-y-2 max-w-xl mx-auto">
+                <h2 class="text-2xl font-black text-slate-800 tracking-tight flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-trophy text-amber-500"></i> Top 10 Elite Standings
+                </h2>
+                <p class="text-xs text-slate-500">Live rankings computed by percentage score, using completed duration as the primary tiebreaker.</p>
+            </div>
+
+            <!-- Loader -->
+            <div id="loading-card" class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center space-y-3">
+                <div class="animate-spin text-blue-950 text-3xl"><i class="fa-solid fa-spinner"></i></div>
+                <p class="text-xs text-slate-500 font-medium">Fetching real-time entries from database...</p>
+            </div>
+
+            <!-- Standings Card -->
+            <div id="leaderboard-card" class="hidden bg-white rounded-2xl shadow-lg border border-slate-200 overflow-hidden">
+                <div class="flex border-b border-slate-200 bg-slate-50 text-xs font-bold uppercase tracking-wider text-center">
+                    <button id="board-nat-btn" class="flex-1 py-3.5 text-blue-950 border-b-4 border-blue-950 transition">Natural Science Stream</button>
+                    <button id="board-soc-btn" class="flex-1 py-3.5 text-slate-400 hover:text-slate-800 transition">Social Science Stream</button>
+                </div>
+
+                <div class="p-4 md:p-6 overflow-x-auto">
+                    <table class="w-full text-left border-collapse text-xs md:text-sm">
+                        <thead>
+                            <tr class="bg-slate-900 text-white uppercase text-[10px] tracking-wider">
+                                <th class="p-3 rounded-l-lg">Rank</th>
+                                <th class="p-3">Name</th>
+                                <th class="p-3">School</th>
+                                <th class="p-3">Subject</th>
+                                <th class="p-3">Score %</th>
+                                <th class="p-3 rounded-r-lg">Duration</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaderboard-table-body" class="divide-y divide-slate-100"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Admin Panel Modal -->
+    <div id="admin-panel-modal" class="hidden fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-2xl border border-slate-200 space-y-4">
+            <div class="flex items-center justify-between border-b pb-2">
+                <h3 class="font-bold text-slate-800 text-sm uppercase tracking-wider"><i class="fa-solid fa-lock-open mr-1"></i> Admin Portal</h3>
+                <button id="close-admin-btn" class="text-slate-400 hover:text-slate-600"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="admin-auth-view" class="space-y-3">
+                <label class="block text-xs font-semibold text-slate-500">Enter Admin Password:</label>
+                <input type="password" id="admin-password" class="w-full px-3 py-2 border rounded-lg outline-none text-sm focus:ring-2 focus:ring-blue-900">
+                <button id="auth-btn" class="w-full bg-blue-950 text-white font-bold py-2 rounded-lg text-xs transition">Verify Access</button>
+            </div>
+            <div id="admin-controls-view" class="hidden space-y-4">
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Arena Operations Mode:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-mode-label" class="font-semibold text-amber-600">Mock/Demo Mode</span>
+                        <button id="toggle-mode-btn" class="bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px] transition">Toggle Mode</button>
+                    </div>
+                </div>
+                <div class="bg-slate-50 p-3 rounded-lg border text-xs space-y-2">
+                    <p class="font-bold text-slate-700">Registration Gate Lock:</p>
+                    <div class="flex items-center justify-between mt-1">
+                        <span id="current-gate-label" class="font-semibold text-emerald-600">Open for Entries</span>
+                        <button id="toggle-gate-btn" class="bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition">Lock Gate</button>
+                    </div>
+                </div>
+                <p class="text-[10px] text-slate-400 leading-relaxed">
+                    * <b>Registration Lock:</b> When locked, no new students can register.<br>
+                    * <b>Operations Mode:</b> Toggle to "Live" to completely remove the mock personalities from the board.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-slate-900 text-slate-500 py-4 text-center text-[10px] border-t border-slate-800 relative z-10">
+        <div class="max-w-4xl mx-auto px-4"><p>&copy; 2026 NextGen Scholars. All rights reserved.</p></div>
+    </footer>
+
+    <!-- JS Leaderboard Logic -->
+    <script>
+        const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzzvn2pR6TSOVdNJaf4AMCvDhqqVZOw7yUO8-AA_Bt9E4rdNhpsr4g9Ll0xS5l4Bg29GQ/exec";
+
+        let rawDatabaseSubmissions = [];
+        let viewBoardStream = "Natural Science";
+        let isRegistrationGateOpen = true;
+        let activeCompetitionMode = "mock"; // "mock" (show test users) or "live" (show only real sheet database)
+        
+        const currentUserName = localStorage.getItem('nextgen_last_name') || "";
+        const currentUserStream = localStorage.getItem('nextgen_last_stream') || "";
+
+        const loadingCard = document.getElementById('loading-card');
+        const leaderboardCard = document.getElementById('leaderboard-card');
+        const boardNatBtn = document.getElementById('board-nat-btn');
+        const boardSocBtn = document.getElementById('board-soc-btn');
+        const tableBody = document.getElementById('leaderboard-table-body');
+
+        // Toggles
+        boardNatBtn.addEventListener('click', () => {
+            viewBoardStream = "Natural Science";
+            boardNatBtn.className = "flex-1 py-3.5 text-blue-950 border-b-4 border-blue-950 transition";
+            boardSocBtn.className = "flex-1 py-3.5 text-slate-400 hover:text-slate-800 transition";
+            renderActiveLeaderboard();
+        });
+
+        boardSocBtn.addEventListener('click', () => {
+            viewBoardStream = "Social Science";
+            boardSocBtn.className = "flex-1 py-3.5 text-blue-950 border-b-4 border-blue-950 transition";
+            boardNatBtn.className = "flex-1 py-3.5 text-slate-400 hover:text-slate-800 transition";
+            renderActiveLeaderboard();
+        });
+
+        function parseTimeToSeconds(timeStr) {
+            if (!timeStr) return 999999;
+            const matches = timeStr.match(/(\d+)m\s*(\d+)s/);
+            if (matches) return (parseInt(matches[1]) * 60) + parseInt(matches[2]);
+            const secondsMatch = timeStr.match(/(\d+)s/);
+            if (secondsMatch) return parseInt(secondsMatch[0]);
+            return 999999;
+        }
+
+        function generateCompetitiveMockData() {
+            const firstNames = ["Abebe", "Tadesse", "Aster", "Mekonnen", "Solen", "Lydia", "Beti", "Dawit", "Yonas", "Fenet", "Chala", "Zenebe", "Hirut", "Kidus", "Eldana", "Eyerusalem", "Yididiya", "Gelila", "Naol", "Bontu"];
+            const lastNames = ["Kassa", "Asefa", "Kebede", "Demissie", "Geda", "Tolosa", "Tsegaye", "Bekele", "Hailu", "Girma", "Mengistu", "Degu", "Fikru", "Balcha", "Tefera", "Abera"];
+            const schools = ["Lideta Cathedral School", "St. Joseph School", "Hillside School", "Abugida Academy", "Ifa Boru Academy", "Bole Secondary", "Arada Secondary", "Gibson Academy", "Medhanealem School"];
+            const subjects = ["Mathematics", "Biology", "Chemistry", "Physics", "English", "SAT", "History", "Geography", "Economics"];
+            
+            let mockDatabase = [];
+            for (let i = 0; i < 70; i++) {
+                const stream = i % 2 === 0 ? "Natural Science" : "Social Science";
+                const percent = Math.floor(Math.random() * 41) + 60; // 60% to 100%
+                const minutes = Math.floor(Math.random() * 41) + 40;
+                const seconds = Math.floor(Math.random() * 60);
+
+                mockDatabase.push({
+                    "Candidate Name": `${firstNames[Math.floor(Math.random() * firstNames.length)]} ${lastNames[Math.floor(Math.random() * lastNames.length)]}`,
+                    "School": schools[Math.floor(Math.random() * schools.length)],
+                    "Stream": stream,
+                    "Subject": subjects[Math.floor(Math.random() * subjects.length)],
+                    "Percentage": `${percent}%`,
+                    "Time Spent": `${minutes}m ${seconds}s`,
+                    "Competition Status": "Eligible"
+                });
+            }
+            return mockDatabase;
+        }
+
+        window.addEventListener('DOMContentLoaded', async () => {
+            if (currentUserStream === "Social Science") {
+                viewBoardStream = "Social Science";
+                boardSocBtn.className = "flex-1 py-3.5 text-blue-950 border-b-4 border-blue-950 transition";
+                boardNatBtn.className = "flex-1 py-3.5 text-slate-400 hover:text-slate-800 transition";
+            }
+
+            try {
+                const dbResponse = await fetch(`${WEB_APP_URL}`);
+                if (dbResponse.ok) {
+                    const payload = await dbResponse.json();
+                    rawDatabaseSubmissions = payload.submissions || [];
+                    activeCompetitionMode = payload.competitionMode || "mock";
+                    isRegistrationGateOpen = payload.registrationOpen !== false;
+                }
+            } catch (err) {
+                console.warn("Spreadsheet lookup skipped. Fallback active:", err);
+            } finally {
+                loadingCard.classList.add('hidden');
+                leaderboardCard.classList.remove('hidden');
+                renderActiveLeaderboard();
+            }
+        });
+
+        function renderActiveLeaderboard() {
+            tableBody.innerHTML = '';
+            let dataPool = [...rawDatabaseSubmissions];
+            
+            // pre-competition test fallback: Only inject mock data if mode is explicitly set to 'mock'
+            if (activeCompetitionMode === "mock") {
+                const mockList = generateCompetitiveMockData();
+                dataPool = dataPool.concat(mockList);
+            }
+
+            // Filter out empty rows and test registrations
+            let filteredList = dataPool.filter(item => {
+                if (!item) return false;
+                const cName = item["Candidate Name"] || "";
+                const streamVal = item["Stream"] || "";
+                const statusVal = item["Competition Status"] || "";
+                return streamVal === viewBoardStream && 
+                       statusVal === "Eligible" &&
+                       !cName.toLowerCase().startsWith("test");
+            });
+
+            // Sort logic: Score % descending, then Time Spent ascending (tiebreaker)
+            filteredList.sort((a, b) => {
+                const percentA = parseInt(a["Percentage"]) || 0;
+                const percentB = parseInt(b["Percentage"]) || 0;
+                if (percentA !== percentB) return percentB - percentA;
+                return parseTimeToSeconds(a["Time Spent"]) - parseTimeToSeconds(b["Time Spent"]);
+            });
+
+            // Find current user's entry in the sorted array
+            let userRankIndex = filteredList.findIndex(item => item["Candidate Name"] === currentUserName);
+            let userRankDisplay = userRankIndex !== -1 ? userRankIndex + 1 : null;
+
+            // Render Top 10 rows
+            const renderedCount = Math.min(10, filteredList.length);
+            for (let i = 0; i < renderedCount; i++) {
+                const rowData = filteredList[i];
+                const isCurrentUser = rowData["Candidate Name"] === currentUserName;
+                
+                const row = document.createElement('tr');
+                row.className = isCurrentUser 
+                    ? "bg-amber-100 font-bold border-l-4 border-amber-500 transition" 
+                    : "hover:bg-slate-50 transition border-b border-slate-100";
+
+                row.innerHTML = `
+                    <td class="p-3 font-mono">${i + 1}</td>
+                    <td class="p-3">${rowData["Candidate Name"]}</td>
+                    <td class="p-3 max-w-xs truncate">${rowData["School"]}</td>
+                    <td class="p-3">${rowData["Subject"]}</td>
+                    <td class="p-3 font-semibold text-blue-950">${rowData["Percentage"]}</td>
+                    <td class="p-3 text-slate-500 font-mono">${rowData["Time Spent"]}</td>
+                `;
+                tableBody.appendChild(row);
+            }
+
+            // Render personal rank card if user falls outside Top 10
+            if (viewBoardStream === currentUserStream) {
+                const userRowData = filteredList.find(item => item["Candidate Name"] === currentUserName);
+                if (userRowData) {
+                    const extraCard = document.createElement('tr');
+                    if (userRankDisplay > 10) {
+                        extraCard.className = "bg-amber-100 font-bold border-t-2 border-amber-500";
+                        extraCard.innerHTML = `
+                            <td class="p-3 font-mono">${userRankDisplay}</td>
+                            <td class="p-3">${userRowData["Candidate Name"]} (You)</td>
+                            <td class="p-3 max-w-xs truncate">${userRowData["School"]}</td>
+                            <td class="p-3">${userRowData["Subject"]}</td>
+                            <td class="p-3 font-semibold text-blue-950">${userRowData["Percentage"]}</td>
+                            <td class="p-3 text-slate-500 font-mono">${userRowData["Time Spent"]}</td>
+                        `;
+                        tableBody.appendChild(extraCard);
+                    }
+                }
+            }
+        }
+
+        // --- ADMIN PORTAL INTERACTION LOGIC ---
+        const adminGateBtn = document.getElementById('admin-gate-btn');
+        const adminPanelModal = document.getElementById('admin-panel-modal');
+        const closeAdminBtn = document.getElementById('close-admin-btn');
+        const adminAuthView = document.getElementById('admin-auth-view');
+        const adminControlsView = document.getElementById('admin-controls-view');
+        const adminPasswordInput = document.getElementById('admin-password');
+        const authBtn = document.getElementById('auth-btn');
+        
+        const toggleGateBtn = document.getElementById('toggle-gate-btn');
+        const currentGateLabel = document.getElementById('current-gate-label');
+        const toggleModeBtn = document.getElementById('toggle-mode-btn');
+        const currentModeLabel = document.getElementById('current-mode-label');
+
+        adminGateBtn.addEventListener('click', () => adminPanelModal.classList.remove('hidden'));
+        closeAdminBtn.addEventListener('click', () => {
+            adminPanelModal.classList.add('hidden');
+            adminAuthView.classList.remove('hidden'); adminControlsView.classList.add('hidden');
+            adminPasswordInput.value = '';
+        });
+
+        authBtn.addEventListener('click', () => {
+            if (adminPasswordInput.value.trim() === "nextgen2018") {
+                adminAuthView.classList.add('hidden'); adminControlsView.classList.remove('hidden');
+                
+                // Initialize admin lock labels
+                currentGateLabel.textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked / Suspended";
+                currentGateLabel.className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                toggleGateBtn.textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate";
+                toggleGateBtn.className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px]" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px]";
+
+                currentModeLabel.textContent = activeCompetitionMode === "live" ? "Live Competition Mode" : "Mock/Demo Mode";
+                currentModeLabel.className = activeCompetitionMode === "live" ? "font-semibold text-emerald-600" : "font-semibold text-amber-600";
+                toggleModeBtn.textContent = activeCompetitionMode === "live" ? "Switch to Demo" : "Switch to Live";
+                toggleModeBtn.className = activeCompetitionMode === "live" ? "bg-slate-500 text-white font-bold px-3 py-1 rounded text-[10px]" : "bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px]";
+            } else alert("Access denied.");
+        });
+
+        // Toggle global registration lock action
+        toggleGateBtn.addEventListener('click', async (e) => {
+            const nextState = !isRegistrationGateOpen;
+            e.target.disabled = true; e.target.textContent = "Updating...";
+
+            try {
+                const response = await fetch(`${WEB_APP_URL}?action=toggleRegistration&open=${nextState}&password=nextgen2018`);
+                if (response.ok) {
+                    const result = await response.json();
+                    isRegistrationGateOpen = result.registrationOpen !== false;
+                    
+                    currentGateLabel.textContent = isRegistrationGateOpen ? "Open for Entries" : "Locked / Suspended";
+                    currentGateLabel.className = isRegistrationGateOpen ? "font-semibold text-emerald-600" : "font-semibold text-red-500";
+                    e.target.textContent = isRegistrationGateOpen ? "Lock Gate" : "Unlock Gate";
+                    e.target.className = isRegistrationGateOpen ? "bg-red-500 text-white font-bold px-3 py-1 rounded text-[10px] transition" : "bg-emerald-600 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+                }
+            } catch (err) {
+                alert("Spreadsheet connection lost. Check Apps Script Web App Deployment.");
+            } finally {
+                e.target.disabled = false;
+            }
+        });
+
+        // Toggle Live vs Mock Mode Action
+        toggleModeBtn.addEventListener('click', async (e) => {
+            const nextState = activeCompetitionMode === "live" ? "mock" : "live";
+            e.target.disabled = true; e.target.textContent = "Updating...";
+
+            try {
+                const response = await fetch(`${WEB_APP_URL}?action=toggleMode&mode=${nextState}&password=nextgen2018`);
+                if (response.ok) {
+                    const result = await response.json();
+                    activeCompetitionMode = result.competitionMode;
+                    
+                    currentModeLabel.textContent = activeCompetitionMode === "live" ? "Live Competition Mode" : "Mock/Demo Mode";
+                    currentModeLabel.className = activeCompetitionMode === "live" ? "font-semibold text-emerald-600" : "font-semibold text-amber-600";
+                    e.target.textContent = activeCompetitionMode === "live" ? "Switch to Demo" : "Switch to Live";
+                    e.target.className = activeCompetitionMode === "live" ? "bg-slate-500 text-white font-bold px-3 py-1 rounded text-[10px] transition" : "bg-amber-500 text-white font-bold px-3 py-1 rounded text-[10px] transition";
+                    
+                    renderActiveLeaderboard();
+                }
+            } catch (err) {
+                alert("Spreadsheet connection lost. Check Apps Script Web App Deployment.");
+            } finally {
+                e.target.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
