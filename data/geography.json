@@ -1,0 +1,1274 @@
+{
+  "parts": [
+    {
+      "partTitle": "Geography Competition Pool",
+      "questions": [
+        {
+          "q": "Which branch of geography studies the distribution of landforms and the forces that change them?",
+          "opts": [
+            "Biogeography",
+            "Climatology",
+            "Phytogeography",
+            "Geomorphology"
+          ],
+          "ans": 3,
+          "exp": "Geomorphology is the scientific study of the origin and evolution of topographic and bathymetric features created by physical, chemical, or biological processes operating at or near the Earth's surface."
+        },
+        {
+          "q": "Which of the following is NOT considered an old fold mountain?",
+          "opts": [
+            "Mount Appalachians",
+            "Mount Drakensberg",
+            "Mount Atlas",
+            "Mount Urals"
+          ],
+          "ans": 2,
+          "exp": "The Atlas Mountains in Northwest Africa are young fold mountains formed during the Alpine orogeny, whereas the Appalachians, Drakensberg, and Urals are much older, heavily eroded fold mountains."
+        },
+        {
+          "q": "Which endogenic force is responsible for the formation of Mount Ras Dashen?",
+          "opts": [
+            "Faulting",
+            "Volcanism",
+            "Earthquake",
+            "Folding"
+          ],
+          "ans": 1,
+          "exp": "Mount Ras Dashen (the highest peak in Ethiopia) is a volcanic mountain, formed by massive outpouring of basaltic lava during the Tertiary period."
+        },
+        {
+          "q": "Which of the following landforms is most closely associated with sea wave erosion and deposition?",
+          "opts": [
+            "Lagoon",
+            "Barchan",
+            "Sand dunes",
+            "Loess deposits"
+          ],
+          "ans": 0,
+          "exp": "A lagoon is a shallow body of water separated from a larger body of water by barrier islands or reefs, formed through coastal wave deposition. Barchans and loess are formed by wind."
+        },
+        {
+          "q": "Which layer of the atmosphere plays the greatest role in protecting the Earth from harmful ultraviolet radiation?",
+          "opts": [
+            "Troposphere",
+            "Mesosphere",
+            "Stratosphere",
+            "Thermosphere"
+          ],
+          "ans": 2,
+          "exp": "The stratosphere contains the ozone layer (O3), which absorbs the majority of the sun's medium-frequency ultraviolet (UV) radiation."
+        },
+        {
+          "q": "Which of the following is a sub-region of the tropical zone?",
+          "opts": [
+            "Savanna grassland",
+            "Coniferous forest",
+            "Mediterranean",
+            "Taiga"
+          ],
+          "ans": 0,
+          "exp": "The savanna grassland is a tropical biome characterized by seasonal rainfall and scattered trees, located transitional to tropical rainforests and deserts."
+        },
+        {
+          "q": "Which of the following does NOT belong to the Southeastern Lowlands of Ethiopia?",
+          "opts": [
+            "Ogaden lowland",
+            "Baro Akobo lowland",
+            "Elkerre lowland",
+            "Borana lowland"
+          ],
+          "ans": 1,
+          "exp": "The Baro-Akobo lowland is located in the western/southwestern part of Ethiopia, not the southeastern region."
+        },
+        {
+          "q": "All of the following factors influence weather changes in the temperate zone EXCEPT:",
+          "opts": [
+            "Angle of the sun",
+            "Length of the day",
+            "Convergence of tropical and polar air masses",
+            "Effects of ocean currents"
+          ],
+          "ans": 2,
+          "exp": "While the angle of the sun, length of day, and ocean currents constantly influence the temperate zone, the direct, severe convergence of tropical and polar air masses (the polar front) is a highly specific driver of mid-latitude cyclones, though sometimes evaluated differently depending on specific curriculum constraints."
+        },
+        {
+          "q": "In regions with a Mediterranean climate, most of the annual precipitation occurs in which season?",
+          "opts": [
+            "Autumn",
+            "Spring",
+            "Summer",
+            "Winter"
+          ],
+          "ans": 3,
+          "exp": "Mediterranean climates are distinct because they have hot, dry summers and mild, wet winters, due to the seasonal shifting of the Westerlies."
+        },
+        {
+          "q": "Which of the following natural regions of the Earth is found almost entirely in the Northern Hemisphere?",
+          "opts": [
+            "Tundra",
+            "Desert",
+            "Mediterranean",
+            "Polar ice cap"
+          ],
+          "ans": 0,
+          "exp": "The tundra biome is located in the extreme northern latitudes, just south of the polar ice caps. The Southern Hemisphere lacks significant landmasses at the corresponding latitudes."
+        },
+        {
+          "q": "Gazelles and Wildebeests feed on grasses and other plants. Cheetahs and Hyenas feed on Gazelles and Wildebeests. Which of these is the role of the cheetahs and hyenas in this ecosystem?",
+          "opts": [
+            "Producers",
+            "Carnivores",
+            "Herbivores",
+            "Decomposers"
+          ],
+          "ans": 1,
+          "exp": "Cheetahs and hyenas consume other animals (herbivores) for energy, classifying them as secondary or tertiary consumers, which are carnivores."
+        },
+        {
+          "q": "Which type of economic activity requires high-level decision-making and advanced scientific research skills?",
+          "opts": [
+            "Tertiary",
+            "Quaternary",
+            "Quinary",
+            "Primary"
+          ],
+          "ans": 2,
+          "exp": "Quinary activities involve the highest levels of decision-making in an economy, encompassing top executives in government, science, universities, and healthcare."
+        },
+        {
+          "q": "Which of the following best illustrates a primary economic activity?",
+          "opts": [
+            "A company using raw cotton to manufacture clothes in a factory",
+            "A farmer growing maize whose harvest depends on rainfall and soil fertility",
+            "A supermarket selling packaged food to urban customers",
+            "A transport company delivering minerals from mines to factories"
+          ],
+          "ans": 1,
+          "exp": "Primary economic activities involve the direct extraction or harvesting of natural resources, such as farming, fishing, and mining."
+        },
+        {
+          "q": "Which situation represents a positive direction of land-use change?",
+          "opts": [
+            "Abandoning terrace farming, leading to increased soil erosion",
+            "Expanding road networks that trigger illegal forest logging",
+            "Implementing irrigation that turns arid land into fertile farmland",
+            "Converting wetlands into factories, causing biodiversity loss"
+          ],
+          "ans": 2,
+          "exp": "Turning unusable arid land into fertile, productive farmland through irrigation represents a positive, economically beneficial change in land use."
+        },
+        {
+          "q": "Which of the following represents a direct economic benefit obtained from natural vegetation?",
+          "opts": [
+            "Providing medicine and pharmaceutical extracts",
+            "Maintaining the balance of nature",
+            "Regulating local climatic conditions",
+            "Adding beauty to the environment"
+          ],
+          "ans": 0,
+          "exp": "Direct benefits are tangible products that can be harvested and used or sold, such as timber, fruit, and medicinal plants."
+        },
+        {
+          "q": "Which of the following is NOT a specific objective of Ethiopia's environmental policy?",
+          "opts": [
+            "Promoting sustainable development and optimizing resource use",
+            "Ensuring environmental concerns are incorporated into decision-making",
+            "Raising public awareness about the link between environment and development",
+            "Pursuing economic growth without considering environmental consequences"
+          ],
+          "ans": 3,
+          "exp": "Environmental policies strictly forbid pursuing economic growth at the expense of severe environmental degradation."
+        },
+        {
+          "q": "Which of the following is NOT an objective of Ethiopia's new main economic policy?",
+          "opts": [
+            "Changing the role of the state in the economy",
+            "Encouraging public participation in development",
+            "Involving regional administrations in economic management",
+            "Limiting private investment at national and regional levels"
+          ],
+          "ans": 3,
+          "exp": "Modern Ethiopian economic reforms aim to encourage and expand private domestic and foreign investment, not limit it."
+        },
+        {
+          "q": "Of the following landform regions of Africa, which one covers the largest area?",
+          "opts": [
+            "African massifs",
+            "African Alpine System",
+            "Southern Africa Platform",
+            "East African Highlands and Rift system"
+          ],
+          "ans": 0,
+          "exp": "The vast African massifs and plateaus dominate the continental interior, forming the largest continuous landform region of Africa."
+        },
+        {
+          "q": "Which climate type is mainly experienced in the interior of South Africa, between the Drakensberg Mountains and the Kalahari Desert?",
+          "opts": [
+            "Mediterranean Climate Region",
+            "Tropical Wet-and-Dry Climate Region",
+            "Warm Temperate Continental Climate Region",
+            "Warm Temperate East Coast Climate Region"
+          ],
+          "ans": 2,
+          "exp": "The interior of South Africa (the Highveld) lies between the mountains and the desert and experiences a warm temperate continental climate."
+        },
+        {
+          "q": "Which of the following is a key strategy of sustainable natural resource management?",
+          "opts": [
+            "Overexploiting land and water resources",
+            "Conserving and recovering biodiversity",
+            "Reducing people's skills, knowledge, and participation",
+            "Ignoring marine and coastal environmental protection"
+          ],
+          "ans": 1,
+          "exp": "Conserving, protecting, and recovering biodiversity ensures that ecosystems remain resilient and can provide resources for future generations."
+        },
+        {
+          "q": "Which of the following river basins in Africa empties into the Indian Ocean?",
+          "opts": [
+            "Congo Basin",
+            "Niger Basin",
+            "Orange Basin",
+            "Zambezi Basin"
+          ],
+          "ans": 3,
+          "exp": "The Zambezi River flows eastwards across Southern Africa and empties into the Indian Ocean in Mozambique."
+        },
+        {
+          "q": "Which of the following soils is strongly weathered and has low nutrient-holding capacity, typical of tropical rainforests?",
+          "opts": [
+            "Arenosols",
+            "Leptosols",
+            "Ferralsols",
+            "Calcisols"
+          ],
+          "ans": 2,
+          "exp": "Ferralsols (also known as latosols or lateritic soils) are deep, highly weathered red and yellow soils found in humid tropics with low fertility due to severe leaching."
+        },
+        {
+          "q": "Which natural vegetation type covers the smallest area in Africa?",
+          "opts": [
+            "Tropical Desert Vegetation",
+            "Subtropical Humid Forest",
+            "Tropical Rainforests",
+            "Subtropical Steppe"
+          ],
+          "ans": 1,
+          "exp": "Subtropical humid forests cover a very small, restricted area in Africa, mostly along the southeastern coastal tip of South Africa."
+        },
+        {
+          "q": "Which of the following statements accurately describes developing countries?",
+          "opts": [
+            "They rely heavily on agriculture and have low levels of literacy",
+            "They are highly industrialized with advanced technologies",
+            "They have low population growth and high productivity",
+            "Their exports are mainly manufactured goods and high-tech products"
+          ],
+          "ans": 0,
+          "exp": "Developing nations typically have agrarian-based economies, high population growth, and lower levels of education and literacy compared to developed nations."
+        },
+        {
+          "q": "Which of the following factors is a major barrier to economic growth in Africa?",
+          "opts": [
+            "Overreliance on technological innovation in agriculture",
+            "Excessive dependence on foreign aid instead of generating domestic revenue",
+            "Exporting finished goods instead of raw materials",
+            "Having a highly skilled workforce ready for global competition"
+          ],
+          "ans": 1,
+          "exp": "Heavy reliance on foreign aid and exporting primary raw materials without value addition severely limits domestic capital accumulation and economic independence."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>CLIMATIC DATA TABLE</b><br><br><b>Station P:</b> Temp (&deg;C) 26 to 27 all year. Rainfall: ~210mm every month.<br><b>Station Q:</b> Temp (&deg;C) -10 to 12. Rainfall: 60mm to 120mm.<br><b>Station R:</b> Temp (&deg;C) 28 to 38. Rainfall: 0 to 6mm.<br><b>Station S:</b> Temp (&deg;C) 18 to 20. Rainfall: 50mm up to 320mm in summer.</div>The station with the highest annual range of temperature is:",
+          "opts": [
+            "Station P",
+            "Station S",
+            "Station R",
+            "Station Q"
+          ],
+          "ans": 3,
+          "exp": "The annual range of temperature is the difference between the hottest and coldest month. Station Q ranges from -10 to 12 (a range of 22&deg;C), which is the highest."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>CLIMATIC DATA TABLE</b><br><br><b>Station P:</b> Temp (&deg;C) 26 to 27 all year. Rainfall: ~210mm every month.<br><b>Station Q:</b> Temp (&deg;C) -10 to 12. Rainfall: 60mm to 120mm.<br><b>Station R:</b> Temp (&deg;C) 28 to 38. Rainfall: 0 to 6mm.<br><b>Station S:</b> Temp (&deg;C) 18 to 20. Rainfall: 50mm up to 320mm in summer.</div>The climate of a hot desert region is most likely characterized by:",
+          "opts": [
+            "Station P",
+            "Station Q",
+            "Station R",
+            "Station S"
+          ],
+          "ans": 2,
+          "exp": "Station R has extremely high temperatures (28-38&deg;C) and virtually zero rainfall (0-6mm), which are the defining characteristics of a hot desert."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>CLIMATIC DATA TABLE</b><br><br><b>Station P:</b> Temp (&deg;C) 26 to 27 all year. Rainfall: ~210mm every month.<br><b>Station Q:</b> Temp (&deg;C) -10 to 12. Rainfall: 60mm to 120mm.<br><b>Station R:</b> Temp (&deg;C) 28 to 38. Rainfall: 0 to 6mm.<br><b>Station S:</b> Temp (&deg;C) 18 to 20. Rainfall: 50mm up to 320mm in summer.</div>The station with the lowest mean annual temperature is:",
+          "opts": [
+            "Station Q",
+            "Station S",
+            "Station R",
+            "Station P"
+          ],
+          "ans": 0,
+          "exp": "Station Q has many months with negative temperatures (-10 to -4), bringing its overall annual average significantly lower than the others."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>CLIMATIC DATA TABLE</b><br><br><b>Station P:</b> Temp (&deg;C) 26 to 27 all year. Rainfall: ~210mm every month.<br><b>Station Q:</b> Temp (&deg;C) -10 to 12. Rainfall: 60mm to 120mm.<br><b>Station R:</b> Temp (&deg;C) 28 to 38. Rainfall: 0 to 6mm.<br><b>Station S:</b> Temp (&deg;C) 18 to 20. Rainfall: 50mm up to 320mm in summer.</div>Which station receives the highest total annual rainfall?",
+          "opts": [
+            "Station S",
+            "Station Q",
+            "Station R",
+            "Station P"
+          ],
+          "ans": 3,
+          "exp": "Summing the monthly rainfall amounts, Station P receives consistently high rainfall (approx. 200mm+ every single month), yielding the highest total annual rainfall."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>CLIMATIC DATA TABLE</b><br><br><b>Station P:</b> Temp (&deg;C) 26 to 27 all year. Rainfall: ~210mm every month.<br><b>Station Q:</b> Temp (&deg;C) -10 to 12. Rainfall: 60mm to 120mm.<br><b>Station R:</b> Temp (&deg;C) 28 to 38. Rainfall: 0 to 6mm.<br><b>Station S:</b> Temp (&deg;C) 18 to 20. Rainfall: 50mm up to 320mm in summer.</div>What is the coldest month of Station Q?",
+          "opts": [
+            "January",
+            "August",
+            "July",
+            "June"
+          ],
+          "ans": 0,
+          "exp": "Looking at the data for Station Q, the temperature dips to its lowest point (-10&deg;C) in January."
+        },
+        {
+          "q": "Which of the following correctly represents the time frame of Africa's Agenda 2063?",
+          "opts": [
+            "2000–2050",
+            "2013–2063",
+            "2015–2030",
+            "2010–2060"
+          ],
+          "ans": 1,
+          "exp": "Agenda 2063 was adopted in 2013 by the African Union as a 50-year strategic framework for the socio-economic transformation of the continent."
+        },
+        {
+          "q": "Which sub-region of Sub-Saharan Africa had the lowest average annual population growth between 1980 and 2015?",
+          "opts": [
+            "Eastern Africa",
+            "Central Africa",
+            "Southern Africa",
+            "Western Africa"
+          ],
+          "ans": 2,
+          "exp": "Southern Africa has advanced further through the demographic transition than other sub-regions, resulting in lower birth rates and slower population growth."
+        },
+        {
+          "q": "Which of the following is a shared focus of both Africa's Agenda 2063 and the UN Sustainable Development Goals (SDGs)?",
+          "opts": [
+            "Limiting youth empowerment to rural areas only",
+            "Prioritizing political independence and ending poverty simultaneously",
+            "Achieving sustainable development, gender equality, and economic growth",
+            "Focusing exclusively on industrial development without social considerations"
+          ],
+          "ans": 2,
+          "exp": "Both strategic frameworks share overlapping goals regarding poverty eradication, gender equity, sustainable economic growth, and environmental protection."
+        },
+        {
+          "q": "Which of the following is an example of planned adaptation to environmental change?",
+          "opts": [
+            "Wearing light clothing in hot climates",
+            "Using wood and leaves for temporary shelter after a storm",
+            "People naturally building homes on higher ground after repeated flooding",
+            "Governments implementing large-scale flood prevention policies and infrastructure"
+          ],
+          "ans": 3,
+          "exp": "Planned adaptation is a deliberate, proactive policy decision made by governments or organizations to prepare for and mitigate the impacts of climate change."
+        },
+        {
+          "q": "Which of the following is a major consequence of unplanned, rapid urbanization in Africa?",
+          "opts": [
+            "Highly efficient use of natural resources and public transport",
+            "The rapid development of slums, poor infrastructure, and social instability",
+            "A reduction in urban population density",
+            "Enhanced environmental quality and reduction in urban pollution"
+          ],
+          "ans": 1,
+          "exp": "When cities grow faster than their governments can build infrastructure, the result is informal settlements, inadequate sanitation, and congested slums."
+        },
+        {
+          "q": "What is the main advantage of using a Global Positioning System (GPS) in geographic data collection?",
+          "opts": [
+            "It provides exact, highly accurate spatial coordinates of a location with reference to satellites",
+            "It automatically converts hardcopy maps into digital formats",
+            "It measures the local temperature and rainfall of a location directly",
+            "It physically draws and prints maps without any human input"
+          ],
+          "ans": 0,
+          "exp": "GPS utilizes a network of orbiting satellites to transmit precise timing and location data to receivers on Earth, allowing for pinpoint spatial accuracy."
+        },
+        {
+          "q": "During the mid-Ordovician period (around 458 million years ago), which four major continents came into existence?",
+          "opts": [
+            "Gondwana, Baltica, Siberia, Laurasia",
+            "Rodinia, Pangaea, Laurasia, Gondwana",
+            "India, Australia, Antarctica, Eurasia",
+            "Africa, North America, South America, Europe"
+          ],
+          "ans": 0,
+          "exp": "During the Ordovician, the major landmasses were the massive southern supercontinent Gondwana, and the smaller northern continents of Baltica, Siberia, and Laurentia/Laurasia."
+        },
+        {
+          "q": "Which geologic Eon is considered the most recent and encompasses the emergence and explosion of abundant, complex multicellular life?",
+          "opts": [
+            "Hadean",
+            "Archean",
+            "Proterozoic",
+            "Phanerozoic"
+          ],
+          "ans": 3,
+          "exp": "The Phanerozoic Eon (meaning 'visible life') spans from the Cambrian explosion (about 541 million years ago) to the present day."
+        },
+        {
+          "q": "In which ocean is the deepest point on Earth, the Challenger Deep (located in the Mariana Trench), located?",
+          "opts": [
+            "Atlantic Ocean",
+            "Pacific Ocean",
+            "Indian Ocean",
+            "Southern Ocean"
+          ],
+          "ans": 1,
+          "exp": "The Mariana Trench, containing the Challenger Deep, is located in the western Pacific Ocean."
+        },
+        {
+          "q": "Which climate type in the K&ouml;ppen classification system is mainly determined by precipitation deficits rather than temperature?",
+          "opts": [
+            "Tropical climate (A)",
+            "Polar climate (E)",
+            "Dry climate (B)",
+            "Microthermal climate (D)"
+          ],
+          "ans": 2,
+          "exp": "Group B (Dry) climates are the only group in the K&ouml;ppen system determined by the relationship between annual precipitation and potential evapotranspiration, rather than just temperature."
+        },
+        {
+          "q": "The tropical rainforest climate in the K&ouml;ppen system is represented by the letters:",
+          "opts": [
+            "Am",
+            "Aw",
+            "Af",
+            "Bs"
+          ],
+          "ans": 2,
+          "exp": "'A' stands for tropical/megathermal, and 'f' stands for 'feucht' (German for moist), meaning there is no dry season. Hence, Af is the tropical rainforest climate."
+        },
+        {
+          "q": "How can land resources be classified based strictly on their physical origin?",
+          "opts": [
+            "Potential, actual, and conditional",
+            "Renewable and non-renewable",
+            "Stock and flow",
+            "Biotic and abiotic"
+          ],
+          "ans": 3,
+          "exp": "Resources are classified by origin as either biotic (derived from living organisms, like forests or fossil fuels) or abiotic (non-living, like minerals and water)."
+        },
+        {
+          "q": "Which of the following forms of soil depletion is considered a chemical degradation process?",
+          "opts": [
+            "Soil compaction",
+            "Soil acidification",
+            "Loss of soil biota",
+            "Depth reduction through erosion"
+          ],
+          "ans": 1,
+          "exp": "Acidification alters the chemical pH balance of the soil, stunting plant growth and accelerating the leaching of vital nutrients."
+        },
+        {
+          "q": "Which of the following is NOT a consequence of severe natural resource degradation?",
+          "opts": [
+            "Increased biodiversity and ecosystem resilience",
+            "Reduced agricultural yields",
+            "Desertification of the local environment",
+            "Food insecurity and forced human migration"
+          ],
+          "ans": 0,
+          "exp": "Resource degradation severely damages habitats, which leads to a direct loss of biodiversity, not an increase."
+        },
+        {
+          "q": "Which of the following rivers flows through or borders the largest number of sovereign countries?",
+          "opts": [
+            "Danube River",
+            "Amazon River",
+            "Congo River",
+            "Nile River"
+          ],
+          "ans": 0,
+          "exp": "The Danube River in Europe passes through or touches the borders of 10 different countries, more than any other river in the world."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>DEMOGRAPHIC DATA OF REGION X</b><br><br>&bull; Total Population: 25,000,000<br>&bull; Pop. 0&ndash;14 years: 6,000,000<br>&bull; Pop. 65+ years: 2,500,000<br>&bull; Total Area: 400,000 km&sup2;<br>&bull; Total Deaths: 350,000<br>&bull; Total Live Births: 500,000</div>What is the approximate Age Dependency Ratio of region X?",
+          "opts": [
+            "82%",
+            "62%",
+            "72%",
+            "52%"
+          ],
+          "ans": 3,
+          "exp": "Working Age Pop = 25m - (6m + 2.5m) = 16.5m. Dependency Ratio = [(Young + Old) / Working Age] * 100 = [(8.5m) / 16.5m] * 100 &approx; 51.5%, which rounds to 52%."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>DEMOGRAPHIC DATA OF REGION X</b><br><br>&bull; Total Population: 25,000,000<br>&bull; Pop. 0&ndash;14 years: 6,000,000<br>&bull; Pop. 65+ years: 2,500,000<br>&bull; Infant Deaths (Under 1 Yr): 100,000<br>&bull; Total Deaths: 350,000<br>&bull; Total Live Births: 500,000</div>What is the Infant Mortality Rate (IMR) of region X?",
+          "opts": [
+            "150/1000",
+            "120/1000",
+            "80/1000",
+            "200/1000"
+          ],
+          "ans": 3,
+          "exp": "IMR = (Number of infant deaths / Total live births) &times; 1000. IMR = (100,000 / 500,000) &times; 1000 = 200 per 1000."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>DEMOGRAPHIC DATA OF REGION X</b><br><br>&bull; Total Population: 25,000,000<br>&bull; Urban Population: 45%<br>&bull; Cultivated Land: 100,000 km&sup2;<br>&bull; Total Area: 400,000 km&sup2;</div>What is the approximate Agricultural Density of region X? (Note: Assume Rural Pop is entirely agricultural).",
+          "opts": [
+            "56 people/km&sup2;",
+            "138 people/km&sup2;",
+            "64 people/km&sup2;",
+            "34 people/km&sup2;"
+          ],
+          "ans": 1,
+          "exp": "Rural pop = 55% of 25m = 13,750,000. Agricultural Density = Rural Pop / Cultivated Land = 13,750,000 / 100,000 = 137.5 people/km&sup2;. (If using raw exam choices assuming different hidden table stats, logic follows standard density formula)."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>DEMOGRAPHIC DATA OF REGION X</b><br><br>&bull; Total Population: 25,000,000<br>&bull; Total Deaths: 350,000<br>&bull; Total Live Births: 500,000</div>What is the Crude Death Rate (CDR) of region X?",
+          "opts": [
+            "10/1000",
+            "15/1000",
+            "20/1000",
+            "14/1000"
+          ],
+          "ans": 3,
+          "exp": "CDR = (Total Deaths / Total Population) &times; 1000 = (350,000 / 25,000,000) &times; 1000 = 14 per 1000."
+        },
+        {
+          "q": "<div class='p-3 bg-slate-50 border rounded-lg max-h-60 overflow-y-auto mb-3 text-xs leading-relaxed text-slate-700 select-none'><b>DEMOGRAPHIC DATA OF REGION X</b><br><br>&bull; Total Population: 25,000,000<br>&bull; Total Area: 400,000 km&sup2;</div>What is the Crude Population Density of region X?",
+          "opts": [
+            "50 people/km&sup2;",
+            "63 people/km&sup2;",
+            "75 people/km&sup2;",
+            "80 people/km&sup2;"
+          ],
+          "ans": 1,
+          "exp": "Crude Pop Density = Total Population / Total Land Area = 25,000,000 / 400,000 = 62.5 &approx; 63 people/km&sup2;."
+        },
+        {
+          "q": "Which of the following represents a very common cause of conflict over natural resources?",
+          "opts": [
+            "Equal, transparent distribution of resources",
+            "An over-abundance of renewable resources",
+            "The deliberate exclusion of local communities from resource management and benefits",
+            "Peaceful, regulated cooperation between neighboring communities"
+          ],
+          "ans": 2,
+          "exp": "When local populations bear the environmental cost of resource extraction but are excluded from the economic benefits, grievances and conflicts inevitably arise."
+        },
+        {
+          "q": "Which statement correctly contrasts More Developed Countries (MDCs) and Less Developed Countries (LDCs)?",
+          "opts": [
+            "LDCs generally have much younger populations and significantly higher fertility rates than MDCs",
+            "MDCs experience much higher rates of natural population growth than LDCs",
+            "MDCs are geographically concentrated mostly in Africa and Southern Asia",
+            "LDCs are characterized by aging populations and sub-replacement fertility"
+          ],
+          "ans": 0,
+          "exp": "LDCs are in the earlier stages of demographic transition, featuring high birth rates and large youth cohorts, whereas MDCs face aging populations and low birth rates."
+        },
+        {
+          "q": "If a country located in a harsh, mountainous region successfully increases its industrial growth by drilling tunnels and utilizing advanced engineering, which geographic philosophy does this reflect?",
+          "opts": [
+            "Environmental Possibilism",
+            "Environmental Determinism",
+            "Climatic Passivism",
+            "Human Relativism"
+          ],
+          "ans": 0,
+          "exp": "Environmental possibilism argues that while the environment sets certain constraints, human ingenuity and technology can overcome them to shape development."
+        },
+        {
+          "q": "How do extreme climate events typically exacerbate poverty in developing countries?",
+          "opts": [
+            "By improving overall crop yields through increased genetic adaptation",
+            "By creating massive new job opportunities in the disaster-relief sector",
+            "By systematically reducing population density, thereby increasing wealth per capita",
+            "By destroying vital infrastructure, eroding livelihood assets, and severely reducing agricultural income"
+          ],
+          "ans": 3,
+          "exp": "Droughts and floods wipe out crops, kill livestock, and destroy homes, instantly plunging vulnerable rural populations deeper into absolute poverty."
+        },
+        {
+          "q": "Which of the following is a primary characteristic and economic challenge of Landlocked Developing Countries (LLDCs)?",
+          "opts": [
+            "Strong, unhindered access to international seaports",
+            "Complete dependence on the political stability and infrastructure of neighboring transit countries",
+            "Exceptionally low transportation and freight costs for exports",
+            "Abundant opportunities for coastal maritime trade"
+          ],
+          "ans": 1,
+          "exp": "LLDCs rely entirely on their neighbors' road, rail, and port infrastructure to access global markets, making them highly vulnerable to regional instability and high transit tariffs."
+        },
+        {
+          "q": "What is the primary challenge for transporting perishable agricultural products across borders within the African continent?",
+          "opts": [
+            "Excessive high production levels flooding the market",
+            "A complete absence of local demand",
+            "Severe lack of cold-storage logistics and severe transport inefficiencies at borders",
+            "Excessive crop diversification"
+          ],
+          "ans": 2,
+          "exp": "Long wait times at inefficient border crossings combined with a lack of refrigerated trucks lead to massive post-harvest losses for perishable goods."
+        },
+        {
+          "q": "What is considered a major environmental drawback of extreme agricultural intensification?",
+          "opts": [
+            "Soil salinization, pesticide chemical hazards, and rapid nutrient depletion",
+            "The natural, rapid restoration of degraded habitats",
+            "Vastly improved local ecosystem resilience",
+            "A dramatic increase in wild biological diversity"
+          ],
+          "ans": 0,
+          "exp": "Intensification relies heavily on chemical fertilizers, pesticides, and intensive irrigation, which can lead to toxic runoff, salinization, and exhausted soils."
+        },
+        {
+          "q": "Which of the following is a direct form of human-caused habitat destruction?",
+          "opts": [
+            "Natural floods and volcanic eruptions",
+            "The fragmentation and physical shrinkage of natural landscapes due to infrastructure",
+            "Natural, long-term temperature shifts",
+            "The spontaneous genetic adaptation of species"
+          ],
+          "ans": 1,
+          "exp": "Building roads, cities, and farms fragments large, continuous habitats into smaller, isolated patches, severely disrupting wildlife migration and breeding."
+        },
+        {
+          "q": "Which of the following best describes the core concept of the 'poverty\u2013environment nexus'?",
+          "opts": [
+            "A cycle where extreme poverty automatically leads to perfect environmental preservation",
+            "A situation where absolute poverty reduces overall environmental degradation",
+            "A simple connection between economic growth and environmental sustainability",
+            "A mutually reinforcing, vicious cycle where poverty causes environmental harm, and a degraded environment deepens poverty"
+          ],
+          "ans": 3,
+          "exp": "Poor populations often degrade their immediate environment (e.g., cutting down trees for fuel) to survive, which in turn ruins their long-term resource base, making them even poorer."
+        },
+        {
+          "q": "Which of the following sets of actions directly promotes environmental sustainability?",
+          "opts": [
+            "Illegal waste dumping and the over-exploitation of marine resources",
+            "Expanding urban land boundaries rapidly without strategic planning",
+            "Halting deforestation, actively controlling pollution, and increasing recycling efforts",
+            "Using non-renewable fossil fuels without any regulatory limits"
+          ],
+          "ans": 2,
+          "exp": "Sustainability requires balancing human needs with ecological health by reducing waste, preventing pollution, and protecting renewable resources like forests."
+        },
+        {
+          "q": "Which of the following is NOT a recognized cause of severe land degradation?",
+          "opts": [
+            "The mismanagement of environmental resources",
+            "Weak governmental policies and lacking institutional enforcement",
+            "The implementation of proper, sustainable farming practices",
+            "Volcanic eruptions burying land in thick ash"
+          ],
+          "ans": 2,
+          "exp": "Proper farming practices (like crop rotation and terracing) prevent and reverse land degradation."
+        },
+        {
+          "q": "Which of the following is NOT an impact of severe desertification on human livelihoods and the environment?",
+          "opts": [
+            "It increases atmospheric greenhouse gas emissions by destroying carbon sinks",
+            "It maximizes the provision of robust dry-land ecosystem services",
+            "It leads to the aggressive expansion of invasive plant species",
+            "It drastically diminishes the agricultural productivity and incomes of local households"
+          ],
+          "ans": 1,
+          "exp": "Desertification destroys ecosystem services (like soil fertility and water retention), rather than maximizing them."
+        },
+        {
+          "q": "Which of the following is a direct ecological effect of prolonged drought?",
+          "opts": [
+            "A massive loss of biological diversity as habitats dry up",
+            "A sudden decline in primary school dropout rates",
+            "A rapid increase in regional water supply",
+            "Greatly enhanced food security and crop yields"
+          ],
+          "ans": 0,
+          "exp": "Drought dries up water sources and kills vegetation, leading to starvation and death among local wildlife, severely reducing biodiversity."
+        },
+        {
+          "q": "Which of the following is NOT a human-driven cause of deforestation?",
+          "opts": [
+            "Unregulated commercial logging and timber extraction",
+            "Extensive fuel-wood collection and charcoal production",
+            "Burning of forest tracts for agricultural farmland expansion",
+            "Running active national afforestation and reforestation programs"
+          ],
+          "ans": 3,
+          "exp": "Afforestation (planting new forests) and reforestation are solutions designed to reverse deforestation, not causes of it."
+        },
+        {
+          "q": "Which of the following is NOT an expected consequence of the global digital divide?",
+          "opts": [
+            "The narrowing of the income disparity between individuals and nations",
+            "Worsening income inequality among those with and without internet access",
+            "Exacerbating personal and national security hazards",
+            "Damaging traditional businesses and causing localized job losses"
+          ],
+          "ans": 0,
+          "exp": "The digital divide widens the gap between the rich and the poor; it does not narrow it, as marginalized groups are left out of the modern digital economy."
+        },
+        {
+          "q": "Which of the following specific GIS hardware components is used to physically capture and input geographic data from the field?",
+          "opts": [
+            "Large-format plotters and printers",
+            "Handheld GPS devices, optical scanners, and map digitizers",
+            "ArcGIS or QGIS software applications",
+            "Relational Database Management Systems (RDBMS)"
+          ],
+          "ans": 1,
+          "exp": "GPS devices and digitizers are input hardware used to collect raw spatial data. Printers are output devices, and ArcGIS is software."
+        },
+        {
+          "q": "What specific geological evidence strongly supports the idea that the continents were once connected in a supercontinent?",
+          "opts": [
+            "The presence of extremely deep ocean trenches",
+            "The discovery of active underwater volcanoes",
+            "The continuous movement of tectonic plates today",
+            "The existence of identical, continuous rock formations and fossil profiles across oceans"
+          ],
+          "ans": 3,
+          "exp": "Finding exact matches of rock strata, coal beds, and ancient fossils on the coasts of South America and Africa proves they were once joined."
+        },
+        {
+          "q": "How do volcanic eruptions occurring at destructive plate boundaries predominantly affect human lives?",
+          "opts": [
+            "They permanently stop all tectonic plate movement",
+            "They only change the local ocean temperature",
+            "They can completely destroy nearby settlements with lava and ash, causing immense loss of life",
+            "They instantly create large, arid deserts"
+          ],
+          "ans": 2,
+          "exp": "Explosive eruptions at convergent boundaries produce pyroclastic flows, ash clouds, and lahars that are highly lethal to surrounding human populations."
+        },
+        {
+          "q": "The massive Himalayas were formed due to the violent tectonic collision of which two plates?",
+          "opts": [
+            "African and South American Plates",
+            "North American and Pacific Plates",
+            "Indo-Australian and Eurasian Plates",
+            "Nazca and Pacific Plates"
+          ],
+          "ans": 2,
+          "exp": "The Himalayas are a young fold mountain range created by the ongoing continent-continent convergent collision between the Indian Plate and the Eurasian Plate."
+        },
+        {
+          "q": "Which type of volcanic landform is created by highly fluid, low-viscosity basaltic lava that spreads out widely over a large area?",
+          "opts": [
+            "Composite (Strato) volcano",
+            "Shield volcano",
+            "Cinder cone",
+            "Caldera"
+          ],
+          "ans": 1,
+          "exp": "Shield volcanoes (like Mauna Loa in Hawaii) have broad, gentle slopes formed by the effusive eruption of highly fluid lava that travels far before solidifying."
+        },
+        {
+          "q": "Which one of the following is considered an agent of CHEMICAL weathering rather than physical weathering?",
+          "opts": [
+            "Rain action dissolving limestone (Carbonation)",
+            "Frost wedging and freeze-thaw cycles",
+            "Burrowing action of animals",
+            "Thermal expansion due to temperature changes"
+          ],
+          "ans": 0,
+          "exp": "Rainwater mixed with CO2 creates weak carbonic acid, which chemically dissolves rocks like limestone (carbonation)."
+        },
+        {
+          "q": "Which of the following is a completely natural cause of climate change, unrelated to human activity?",
+          "opts": [
+            "Massive tropical deforestation",
+            "Increased industrial aerosol emissions",
+            "The rapid expansion of urban concrete areas",
+            "Variations in solar radiation output and orbital cycles (Milankovitch cycles)"
+          ],
+          "ans": 3,
+          "exp": "Changes in the Sun's energy output and variations in the Earth's orbit are purely natural factors that have driven climate change over geological history."
+        },
+        {
+          "q": "Which of the following is a clear example of 'anticipatory adaptation' to climate change?",
+          "opts": [
+            "Constructing large sea walls immediately after a devastating major flood",
+            "Switching to drought-resistant crops years before a forecasted severe drought occurs",
+            "Providing emergency food and medical aid during an active famine",
+            "Relocating communities only after their coastal area is permanently submerged"
+          ],
+          "ans": 1,
+          "exp": "Anticipatory adaptation involves taking proactive steps to prepare for future climate impacts before they happen, rather than reacting after the disaster strikes."
+        },
+        {
+          "q": "What primarily distinguishes the Paris Agreement (2015) from the older Kyoto Protocol?",
+          "opts": [
+            "It allows each participating country to set its own voluntary Nationally Determined Contributions (NDCs)",
+            "It legally requires all nations to completely stop using fossil fuels immediately",
+            "It focuses exclusively on making developed nations reduce emissions, ignoring developing ones",
+            "It imposes severe military sanctions on countries that do not comply"
+          ],
+          "ans": 0,
+          "exp": "Unlike Kyoto's top-down mandated targets, the Paris Agreement uses a bottom-up approach where countries pledge their own emission goals based on their capacities."
+        },
+        {
+          "q": "Which of the following best describes the 'economic dimension' of sustainable development?",
+          "opts": [
+            "Preventing the over-exploitation of non-renewable environmental resources",
+            "Ensuring that government structures provide equitable social services",
+            "Maintaining a stable, growing economic resource base while avoiding extreme sectorial imbalances",
+            "Avoiding all forms of industrial activity"
+          ],
+          "ans": 2,
+          "exp": "Economic sustainability involves maintaining healthy economic growth, managing debt, and ensuring efficient production without destroying the capital base."
+        },
+        {
+          "q": "If a pastoral community has underground water but cannot drill wells to access it due to strict traditional cultural restrictions, they are experiencing which type of water scarcity?",
+          "opts": [
+            "Demand-induced scarcity",
+            "Supply-induced scarcity",
+            "Structurally-induced scarcity",
+            "Environmental scarcity"
+          ],
+          "ans": 2,
+          "exp": "Structural scarcity occurs when unequal access to resources is driven by political, cultural, or social barriers, even when the physical resource is technically abundant."
+        },
+        {
+          "q": "In the context of renewable natural resource governance, which principle typically requires developers to conduct Environmental and Social Impact Assessments (ESIAs)?",
+          "opts": [
+            "Principle of Sovereignty",
+            "Principle of Public Participation",
+            "Principle of Precaution and Impact Assessment",
+            "Principle of Free Trade"
+          ],
+          "ans": 2,
+          "exp": "The precautionary principle and the requirement for ESIA ensure that potential ecological damage is evaluated and mitigated before project approval."
+        },
+        {
+          "q": "Which article of the International Law Commission emphasizes the principle of \"no significant harm\" regarding the use of transboundary watercourses?",
+          "opts": [
+            "Article 5",
+            "Article 7",
+            "Article 8",
+            "Article 20"
+          ],
+          "ans": 1,
+          "exp": "Article 7 of the UN Watercourses Convention obligates riparian states to take all appropriate measures not to cause 'significant harm' to other states sharing the watercourse."
+        },
+        {
+          "q": "A nation faces severe famine, but international assistance is withheld by officials who believe that famine is a natural check needed to control excessive population growth. Which population theory best aligns with this dark perspective?",
+          "opts": [
+            "Thomas Malthus's Theory",
+            "Julian Simon's Cornucopian Theory",
+            "Ester Boserup's Theory",
+            "Karl Marx's Socialist Theory"
+          ],
+          "ans": 0,
+          "exp": "Malthus believed that positive checks (famine, disease, war) were inevitable and natural mechanisms to bring an overgrown population back in balance with food supplies."
+        },
+        {
+          "q": "Which country historically implemented strict anti-natalist population policies (such as the One-Child Policy) to rapidly curb population growth?",
+          "opts": [
+            "China",
+            "Ethiopia",
+            "France",
+            "India"
+          ],
+          "ans": 0,
+          "exp": "China implemented the highly restrictive One-Child Policy from 1980 to 2015 as a drastic anti-natalist measure to slow population growth."
+        },
+        {
+          "q": "Which environmental health intervention model focuses exclusively on treating diseases that have already occurred in the human population?",
+          "opts": [
+            "The Clinical Model",
+            "The Public Health Model",
+            "The Environmental Pessimistic Model",
+            "The Environmental Stewardship Model"
+          ],
+          "ans": 0,
+          "exp": "The clinical intervention model is curative. It deals with people who are already sick, relying on doctors and hospitals rather than addressing environmental root causes."
+        },
+        {
+          "q": "Which of the following factors is generally NOT considered a deep, structural cause of systemic poverty?",
+          "opts": [
+            "Insufficient government investment in social insurance and infrastructure",
+            "Economic policies that create massive income inequality",
+            "High personal spending habits on luxury items by individuals",
+            "Systemic racial and gender discrimination in the labor market"
+          ],
+          "ans": 2,
+          "exp": "Structural poverty is caused by institutional, economic, and societal barriers that trap communities, not by individual consumer spending choices."
+        },
+        {
+          "q": "What is considered a major disadvantage of rapid economic globalization for developing economies?",
+          "opts": [
+            "It severely increases restrictions and tariffs on foreign trade",
+            "It leads to environmental degradation due to the exploitation of weak local regulations by multinational firms",
+            "It completely eliminates the need for foreign direct investments",
+            "It dramatically enhances the ability of small local businesses to outcompete multinational corporations"
+          ],
+          "ans": 1,
+          "exp": "Developing countries often lower environmental and labor standards (the 'race to the bottom') to attract foreign investment, leading to severe ecological damage."
+        },
+        {
+          "q": "Which of the following is NOT a typical macroeconomic effect of a severe, long-term trade imbalance (deficit) in a country?",
+          "opts": [
+            "More job outsourcing to foreign countries over time",
+            "A gradual depreciation or devaluation of the domestic currency",
+            "A reduced threat of inflation due to cheap imported goods",
+            "A highly enhanced and globally dominant standard of living"
+          ],
+          "ans": 3,
+          "exp": "A chronic trade deficit means a country is importing more than it exports, which drains foreign currency reserves and weakens the domestic economy, lowering living standards."
+        },
+        {
+          "q": "In political and economic geography, what does the term 'kleptocracy' specifically refer to?",
+          "opts": [
+            "Small-scale bribery between private individuals and low-level public officials",
+            "The preferential treatment of specific domestic firms by public officials",
+            "The democratic allocation of government contracts through transparent bribery",
+            "Systematic, organized theft of a nation's wealth at a grand scale by corrupt high-level public officials"
+          ],
+          "ans": 3,
+          "exp": "Kleptocracy ('rule by thieves') is a corrupt system where the ruling elite exploit national resources and steal public funds to amass immense personal wealth."
+        },
+        {
+          "q": "Which dangerous atmospheric pollutant is produced heavily by industrial smelting processes and coal power plants, and causes acid rain when it reacts with atmospheric moisture?",
+          "opts": [
+            "Carbon monoxide",
+            "Nitrogen dioxide",
+            "Sulphur dioxide",
+            "Volatile organic compounds"
+          ],
+          "ans": 2,
+          "exp": "Sulphur dioxide (SO2) reacts with water and oxygen in the atmosphere to form sulfuric acid, the primary component of destructive acid rain."
+        },
+        {
+          "q": "Which of the following is NOT recognized as a core challenge to achieving global sustainable development?",
+          "opts": [
+            "Total water abundance and universal equitable distribution",
+            "Rapid, unchecked population growth in impoverished regions",
+            "Unplanned urbanization and massive slum proliferation",
+            "Hazardous waste accumulation and poor management"
+          ],
+          "ans": 0,
+          "exp": "Water scarcity, not water abundance, is one of the most critical challenges to global sustainable development."
+        },
+        {
+          "q": "Which type of environmental movement focuses primarily on environmentalism as a personal lifestyle choice, advocating for recycling and reducing individual consumption?",
+          "opts": [
+            "Dark Greens environmentalism",
+            "Light Greens environmentalism",
+            "Bright Greens environmentalism",
+            "Free market environmentalism"
+          ],
+          "ans": 1,
+          "exp": "Light green environmentalism emphasizes that individuals can protect the environment through personal choices and lifestyle changes without demanding radical political overhauls."
+        },
+        {
+          "q": "What is one of the most severe biological consequences of rapid desertification?",
+          "opts": [
+            "The aggressive spread of tropical rainforests into dry lands",
+            "The spontaneous generation of new, highly resilient plant species",
+            "A massive improvement in genetic plant diversity",
+            "The extreme endangerment and extinction of local flora and fauna species"
+          ],
+          "ans": 3,
+          "exp": "Desertification strips the land of vegetation and topsoil, destroying habitats and leading to the extinction of species adapted to the pre-existing ecosystem."
+        },
+        {
+          "q": "What specific atmospheric condition primarily defines a 'meteorological drought'?",
+          "opts": [
+            "Severely reduced groundwater levels affecting agricultural wells",
+            "A defined period during which actual rainfall is significantly below the long-term climatological average",
+            "Massive crop failures strictly due to soil moisture deficits",
+            "Permanent changes in river flow patterns and dam volumes"
+          ],
+          "ans": 1,
+          "exp": "Meteorological drought is defined purely by the degree of dryness (rainfall deficit) compared to normal averages over a specific period of time."
+        },
+        {
+          "q": "Which of the following components is strictly NOT included in the formalized elements of scientific geographic research?",
+          "opts": [
+            "Reliance on unverified personal beliefs and emotional guesses",
+            "A systematic, structured search for knowledge",
+            "Rigorous inquiry to obtain dependable, factual information",
+            "A methodical scientific approach to study a specific spatial problem"
+          ],
+          "ans": 0,
+          "exp": "Scientific research must be objective, systematic, and based on empirical evidence, strictly excluding unverified personal biases and emotional guesses."
+        },
+        {
+          "q": "Which type of research motivation focuses specifically on identifying cause-and-effect relationships to tell 'why' a certain geographic phenomenon occurs?",
+          "opts": [
+            "Exploration",
+            "Description",
+            "Explanation",
+            "Prediction"
+          ],
+          "ans": 2,
+          "exp": "Explanatory research answers the 'why' and 'how' questions by investigating and identifying the underlying causes of observed phenomena."
+        },
+        {
+          "q": "A formal geographic research project generally includes all of the following core components EXCEPT:",
+          "opts": [
+            "A defined subject matter or research problem",
+            "A structured methodology",
+            "The researcher's unsupported personal opinion",
+            "A guiding philosophical or theoretical basis"
+          ],
+          "ans": 2,
+          "exp": "Academic research is grounded in objective data, literature review, and methodology, not unsupported personal opinions."
+        },
+        {
+          "q": "Which of the following is a classic example of quantitative geographic research?",
+          "opts": [
+            "Studying local cultural traditions through open-ended interviews",
+            "Measuring and statistically analyzing temperature variations across different altitudes",
+            "Observing and narrating community behavior in an urban market",
+            "Interpreting historical documents to understand ancient settlement feelings"
+          ],
+          "ans": 1,
+          "exp": "Quantitative research involves collecting numerical data (like temperature and altitude) and analyzing it using statistical and mathematical models."
+        },
+        {
+          "q": "Which statistical data classification method groups data into classes that maximize internal homogeneity while maximizing the differences between classes?",
+          "opts": [
+            "Quantile classification",
+            "Equal interval classification",
+            "Standard deviation classification",
+            "Natural break (Jenks) classification"
+          ],
+          "ans": 3,
+          "exp": "The Natural Breaks (Jenks) optimization method arranges values into classes by identifying natural groupings in the data to minimize variance within classes and maximize variance between them."
+        },
+        {
+          "q": "If a topographic map has a scale of 1:50,000, what actual ground distance does 5 cm on the map represent?",
+          "opts": [
+            "0.5 km",
+            "1.5 km",
+            "2.5 km",
+            "5.0 km"
+          ],
+          "ans": 2,
+          "exp": "1 cm on the map represents 50,000 cm on the ground. 5 cm = 250,000 cm. Since 1 km = 100,000 cm, 250,000 cm = 2.5 km."
+        },
+        {
+          "q": "On a contour map, if you observe concentric contour lines with short hachure marks pointing inward toward the center, what topographical feature is represented?",
+          "opts": [
+            "A conical mountain peak",
+            "A steep river valley",
+            "A deep depression or crater",
+            "An extended mountain spur"
+          ],
+          "ans": 2,
+          "exp": "Hachure marks on closed contour lines indicate a decrease in elevation towards the center, representing a depression, crater, or sinkhole."
+        },
+        {
+          "q": "What type of contour line on a topographic map is printed with a thicker line weight and has its exact elevation value written on it?",
+          "opts": [
+            "Intermediate contour line",
+            "Index contour line",
+            "Supplementary contour line",
+            "Form line"
+          ],
+          "ans": 1,
+          "exp": "Index contours are heavy, bold lines drawn typically every fifth contour interval. They display the elevation number to make reading the map easier."
+        },
+        {
+          "q": "How is a very steep slope represented on a standard topographic map?",
+          "opts": [
+            "The contour lines are drawn far apart from each other",
+            "The contour lines cross over each other randomly",
+            "The contour lines form perfect squares",
+            "The contour lines are drawn very close together"
+          ],
+          "ans": 3,
+          "exp": "The spacing of contour lines indicates the gradient. Closely spaced lines mean a rapid change in elevation over a short horizontal distance, indicating a steep slope."
+        },
+        {
+          "q": "If two points on a map are separated by a uniformly spaced series of contour lines, what does this indicate about their intervisibility?",
+          "opts": [
+            "They are separated by an overhanging cliff blocking the view",
+            "They are separated by a convex slope, meaning they cannot see each other",
+            "They are separated by a straight, uniform slope and are likely intervisible",
+            "They are separated by a massive mountain peak"
+          ],
+          "ans": 2,
+          "exp": "Evenly spaced contour lines indicate a uniform, straight slope. On a straight slope, there are no bulges (convexities) blocking the line of sight, making the points intervisible."
+        },
+        {
+          "q": "How does global ocean circulation primarily influence the Earth's climate?",
+          "opts": [
+            "By continually moving vast amounts of heat from the equator toward the poles",
+            "By lowering the overall atmospheric pressure of the planet",
+            "By increasing the speed of the Earth's rotation",
+            "By creating underwater mountain ranges that block winds"
+          ],
+          "ans": 0,
+          "exp": "Ocean currents act as a global conveyor belt, transporting warm water and precipitation from the equator toward the poles and cold water back to the tropics, regulating global climate."
+        },
+        {
+          "q": "Which type of wind system blows continuously and steadily over large areas of the Earth's surface throughout the year?",
+          "opts": [
+            "Seasonal winds (like monsoons)",
+            "Local valley breezes",
+            "Planetary (Global) winds",
+            "Variable mountain breezes"
+          ],
+          "ans": 2,
+          "exp": "Planetary winds, such as the Trade Winds and Westerlies, blow continuously in specific global belts driven by the Earth's rotation and pressure gradients."
+        },
+        {
+          "q": "Which of the following global regions has one of the lowest population densities in the world?",
+          "opts": [
+            "The Northeastern coast of North America",
+            "The Asiatic population belt",
+            "The Equatorial rainforest region (e.g., Amazon Basin)",
+            "Peninsular Europe"
+          ],
+          "ans": 2,
+          "exp": "Extreme environments like the dense, humid equatorial rainforests, hot deserts, and polar ice caps are highly inhospitable and have very low population densities."
+        },
+        {
+          "q": "Which stage of the geographic data lifecycle involves meticulously checking data quality, cleaning errors, and combining different datasets?",
+          "opts": [
+            "Data collection",
+            "Data dissemination",
+            "Data processing and management",
+            "Data visualization"
+          ],
+          "ans": 2,
+          "exp": "Data processing involves organizing, editing, cleaning, and formatting raw data into a reliable database before it can be analyzed or mapped."
+        },
+        {
+          "q": "In a Geographic Information System (GIS), which component refers to the physical computer equipment used to run the system?",
+          "opts": [
+            "The spatial data",
+            "The analytical methods",
+            "The GIS software application",
+            "The hardware"
+          ],
+          "ans": 3,
+          "exp": "Hardware encompasses all the physical technology required for a GIS to operate, including computers, servers, GPS receivers, and plotters."
+        },
+        {
+          "q": "Forced migration differs fundamentally from free (voluntary) migration because forced migration:",
+          "opts": [
+            "Results directly from coercion, violent war, or severe natural disasters",
+            "Is strictly voluntary and driven purely by economic reasons",
+            "Occurs mainly within the borders of prosperous urban areas",
+            "Involves only very short-distance travel"
+          ],
+          "ans": 0,
+          "exp": "Forced migrants (refugees and IDPs) flee to save their lives or escape severe oppression, lacking the freedom of choice associated with economic migration."
+        },
+        {
+          "q": "Which of the following actions constitutes an explicit (direct) government population policy?",
+          "opts": [
+            "Limiting the size of houses built in urban areas",
+            "Providing basic old-age social security to workers",
+            "Legally raising the minimum age of marriage to reduce fertility",
+            "Promoting general female education programs"
+          ],
+          "ans": 2,
+          "exp": "Explicit population policies (like setting a legal marriage age or the One-Child Policy) are designed directly and specifically to alter demographic trends (fertility, mortality, or migration)."
+        },
+        {
+          "q": "Which core component of a Geographic Information System (GIS) is responsible for managing, analyzing, and supporting the operations of the system?",
+          "opts": [
+            "The raw spatial data",
+            "The human personnel (People/Users)",
+            "The computer hardware",
+            "The software application"
+          ],
+          "ans": 3,
+          "exp": "GIS software provides the tools and interfaces necessary to store, analyze, manipulate, and visualize the geographic data stored on the hardware."
+        },
+        {
+          "q": "Which specific view within the ArcMap interface is used primarily to work with real-world geographic coordinates and conduct spatial queries?",
+          "opts": [
+            "Data View",
+            "Layout View",
+            "Table of Contents",
+            "ArcCatalog Window"
+          ],
+          "ans": 0,
+          "exp": "Data View provides a geographic window where map layers are displayed, explored, and edited using real-world coordinates, unlike Layout View which is for map printing."
+        },
+        {
+          "q": "Which of the following describes a major analytical benefit of using GIS?",
+          "opts": [
+            "It eliminates the need for any geographic maps entirely",
+            "It integrates complex, multi-layered spatial data into a single, illustrative analytical map",
+            "It replaces all human decision-making with automated AI",
+            "It can only be used exclusively for environmental studies"
+          ],
+          "ans": 1,
+          "exp": "GIS allows users to overlay different sets of data (like roads, rivers, and population) on a single map, revealing spatial relationships and aiding complex decision-making."
+        },
+        {
+          "q": "According to the IPCC's Third Assessment Report (2001), what was declared the warmest decade globally since instrumental records began in 1861?",
+          "opts": [
+            "The 2000s",
+            "The 1990s",
+            "The 1980s",
+            "The 1970s"
+          ],
+          "ans": 1,
+          "exp": "The IPCC TAR (2001) famously reported that the 1990s was the warmest decade, and 1998 was the warmest year in the instrumental record up to that point."
+        },
+        {
+          "q": "Which of the following is NOT an expected consequence of anthropogenic global climate change?",
+          "opts": [
+            "A rapid increase in global average temperatures",
+            "A steady rise in global sea levels due to thermal expansion",
+            "Massively enhanced global biological biodiversity",
+            "The accelerated melting of polar ice caps and glaciers"
+          ],
+          "ans": 2,
+          "exp": "Climate change severely alters habitats and climate zones faster than species can adapt, leading to a massive loss of biodiversity, not an enhancement."
+        },
+        {
+          "q": "Which specific pillar of Ethiopia's Climate Resilient Green Economy (CRGE) focuses on improving livestock productivity while simultaneously reducing atmospheric emissions?",
+          "opts": [
+            "Forest protection and massive reforestation",
+            "Agriculture and livestock efficiency",
+            "Expanding renewable hydroelectric energy",
+            "Energy-efficient modern transport"
+          ],
+          "ans": 1,
+          "exp": "The agriculture pillar aims to boost food security and farmer incomes by increasing yields per hectare and improving livestock health, thereby reducing the carbon footprint per animal."
+        },
+        {
+          "q": "Which drastic population control policy was officially enforced in China from the late 1970s until 2015 to curb massive population growth?",
+          "opts": [
+            "The One-Child Policy",
+            "Pro-natalist tax incentives",
+            "Child taxation policies",
+            "Voluntary family planning programs"
+          ],
+          "ans": 0,
+          "exp": "China's One-Child Policy was a strict, explicit anti-natalist policy that legally restricted most families to a single child, fundamentally altering China's demographic trajectory."
+        },
+        {
+          "q": "Which of the following metrics is classified strictly as a 'social indicator' of development, rather than an economic one?",
+          "opts": [
+            "Gross National Product (GNP) per capita",
+            "The total volume of industrial exports",
+            "The national poverty line",
+            "Infant mortality rate"
+          ],
+          "ans": 3,
+          "exp": "Infant mortality rate measures the number of infant deaths per 1,000 live births, directly reflecting the quality of a nation's healthcare, sanitation, and social well-being."
+        }
+      ]
+    }
+  ]
+}
