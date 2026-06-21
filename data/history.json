@@ -1,0 +1,1109 @@
+{
+  "parts": [
+    {
+      "partTitle": "History Competition Pool",
+      "questions": [
+        {
+          "q": "Which of the following statements best explains the fundamental purpose of studying history?",
+          "opts": [
+            "It primarily advocates nationalistic pride over global diversity",
+            "It stimulates citizens to focus solely on their own regional issues",
+            "It supports our critical understanding of past events to interpret current affairs",
+            "It enables societies to become more deeply religious and less secular"
+          ],
+          "ans": 2,
+          "exp": "History as an academic discipline uses a critical, evidence-based approach to reconstruct the past, which helps societies understand current geopolitical, economic, and social realities."
+        },
+        {
+          "q": "In the evolutionary lineage of human ancestors, which of the following biological classifications is the most inclusive?",
+          "opts": [
+            "Homo erectus",
+            "Homo habilis",
+            "Genus Homo",
+            "Homo sapiens"
+          ],
+          "ans": 2,
+          "exp": "The taxonomic rank 'Genus Homo' is the most inclusive category, as it contains all human ancestor species (including habilis, erectus, and sapiens)."
+        },
+        {
+          "q": "What was the primary revolutionary factor that allowed for the transition of human societies into early civilizations?",
+          "opts": [
+            "The emergence and spread of agriculture (farming)",
+            "The introduction of organized monotheistic religions",
+            "The rapid construction of modern administrative states",
+            "The recovery of classical Greco-Roman learning"
+          ],
+          "ans": 0,
+          "exp": "The Neolithic Revolution (the rise of farming) allowed humans to establish permanent settlements, generate food surpluses, and develop specialized labor division, which laid the foundation for civilization."
+        },
+        {
+          "q": "Which of the following statements is INCORRECT regarding the roles of leaders in ancient theocratic states?",
+          "opts": [
+            "They supervised the construction of complex irrigation canals",
+            "They predicted the rise and fall of water levels in rivers",
+            "They devised highly accurate calendar systems",
+            "They inherited the private property of all their subjects by default"
+          ],
+          "ans": 3,
+          "exp": "While theocratic leaders claimed divine authority and controlled massive state assets, they did not automatically inherit the personal private property of every individual subject as a standard practice."
+        },
+        {
+          "q": "Which historical document provides a highly detailed, first-hand trade account of the Aksumite state and its coastal ports along the Red Sea?",
+          "opts": [
+            "The Periplus of the Erythraean Sea",
+            "The Histories by Herodotus",
+            "The Epic of Gilgamesh",
+            "The Rosetta Stone"
+          ],
+          "ans": 0,
+          "exp": "Written by a Greek-speaking merchant in the 1st century AD, 'The Periplus of the Erythraean Sea' describes Adulis as a major port and details Aksum's trade networks."
+        },
+        {
+          "q": "Which of the following factors contributed most directly to the initial emergence of complex socio-political communities in human history?",
+          "opts": [
+            "The total stagnation of regional trade networks",
+            "The development and growth of agriculture",
+            "A widespread refusal to pay regional taxes",
+            "The complete isolation of trading routes"
+          ],
+          "ans": 1,
+          "exp": "The expansion of agriculture allowed populations to grow, specialize, and form complex, stratified communities requiring centralized administration."
+        },
+        {
+          "q": "To which language superfamily does the Arabic language belong?",
+          "opts": [
+            "Niger-Congo",
+            "Afro-Asiatic",
+            "Nilo-Saharan",
+            "Khoisan"
+          ],
+          "ans": 1,
+          "exp": "Arabic belongs to the Semitic branch of the Afro-Asiatic language superfamily, which is highly prevalent across North Africa and the Middle East."
+        },
+        {
+          "q": "Which of the following matches between ancient writing systems and their developers is INCORRECT?",
+          "opts": [
+            "China - Logographic script",
+            "Sumeria - Cuneiform",
+            "Egypt - Hieroglyphic script",
+            "Kush - Pictographic script"
+          ],
+          "ans": 3,
+          "exp": "The Kingdom of Kush developed Meroitic script, which was an alphabetic/syllabic writing system consisting of 23 signs, not a pictographic script."
+        },
+        {
+          "q": "The historic Edict of Milan, which granted religious toleration to Christians, was declared by which Roman emperor?",
+          "opts": [
+            "Nero",
+            "Constantine the Great",
+            "Diocletian",
+            "Theodosius"
+          ],
+          "ans": 1,
+          "exp": "Issued in 313 AD by Emperor Constantine (alongside Licinius), the Edict of Milan established religious toleration for Christianity throughout the Roman Empire."
+        },
+        {
+          "q": "During the early Christian era, which two major cities competed intensely for supreme administrative and religious power?",
+          "opts": [
+            "Rome and London",
+            "Constantinople and Rome",
+            "Paris and Berlin",
+            "Jerusalem and Berlin"
+          ],
+          "ans": 1,
+          "exp": "Following the division of the Roman Empire, Rome (Western seat) and Constantinople (Eastern seat) competed for religious authority, eventually leading to the Great Schism of 1054."
+        },
+        {
+          "q": "Which of the following factors accelerated the economic and political downfall of the Aksumite kingdom?",
+          "opts": [
+            "The peaceful spread of Christianity around the Red Sea",
+            "The rapid expansion of internal land trade",
+            "The destruction of its primary Red Sea port, Adulis, by Muslim forces",
+            "A series of devastating earthquakes around the Red Sea"
+          ],
+          "ans": 2,
+          "exp": "The destruction of the port city of Adulis in the mid-7th century AD isolated Aksum from its highly profitable maritime trade networks, hastening its decline."
+        },
+        {
+          "q": "Which of the following is historically recognized as the earliest Muslim Sultanate founded in the Ethiopian region?",
+          "opts": [
+            "Adal",
+            "The Sultanate of Shewa",
+            "Fatagar",
+            "Hadiya"
+          ],
+          "ans": 1,
+          "exp": "The Sultanate of Shewa, established in 896 AD by the Makhzumi dynasty, is traditionally documented as the earliest Muslim Sultanate in the Horn of Africa."
+        },
+        {
+          "q": "Islam was primarily introduced and spread throughout the Horn of Africa through which of the following?",
+          "opts": [
+            "Aggressive military conquest from the North",
+            "Trade routes, coastal ports (Zeila/Dahlak), and peaceful assimilation",
+            "Mandatory decrees issued by Christian monarchs",
+            "Widespread colonization by European powers"
+          ],
+          "ans": 1,
+          "exp": "Islam spread peacefully into the Horn of Africa via merchants, trade routes, and coastal ports on the Red Sea and Indian Ocean coasts."
+        },
+        {
+          "q": "Which of the following was established as the first political center of the Zagwe dynasty?",
+          "opts": [
+            "Lalibela",
+            "Adafa",
+            "Bugna (Lasta)",
+            "Yeha"
+          ],
+          "ans": 2,
+          "exp": "The Zagwe dynasty initially consolidated their power in the district of Bugna in Lasta, before later moving their administrative capital to Adafa."
+        },
+        {
+          "q": "What is considered the most outstanding cultural and architectural feature of the Zagwe dynasty?",
+          "opts": [
+            "The introduction of royal succession laws",
+            "The complete continuation of the old Aksumite military structure",
+            "The construction of the eleven monolithic Rock-Hewn churches of Lalibela",
+            "The adoption of Agew as the sole written national language"
+          ],
+          "ans": 2,
+          "exp": "King Lalibela of the Zagwe dynasty commissioned the carving of eleven spectacular monolithic churches from solid rock in the 12th/13th centuries, a major feat of medieval architecture."
+        },
+        {
+          "q": "What was a primary internal factor that led to the decline and eventual downfall of the Zagwe dynasty?",
+          "opts": [
+            "The sudden rise of Islam around the Red Sea",
+            "Intense power struggles and internal succession disputes among the ruling class",
+            "Direct military intervention by foreign European powers",
+            "The complete collapse of local agricultural production"
+          ],
+          "ans": 1,
+          "exp": "The Zagwe dynasty suffered from chronic succession crises, as there was no clear, universally accepted law of inheritance for the crown, weakening the state."
+        },
+        {
+          "q": "Who was the last king of the Zagwe dynasty, defeated in battle by Yekuno Amlak in 1270 AD?",
+          "opts": [
+            "Nakuto La'ab",
+            "Yitbarek",
+            "Harbe",
+            "Lalibela"
+          ],
+          "ans": 1,
+          "exp": "Yitbarek was the last Zagwe king. He was defeated and killed by Yekuno Amlak, who then established the Solomonic dynasty."
+        },
+        {
+          "q": "Who is recognized as the historical founder of the Zagwe dynasty?",
+          "opts": [
+            "Yekuno Amlak",
+            "Meratekla Haymanot",
+            "Yitbarek",
+            "Dil Na'od"
+          ],
+          "ans": 1,
+          "exp": "Mara Takle Haymanot, an Agew general who married the daughter of the last Aksumite king, overthrew the Aksumite state to found the Zagwe dynasty."
+        },
+        {
+          "q": "The Zagwe dynasty came to power by succeeding which of the following ancient states?",
+          "opts": [
+            "The Kingdom of Damot",
+            "The Kingdom of Aksum",
+            "The Sultanate of Adal",
+            "The Kingdom of Da'amat"
+          ],
+          "ans": 1,
+          "exp": "The Zagwe dynasty rose to power in the mid-12th century by directly overthrowing the remnants of the Aksumite Kingdom."
+        },
+        {
+          "q": "Which of the following is correct about the Christian highland kingdom of Ethiopia during the medieval period (1270 to 1529)?",
+          "opts": [
+            "The kingdom had no permanent capital city, utilizing mobile tents instead",
+            "The kingdom lacked a vast territorial empire",
+            "The monarchs completely avoided diplomatic relations with European states",
+            "The kingdom utilized printed paper money for domestic trade"
+          ],
+          "ans": 0,
+          "exp": "During this period, the Solomonic monarchs ruled from 'mobile capitals' (roving royal camps) to maintain administrative control, secure resources, and collect tribute across their vast territory."
+        },
+        {
+          "q": "Which of the following medieval Muslim Sultanates was directly associated with the ruling Walasma dynasty?",
+          "opts": [
+            "Sultanate of Shewa",
+            "Sultanate of Ifat",
+            "Sultanate of Bali",
+            "Sultanate of Dawuro"
+          ],
+          "ans": 1,
+          "exp": "The Walasma dynasty was founded in the 13th century and ruled the Sultanate of Ifat, and later the Sultanate of Adal."
+        },
+        {
+          "q": "Which of the following statements is INCORRECT regarding the historical period known as the 'Dark Ages' in Western Europe?",
+          "opts": [
+            "It represented the early part of the medieval European period",
+            "Urbanization and scientific advancements saw a significant decline",
+            "The Eastern Roman (Byzantine) Empire collapsed at the same time as the Western Roman Empire",
+            "It is generally dated by historians from roughly 500 to 1000 AD"
+          ],
+          "ans": 2,
+          "exp": "While the Western Roman Empire fell in 476 AD (initiating the Dark Ages in the West), the Eastern Roman (Byzantine) Empire survived and flourished for another thousand years, until 1453 AD."
+        },
+        {
+          "q": "Which set of technological innovations acted as major catalysts for the European Age of Exploration and Discovery?",
+          "opts": [
+            "The steam engine and coal mining tools",
+            "The printing press and paper mills",
+            "The magnetic compass, astrolabe, and improved ship designs (caravels)",
+            "The mechanization of textile weaving"
+          ],
+          "ans": 2,
+          "exp": "The adoption of the magnetic compass, the astrolabe, and the development of deep-sea caravels allowed European explorers to safely navigate open oceans."
+        },
+        {
+          "q": "The historical conflict known as the Seven Years' War was fought primarily between which two global powers?",
+          "opts": [
+            "Germany and Italy",
+            "Great Britain and France",
+            "Spain and Portugal",
+            "Belgium and Denmark"
+          ],
+          "ans": 1,
+          "exp": "The Seven Years' War (1756–1763) was a global conflict fought primarily between Great Britain and France, along with their respective allies, over colonial dominance in North America and India."
+        },
+        {
+          "q": "What was a key institutional feature that facilitated the rise of early capitalism in Western Europe?",
+          "opts": [
+            "The development of joint-stock companies and modern banking systems to facilitate long-distance trade",
+            "The complete decline of the merchant class (bourgeoisie)",
+            "The relocation of manufacturing from major urban centers to rural farms",
+            "Heavy government state monopolies over all private trade"
+          ],
+          "ans": 0,
+          "exp": "The rise of joint-stock companies, double-entry bookkeeping, and bills of exchange allowed merchants to pool capital, manage risks, and finance large-scale international trade."
+        },
+        {
+          "q": "Which of the following were core elements of early capitalist economic relations in Europe?",
+          "opts": [
+            "Subsistence farming and local barter",
+            "Industrial mechanization and steam power",
+            "Long-distance trade, monetized banking, and wage labor",
+            "Feudal land tenure and agricultural serfdom"
+          ],
+          "ans": 2,
+          "exp": "Early (commercial) capitalism relied heavily on mercantilism, long-distance trade networks, the growth of banking houses, and the expansion of monetary systems."
+        },
+        {
+          "q": "The intellectual and cultural movement known as the Renaissance is best defined as:",
+          "opts": [
+            "A radical religious reform movement",
+            "A revival of interest in classical Greek and Roman art, literature, and humanism",
+            "A political revolution against absolute monarchy",
+            "The invention of modern industrial machinery"
+          ],
+          "ans": 1,
+          "exp": "The Renaissance was a cultural 'rebirth' starting in Italy in the 14th century, emphasizing humanism, individualism, and a return to classical learning."
+        },
+        {
+          "q": "Which of the following European territories constituted the core of the Holy Roman Empire during the medieval period?",
+          "opts": [
+            "France and Great Britain",
+            "Germany and Northern Italy",
+            "Spain and Portugal",
+            "Russia and Poland"
+          ],
+          "ans": 1,
+          "exp": "The Holy Roman Empire was a multi-ethnic complex of territories in Central Europe, primarily centered around Germany, Austria, and parts of Northern Italy."
+        },
+        {
+          "q": "Which of the following was a primary factor that drove the rise of early mercantilist capitalism in Europe?",
+          "opts": [
+            "The onset of the Industrial Revolution",
+            "The European Age of Exploration and the discovery of the Americas",
+            "The complete decline of international trade routes",
+            "The total devastation of domestic agriculture"
+          ],
+          "ans": 1,
+          "exp": "The discovery of the Americas and new maritime routes to Asia opened up global trade, leading to the accumulation of gold and silver (mercantilism)."
+        },
+        {
+          "q": "Which of the following Renaissance artists did NOT participate in the Age of Exploration?",
+          "opts": [
+            "Christopher Columbus",
+            "Amerigo Vespucci",
+            "Donatello",
+            "Vasco da Gama"
+          ],
+          "ans": 2,
+          "exp": "Donatello was a famous Early Renaissance sculptor from Florence, whereas Columbus, Vespucci, and da Gama were oceanic explorers."
+        },
+        {
+          "q": "What is the primary objective of studying history as an academic discipline?",
+          "opts": [
+            "To memorize long lists of dates and names without context",
+            "To accurately predict future technological and scientific discoveries",
+            "To analyze past human actions, understand cause-and-effect relationships, and apply these insights to present realities",
+            "To establish the moral superiority of one culture over another"
+          ],
+          "ans": 2,
+          "exp": "Academic history is a rigorous social science that uses critical analysis of primary and secondary sources to reconstruct past human experiences."
+        },
+        {
+          "q": "What is a major methodological difference between historians and natural scientists?",
+          "opts": [
+            "Historians rely on controlled laboratory experiments",
+            "Natural scientists incorporate personal subjective views into their data",
+            "Both fields follow identical research methodologies",
+            "Historians analyze unique, unrepeatable past events, while natural scientists study repeatable phenomena under controlled conditions"
+          ],
+          "ans": 3,
+          "exp": "Unlike natural scientists who can test hypotheses through repeatable laboratory experiments, historians must reconstruct and interpret unique past events using surviving evidence."
+        },
+        {
+          "q": "In historical methodology, what does the term 'historiography' refer to?",
+          "opts": [
+            "The process of preserving oral traditions without writing",
+            "The study of the history and methods of writing history",
+            "The recording of historical events without any critical analysis",
+            "The study of ancient geographical maps"
+          ],
+          "ans": 1,
+          "exp": "Historiography is 'the history of history-writing,' focusing on how historians' methods, biases, and interpretations have evolved over time."
+        },
+        {
+          "q": "Which of the following has historically been a significant limitation in the study of early Ethiopian history?",
+          "opts": [
+            "An over-reliance on oral traditions as the sole source of history until the 1960s",
+            "A complete lack of written primary sources",
+            "A structural bias that favored socioeconomic history over political history",
+            "The total absence of archaeological sites"
+          ],
+          "ans": 0,
+          "exp": "Before the mid-20th century, academic historiography of Ethiopia relied heavily on written royal chronicles, often ignoring oral traditions and the history of southern societies."
+        },
+        {
+          "q": "Which of the following is considered a defining characteristic of modern academic history?",
+          "opts": [
+            "Relying entirely on mythology to fill gaps in knowledge",
+            "Focusing exclusively on political and military battles",
+            "Using a critical, source-verified, and evidence-based approach to reconstruct the past",
+            "Avoiding the use of written documents to remain objective"
+          ],
+          "ans": 2,
+          "exp": "Modern academic history is built on the critical evaluation of primary sources, cross-referencing evidence, and maintaining objective analysis."
+        },
+        {
+          "q": "Who is universally recognized as the 'father of modern evidence-based history' in Western historiography?",
+          "opts": [
+            "Herodotus",
+            "Thucydides",
+            "Leopold von Ranke",
+            "Edward Gibbon"
+          ],
+          "ans": 2,
+          "exp": "The 19th-century German historian Leopold von Ranke revolutionized history by introducing seminars, critical source analysis, and the rule to write history 'as it actually was'."
+        },
+        {
+          "q": "What revolutionary scientific concept did Charles Darwin present in his 1859 book 'On the Origin of Species'?",
+          "opts": [
+            "That all human species were created in their current form",
+            "That species evolve over time through the mechanism of natural selection",
+            "That the Earth is only 6,000 years old",
+            "That physical traits acquired during life are passed to offspring"
+          ],
+          "ans": 1,
+          "exp": "Darwin's theory of evolution by natural selection explained how diverse species adapt and evolve over generations from common ancestors."
+        },
+        {
+          "q": "Based on archaeological findings, when did Homo erectus likely master the controlled use of fire?",
+          "opts": [
+            "Approximately 1.5 million years ago",
+            "Approximately 500,000 years ago",
+            "Approximately 10,000 years ago",
+            "Approximately 100,000 years ago"
+          ],
+          "ans": 0,
+          "exp": "Evidence from sites in Africa and Asia suggests that Homo erectus developed the capability to control and use fire roughly 1.5 million years ago, aiding in cooking and defense."
+        },
+        {
+          "q": "Which major event occurred during the New Kingdom period of ancient Egypt, representing its political and economic peak?",
+          "opts": [
+            "The initial construction of the Great Pyramids of Giza",
+            "The reign of Queen Hatshepsut and the expansion of international trade",
+            "The total invasion and conquest of Egypt by the Roman Empire",
+            "The complete collapse of Egyptian centralized authority"
+          ],
+          "ans": 1,
+          "exp": "The New Kingdom (c. 1550–1070 BC) was Egypt's golden age. Queen Hatshepsut authorized famous trade expeditions, notably to the Land of Punt."
+        },
+        {
+          "q": "What was cuneiform?",
+          "opts": [
+            "An ancient Egyptian system of painting",
+            "A system of writing developed by the Sumerians using wedge-shaped marks on clay tablets",
+            "A language spoken exclusively by the ancient Greeks",
+            "An early agricultural tool used for irrigation"
+          ],
+          "ans": 1,
+          "exp": "Developed by the Sumerians around 3200 BC, cuneiform is considered one of the earliest writing systems in human history."
+        },
+        {
+          "q": "What is the ancient Babylonian king Hammurabi best known for?",
+          "opts": [
+            "Conquering the entire Nile Valley",
+            "Constructing the Hanging Gardens of Babylon",
+            "Creating one of the earliest written legal codes (The Code of Hammurabi)",
+            "Introducing monotheism to Mesopotamia"
+          ],
+          "ans": 2,
+          "exp": "The Code of Hammurabi (c. 1750 BC) is a set of 282 laws inscribed on a basalt stele, detailing civil, criminal, and commercial regulations."
+        },
+        {
+          "q": "Which event marked the definitive end of the political independence of the classical Greek city-states?",
+          "opts": [
+            "The outbreak of the Peloponnesian War",
+            "The destruction of Sparta by Athens",
+            "The conquest of Greece by Philip II of Macedon",
+            "The invasion of Persia by Alexander the Great"
+          ],
+          "ans": 2,
+          "exp": "Following the Battle of Chaeronea in 338 BC, King Philip II of Macedon defeated the allied Greek city-states, ending their political independence."
+        },
+        {
+          "q": "Which historical event marked the transition from the Roman Republic to the Roman Empire under Augustus?",
+          "opts": [
+            "The assassination of Julius Caesar in 44 BC",
+            "The defeat of Mark Antony and Cleopatra by Octavian at the Battle of Actium",
+            "The complete sack of Rome by Visigoth tribes",
+            "The signing of the Edict of Milan"
+          ],
+          "ans": 1,
+          "exp": "Octavian's victory at Actium in 31 BC left him as the sole ruler of Rome. In 27 BC, he took the title Augustus, becoming the first Roman Emperor."
+        },
+        {
+          "q": "How did the Maya civilization successfully sustain large, growing cities in their tropical rainforest environment?",
+          "opts": [
+            "By building terraced fields on steep mountainsides",
+            "By constructing raised fields in swamplands to control water and prevent flooding",
+            "By relying entirely on hunting and gathering",
+            "By importing all of their food from distant South American empires"
+          ],
+          "ans": 1,
+          "exp": "The Maya developed advanced agricultural techniques, including canal systems and raised fields (chinampas), to farm fertile wetlands."
+        },
+        {
+          "q": "Which of the following engineering and technological achievements was NOT attributed to the Inca Empire?",
+          "opts": [
+            "The construction of a vast network of paved roads across the Andes",
+            "Successful brain surgeries (trepanation)",
+            "The widespread industrial use of concrete in stone architecture",
+            "The use of quinine to treat malaria"
+          ],
+          "ans": 2,
+          "exp": "The Incas were master stonemasons. They fitted stones together so tightly without mortar or concrete that a knife blade could not slide between them."
+        },
+        {
+          "q": "The core Christian doctrine of the Holy Trinity was first formally confirmed and codified by which of the following?",
+          "opts": [
+            "The Council of Nicaea in 325 AD",
+            "The Council of Constantinople in 381 AD",
+            "The Patriarch of Rome in 250 AD",
+            "The Council of Chalcedon"
+          ],
+          "ans": 0,
+          "exp": "The First Council of Nicaea (325 AD) formulated the Nicene Creed, which established the consensus doctrine of the Holy Trinity."
+        },
+        {
+          "q": "The Cushitic branch of the Afro-Asiatic language family in Ethiopia includes which of the following languages?",
+          "opts": [
+            "Afar",
+            "Amharic",
+            "Tigrinya",
+            "Gurage"
+          ],
+          "ans": 0,
+          "exp": "Afar, Oromo, and Somali are Cushitic languages, whereas Amharic, Tigrinya, and Gurage belong to the Semitic branch."
+        },
+        {
+          "q": "In the traditional indigenous religion of the Oromo people (Waqeffanna), who holds the highly respected position of spiritual leader and mediator?",
+          "opts": [
+            "The Abba Muda",
+            "The Qallu",
+            "The Abba Gadaa",
+            "The Waqeffanna followers"
+          ],
+          "ans": 1,
+          "exp": "The Qallu acts as the high priest and spiritual mediator between Waaq (God) and the community, playing a crucial role in blessings and Gadaa transitions."
+        },
+        {
+          "q": "Which of the following statements highlights the global significance of the Aksumite Kingdom between the 3rd and 7th centuries AD?",
+          "opts": [
+            "It was completely isolated from global trade networks",
+            "It was recognized as one of the world's four great powers, alongside Rome, Persia, and China",
+            "It restricted its maritime trade strictly to the Red Sea",
+            "It was politically dominated by the Roman Empire"
+          ],
+          "ans": 1,
+          "exp": "As noted by Persian writer Mani, Aksum was one of the four greatest empires of the ancient world due to its military strength, wealth, and trade."
+        },
+        {
+          "q": "Which factor contributed most directly to the rise and prosperity of the ancient Kingdom of Da'amat (c. 10th to 5th centuries BC)?",
+          "opts": [
+            "Its advanced oceanic shipbuilding technology",
+            "Its political dominance over the land of Punt",
+            "Its strategic location for trade networks connecting with South Arabia",
+            "Its discovery of massive oil reserves"
+          ],
+          "ans": 2,
+          "exp": "Da'amat's proximity to the Red Sea allowed it to establish close commercial and cultural contacts with South Arabian kingdoms, notably Saba."
+        },
+        {
+          "q": "Which historical event marked the definitive political end of the independent Sultanate of Shewa?",
+          "opts": [
+            "Its invasion by the Kingdom of Damot",
+            "Its conquest and annexation by the Sultanate of Ifat",
+            "The rise of the Zagwe Dynasty",
+            "The expansion of the Christian highland kingdom under Amda Seyon"
+          ],
+          "ans": 1,
+          "exp": "In 1285, the Walasma dynasty of Ifat conquered the Makhzumi dynasty of Shewa, absorbing its territory into the expanding Ifat Sultanate."
+        },
+        {
+          "q": "Which major craft and trade did the Beta-Israel community expand into to support their livelihood after losing their land rights in the 15th/16th centuries?",
+          "opts": [
+            "Farming and weaving",
+            "Masonry, pottery, and metalworking",
+            "Deep-sea shipbuilding",
+            "Oceanic spice trade"
+          ],
+          "ans": 1,
+          "exp": "After being declared 'rest' landless (falas) by Solomonic kings, the Beta-Israel turned to specialized artisan crafts like blacksmithing, pottery, and masonry."
+        },
+        {
+          "q": "Which of the following was NOT a contributing factor to the decline and fall of the Western Roman Empire?",
+          "opts": [
+            "Internal political instability and civil wars",
+            "A series of major invasions by Germanic tribes",
+            "The military invasion of Italy by Ottoman Turks",
+            "Economic decline and high inflation"
+          ],
+          "ans": 2,
+          "exp": "The Western Roman Empire fell in 476 AD. The Ottoman Turks captured Constantinople (Eastern Rome) much later, in 1453 AD."
+        },
+        {
+          "q": "What was the primary motive behind the creation of the College of Cardinals in 1059 by Pope Nicholas II?",
+          "opts": [
+            "To manage the vast agricultural estates of the Papacy",
+            "To allow the election of popes without interference from secular kings, emperors, or Roman mobs",
+            "To establish new maritime trade regulations in Europe",
+            "To serve as a military advisory council during the Crusades"
+          ],
+          "ans": 1,
+          "exp": "The Papal Bull 'In Nomine Domini' established that cardinal-bishops would have exclusive rights to elect new popes, securing the independence of the Church."
+        },
+        {
+          "q": "During his reign, Pope Innocent III (1198-1216) asserted what major claim regarding papal authority?",
+          "opts": [
+            "That the authority of secular kings was superior to the Church",
+            "That bishops should focus strictly on spiritual matters and avoid politics",
+            "That the Pope had supreme, final authority over all secular rulers",
+            "That the Church should be subordinate to the Holy Roman Emperor"
+          ],
+          "ans": 2,
+          "exp": "Innocent III asserted that the papacy held absolute spiritual and temporal power, claiming the Pope had the right to depose kings and emperors."
+        },
+        {
+          "q": "The Golden Age of Islamic medicine during the Middle Ages included all of the following achievements EXCEPT:",
+          "opts": [
+            "The development of the science of optics by Ibn al-Haytham",
+            "The establishment of advanced public hospitals",
+            "The development of the first vaccines for viral diseases",
+            "The compilation of systematic medical encyclopedias by Ibn Sina (Avicenna)"
+          ],
+          "ans": 2,
+          "exp": "While Islamic physicians developed advanced surgery, pharmacology, and quarantine methods, vaccines were developed much later in Europe (Jenner, Pasteur)."
+        },
+        {
+          "q": "Which two Italian city-states dominated maritime trade across the Mediterranean during the medieval period?",
+          "opts": [
+            "Florence and Rome",
+            "Venice and Genoa",
+            "Milan and Naples",
+            "Turin and Bologna"
+          ],
+          "ans": 1,
+          "exp": "Venice and Genoa built powerful merchant fleets and naval empires, controlling the trade of silk, spices, and grain between Europe and the East."
+        },
+        {
+          "q": "Which Spanish adventurers are historically famous for leading the conquests of the Aztec and Inca empires respectively?",
+          "opts": [
+            "Hernan Cortes and Francisco Pizarro",
+            "Ferdinand Magellan and Vasco da Gama",
+            "Francisco de Coronado and Hernando de Soto",
+            "Christopher Columbus and Amerigo Vespucci"
+          ],
+          "ans": 0,
+          "exp": "Cortes conquered the Aztec Empire in Mexico (1521), while Pizarro conquered the Inca Empire in Peru (1532)."
+        },
+        {
+          "q": "How did John Calvin's theological doctrine of predestination influence his followers' social behavior?",
+          "opts": [
+            "It led to lax moral standards since salvation was already decided",
+            "It encouraged a strict moral code, discipline, and hard work as signs of being among the 'elect'",
+            "It caused them to completely reject the authority of local governments",
+            "It promoted total religious tolerance and coexistence"
+          ],
+          "ans": 1,
+          "exp": "Calvinists believed that material success, self-discipline, and moral uprightness were outward signs that an individual was chosen by God for salvation."
+        },
+        {
+          "q": "How did Isaac Newton's scientific discoveries influence the development of Enlightenment philosophy?",
+          "opts": [
+            "He inspired philosophers to reject the scientific method",
+            "He proved that human societies cannot be explained by natural laws",
+            "He showed that the physical universe operates according to rational, predictable laws, encouraging the use of reason in human affairs",
+            "He argued that absolute monarchy was the natural state of government"
+          ],
+          "ans": 2,
+          "exp": "Newton's laws of motion and gravitation showed that nature was rational and orderly, inspiring thinkers to apply reason to politics, law, and society."
+        },
+        {
+          "q": "According to the principles of classical capitalism, what role should the government play in the economy?",
+          "opts": [
+            "Active regulation and direct intervention in all markets",
+            "Complete ownership of all production assets and wage setting",
+            "Minimal intervention, following the principle of laissez-faire",
+            "Ensuring an absolutely equal distribution of national wealth"
+          ],
+          "ans": 2,
+          "exp": "Laissez-faire (leave it alone) capitalism, popularized by Adam Smith, argues that markets operate most efficiently when free from government interference."
+        },
+        {
+          "q": "How did the Industrial Revolution directly fuel 19th-century European imperialism?",
+          "opts": [
+            "It reduced the need for raw materials, allowing countries to focus abroad",
+            "It created an urgent domestic demand for foreign manufactured goods",
+            "It created a surplus of manufactured goods and a critical need for raw materials and secure markets",
+            "It led to the collapse of European military power"
+          ],
+          "ans": 2,
+          "exp": "Industrialized nations needed reliable sources of raw materials (like rubber, oil, and cotton) and captive markets to sell their surplus manufactured goods."
+        },
+        {
+          "q": "By 1850, which major British industry was almost completely dominated by the automated factory system?",
+          "opts": [
+            "The iron manufacturing industry",
+            "The coal mining industry",
+            "The cotton textile industry",
+            "The agricultural production sector"
+          ],
+          "ans": 2,
+          "exp": "The mechanization of spinning and weaving made textiles the first industry to transition completely to the factory system."
+        },
+        {
+          "q": "Who was invited by local nationalists to lead the Sicilian uprising in 1860, aiding the unification of Italy?",
+          "opts": [
+            "Count Camillo di Cavour",
+            "Giuseppe Garibaldi",
+            "Victor Emmanuel II",
+            "Giuseppe Mazzini"
+          ],
+          "ans": 1,
+          "exp": "Garibaldi led his force of volunteer 'Redshirts' to capture Sicily and Naples, which he then turned over to King Victor Emmanuel II to unify Italy."
+        },
+        {
+          "q": "What was one of the primary political obstacles to the unification of Germany in the 1850s?",
+          "opts": [
+            "Austria's desire to maintain its traditional dominance in the German Confederation",
+            "A complete lack of nationalistic feelings among the German people",
+            "The lack of support from the King of Prussia",
+            "Total cultural division between northern and southern Germany"
+          ],
+          "ans": 0,
+          "exp": "Austria opposed a unified Germany led by Prussia, as it would diminish Austrian influence in Central Europe."
+        },
+        {
+          "q": "What was a major political and social outcome of the American Civil War?",
+          "opts": [
+            "The Southern states successfully gained independence",
+            "The federal Union was preserved, and slavery was permanently abolished",
+            "The United States adopted a monarchical system of government",
+            "The country fell into long-term economic stagnation"
+          ],
+          "ans": 1,
+          "exp": "The Union victory in 1865 preserved the nation as a single state and led to the passage of the 13th Amendment, which outlawed slavery."
+        },
+        {
+          "q": "What specific action in 1908 outraged Pan-Slav nationalists in Serbia and increased tensions in the Balkans?",
+          "opts": [
+            "Austria-Hungary's formal annexation of Bosnia and Herzegovina",
+            "The complete collapse of the Ottoman Empire",
+            "The signing of the Entente Cordiale",
+            "Russia's invasion of Belgrade"
+          ],
+          "ans": 0,
+          "exp": "Serbia wanted to unify Bosnia (which had a large Serb population) into a greater Slavic state. Austria's sudden annexation of Bosnia ruined these plans, triggering the Bosnian Crisis."
+        },
+        {
+          "q": "What was the significance of the Entente Cordiale signed in 1904?",
+          "opts": [
+            "It was a formal military alliance between Germany and Austria-Hungary",
+            "It was a series of agreements between Great Britain and France that settled colonial disputes",
+            "It was a commercial trade treaty between Britain and Russia",
+            "It was a peace treaty that ended the Crimean War"
+          ],
+          "ans": 1,
+          "exp": "The Entente Cordiale settled long-standing colonial disputes in Africa (notably over Egypt and Morocco), paving the way for the Anglo-French alliance in World War I."
+        },
+        {
+          "q": "What was a major reason why 'Legitimate Trade' replaced the Trans-Atlantic Slave Trade in West Africa in the early 19th century?",
+          "opts": [
+            "The demand for raw industrial materials like palm oil rose in Europe, while Britain actively suppressed the slave trade",
+            "African rulers voluntarily decided to stop trading slaves",
+            "The global demand for labor declined to zero",
+            "European nations ran out of goods to trade for slaves"
+          ],
+          "ans": 0,
+          "exp": "Following Britain's abolition of the slave trade in 1807, the Royal Navy blockaded West Africa, forcing a transition to trading agricultural commodities like palm oil."
+        },
+        {
+          "q": "How did European powers respond to the global economic depression that began in 1873?",
+          "opts": [
+            "They abandoned all protective tariffs to encourage free trade",
+            "They turned to neo-mercantilist expansion and targeted Africa for raw materials and colonial markets",
+            "They completely stopped all colonial expansion",
+            "They focused exclusively on domestic agricultural development"
+          ],
+          "ans": 1,
+          "exp": "The Long Depression (1873–1896) caused European states to adopt protectionist trade policies and seek exclusive colonial territories in Africa to secure raw materials and markets."
+        },
+        {
+          "q": "In 1884, Germany declared a protectorate over which of the following African territories?",
+          "opts": [
+            "Egypt and Sudan",
+            "South Africa and Zimbabwe",
+            "Togoland, Cameroon, and Southwest Africa (Namibia)",
+            "Somalia and Kenya"
+          ],
+          "ans": 2,
+          "exp": "Chancellor Otto von Bismarck entered the colonial race in 1884 by declaring protectorates over Southwest Africa, Togoland, Cameroon, and East Africa (Tanganyika)."
+        },
+        {
+          "q": "Where was the core of Samori Toure's Wassoulou Empire located?",
+          "opts": [
+            "Present-day Guinea, Mali, and C&ocirc;te d'Ivoire",
+            "Present-day Nigeria and Niger",
+            "Present-day Sudan and South Sudan",
+            "Present-day South Africa and Botswana"
+          ],
+          "ans": 0,
+          "exp": "Samori Toure established the Wassoulou Empire in the Upper Niger Basin, covering parts of modern Guinea, Mali, and C&ocirc;te d'Ivoire."
+        },
+        {
+          "q": "What role did Samori Toure play in the history of West African resistance to European colonialism?",
+          "opts": [
+            "He allied with the French to defeat neighboring kingdoms",
+            "He created a highly organized, professional army and used guerrilla warfare to resist French expansion for over a decade",
+            "He peacefully accepted French protection without resistance",
+            "He united all West African states under a single constitution"
+          ],
+          "ans": 1,
+          "exp": "Samori Toure built a modern army equipped with firearms and resisted French colonial forces from 1882 until his capture in 1898."
+        },
+        {
+          "q": "What happened to Ahmad Urabi, the leader of the 1882 nationalist revolt in Egypt, after his forces were defeated by the British?",
+          "opts": [
+            "He was executed for treason in Cairo",
+            "He escaped to Sudan to lead the Mahdist revolt",
+            "He was pardoned and appointed Prime Minister",
+            "He was captured and exiled to Ceylon (now Sri Lanka)"
+          ],
+          "ans": 3,
+          "exp": "Following the British victory at the Battle of Tell el-Kebir in 1882, Urabi was captured, tried, and exiled to Ceylon, where he remained until 1901."
+        },
+        {
+          "q": "Who laid the theoretical foundations for the French colonial administrative policy of 'Direct Rule'?",
+          "opts": [
+            "Charles de Gaulle",
+            "Albert Sarraut",
+            "Georges Clemenceau",
+            "Leopold Senghor"
+          ],
+          "ans": 1,
+          "exp": "Albert Sarraut, as Colonial Minister, formulated the French policy of 'mise en valeur' and the administrative framework of direct rule over colonies."
+        },
+        {
+          "q": "What was a major negative consequence of the European introduction of cash-crop agriculture on African farmers?",
+          "opts": [
+            "It led to a massive increase in local food security",
+            "It forced farmers to allocate their best land and labor to export crops, causing local food shortages",
+            "It completely eliminated all colonial taxation",
+            "It led to the immediate transfer of land ownership to African peasants"
+          ],
+          "ans": 1,
+          "exp": "Colonial powers forced African farmers to grow cash crops (like cotton, cocoa, and coffee) to pay taxes. This diverted land and labor away from food production, leading to food insecurity."
+        },
+        {
+          "q": "Which European concession company held total monopoly control over copper and mineral mining in Katanga (Belgian Congo)?",
+          "opts": [
+            "The British South Africa Company",
+            "The Union Mini&egrave;re du Haut-Katanga (UMHK)",
+            "The Royal Niger Company",
+            "The Imperial British East Africa Company"
+          ],
+          "ans": 1,
+          "exp": "UMHK was a powerful Belgian concession company that dominated the rich copper and cobalt mining operations in Katanga from 1906 until nationalization."
+        },
+        {
+          "q": "What was a primary reason why regional trade and economic security improved in northern Ethiopia during the early 19th century?",
+          "opts": [
+            "The gradual stabilization of local power bases and decline of destructive feudal wars",
+            "The introduction of modern railway transport",
+            "The total abolition of all transit taxes",
+            "The complete conquest of the region by the Ottoman Empire"
+          ],
+          "ans": 0,
+          "exp": "During the Zemene Mesafint, regional trade was disrupted. In the early 19th century, the stabilization of regional power bases (like Shewa and Tigray) allowed trade routes to reopen."
+        },
+        {
+          "q": "What critical lesson did Kasa Hailu (later Emperor Tewodros II) learn from his defeat at the Battle of Deberki in 1848 against Egyptian forces?",
+          "opts": [
+            "The importance of forming alliances with European states",
+            "The need to avoid using firearms in battle",
+            "The absolute superiority of a disciplined, modern-trained army equipped with artillery",
+            "The necessity of using cavalry charges on flat plains"
+          ],
+          "ans": 2,
+          "exp": "Kasa's forces were routed by a much smaller, disciplined Egyptian force equipped with modern artillery, inspiring his lifelong mission to build a modern, disciplined army in Ethiopia."
+        },
+        {
+          "q": "Which of the following contributed directly to the political downfall of Emperor Tekle Giorgis II in 1871?",
+          "opts": [
+            "His military conflict with British forces at Magdala",
+            "His failure to secure alliances and military support from other powerful regional rulers, notably Dejazmach Kasa Mercha of Tigray",
+            "His decision to abolish the traditional land tenure system",
+            "The invasion of his capital by Mahdist forces"
+          ],
+          "ans": 1,
+          "exp": "Dejazmach Kasa Mercha of Tigray had modern firearms (received from the British). He defeated Tekle Giorgis II at the Battle of Assam in 1871 to crown himself Emperor Yohannes IV."
+        },
+        {
+          "q": "Which independent southern Ethiopian ruler was NOT conquered peacefully and resisted Menilek's territorial expansion between 1882 and 1884?",
+          "opts": [
+            "King Aba Jifar II of Jimma",
+            "Hassan Enjamo of Qebena",
+            "Kumsa Moreda of Leqa Neqamte",
+            "Jote Tulu of Leqa Qellem"
+          ],
+          "ans": 1,
+          "exp": "While Aba Jifar, Kumsa, and Jote submitted peacefully to secure autonomy, Hassan Enjamo of Qebena led a fierce armed resistance against Menilek's forces."
+        },
+        {
+          "q": "What was the immediate impact of the Great Ethiopian Famine of 1888–1892 (Kefu Qen) on Menilek's military operations?",
+          "opts": [
+            "It completely stopped all of his southern and western campaigns",
+            "It forced him to temporarily halt major campaigns and prioritize relief, before later resuming the Wolaita campaign",
+            "It had no significant effect on his military strategies",
+            "It caused him to immediately sign a peace treaty with Italy"
+          ],
+          "ans": 1,
+          "exp": "The devastating rinderpest epizootic and famine depleted livestock and food supplies, forcing Menilek to temporarily halt some campaigns before resuming expansion once resources stabilized."
+        },
+        {
+          "q": "Who were the Melkegnas in the context of the traditional land tenure system in southern Ethiopia?",
+          "opts": [
+            "Peasants who owned ancestral land",
+            "State-appointed administrators and soldiers who received land and tribute rights from the government",
+            "Traditional religious leaders of the Oromo people",
+            "Local merchants who managed long-distance trade"
+          ],
+          "ans": 1,
+          "exp": "Following Menilek's expansion, the Melkegna-Gabar system was introduced, where state soldiers and officials (Melkegnas) were allocated land and local tenant farmers (Gabars) to support them."
+        },
+        {
+          "q": "Who was the main European architect who planned and encouraged Egyptian military expansion and aggression against Ethiopia in the 1870s?",
+          "opts": [
+            "Werner Munzinger",
+            "Colonel Arendrup",
+            "Charles Gordon",
+            "Mohammed Rauf Pasha"
+          ],
+          "ans": 0,
+          "exp": "Munzinger, a Swiss adventurer appointed as governor of Massawa by the Khedive of Egypt, was the primary strategist behind Egypt's attempts to invade northern Ethiopia."
+        },
+        {
+          "q": "How did the British government respond to the Dogali incident of 1887, where Ras Alula's forces defeated an Italian detachment?",
+          "opts": [
+            "They condemned Ras Alula and actively supported an Italian invasion of Ethiopia",
+            "They remained neutral and refused to intervene",
+            "They sent the Gerald Portal mission to mediate a peace agreement, attempting to pressure Yohannes IV into making concessions to Italy",
+            "They sent a military expedition to support Yohannes IV"
+          ],
+          "ans": 2,
+          "exp": "The British sent Gerald Portal to mediate. His proposal demanded that Yohannes IV apologize to Italy, surrender territories, and accept an Italian protectorate, which the Emperor rejected."
+        },
+        {
+          "q": "What role did Ras Mekonnen play in the context of the diplomatic crisis over the Treaty of Wuchale?",
+          "opts": [
+            "He was a vocal supporter of the Italian version of Article 17",
+            "He was sent to Rome in 1889 to negotiate the boundary and clarify the disputed article",
+            "He signed the treaty without consulting Emperor Menilek",
+            "He led the first military campaign against Italian forces in Eritrea"
+          ],
+          "ans": 1,
+          "exp": "Ras Mekonnen was sent to Rome to negotiate the terms of the treaty. During his mission, he discovered that Italy had notified European powers of a protectorate over Ethiopia, which led to the rejection of the treaty."
+        },
+        {
+          "q": "Which event marked a major turning point in the diplomatic crisis between Ethiopia and Italy, directly leading to the outbreak of war and the Battle of Adwa?",
+          "opts": [
+            "The signing of the Brussels Act",
+            "The revolt of Dejazmach Bahta Hagos in Akkele Guzay",
+            "The formal abrogation of the Treaty of Wuchale by Emperor Menilek in February 1893",
+            "The signing of the Mereb Convention"
+          ],
+          "ans": 2,
+          "exp": "After Italy refused to amend Article 17, Menilek formally tore up the Treaty of Wuchale in 1893 and declared war, unifying the country's regional forces."
+        },
+        {
+          "q": "What was the primary religious objective of the Council of Borumeda, convened by Emperor Yohannes IV in 1878?",
+          "opts": [
+            "To establish a new, separate religion for all Ethiopians",
+            "To resolve the theological disputes within the Ethiopian Orthodox Church and enforce conversion on Muslims in Wollo",
+            "To officially separate the Church from the State",
+            "To ban the practice of traditional Oromo religions"
+          ],
+          "ans": 1,
+          "exp": "The council resolved internal doctrinal disputes (favoring the Karra sect) and decreed that Wollo's Muslim leaders and population must convert to Orthodox Christianity or lose their land."
+        },
+        {
+          "q": "What was a significant consequence of Article III of the Treaty of Wuchale?",
+          "opts": [
+            "It led to the immediate withdrawal of Italian forces from Massawa",
+            "It allowed Italy to define its colonial boundary, which they used to occupy areas beyond the agreed line",
+            "It allowed Menilek to annex Italian-occupied ports",
+            "It established a joint military command between the two countries"
+          ],
+          "ans": 1,
+          "exp": "Article III defined the boundary between Ethiopia and Eritrea. Italy exploited vague wording to push past the agreed lines and occupy more northern Ethiopian territory."
+        },
+        {
+          "q": "What was the primary goal of the system of alliances constructed by German Chancellor Otto von Bismarck after 1871?",
+          "opts": [
+            "To diplomatically isolate France and ensure Germany's security",
+            "To conquer and partition the Ottoman Empire",
+            "To establish German colonial dominance across West Africa",
+            "To build a strong military alliance with Great Britain"
+          ],
+          "ans": 0,
+          "exp": "Bismarck's main foreign policy goal was to isolate France to prevent a two-front war, which he achieved by building alliances with Austria-Hungary and Russia."
+        },
+        {
+          "q": "Which of the following European alliances was formed last before the outbreak of World War I?",
+          "opts": [
+            "The Triple Alliance (Germany, Austria-Hungary, Italy)",
+            "The Dual Alliance (Germany, Austria-Hungary)",
+            "The Triple Entente (France, Russia, Great Britain)",
+            "The Franco-Russian Alliance"
+          ],
+          "ans": 2,
+          "exp": "The Triple Entente was completed in 1907 with the signing of the Anglo-Russian Entente, following earlier bilateral agreements."
+        },
+        {
+          "q": "Which political organization was directly responsible for planning and executing the assassination of Archduke Franz Ferdinand in Sarajevo in 1914?",
+          "opts": [
+            "The Black Hand (Unification or Death)",
+            "The Bolshevik Party",
+            "The Young Turks",
+            "The Mensheviks"
+          ],
+          "ans": 0,
+          "exp": "Gavrilo Princip, the assassin, was a member of Young Bosnia, a movement backed by the Black Hand, a secret Serbian military society."
+        },
+        {
+          "q": "Why did the Russian Empire mobilize its army in support of Serbia after Austria-Hungary declared war in 1914?",
+          "opts": [
+            "To fulfill a formal military treaty with Great Britain",
+            "To protect its economic investments in Belgrade",
+            "To honor its role as the protector of Slavic nations and maintain influence in the Balkans",
+            "To conquer Austrian territories in Poland"
+          ],
+          "ans": 2,
+          "exp": "Russia viewed itself as the patron of the Slavic peoples in the Balkans. Mobilizing was essential to check Austro-Hungarian expansion in the region."
+        },
+        {
+          "q": "Why did Italy abandon its alliance with Germany and Austria-Hungary to join the Triple Entente in 1915?",
+          "opts": [
+            "It was militarily defeated by British forces",
+            "It was promised Austrian-occupied territories (Trentino and Trieste) in the secret Treaty of London",
+            "It wanted to protect its existing colonies in North Africa",
+            "It opposed Germany's invasion of neutral Belgium"
+          ],
+          "ans": 1,
+          "exp": "The Treaty of London (1915) promised Italy substantial territorial gains from the Austro-Hungarian Empire upon an Allied victory, prompting Italy to switch sides."
+        },
+        {
+          "q": "What was the significance of the 1907 Hague Convention in the history of international law and warfare?",
+          "opts": [
+            "It banned the deployment of submarines in open oceans",
+            "It completely outlawed the declaration of war",
+            "It established rules of land and maritime warfare, including bans on chemical weapons and aerial bombardment of undefended cities",
+            "It created the League of Nations"
+          ],
+          "ans": 2,
+          "exp": "The Hague Conventions of 1899 and 1907 were among the first formal statements of the laws of war, restricting specific weapons and tactics."
+        },
+        {
+          "q": "What was the main objective of Vladimir Lenin's 'April Theses' published upon his return to Russia in 1917?",
+          "opts": [
+            "To support the Provisional Government and continue the war effort against Germany",
+            "To call for an immediate socialist revolution and withdraw Russia from World War I under the slogan 'Peace, Land, and Bread'",
+            "To establish a joint military dictatorship with General Kornilov",
+            "To restore the Romanov monarchy under a constitutional framework"
+          ],
+          "ans": 1,
+          "exp": "The April Theses called for 'All power to the Soviets', the nationalization of land, and an immediate end to Russia's involvement in the war."
+        },
+        {
+          "q": "Why did King Victor Emmanuel III of Italy appoint Benito Mussolini as Prime Minister following the Fascist March on Rome in October 1922?",
+          "opts": [
+            "He personally supported Fascist economic policies",
+            "Mussolini had won a landslide victory in the democratic elections",
+            "He feared a civil war and was reluctant to use the military to suppress the Fascist marchers",
+            "He was pressured by the League of Nations to do so"
+          ],
+          "ans": 2,
+          "exp": "The King refused to sign the declaration of state of siege proposed by Prime Minister Facta, choosing instead to compromise with Mussolini to avoid violence."
+        },
+        {
+          "q": "Which of the following factors contributed most directly to the rapid rise of the Nazi Party (NSDAP) in Germany in the early 1930s?",
+          "opts": [
+            "The economic stability and political unity of the Weimar Republic",
+            "The Great Depression, hyperinflation, high unemployment, and anger over the Treaty of Versailles",
+            "Germany's successful military campaigns in Europe",
+            "A peaceful, democratic resolution to all border disputes"
+          ],
+          "ans": 1,
+          "exp": "The onset of the Great Depression in 1929 devastated the German economy. Millions of unemployed citizens turned to extreme parties like the NSDAP."
+        },
+        {
+          "q": "What event marked the end of the relative inactivity known as the 'Phony War' during the early stages of World War II?",
+          "opts": [
+            "The German invasion of Denmark and Norway in April 1940",
+            "The evacuation of Allied forces from Dunkirk",
+            "The signing of the armistice between France and Germany",
+            "The Battle of Britain"
+          ],
+          "ans": 0,
+          "exp": "The Phony War ended when Germany launched active military operations, invading Denmark and Norway to secure iron ore shipments."
+        },
+        {
+          "q": "Which event led to the celebration of VE Day (Victory in Europe Day) on May 8, 1945?",
+          "opts": [
+            "The atomic bombing of Hiroshima and Nagasaki",
+            "The unconditional surrender of Nazi Germany",
+            "The liberation of Paris by Allied forces",
+            "The signing of the Potsdam Agreement"
+          ],
+          "ans": 1,
+          "exp": "VE Day marks the formal acceptance by the Allies of World War II of Nazi Germany's unconditional surrender, ending the war in Europe."
+        }
+      ]
+    }
+  ]
+}
